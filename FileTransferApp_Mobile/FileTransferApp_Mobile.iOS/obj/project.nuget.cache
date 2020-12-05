@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dXHeOtzC/0gvWQ2KJDYV82ZUY28sMFIzxksGn4jAf40w48PCsTgyVwtKhAZ2TEMKyGa3xoU+j7tj7ALOCxCqvg==",
+  "success": true,
+  "projectFilePath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\FileTransferApp_Mobile.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}

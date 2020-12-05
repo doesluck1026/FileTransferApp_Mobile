@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FileTransferApp_Mobile.MainPage"
+            
+             >
+
+
+    <Grid BackgroundColor="#353536">
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "1*" />
+            <RowDefinition Height = "2*" />
+            <RowDefinition Height = "5*" />
+            <RowDefinition Height = "5*" />
+            <RowDefinition Height = "5*" />
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0" Orientation="Vertical" >
+            <Frame BackgroundColor="Transparent" Padding="1" CornerRadius="2" BorderColor="LightBlue">
+                <Label Text="Wifi File Transfer" HorizontalTextAlignment="Center" TextColor="White" FontSize="32" />
+            </Frame>
+        </StackLayout>
+        <StackLayout Grid.Row="1" Orientation="Horizontal">
+                <Label Text=" ==> : " TextColor="GreenYellow" VerticalTextAlignment="Center" />
+                <Label x:Name="txt_StatusInfo" VerticalTextAlignment="Center" Text="" TextColor="GreenYellow" />
+            <Picker BackgroundColor="White" Margin="310,20,0,20">
+                <Picker.Items>
+                    <x:String>"EN"</x:String>
+                    <x:String>"TR"</x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+        <StackLayout Grid.Row="2" Orientation="Horizontal">
+            <StackLayout Orientation="Vertical" WidthRequest="120" VerticalOptions="Center">
+                <Image x:Name="Img_FirstStep" Margin="15,0,15,0" Source="D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\Resources\drawable\number1.png" WidthRequest="75"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" WidthRequest="270">
+                <Frame BackgroundColor="Transparent" Padding="2" BorderColor="Blue" CornerRadius="20">
+                    <Button x:Name="btn_SendFile" Text=" Send File" BackgroundColor="Transparent" TextColor="LightBlue" Clicked="btn_SendFile_Click" FontSize="32" />
+                </Frame>
+
+                <Frame BackgroundColor="Transparent" Padding="2" BorderColor="Blue" CornerRadius="20">
+                    <Button x:Name="btn_ReceiveFile" Text=" Receive File" BackgroundColor="Transparent" TextColor="LightBlue" Clicked="btn_ReceiveFile_Click"  FontSize="32" />
+                </Frame>
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="lbl_FilePath" Text=" File Path  : " VerticalOptions="Center" TextColor="LightBlue" FontSize="14"/>
+                    <Label x:Name="txt_FilePath" VerticalOptions="Center" Text="adadawd" TextColor="CornflowerBlue" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Grid.Row="3" Orientation="Horizontal">
+            <StackLayout Orientation="Vertical" WidthRequest="120" VerticalOptions="Center">
+                <Image x:Name="Img_SecondStep" Margin="15,0,15,0" Source="D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\Resources\drawable\number2.png" WidthRequest="75"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" WidthRequest="270" VerticalOptions="Center">
+                <StackLayout  Orientation="Horizontal">
+                    <Label x:Name="lbl_FileName" FontSize="14" Text=" File Name  : " VerticalOptions="Center" TextColor="LightBlue"/>
+                    <Label x:Name="txt_FileName" VerticalOptions="Center" Text="" TextColor="CornflowerBlue" />
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal">
+                    <Label x:Name="lbl_FileSize" Text=" File Size      : " FontSize="14" VerticalOptions="Center" TextColor="LightBlue" />
+                    <Label x:Name="txt_FileSize" VerticalOptions="Center" Text="" TextColor="CornflowerBlue" />
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal">
+                    <Label x:Name="lbl_code" WidthRequest="80" FontSize="14" Text="Code : " VerticalOptions="Center" TextColor="LightBlue" />
+                    <Entry x:Name="txt_IpCode" VerticalOptions="Center" WidthRequest="150" HeightRequest="50" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text=" CODE" FontSize="20"  FontFamily="Bold" Background="Transparent" TextColor="CornflowerBlue" TextChanged="txt_IpCode_TextChanged" />
+                </StackLayout>
+                <Frame Padding="-8" BackgroundColor="Transparent" BorderColor="Blue" CornerRadius="20" WidthRequest="150">
+                    <Button x:Name="btn_Confirm" BackgroundColor="Transparent" Text="Confirm" TextColor="LightBlue" FontSize="25" Clicked="btn_Confirm_Click" />
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Grid.Row="4" Orientation="Horizontal">
+            <StackLayout Orientation="Vertical" WidthRequest="120" VerticalOptions="Center">
+                <Image x:Name="Img_ThirdStep" Margin="15,0,15,0" Source="D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\Resources\drawable\number3.png" WidthRequest="75"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical"  WidthRequest="270" VerticalOptions="Center">
+                <ProgressBar Progress="0" x:Name="pbStatus" WidthRequest="300" HeightRequest="40"  ScaleY="4"  BackgroundColor="Transparent" ProgressColor="#3a71c9" />
+                    <StackLayout Orientation="Horizontal">
+                    <Label x:Name="lbl_TransferSpeed" Text=" Speed : " VerticalOptions="Center" TextColor="LightBlue" />
+                    <Label x:Name="txt_TransferSpeed" WidthRequest="20" VerticalOptions="Center" Text="" TextColor="CornflowerBlue"/>
+                    <Label x:Name="lbl_PassedTime" Text=" Time Passed : " VerticalOptions="Center" TextColor="LightBlue" />
+                    <Label x:Name="txt_PassedTime" WidthRequest="20" VerticalOptions="Center" Text="" TextColor="CornflowerBlue"/>
+                    <Label x:Name="lbl_EstimatedTime"  Text=" Estimated Time : " VerticalOptions="Center" TextColor="LightBlue" />
+                    <Label x:Name="txt_EstimatedTime" VerticalOptions="Center" Text="" TextColor="CornflowerBlue"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>

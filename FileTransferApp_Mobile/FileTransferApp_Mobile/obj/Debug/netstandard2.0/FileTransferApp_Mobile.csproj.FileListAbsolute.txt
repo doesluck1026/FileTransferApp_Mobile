@@ -1,0 +1,28 @@
+C:\Users\CDS_Software02\Desktop\new folder\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\CDS_Software02\Desktop\new folder\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\CDS_Software02\Desktop\new folder\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\FileTransferApp_Mobile.AssemblyInfoInputs.cache
+C:\Users\CDS_Software02\Desktop\new folder\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\FileTransferApp_Mobile.AssemblyInfo.cs
+C:\Users\CDS_Software02\Desktop\new folder\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\FileTransferApp_Mobile.csproj.CoreCompileInputs.cache
+C:\Users\CDS_Software02\Desktop\new folder\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\FileTransferApp_Mobile.dll
+C:\Users\CDS_Software02\Desktop\new folder\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\ref\FileTransferApp_Mobile.dll
+C:\Users\CDS_Software02\Desktop\new folder\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\FileTransferApp_Mobile.pdb
+C:\Users\CDS_Software02\Desktop\new folder\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Debug\netstandard2.0\FileTransferApp_Mobile.deps.json
+C:\Users\CDS_Software02\Desktop\new folder\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Debug\netstandard2.0\FileTransferApp_Mobile.dll
+C:\Users\CDS_Software02\Desktop\new folder\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Debug\netstandard2.0\ref\FileTransferApp_Mobile.dll
+C:\Users\CDS_Software02\Desktop\new folder\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Debug\netstandard2.0\FileTransferApp_Mobile.pdb
+C:\Users\CDS_Software02\Desktop\new folder\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\CDS_Software02\Desktop\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Debug\netstandard2.0\FileTransferApp_Mobile.deps.json
+C:\Users\CDS_Software02\Desktop\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Debug\netstandard2.0\FileTransferApp_Mobile.dll
+C:\Users\CDS_Software02\Desktop\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Debug\netstandard2.0\ref\FileTransferApp_Mobile.dll
+C:\Users\CDS_Software02\Desktop\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Debug\netstandard2.0\FileTransferApp_Mobile.pdb
+C:\Users\CDS_Software02\Desktop\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\FileTransferApp_Mobile.csprojAssemblyReference.cache
+C:\Users\CDS_Software02\Desktop\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\CDS_Software02\Desktop\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\CDS_Software02\Desktop\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\FileTransferApp_Mobile.AssemblyInfoInputs.cache
+C:\Users\CDS_Software02\Desktop\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\FileTransferApp_Mobile.AssemblyInfo.cs
+C:\Users\CDS_Software02\Desktop\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\FileTransferApp_Mobile.csproj.CoreCompileInputs.cache
+C:\Users\CDS_Software02\Desktop\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\CDS_Software02\Desktop\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\FileTransferApp_Mobile.dll
+C:\Users\CDS_Software02\Desktop\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\ref\FileTransferApp_Mobile.dll
+C:\Users\CDS_Software02\Desktop\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\FileTransferApp_Mobile.pdb
+C:\Users\CDS_Software02\Desktop\new folder\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.0\FileTransferApp_Mobile.csprojAssemblyReference.cache
