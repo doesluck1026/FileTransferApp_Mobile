@@ -8382,13 +8382,13 @@ namespace FileTransferApp_Mobile.Droid
 			public const int notify_panel_notification_icon_bg = 2131165296;
 			
 			// aapt resource value: 0x7F070071
-			public const int number_1 = 2131165297;
+			public const int number1 = 2131165297;
 			
 			// aapt resource value: 0x7F070072
-			public const int number_2 = 2131165298;
+			public const int number2 = 2131165298;
 			
 			// aapt resource value: 0x7F070073
-			public const int number_3 = 2131165299;
+			public const int number3 = 2131165299;
 			
 			// aapt resource value: 0x7F070074
 			public const int tooltip_frame_dark = 2131165300;
