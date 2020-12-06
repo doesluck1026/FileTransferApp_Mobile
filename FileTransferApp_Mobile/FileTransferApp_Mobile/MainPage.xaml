@@ -64,6 +64,9 @@
                     <Label x:Name="lbl_code" WidthRequest="80" FontSize="14" Text="Code : " VerticalOptions="Center" TextColor="LightBlue" />
                     <Entry x:Name="txt_IpCode" VerticalOptions="Center" WidthRequest="150" HeightRequest="50" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Text=" CODE" FontSize="20"  FontFamily="Bold" Background="Transparent" TextColor="CornflowerBlue" TextChanged="txt_IpCode_TextChanged" />
                 </StackLayout>
+                <Label x:Name="lbl_HostName" FontSize="14" Text="Host Name  : " VerticalOptions="Center" TextColor="LightBlue" />
+                <Label x:Name="txt_HostName" VerticalOptions="Center" Text="" TextColor="CornflowerBlue" />
+
                 <Frame Padding="-8" BackgroundColor="Transparent" BorderColor="Blue" CornerRadius="20" WidthRequest="150">
                     <Button x:Name="btn_Confirm" BackgroundColor="Transparent" Text="Confirm" TextColor="LightBlue" FontSize="25" Clicked="btn_Confirm_Click" />
                 </Frame>
