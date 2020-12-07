@@ -11,12 +11,15 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Essentials;
 using Plugin.FilePicker;
+using System.IO;
+
 
 namespace FileTransferApp_Mobile
 {
     public partial class MainPage : ContentPage
     {
         private string FileURL = "";
+        private string SaveFolderPath= Environment.GetFolderPath(Environment.SpecialFolder.Personal)+"\\WifiFileTransfer";
         private FileOperations.TransferMode TransferMode;
         private uint prev_timePassed = 0;
         private double _transferSpeed = 0;
@@ -38,6 +41,7 @@ namespace FileTransferApp_Mobile
             Img_SecondStep.Source = (Device.RuntimePlatform == Device.Android) ? ImageSource.FromFile("icons/number2.png") : ImageSource.FromFile("icons/number2.png");
             Img_ThirdStep.Source = (Device.RuntimePlatform == Device.Android) ? ImageSource.FromFile("icons/number3.png") : ImageSource.FromFile("icons/number3.png");
 
+            
             Main.Init(true);
             UI_Init();
         }
@@ -45,6 +49,7 @@ namespace FileTransferApp_Mobile
         {
             txt_FilePath.Text = "Do you really wanna send?";
             StopFlashing();
+            
             SelectFile();
             if (FileURL == null)
             {
@@ -248,7 +253,11 @@ namespace FileTransferApp_Mobile
             {
                 
                 lbl_FileName.Text = file.FileName;
-                
+                string filePath = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+                string localPath = Path.Combine(filePath, "slm.jpg");
+                Debug.WriteLine("LocalPath::: " + localPath);
+                File.WriteAllBytes(localPath, file.DataArray);
+
             }
             //Main.SetFileURL(FileURL);
             //return null;
