@@ -44,6 +44,11 @@ namespace FileTransferApp_Mobile
             
             Main.Init(true);
             UI_Init();
+
+            UIUpdate_thread = new Thread(UpdateUI);
+            UIUpdate_thread.IsBackground = true;
+            UIUpdate_Start = true;
+            UIUpdate_thread.Start();
         }
         private void btn_SendFile_Click(object sender, EventArgs e)
         {
@@ -51,17 +56,6 @@ namespace FileTransferApp_Mobile
             StopFlashing();
             
             SelectFile();
-            if (FileURL == null)
-            {
-                string sSelectionValidFile = res_man.GetString("sSelectionValidFile", cul);
-                //MessageBox.Show(sSelectionValidFile);
-                return;
-            }
-            Reset();
-            TransferMode = FileOperations.TransferMode.Send;
-            
-            FlashObject(txt_IpCode);
-            System.Diagnostics.Debug.WriteLine(" FileURL = " + FileURL);
         }
         private void btn_ReceiveFile_Click(object sender, EventArgs e)
         {
@@ -118,11 +112,12 @@ namespace FileTransferApp_Mobile
             //        // kodun hatalı olduğu ise burada gösterilri
             //    }
             //}
-            //else if (TransferMode == FileOperations.TransferMode.Send && Communication.isClientConnected)
-            //{
-            //    Main.TransferApproved = true;
-            //    StopFlashing();
-            //}
+            if (TransferMode == FileOperations.TransferMode.Send && Communication.isClientConnected)
+            {
+                Main.TransferApproved = true;
+                Main.ExportingVerification = false;
+                StopFlashing();
+            }
             pbStatus.Progress += 0.1;
             if (pbStatus.Progress >= 1)
                 pbStatus.Progress = 0;
@@ -167,7 +162,7 @@ namespace FileTransferApp_Mobile
                         //border_ThirdStep.IsEnabled = true;
                         if (TransferMode == FileOperations.TransferMode.Send) // ********************* Main içerisinde de proses tipi var biri seçilmeli
                         {
-                            btn_Confirm.IsEnabled = false;
+                           // btn_Confirm.IsEnabled = false;
                         }
                         Main.SecondStep = false;
                         StopFlashing();
@@ -182,12 +177,11 @@ namespace FileTransferApp_Mobile
 
                     if (Main.ExportingVerification && Communication.isClientConnected)
                     {
-                        string sExportingVerification = res_man.GetString("sExportingVerification", cul) + ":" + Main.HostName.ToString();
-                        string sConfirmation = res_man.GetString("sConfirmation", cul);
+                        //string sExportingVerification = res_man.GetString("sExportingVerification", cul) + ":" + Main.HostName.ToString();
+                        //string sConfirmation = res_man.GetString("sConfirmation", cul);
                        // MessageBoxResult result = MessageBox.Show(sExportingVerification, sConfirmation, MessageBoxButton.YesNo);
                         //if (result == MessageBoxResult.Yes)
-                            Main.TransferApproved = true;
-                        Main.ExportingVerification = false;
+                         
 
                     }
 
@@ -195,8 +189,8 @@ namespace FileTransferApp_Mobile
                     if (TransferMode == FileOperations.TransferMode.Send)
                         txt_IpCode.Text = Main.IpCode;
                     string MainStatus = Main.InfoMsg;
-                    if (!MainStatus.Equals(""))
-                        txt_StatusInfo.Text = res_man.GetString(MainStatus, cul);
+                    //if (!MainStatus.Equals(""))
+                   //     txt_StatusInfo.Text = res_man.GetString(MainStatus, cul);
                     txt_FilePath.Text = Main.URL;
                     txt_FileName.Text = Main.FileName;
                     txt_HostName.Text = Main.HostName;
@@ -253,11 +247,12 @@ namespace FileTransferApp_Mobile
             {
                 
                 lbl_FileName.Text = file.FileName;
-                string filePath = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
-                string localPath = Path.Combine(filePath, "slm.jpg");
-                Debug.WriteLine("LocalPath::: " + localPath);
-                File.WriteAllBytes(localPath, file.DataArray);
-
+                Debug.WriteLine("FileName: " + file.FilePath+"/"+file.FileName + "   len: " + file.DataArray.Length);
+                this.FileURL = file.FilePath;
+                Reset();
+                TransferMode = FileOperations.TransferMode.Send;
+                Main.SetFileURL(FileURL);
+                FlashObject(txt_IpCode);
             }
             //Main.SetFileURL(FileURL);
             //return null;

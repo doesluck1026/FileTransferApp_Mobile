@@ -1,0 +1,13 @@
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Release\netstandard2.1\FileTransferApp_Mobile.deps.json
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Release\netstandard2.1\FileTransferApp_Mobile.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Release\netstandard2.1\ref\FileTransferApp_Mobile.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Release\netstandard2.1\FileTransferApp_Mobile.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\App.xaml.g.cs
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\MainPage.xaml.g.cs
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\FileTransferApp_Mobile.AssemblyInfoInputs.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\FileTransferApp_Mobile.AssemblyInfo.cs
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\FileTransferApp_Mobile.csproj.CoreCompileInputs.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\XamlC.stamp
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\FileTransferApp_Mobile.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\ref\FileTransferApp_Mobile.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\FileTransferApp_Mobile.pdb

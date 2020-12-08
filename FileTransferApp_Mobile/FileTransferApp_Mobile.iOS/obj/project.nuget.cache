@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "F04wAA1uPg2LQfStVTRdDBatl3T1VQiQbi8WKsR4sV9DYXNyJ3oNEgGzbonrgXGdP2dTaKspP4zEEYavwEevQA==",
+  "dgSpecHash": "YyUD1lI/sqn+wd+t2j1oWZ1ByyPr5W5tW/eAImqpQUqTOgjSsOZ3KZ1Nrghc3rqCHhruUZLbG1Ro9QFo+umJnw==",
   "success": true,
   "projectFilePath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\FileTransferApp_Mobile.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xam.plugin.filepicker\\1.1.0\\xam.plugin.filepicker.1.1.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512",
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.plugin.filepicker\\2.1.41\\xamarin.plugin.filepicker.2.1.41.nupkg.sha512"
   ],
   "logs": [
     {

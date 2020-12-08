@@ -11,17 +11,6 @@
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {}
         }
       },
-      "Xam.Plugin.FilePicker/1.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.dll": {},
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.dll": {},
-          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.dll": {}
-        }
-      },
       "Xamarin.Essentials/1.5.3.2": {
         "type": "package",
         "dependencies": {
@@ -49,6 +38,15 @@
         "build": {
           "buildTransitive/Xamarin.Forms.props": {},
           "buildTransitive/Xamarin.Forms.targets": {}
+        }
+      },
+      "Xamarin.Plugin.FilePicker/2.1.41": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Plugin.FilePicker.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.FilePicker.dll": {}
         }
       }
     }
@@ -99,58 +97,6 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "Xam.Plugin.FilePicker/1.1.0": {
-      "sha512": "ORzNG6dEgdBZnIdmbQCpNB4LSSTjBebwGjb1XZrgfbBGjX9muHBfZeQwOnNRvcGlm6fkylzTj2rDslDA1E/JFA==",
-      "type": "package",
-      "path": "xam.plugin.filepicker/1.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/MonoAndroid10/Plugin.FilePicker.Abstractions.dll",
-        "lib/MonoAndroid10/Plugin.FilePicker.Abstractions.pdb",
-        "lib/MonoAndroid10/Plugin.FilePicker.Abstractions.xml",
-        "lib/MonoAndroid10/Plugin.FilePicker.dll",
-        "lib/MonoAndroid10/Plugin.FilePicker.pdb",
-        "lib/MonoAndroid10/Plugin.FilePicker.xml",
-        "lib/MonoTouch10/Plugin.FilePicker.Abstractions.dll",
-        "lib/MonoTouch10/Plugin.FilePicker.Abstractions.xml",
-        "lib/MonoTouch10/Plugin.FilePicker.dll",
-        "lib/MonoTouch10/Plugin.FilePicker.xml",
-        "lib/UAP10/Plugin.FilePicker.Abstractions.dll",
-        "lib/UAP10/Plugin.FilePicker.Abstractions.pdb",
-        "lib/UAP10/Plugin.FilePicker.Abstractions.xml",
-        "lib/UAP10/Plugin.FilePicker.dll",
-        "lib/UAP10/Plugin.FilePicker.pdb",
-        "lib/UAP10/Plugin.FilePicker.xml",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.pdb",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.xml",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.pdb",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.xml",
-        "lib/win8/Plugin.FilePicker.Abstractions.dll",
-        "lib/win8/Plugin.FilePicker.Abstractions.pdb",
-        "lib/win8/Plugin.FilePicker.Abstractions.xml",
-        "lib/win8/Plugin.FilePicker.dll",
-        "lib/win8/Plugin.FilePicker.pdb",
-        "lib/win8/Plugin.FilePicker.xml",
-        "lib/wp8/Plugin.FilePicker.Abstractions.dll",
-        "lib/wp8/Plugin.FilePicker.Abstractions.pdb",
-        "lib/wp8/Plugin.FilePicker.Abstractions.xml",
-        "lib/wp8/Plugin.FilePicker.dll",
-        "lib/wp8/Plugin.FilePicker.pdb",
-        "lib/wp8/Plugin.FilePicker.xml",
-        "lib/wpa81/Plugin.FilePicker.Abstractions.dll",
-        "lib/wpa81/Plugin.FilePicker.Abstractions.pdb",
-        "lib/wpa81/Plugin.FilePicker.Abstractions.xml",
-        "lib/wpa81/Plugin.FilePicker.dll",
-        "lib/wpa81/Plugin.FilePicker.pdb",
-        "lib/wpa81/Plugin.FilePicker.xml",
-        "readme.txt",
-        "xam.plugin.filepicker.1.1.0.nupkg.sha512",
-        "xam.plugin.filepicker.nuspec"
       ]
     },
     "Xamarin.Essentials/1.5.3.2": {
@@ -516,13 +462,55 @@
         "xamarin.forms.4.8.0.1687.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Xamarin.Plugin.FilePicker/2.1.41": {
+      "sha512": "SFJp7AEq6YFZ72mw+CxGMQcMzBYhA0b5NkhSyE5b+prCiNli7bKI5pWOT+mbyFng0En8LfeY0dEbedpkecQFQw==",
+      "type": "package",
+      "path": "xamarin.plugin.filepicker/2.1.41",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/Plugin.FilePicker.dll",
+        "lib/monoandroid10.0/Plugin.FilePicker.pdb",
+        "lib/monoandroid10.0/Plugin.FilePicker.xml",
+        "lib/monoandroid80/Plugin.FilePicker.dll",
+        "lib/monoandroid80/Plugin.FilePicker.pdb",
+        "lib/monoandroid80/Plugin.FilePicker.xml",
+        "lib/monoandroid81/Plugin.FilePicker.dll",
+        "lib/monoandroid81/Plugin.FilePicker.pdb",
+        "lib/monoandroid81/Plugin.FilePicker.xml",
+        "lib/monoandroid90/Plugin.FilePicker.dll",
+        "lib/monoandroid90/Plugin.FilePicker.pdb",
+        "lib/monoandroid90/Plugin.FilePicker.xml",
+        "lib/net45/Plugin.FilePicker.dll",
+        "lib/net45/Plugin.FilePicker.pdb",
+        "lib/net45/Plugin.FilePicker.xml",
+        "lib/netstandard1.0/Plugin.FilePicker.dll",
+        "lib/netstandard1.0/Plugin.FilePicker.pdb",
+        "lib/netstandard1.0/Plugin.FilePicker.xml",
+        "lib/netstandard2.0/Plugin.FilePicker.dll",
+        "lib/netstandard2.0/Plugin.FilePicker.pdb",
+        "lib/netstandard2.0/Plugin.FilePicker.xml",
+        "lib/uap10.0.16299/Plugin.FilePicker.dll",
+        "lib/uap10.0.16299/Plugin.FilePicker.pdb",
+        "lib/uap10.0.16299/Plugin.FilePicker.pri",
+        "lib/uap10.0.16299/Plugin.FilePicker.xml",
+        "lib/xamarinios10/Plugin.FilePicker.dll",
+        "lib/xamarinios10/Plugin.FilePicker.pdb",
+        "lib/xamarinios10/Plugin.FilePicker.xml",
+        "lib/xamarinmac20/Plugin.FilePicker.dll",
+        "lib/xamarinmac20/Plugin.FilePicker.pdb",
+        "lib/xamarinmac20/Plugin.FilePicker.xml",
+        "xamarin.plugin.filepicker.2.1.41.nupkg.sha512",
+        "xamarin.plugin.filepicker.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
-      "Xam.Plugin.FilePicker >= 1.1.0",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.8.0.1687"
+      "Xamarin.Forms >= 4.8.0.1687",
+      "Xamarin.Plugin.FilePicker >= 2.1.41"
     ]
   },
   "packageFolders": {
@@ -569,10 +557,6 @@
       "netstandard2.1": {
         "targetAlias": "netstandard2.1",
         "dependencies": {
-          "Xam.Plugin.FilePicker": {
-            "target": "Package",
-            "version": "[1.1.0, )"
-          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.5.3.2, )"
@@ -580,6 +564,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.8.0.1687, )"
+          },
+          "Xamarin.Plugin.FilePicker": {
+            "target": "Package",
+            "version": "[2.1.41, )"
           }
         },
         "imports": [
@@ -600,17 +588,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Xam.Plugin.FilePicker 1.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Xam.Plugin.FilePicker",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.1"
-      ]
-    }
-  ]
+  }
 }
