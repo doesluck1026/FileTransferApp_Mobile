@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
+using Plugin.FilePicker;
 
 class Main
 {
@@ -502,11 +503,11 @@ class Main
     /// </summary>
     /// <param name="url">Path of the file to be transfered</param>
     /// <returns></returns>
-    public static void SetFileURL(string url)
+    public static void SetFileURL(Plugin.FilePicker.Abstractions.FileData file)
     {
         TotalMegaBytesSent = 0;
-        URL = url;                                                  /// assign URL
-        FileOps.Init(url, FileOperations.TransferMode.Send);
+        URL = file.FileName;                                                  /// assign URL
+        FileOps.Init(file, FileOperations.TransferMode.Send);
         FileName = FileOps.FileName;
         FileSize = FileOps.FileSize;
         FileSizeType = FileOps.FilesizeType;
@@ -680,7 +681,7 @@ class Main
     public static void SetFilePathToSave(string path)
     {
         URL = path;
-        FileOps.Init(path, FileOperations.TransferMode.Receive);
+        //FileOps.Init(path, FileOperations.TransferMode.Receive);
         TotalMegaBytesSent = 0;
         //RespondToTransferRequest(true);
     }

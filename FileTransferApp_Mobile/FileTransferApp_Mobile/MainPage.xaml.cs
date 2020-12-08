@@ -247,11 +247,12 @@ namespace FileTransferApp_Mobile
             {
                 
                 lbl_FileName.Text = file.FileName;
-                Debug.WriteLine("FileName: " + file.FilePath+"/"+file.FileName + "   len: " + file.DataArray.Length);
-                this.FileURL = file.FilePath;
+
+                //Debug.WriteLine("FileName: " + file.FilePath+"/"+file.FileName + "   len: " + file.DataArray.Length);
+                //this.FileURL = file.FilePath;
                 Reset();
                 TransferMode = FileOperations.TransferMode.Send;
-                Main.SetFileURL(FileURL);
+                Main.SetFileURL(file);
                 FlashObject(txt_IpCode);
             }
             //Main.SetFileURL(FileURL);
