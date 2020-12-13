@@ -10,7 +10,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Essentials;
-using Plugin.FilePicker;
 using System.IO;
 
 
@@ -52,66 +51,63 @@ namespace FileTransferApp_Mobile
         }
         private void btn_SendFile_Click(object sender, EventArgs e)
         {
-            txt_FilePath.Text = "Do you really wanna send?";
             StopFlashing();
             
             SelectFile();
         }
         private void btn_ReceiveFile_Click(object sender, EventArgs e)
         {
-            txt_FilePath.Text = "Do you really wanna receive?";
-
-            //StopFlashing();
-            //FileURL = GetFolder();
-            //if (FileURL == null)
-            //{
-            //    System.Diagnostics.Debug.WriteLine("File Url is null");
-            //    return;
-            //}
-            //Reset();
-            //TransferMode = FileOperations.TransferMode.Receive;
-            //Main.FirstStep = true;
-            //Main.InfoMsg = "sEnterCode";
-            //FlashObject(txt_IpCode);
-            //System.Diagnostics.Debug.WriteLine(" FileURL = " + FileURL);
+            StopFlashing();
+            FileURL = GetFolder();
+            if (FileURL == null)
+            {
+                System.Diagnostics.Debug.WriteLine("File Url is null");
+                return;
+            }
+            Reset();
+            TransferMode = FileOperations.TransferMode.Receive;
+            Main.FirstStep = true;
+            Main.InfoMsg = "sEnterCode";
+            FlashObject(txt_IpCode);
+            System.Diagnostics.Debug.WriteLine(" FileURL = " + FileURL);
         }
         private void btn_Confirm_Click(object sender, EventArgs e)
         {
-            //if (TransferMode == FileOperations.TransferMode.Receive)
-            //{
-            //    Main.Init(false);
-            //    string code = txt_IpCode.Text;
-            //    bool success = Main.EnterTheCode(code);
-            //    if (success)
-            //    {
-            //        StopFlashing();
-            //        Main.SetFilePathToSave(FileURL);
-            //        string FileName = Main.FileName;
-            //        string fileSizeType = Main.FileSizeType.ToString();
-            //        string fileSize = Main.FileSize.ToString("0.00") + " " + fileSizeType;
+            if (TransferMode == FileOperations.TransferMode.Receive)
+            {
+                Main.Init(false);
+                string code = txt_IpCode.Text;
+                bool success = Main.EnterTheCode(code);
+                if (success)
+                {
+                    StopFlashing();
+                    Main.SetFilePathToSave(FileURL);
+                    string FileName = Main.FileName;
+                    string fileSizeType = Main.FileSizeType.ToString();
+                    string fileSize = Main.FileSize.ToString("0.00") + " " + fileSizeType;
 
-            //        string sImportingVerification = res_man.GetString("sImportingVerification", cul);
-            //        string sConfirmation = res_man.GetString("sConfirmation", cul);
-            //        MessageBoxResult result = MessageBox.Show(sImportingVerification + "\n" + FileName + " file of " + fileSize + " size?", sConfirmation, MessageBoxButton.YesNo);
-            //        if (result == MessageBoxResult.Yes)
-            //        {
-            //            // Yes code here  
-            //            Main.RespondToTransferRequest(true);
-            //        }
-            //        else if (result == MessageBoxResult.No)
-            //        {
-            //            // No code here  
-            //            Main.RespondToTransferRequest(false);
-            //        }
+                    //string sImportingVerification = res_man.GetString("sImportingVerification", cul);
+                    //string sConfirmation = res_man.GetString("sConfirmation", cul);
+                   // MessageBoxResult result = MessageBox.Show(sImportingVerification + "\n" + FileName + " file of " + fileSize + " size?", sConfirmation, MessageBoxButton.YesNo);
+                    //if (result == MessageBoxResult.Yes)
+                   // {
+                        // Yes code here  
+                        Main.RespondToTransferRequest(true);
+                   // }
+                  //  else if (result == MessageBoxResult.No)
+                   // {
+                        // No code here  
+                    //   Main.RespondToTransferRequest(false);
+                  //  }
 
-            //        // Gönderimin alınıp alınmaması durmu burada sorulur
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Entered code is incorrect!");
-            //        // kodun hatalı olduğu ise burada gösterilri
-            //    }
-            //}
+                    // Gönderimin alınıp alınmaması durmu burada sorulur
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Entered code is incorrect!");
+                //    // kodun hatalı olduğu ise burada gösterilri
+                }
+            }
             if (TransferMode == FileOperations.TransferMode.Send && Communication.isClientConnected)
             {
                 Main.TransferApproved = true;
@@ -241,18 +237,17 @@ namespace FileTransferApp_Mobile
         /// <returns>the address of the file in memory</returns>
         private async void SelectFile()
         {
-            var file = await CrossFilePicker.Current.PickFile();
-
-            if (file != null)
+            var pickResult = await FilePicker.PickAsync();
+            if (pickResult != null)
             {
-                
-                lbl_FileName.Text = file.FileName;
-
-                //Debug.WriteLine("FileName: " + file.FilePath+"/"+file.FileName + "   len: " + file.DataArray.Length);
-                //this.FileURL = file.FilePath;
+                string filePath = pickResult.FullPath;
+                string fileName = pickResult.FileName;
+                lbl_FileName.Text = fileName;
+                Debug.WriteLine("FileName: " + filePath);
+                this.FileURL = filePath;
                 Reset();
                 TransferMode = FileOperations.TransferMode.Send;
-                Main.SetFileURL(file);
+                Main.SetFileURL(filePath);
                 FlashObject(txt_IpCode);
             }
             //Main.SetFileURL(FileURL);
@@ -265,8 +260,7 @@ namespace FileTransferApp_Mobile
         /// <returns>Folder path</returns>
         private string GetFolder()
         {
-
-            return null;
+            return "/storage/emulated/0/Download/";
         }
         private void UI_Init()
         {

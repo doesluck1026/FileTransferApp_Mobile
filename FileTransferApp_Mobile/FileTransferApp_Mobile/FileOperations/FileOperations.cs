@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Plugin.FilePicker;
+using Xamarin.Essentials;
 class FileOperations
 {
     private static object lock_FileName = new object();
@@ -39,7 +39,6 @@ class FileOperations
             _FilePath = value;
         }
     }
-    Plugin.FilePicker.Abstractions.FileData File;
     
     /// <summary>
     /// name of the file including extention
@@ -110,9 +109,9 @@ class FileOperations
     public FileOperations()
     {
     }
-    public void Init(Plugin.FilePicker.Abstractions.FileData File, TransferMode transferMode)
+    public void Init(string filePath, TransferMode transferMode)
     {
-        this.File = File;                                       /// Assign path to FilePath variable
+        this.FilePath = filePath;                                       /// Assign path to FilePath variable
         if (transferMode == TransferMode.Receive)
         {
             if (FileName == null || FileName == "")
@@ -121,13 +120,13 @@ class FileOperations
                 return;
             }
             Debug.WriteLine("File is Created: " + (FilePath + "\\" + FileName));
-            Fs = File.GetStream();
+            Fs = File.OpenWrite(FilePath + "\\" + FileName);
             return;
         }
-        Fs = File.GetStream();                            /// Open File
-        //char[] splitterUsta = { '\\', '/' };                                     /// Define splitter array that will be used to find file name
-        //string[] nameArray = FilePath.Split(splitterUsta);              /// Split path string to array by '/' sign
-        this.FileName = File.FileName;                /// Get the last string which will be the file name as "filename.extension"
+        Fs = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);                             /// Open File
+        char[] splitterUsta = { '\\', '/' };                                     /// Define splitter array that will be used to find file name
+        string[] nameArray = FilePath.Split(splitterUsta);              /// Split path string to array by '/' sign
+        this.FileName = nameArray[nameArray.Length - 1];                /// Get the last string which will be the file name as "filename.extension"
         long fileSizeAsByte = Fs.Length;                                /// Get the Total length of the file as bytes
         _FileSizeAsBytes = fileSizeAsByte;                              /// Store File Length as bytes in a global variable
         int pow = (int)Math.Log(fileSizeAsByte, 1024);                  /// calculate the greatest type ( byte megabyte gigabyte etc...) the filesize can be respresent as integer variable

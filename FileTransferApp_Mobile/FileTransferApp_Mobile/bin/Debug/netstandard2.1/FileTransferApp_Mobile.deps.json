@@ -9,9 +9,8 @@
     ".NETStandard,Version=v2.1/": {
       "FileTransferApp_Mobile/1.0.0": {
         "dependencies": {
-          "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1687",
-          "Xamarin.Plugin.FilePicker": "2.1.41"
+          "Xamarin.Essentials": "1.6.0-rc1",
+          "Xamarin.Forms": "5.0.0.1791-pre5"
         },
         "runtime": {
           "FileTransferApp_Mobile.dll": {}
@@ -25,7 +24,7 @@
           }
         }
       },
-      "Xamarin.Essentials/1.5.3.2": {
+      "Xamarin.Essentials/1.6.0-rc1": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
@@ -36,27 +35,19 @@
           }
         }
       },
-      "Xamarin.Forms/4.8.0.1687": {
+      "Xamarin.Forms/5.0.0.1791-pre5": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.8.0.400"
+            "fileVersion": "5.0.0.511"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.8.0.400"
+            "fileVersion": "5.0.0.511"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.8.0.400"
-          }
-        }
-      },
-      "Xamarin.Plugin.FilePicker/2.1.41": {
-        "runtime": {
-          "lib/netstandard2.0/Plugin.FilePicker.dll": {
-            "assemblyVersion": "2.1.0.0",
-            "fileVersion": "2.1.0.0"
+            "fileVersion": "5.0.0.511"
           }
         }
       }
@@ -75,26 +66,19 @@
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
-    "Xamarin.Essentials/1.5.3.2": {
+    "Xamarin.Essentials/1.6.0-rc1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BSLgDJUOPFRwTpQaftM+s4qb/MsTjrqXulEYDOcK6KF3i0Orf75zo3RwRfqnQ8WfpoEFxW/v0jgcPWCvOMgHxg==",
-      "path": "xamarin.essentials/1.5.3.2",
-      "hashPath": "xamarin.essentials.1.5.3.2.nupkg.sha512"
+      "sha512": "sha512-PBc8xbb/8PJpV/cCgBbgUui8m79uk1KvY0trT14hRSb2OwApDbjl0koVDkyzdPMp3azLb35F+i6fLOEX7hMyDw==",
+      "path": "xamarin.essentials/1.6.0-rc1",
+      "hashPath": "xamarin.essentials.1.6.0-rc1.nupkg.sha512"
     },
-    "Xamarin.Forms/4.8.0.1687": {
+    "Xamarin.Forms/5.0.0.1791-pre5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-o9ACAbleXxorZzIHRBzIloPollwVC7+YTfxE8r3L2frArCHUkrHIy+K+azQag/Un4h2u88DS01HqR16/lMD8zQ==",
-      "path": "xamarin.forms/4.8.0.1687",
-      "hashPath": "xamarin.forms.4.8.0.1687.nupkg.sha512"
-    },
-    "Xamarin.Plugin.FilePicker/2.1.41": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-SFJp7AEq6YFZ72mw+CxGMQcMzBYhA0b5NkhSyE5b+prCiNli7bKI5pWOT+mbyFng0En8LfeY0dEbedpkecQFQw==",
-      "path": "xamarin.plugin.filepicker/2.1.41",
-      "hashPath": "xamarin.plugin.filepicker.2.1.41.nupkg.sha512"
+      "sha512": "sha512-1GKg/cTAFaLRSRcdxld0BxuDoisitHiVEltmgIxIPa/mgyZ1OoKpnJSpV33vz6+Ab0p7u65b51743ZTAvHQW9g==",
+      "path": "xamarin.forms/5.0.0.1791-pre5",
+      "hashPath": "xamarin.forms.5.0.0.1791-pre5.nupkg.sha512"
     }
   }
 }

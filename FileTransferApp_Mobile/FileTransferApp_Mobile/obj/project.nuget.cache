@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "9jw7DFj+ccuBFa5+ZskiA0WDFekLSgFSCNOa+a1mXy/jpTTvsBm38Lgg/CUuwgPn+xusuDDkgNt35AwYREhP6w==",
+  "dgSpecHash": "2NrKuOBQclW/+tTVmS0mSUpwtRGSkAduc0EgehEmt6uDKdcMw3/PJLm/RXRXQ6XwboJmIyZzDqyUFyiHkiyH1A==",
   "success": true,
   "projectFilePath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.forms\\4.8.0.1687\\xamarin.forms.4.8.0.1687.nupkg.sha512",
-    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.plugin.filepicker\\2.1.41\\xamarin.plugin.filepicker.2.1.41.nupkg.sha512"
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.essentials\\1.6.0-rc1\\xamarin.essentials.1.6.0-rc1.nupkg.sha512",
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.forms\\5.0.0.1791-pre5\\xamarin.forms.5.0.0.1791-pre5.nupkg.sha512"
   ],
   "logs": []
 }

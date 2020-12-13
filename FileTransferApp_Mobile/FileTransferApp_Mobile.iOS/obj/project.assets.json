@@ -136,25 +136,12 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Plugin.FilePicker/2.1.41": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Drawing.Common.dll"
-        ],
-        "compile": {
-          "lib/xamarinios10/Plugin.FilePicker.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Plugin.FilePicker.dll": {}
-        }
-      },
       "FileTransferApp_Mobile/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1687",
-          "Xamarin.Plugin.FilePicker": "2.1.41"
+          "Xamarin.Essentials": "1.6.0-rc1",
+          "Xamarin.Forms": "5.0.0.1791-pre5"
         },
         "compile": {
           "bin/placeholder/FileTransferApp_Mobile.dll": {}
@@ -299,25 +286,12 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Plugin.FilePicker/2.1.41": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Drawing.Common.dll"
-        ],
-        "compile": {
-          "lib/xamarinios10/Plugin.FilePicker.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Plugin.FilePicker.dll": {}
-        }
-      },
       "FileTransferApp_Mobile/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1687",
-          "Xamarin.Plugin.FilePicker": "2.1.41"
+          "Xamarin.Essentials": "1.6.0-rc1",
+          "Xamarin.Forms": "5.0.0.1791-pre5"
         },
         "compile": {
           "bin/placeholder/FileTransferApp_Mobile.dll": {}
@@ -462,25 +436,12 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Plugin.FilePicker/2.1.41": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Drawing.Common.dll"
-        ],
-        "compile": {
-          "lib/xamarinios10/Plugin.FilePicker.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Plugin.FilePicker.dll": {}
-        }
-      },
       "FileTransferApp_Mobile/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1687",
-          "Xamarin.Plugin.FilePicker": "2.1.41"
+          "Xamarin.Essentials": "1.6.0-rc1",
+          "Xamarin.Forms": "5.0.0.1791-pre5"
         },
         "compile": {
           "bin/placeholder/FileTransferApp_Mobile.dll": {}
@@ -625,25 +586,12 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Plugin.FilePicker/2.1.41": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Drawing.Common.dll"
-        ],
-        "compile": {
-          "lib/xamarinios10/Plugin.FilePicker.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Plugin.FilePicker.dll": {}
-        }
-      },
       "FileTransferApp_Mobile/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1687",
-          "Xamarin.Plugin.FilePicker": "2.1.41"
+          "Xamarin.Essentials": "1.6.0-rc1",
+          "Xamarin.Forms": "5.0.0.1791-pre5"
         },
         "compile": {
           "bin/placeholder/FileTransferApp_Mobile.dll": {}
@@ -1019,48 +967,6 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Plugin.FilePicker/2.1.41": {
-      "sha512": "SFJp7AEq6YFZ72mw+CxGMQcMzBYhA0b5NkhSyE5b+prCiNli7bKI5pWOT+mbyFng0En8LfeY0dEbedpkecQFQw==",
-      "type": "package",
-      "path": "xamarin.plugin.filepicker/2.1.41",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/monoandroid10.0/Plugin.FilePicker.dll",
-        "lib/monoandroid10.0/Plugin.FilePicker.pdb",
-        "lib/monoandroid10.0/Plugin.FilePicker.xml",
-        "lib/monoandroid80/Plugin.FilePicker.dll",
-        "lib/monoandroid80/Plugin.FilePicker.pdb",
-        "lib/monoandroid80/Plugin.FilePicker.xml",
-        "lib/monoandroid81/Plugin.FilePicker.dll",
-        "lib/monoandroid81/Plugin.FilePicker.pdb",
-        "lib/monoandroid81/Plugin.FilePicker.xml",
-        "lib/monoandroid90/Plugin.FilePicker.dll",
-        "lib/monoandroid90/Plugin.FilePicker.pdb",
-        "lib/monoandroid90/Plugin.FilePicker.xml",
-        "lib/net45/Plugin.FilePicker.dll",
-        "lib/net45/Plugin.FilePicker.pdb",
-        "lib/net45/Plugin.FilePicker.xml",
-        "lib/netstandard1.0/Plugin.FilePicker.dll",
-        "lib/netstandard1.0/Plugin.FilePicker.pdb",
-        "lib/netstandard1.0/Plugin.FilePicker.xml",
-        "lib/netstandard2.0/Plugin.FilePicker.dll",
-        "lib/netstandard2.0/Plugin.FilePicker.pdb",
-        "lib/netstandard2.0/Plugin.FilePicker.xml",
-        "lib/uap10.0.16299/Plugin.FilePicker.dll",
-        "lib/uap10.0.16299/Plugin.FilePicker.pdb",
-        "lib/uap10.0.16299/Plugin.FilePicker.pri",
-        "lib/uap10.0.16299/Plugin.FilePicker.xml",
-        "lib/xamarinios10/Plugin.FilePicker.dll",
-        "lib/xamarinios10/Plugin.FilePicker.pdb",
-        "lib/xamarinios10/Plugin.FilePicker.xml",
-        "lib/xamarinmac20/Plugin.FilePicker.dll",
-        "lib/xamarinmac20/Plugin.FilePicker.pdb",
-        "lib/xamarinmac20/Plugin.FilePicker.xml",
-        "xamarin.plugin.filepicker.2.1.41.nupkg.sha512",
-        "xamarin.plugin.filepicker.nuspec"
-      ]
-    },
     "FileTransferApp_Mobile/1.0.0": {
       "type": "project",
       "path": "../FileTransferApp_Mobile/FileTransferApp_Mobile.csproj",
@@ -1144,7 +1050,20 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 4.8.0.1687 to 4.8.0.1451. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> FileTransferApp_Mobile -> Xamarin.Forms (>= 4.8.0.1687) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Forms (>= 4.8.0.1451)",
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.0-rc1 to 1.5.3.2. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> FileTransferApp_Mobile -> Xamarin.Essentials (>= 1.6.0-rc1) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Essentials (>= 1.5.3.2)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.1791-pre5 to 4.8.0.1451. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> FileTransferApp_Mobile -> Xamarin.Forms (>= 5.0.0.1791-pre5) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Forms (>= 4.8.0.1451)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",
