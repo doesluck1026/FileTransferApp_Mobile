@@ -114,9 +114,6 @@ namespace FileTransferApp_Mobile
                 Main.ExportingVerification = false;
                 StopFlashing();
             }
-            pbStatus.Progress += 0.1;
-            if (pbStatus.Progress >= 1)
-                pbStatus.Progress = 0;
         }
         /// <summary>
         /// This function is used to prevent the user to type more than 6 characters
@@ -195,7 +192,7 @@ namespace FileTransferApp_Mobile
                     txt_TransferSpeed.Text = Main.TransferSpeed.ToString("0.00") + " MB/s";
                     txt_EstimatedTime.Text = Main.EstimatedMin.ToString() + " : " + Main.EstimatedSec.ToString();
                     txt_PassedTime.Text = Main.PassedMin.ToString() + " : " + Main.PassedSec.ToString();
-                    pbStatus.Progress = Main.CompletedPercentage;
+                    pbStatus.Progress = Main.CompletedPercentage/100.0;
                 });
 
                 while (UpdateWatch.ElapsedMilliseconds < UIUpdate_Period)
@@ -260,7 +257,10 @@ namespace FileTransferApp_Mobile
         /// <returns>Folder path</returns>
         private string GetFolder()
         {
-            return "/storage/emulated/0/Download/";
+            if (Device.RuntimePlatform == Device.Android)
+                return "/storage/emulated/0/Download/";
+            else
+                return "";
         }
         private void UI_Init()
         {
