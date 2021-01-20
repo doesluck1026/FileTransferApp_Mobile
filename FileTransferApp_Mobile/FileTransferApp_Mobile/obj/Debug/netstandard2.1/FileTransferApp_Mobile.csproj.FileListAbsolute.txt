@@ -26,3 +26,4 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debu
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\FileTransferApp_Mobile.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\ref\FileTransferApp_Mobile.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\FileTransferApp_Mobile.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\SendingPage.xaml.g.cs

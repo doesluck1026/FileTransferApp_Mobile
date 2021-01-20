@@ -9,8 +9,8 @@
     ".NETStandard,Version=v2.1/": {
       "FileTransferApp_Mobile/1.0.0": {
         "dependencies": {
-          "Xamarin.Essentials": "1.6.0-rc1",
-          "Xamarin.Forms": "5.0.0.1791-pre5"
+          "Xamarin.Essentials": "1.6.1-preview1",
+          "Xamarin.Forms": "5.0.0.1874"
         },
         "runtime": {
           "FileTransferApp_Mobile.dll": {}
@@ -24,7 +24,7 @@
           }
         }
       },
-      "Xamarin.Essentials/1.6.0-rc1": {
+      "Xamarin.Essentials/1.6.1-preview1": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
@@ -35,19 +35,19 @@
           }
         }
       },
-      "Xamarin.Forms/5.0.0.1791-pre5": {
+      "Xamarin.Forms/5.0.0.1874": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.511"
+            "fileVersion": "5.0.0.582"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.511"
+            "fileVersion": "5.0.0.582"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.511"
+            "fileVersion": "5.0.0.582"
           }
         }
       }
@@ -66,19 +66,19 @@
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
-    "Xamarin.Essentials/1.6.0-rc1": {
+    "Xamarin.Essentials/1.6.1-preview1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PBc8xbb/8PJpV/cCgBbgUui8m79uk1KvY0trT14hRSb2OwApDbjl0koVDkyzdPMp3azLb35F+i6fLOEX7hMyDw==",
-      "path": "xamarin.essentials/1.6.0-rc1",
-      "hashPath": "xamarin.essentials.1.6.0-rc1.nupkg.sha512"
+      "sha512": "sha512-5d31UJzgmGxP41i0FKQmVhEBRPALGds3HRBL3wJeQx/xGa9uDWoPIlS1jky+jL5TQ49+jkCg1IbDjb9Bo/C9NQ==",
+      "path": "xamarin.essentials/1.6.1-preview1",
+      "hashPath": "xamarin.essentials.1.6.1-preview1.nupkg.sha512"
     },
-    "Xamarin.Forms/5.0.0.1791-pre5": {
+    "Xamarin.Forms/5.0.0.1874": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1GKg/cTAFaLRSRcdxld0BxuDoisitHiVEltmgIxIPa/mgyZ1OoKpnJSpV33vz6+Ab0p7u65b51743ZTAvHQW9g==",
-      "path": "xamarin.forms/5.0.0.1791-pre5",
-      "hashPath": "xamarin.forms.5.0.0.1791-pre5.nupkg.sha512"
+      "sha512": "sha512-DddatpRCi4WvM4pBuDfRtKr/KkhFZoVE1KLNFwbOfltVUecqf78y8VaIDDU/iddfNfMSSzoqDBWpZgNj6lFyxA==",
+      "path": "xamarin.forms/5.0.0.1874",
+      "hashPath": "xamarin.forms.5.0.0.1874.nupkg.sha512"
     }
   }
 }

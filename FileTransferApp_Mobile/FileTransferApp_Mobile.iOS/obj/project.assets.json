@@ -140,8 +140,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "Xamarin.Essentials": "1.6.0-rc1",
-          "Xamarin.Forms": "5.0.0.1791-pre5"
+          "Xamarin.Essentials": "1.6.1-preview1",
+          "Xamarin.Forms": "5.0.0.1874"
         },
         "compile": {
           "bin/placeholder/FileTransferApp_Mobile.dll": {}
@@ -290,8 +290,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "Xamarin.Essentials": "1.6.0-rc1",
-          "Xamarin.Forms": "5.0.0.1791-pre5"
+          "Xamarin.Essentials": "1.6.1-preview1",
+          "Xamarin.Forms": "5.0.0.1874"
         },
         "compile": {
           "bin/placeholder/FileTransferApp_Mobile.dll": {}
@@ -440,8 +440,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "Xamarin.Essentials": "1.6.0-rc1",
-          "Xamarin.Forms": "5.0.0.1791-pre5"
+          "Xamarin.Essentials": "1.6.1-preview1",
+          "Xamarin.Forms": "5.0.0.1874"
         },
         "compile": {
           "bin/placeholder/FileTransferApp_Mobile.dll": {}
@@ -590,8 +590,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "Xamarin.Essentials": "1.6.0-rc1",
-          "Xamarin.Forms": "5.0.0.1791-pre5"
+          "Xamarin.Essentials": "1.6.1-preview1",
+          "Xamarin.Forms": "5.0.0.1874"
         },
         "compile": {
           "bin/placeholder/FileTransferApp_Mobile.dll": {}
@@ -1050,7 +1050,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.0-rc1 to 1.5.3.2. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> FileTransferApp_Mobile -> Xamarin.Essentials (>= 1.6.0-rc1) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Essentials (>= 1.5.3.2)",
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1-preview1 to 1.5.3.2. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> FileTransferApp_Mobile -> Xamarin.Essentials (>= 1.6.1-preview1) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Essentials (>= 1.5.3.2)",
       "libraryId": "Xamarin.Essentials",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",
@@ -1063,7 +1063,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.1791-pre5 to 4.8.0.1451. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> FileTransferApp_Mobile -> Xamarin.Forms (>= 5.0.0.1791-pre5) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Forms (>= 4.8.0.1451)",
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.1874 to 4.8.0.1451. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> FileTransferApp_Mobile -> Xamarin.Forms (>= 5.0.0.1874) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Forms (>= 4.8.0.1451)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",

@@ -11,7 +11,7 @@
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {}
         }
       },
-      "Xamarin.Essentials/1.6.0-rc1": {
+      "Xamarin.Essentials/1.6.1-preview1": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -23,7 +23,7 @@
           "lib/netstandard2.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/5.0.0.1791-pre5": {
+      "Xamarin.Forms/5.0.0.1874": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -90,10 +90,10 @@
         "version.txt"
       ]
     },
-    "Xamarin.Essentials/1.6.0-rc1": {
-      "sha512": "PBc8xbb/8PJpV/cCgBbgUui8m79uk1KvY0trT14hRSb2OwApDbjl0koVDkyzdPMp3azLb35F+i6fLOEX7hMyDw==",
+    "Xamarin.Essentials/1.6.1-preview1": {
+      "sha512": "5d31UJzgmGxP41i0FKQmVhEBRPALGds3HRBL3wJeQx/xGa9uDWoPIlS1jky+jL5TQ49+jkCg1IbDjb9Bo/C9NQ==",
       "type": "package",
-      "path": "xamarin.essentials/1.6.0-rc1",
+      "path": "xamarin.essentials/1.6.1-preview1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -137,14 +137,14 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.6.0-rc1.nupkg.sha512",
+        "xamarin.essentials.1.6.1-preview1.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/5.0.0.1791-pre5": {
-      "sha512": "1GKg/cTAFaLRSRcdxld0BxuDoisitHiVEltmgIxIPa/mgyZ1OoKpnJSpV33vz6+Ab0p7u65b51743ZTAvHQW9g==",
+    "Xamarin.Forms/5.0.0.1874": {
+      "sha512": "DddatpRCi4WvM4pBuDfRtKr/KkhFZoVE1KLNFwbOfltVUecqf78y8VaIDDU/iddfNfMSSzoqDBWpZgNj6lFyxA==",
       "type": "package",
-      "path": "xamarin.forms/5.0.0.1791-pre5",
+      "path": "xamarin.forms/5.0.0.1874",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -353,15 +353,15 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.5.0.0.1791-pre5.nupkg.sha512",
+        "xamarin.forms.5.0.0.1874.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
-      "Xamarin.Essentials >= 1.6.0-rc1",
-      "Xamarin.Forms >= 5.0.0.1791-pre5"
+      "Xamarin.Essentials >= 1.6.1-preview1",
+      "Xamarin.Forms >= 5.0.0.1874"
     ]
   },
   "packageFolders": {
@@ -410,11 +410,11 @@
         "dependencies": {
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.6.0-rc1, )"
+            "version": "[1.6.1-preview1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[5.0.0.1791-pre5, )"
+            "version": "[5.0.0.1874, )"
           }
         },
         "imports": [

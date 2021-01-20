@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "c5mjwXevzZkJdPbMpmUQxBDB4advZYLHMFKMVeICjMEfvvugoODmTHnjgTmaRQ1Vd6ENqp4KuUn/Q/Xtnllqag==",
+  "dgSpecHash": "RQgSErXxC/6WV5nNQzSsj108E2vYOUkINAslWUf7Q6q9YklsVgkKSxw2/Uk7U4lbAsyKrOm3n98WnPzUptO5sg==",
   "success": true,
   "projectFilePath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.essentials\\1.6.0-rc1\\xamarin.essentials.1.6.0-rc1.nupkg.sha512",
-    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.forms\\5.0.0.1791-pre5\\xamarin.forms.5.0.0.1791-pre5.nupkg.sha512"
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.essentials\\1.6.1-preview1\\xamarin.essentials.1.6.1-preview1.nupkg.sha512",
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.forms\\5.0.0.1874\\xamarin.forms.5.0.0.1874.nupkg.sha512"
   ],
   "logs": []
 }
