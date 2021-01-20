@@ -7,11 +7,10 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
 
+
 class NetworkScanner
 {
-    private static List<string[]> DeviceList = new List<string[]>();
-    public delegate void ScanNetworkEvent(List<string[]> availableDevices);
-    public static event ScanNetworkEvent OnScanCompeleted;
+    public static List<string> DeviceList = new List<string>();
 
     private static int numberofPingedDevice = 0;
     private static int numberofPingResponses = 0;
@@ -22,7 +21,7 @@ class NetworkScanner
             for (int i = 2; i <= 100; i++)
             {
                 string ping_var = array[0] + "." + array[1] + "." + array[2] + "." + i;
-                Ping(ping_var, 8, 4000);
+                Ping(ping_var, 4, 4000);
             }
         //Task.Run(() => {
         //    for (int i = 51; i <= 100; i++)
@@ -106,9 +105,9 @@ class NetworkScanner
             arr[0] = ip;
             arr[1] = hostname;
             //arr[2] = macaddres;
-            if (!DeviceList.Contains(arr))
+            if (!DeviceList.Contains(arr[0]))
             { 
-                DeviceList.Add(arr);
+                DeviceList.Add(arr[0]);
                 Debug.WriteLine("device: " + arr[0]);
             }
         }
@@ -116,9 +115,8 @@ class NetworkScanner
         {
             // MessageBox.Show(e.Reply.Status.ToString());
         }
-        numberofPingResponses++;
-        if (numberofPingedDevice >50 )
-            OnScanCompeleted(DeviceList);
+
+           
     }
     public static string GetHostName(string ipAddress)
     {

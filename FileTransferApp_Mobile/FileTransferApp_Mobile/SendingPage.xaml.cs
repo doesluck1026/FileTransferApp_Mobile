@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,7 @@ namespace FileTransferApp_Mobile
     public partial class SendingPage : ContentPage
     {
         public static SendingPage Instance;
-        public List<string[]> AvailableDeviceList = new List<string[]>();
+        public string[] AvailableDeviceList ;
         public SendingPage()
         {
             InitializeComponent();
@@ -23,19 +24,31 @@ namespace FileTransferApp_Mobile
 
         private void btn_SendFile_Clicked(object sender, EventArgs e)
         {
-            list_Devices = new ListView();
-
-            list_Devices.ItemsSource = new string[]
-                {
-                    "selam",
-                    "sana",
-                    "demir",
-                    "ayak"
-                };
+            Debug.WriteLine("Buton basıldı");
+            //list_Devices.ItemsSource = new string[]
+            //    {
+            //        "selam",
+            //        "sana",
+            //        "demir",
+            //        "ayak",
+            //        "demir",
+            //        "demir",
+            //        "demir",
+            //        "demir",
+            //        "demir",
+            //        "demir",
+            //        "demir",
+            //        "demir",
+            //        "demir",
+            //        "demir",
+            //        "demir",
+            //    };
+            AvailableDeviceList = NetworkScanner.DeviceList.ToArray();
+            list_Devices.ItemsSource = AvailableDeviceList;
         }
         public void UpdateSource()
         {
-            list_Devices = new ListView();
+            AvailableDeviceList = NetworkScanner.DeviceList.ToArray();
             list_Devices.ItemsSource = AvailableDeviceList;
         }
     }
