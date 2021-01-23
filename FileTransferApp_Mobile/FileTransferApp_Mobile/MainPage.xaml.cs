@@ -25,18 +25,9 @@ namespace FileTransferApp_Mobile
         private async void btn_SelectFile_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new SendingPage());
-            NetworkScanner.ScanAvailableDevices();
-
+            //await Task.Run(() => NetworkScanner.ScanAvailableDevices());
+            
         }
-
-        private void NetworkScanner_OnScanCompeleted(bool success)
-        {
-            Debug.WriteLine("Ping Compeleted!");
-            if (success)
-            {
-                SendingPage.Instance.AvailableDeviceList = NetworkScanner.DeviceList.ToArray() ;
-                SendingPage.Instance.UpdateSource();
-            }
-        }
+   
     }
 }

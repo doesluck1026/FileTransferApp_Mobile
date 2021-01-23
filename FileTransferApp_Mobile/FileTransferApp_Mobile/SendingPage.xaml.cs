@@ -20,36 +20,39 @@ namespace FileTransferApp_Mobile
         {
             InitializeComponent();
             Instance = this;
+            NetworkScanner.OnScanCompleted += NetworkScanner_OnScanCompleted;
+
         }
 
         private void btn_SendFile_Clicked(object sender, EventArgs e)
         {
             Debug.WriteLine("Buton basıldı");
-            //list_Devices.ItemsSource = new string[]
-            //    {
-            //        "selam",
-            //        "sana",
-            //        "demir",
-            //        "ayak",
-            //        "demir",
-            //        "demir",
-            //        "demir",
-            //        "demir",
-            //        "demir",
-            //        "demir",
-            //        "demir",
-            //        "demir",
-            //        "demir",
-            //        "demir",
-            //        "demir",
-            //    };
-            AvailableDeviceList = NetworkScanner.DeviceList.ToArray();
-            list_Devices.ItemsSource = AvailableDeviceList;
+            list_Devices.ItemsSource = new string[]
+                {
+                    "selam",
+                    "sana",
+                    "demir",
+                    "ayak",
+                    "demir",
+                    "demir",
+                    "demir",
+                    "demir",
+                    "demir",
+                    "demir",
+                    "demir",
+                    "demir",
+                    "demir",
+                    "demir",
+                    "demir",
+                };
         }
-        public void UpdateSource()
+        private void NetworkScanner_OnScanCompleted(string[] devices)
         {
-            AvailableDeviceList = NetworkScanner.DeviceList.ToArray();
+            Debug.WriteLine("Ping Compeleted!");
+            AvailableDeviceList = new string[devices.Length];
+            devices.CopyTo(AvailableDeviceList, 0);
             list_Devices.ItemsSource = AvailableDeviceList;
+
         }
     }
 }

@@ -12,45 +12,27 @@ class NetworkScanner
 {
     public static List<string> DeviceList = new List<string>();
 
+    public delegate void ScanCompleteDelegate(string[] devices);
+    public static event ScanCompleteDelegate OnScanCompleted;
+
     private static int numberofPingedDevice = 0;
     private static int numberofPingResponses = 0;
     public static void ScanAvailableDevices()
     {
+        Random r = new Random();
+        numberofPingResponses = 0;
+        isScanCompleted = false;
         string gate_ip = NetworkGateway();
         string[] array = gate_ip.Split('.');
-            for (int i = 2; i <= 100; i++)
-            {
-                string ping_var = array[0] + "." + array[1] + "." + array[2] + "." + i;
-                Ping(ping_var, 4, 4000);
-            }
-        //Task.Run(() => {
-        //    for (int i = 51; i <= 100; i++)
-        //    {
-        //        string ping_var = array[0] + "." + array[1] + "." + array[2] + "." + i;
-        //        Ping(ping_var, 8, 4000);
-        //    }
-        //});
-        //Task.Run(() => {
-        //    for (int i = 101; i <= 150; i++)
-        //    {
-        //        string ping_var = array[0] + "." + array[1] + "." + array[2] + "." + i;
-        //        Ping(ping_var, 8, 4000);
-        //    }
-        //});
-        //Task.Run(() => {
-        //    for (int i = 151; i <= 200; i++)
-        //    {
-        //        string ping_var = array[0] + "." + array[1] + "." + array[2] + "." + i;
-        //        Ping(ping_var, 8, 4000);
-        //    }
-        //});
-        //Task.Run(() => {
-        //    for (int i = 201; i <= 255; i++)
-        //    {
-        //        string ping_var = array[0] + "." + array[1] + "." + array[2] + "." + i;
-        //        Ping(ping_var, 8, 4000);
-        //    }
-        //});
+        for (int i = 2; i <= 40; i++)
+        {
+            string ping_var = array[0] + "." + array[1] + "." + array[2] + "." + i;
+            Ping(ping_var, 8, 4000);
+            
+
+            DeviceList.Add("gg : " + r.Next(0, 100));
+        }
+        //OnScanCompleted(DeviceList.ToArray());
     }
     private static string NetworkGateway()
     {
@@ -91,9 +73,11 @@ class NetworkScanner
             }).Start();
         }
     }
+    private static bool isScanCompleted = false;
     private static void PingCompleted(object sender, PingCompletedEventArgs e)
     {
-        
+        numberofPingResponses++;
+
         string ip = (string)e.UserState;
         if (e.Reply != null && e.Reply.Status == IPStatus.Success)
         {
@@ -105,18 +89,25 @@ class NetworkScanner
             arr[0] = ip;
             arr[1] = hostname;
             //arr[2] = macaddres;
+            Debug.WriteLine("found device: " + arr[0]);
             if (!DeviceList.Contains(arr[0]))
             { 
                 DeviceList.Add(arr[0]);
-                Debug.WriteLine("device: " + arr[0]);
+                Debug.WriteLine("new device: " + arr[0]);
             }
         }
         else
         {
             // MessageBox.Show(e.Reply.Status.ToString());
         }
-
-           
+        if (!isScanCompleted)
+        {
+            if (numberofPingResponses >= 50)
+            {
+                isScanCompleted = true;
+                OnScanCompleted(DeviceList.ToArray());
+            }
+        }
     }
     public static string GetHostName(string ipAddress)
     {
