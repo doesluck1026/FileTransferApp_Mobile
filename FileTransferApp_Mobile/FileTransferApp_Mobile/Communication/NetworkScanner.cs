@@ -18,7 +18,7 @@ class NetworkScanner
     {
         IPend = ipend;
     }
-    public  void ScanAvailableDevices()
+    public void ScanAvailableDevices()
     {
         string gate_ip= "192.168.1.1";
         string[] array = gate_ip.Split('.');
