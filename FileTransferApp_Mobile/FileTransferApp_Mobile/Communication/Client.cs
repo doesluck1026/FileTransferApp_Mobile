@@ -26,7 +26,7 @@ class Client
     /// Connects to server with specified IP.
     /// </summary>
     /// <returns>Hostname of server</returns>
-    public bool ConnectToServer()
+    public string ConnectToServer()
     {
         try
         {
@@ -36,14 +36,14 @@ class Client
             client.SendBufferSize = BufferSize;
             client.ReceiveBufferSize = BufferSize;
             Debug.WriteLine("Succesfully Connected to: " + IP + " on Port: " + Port);
-            //var host = Dns.GetHostEntry(IP);
-            return true;// host.HostName;
+            var host = Dns.GetHostEntry(IP);
+            return host.HostName;
         }
 
         catch (Exception e)
         {
             Debug.WriteLine("Connection Failed: " + e.ToString());
-            return false;
+            return "";
         }
     }
     public bool DisconnectFromServer()

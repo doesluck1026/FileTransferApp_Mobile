@@ -21,16 +21,34 @@ namespace FileTransferApp_Mobile
         public static MainPage Instance;
         private string DeviceIP;
         private string DeviceHostName;
+        private Main main;
         public MainPage()
         {
             InitializeComponent();
             Instance = this;
+            main = new Main();
+            main.StartServer();
             NetworkScanner.GetDeviceAddress(out DeviceIP, out DeviceHostName);
             Dispatcher.BeginInvokeOnMainThread(() =>
             {
                 lbl_IP.Text = DeviceIP;
                 lbl_HostName.Text = DeviceHostName;
             });
+        }
+
+        /// <summary>
+        /// The address of the file to be processed is selected
+        /// </summary>
+        /// <returns>the address of the file in memory</returns>
+        private async void SelectFile()
+        {
+            var pickResult = await FilePicker.PickMultipleAsync();
+            if (pickResult != null)
+            {
+                var results = pickResult.ToArray();
+                string[] filepaths = new string[results.Length];
+                main.SetFilePaths(filepaths);
+            }
         }
 
         private async void btn_SelectFile_Clicked(object sender, EventArgs e)

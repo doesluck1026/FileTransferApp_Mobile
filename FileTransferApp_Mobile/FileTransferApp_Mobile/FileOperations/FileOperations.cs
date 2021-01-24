@@ -57,7 +57,7 @@ class FileOperations
         }
     }
     /// <summary>
-    /// Size of the file as double. this can be in the unit of bytes, megabytes gigabytes etc. Check SizeType to find it out.
+    /// Size of the file as int64. this is the length of file as bytes.
     /// </summary>
     public long FileSizeAsBytes
     {
@@ -152,18 +152,19 @@ class FileOperations
         string[] nameArray = FilePath.Split(splitterUsta);              /// Split path string to array by '/' sign
         this.FileName = nameArray[nameArray.Length - 1];                /// Get the last string which will be the file name as "filename.extension"
         long fileSizeAsByte = Fs.Length;                                /// Get the Total length of the file as bytes
-        _FileSizeAsBytes = fileSizeAsByte;                              /// Store File Length as bytes in a global variable
+        FileSizeAsBytes = fileSizeAsByte;                              /// Store File Length as bytes in a global variable
         int pow = (int)Math.Log(fileSizeAsByte, 1024);                  /// calculate the greatest type ( byte megabyte gigabyte etc...) the filesize can be respresent as integer variable
         FileSize = fileSizeAsByte / Math.Pow(1024, pow);                /// Convert file size from bytes to the greatest type
         FileSizeUnit = (SizeUnit)pow;                                   /// Assign the unit
     }
-    public void FileReadAtByteIndex(long BufferIndx, out int BytesRead, out byte[] Buffer, int chunkSize = 1024)
+    public void FileReadAtByteIndex(long BufferIndx, out int BytesRead, out byte[] Buffer, int chunkSize = 1024, byte functionByte=0)
     {
         byte[] chunk = new byte[chunkSize];
         Fs.Position = BufferIndx;
         BytesRead = Fs.Read(chunk, 0, chunkSize);
-        Buffer = new byte[BytesRead];
-        Array.Copy(chunk, 0, Buffer, 0, BytesRead);
+        Buffer = new byte[BytesRead+1];
+        Buffer[0] = functionByte;
+        Array.Copy(chunk, 0, Buffer, 1, BytesRead);
     }
     public void FileWriteAtByteIndex(long BufferIndx, byte[] Buffer)
     {
