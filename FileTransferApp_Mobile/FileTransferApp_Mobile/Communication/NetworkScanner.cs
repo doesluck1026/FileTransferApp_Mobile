@@ -24,7 +24,7 @@ class NetworkScanner
         string[] array = gate_ip.Split('.');
             string ping_var = array[0] + "." + array[1] + "." + array[2] + "." + IPend;
         //if(ping_var!= thisIP)
-            Ping(ping_var, 8, 1000);
+            Ping(ping_var, 1, 100);
         //OnScanCompleted(DeviceList.ToArray());
     }
     public static void GetDeviceAddress(out string deviceIP,out string deviceHostname)

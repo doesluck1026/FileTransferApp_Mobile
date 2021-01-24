@@ -1,29 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Essentials;
 class FileOperations
 {
-    private static object lock_FileName = new object();
-    private string _FilePath;
-    private string _FileName;
-    private double _FileSize;
-    private long _FileSizeAsBytes;
-    private Stream  Fs;
-    private Communication.SizeTypes _sizeTypes;
-
-    /// <summary>
-    /// Determines if this device will send a file or receive.
-    /// </summary>
-    public enum TransferMode
-    {
-        Send,
-        Receive
-    }
+    #region Public Variables
 
     /// <summary>
     /// Path and name of the file including extention
@@ -91,7 +71,7 @@ class FileOperations
     /// <summary>
     /// Type of the file Size which can be kb, mb, gb, tb...
     /// </summary>
-    public Communication.SizeTypes FilesizeType
+    public SizeUnit FileSizeUnit
     {
         get
         {
@@ -102,6 +82,48 @@ class FileOperations
             _sizeTypes = value;
         }
     }
+
+    #endregion
+
+    #region Enums
+
+    /// <summary>
+    /// Determines if this device will send a file or receive.
+    /// </summary>
+    public enum TransferMode
+    {
+        Send,
+        Receive
+    }
+    /// <summary>
+    /// Size unit of the file
+    /// </summary>
+    public enum SizeUnit
+    {
+        Byte = 0,
+        KB,
+        MB,
+        GB,
+        TB,
+        none
+    }
+
+    #endregion
+
+    #region Private Variables
+
+    private static object lock_FileName = new object();
+    private string _FilePath;
+    private string _FileName;
+    private double _FileSize;
+    private long _FileSizeAsBytes;
+    private Stream  Fs;
+    private SizeUnit _sizeTypes;
+
+    #endregion
+
+    #region Public Functions
+
     /// <summary>
     /// Create File Operation
     /// </summary>
@@ -131,24 +153,7 @@ class FileOperations
         _FileSizeAsBytes = fileSizeAsByte;                              /// Store File Length as bytes in a global variable
         int pow = (int)Math.Log(fileSizeAsByte, 1024);                  /// calculate the greatest type ( byte megabyte gigabyte etc...) the filesize can be respresent as integer variable
         FileSize = fileSizeAsByte / Math.Pow(1024, pow);                /// Convert file size from bytes to the greatest type
-        switch (pow)                                                    /// to assign type:
-        {
-            case 0:                                                     /// if pow equals to 0
-                FilesizeType = Communication.SizeTypes.Byte;            /// then the type is bytes
-                break;
-            case 1:                                                     /// if pow equals to 1 
-                FilesizeType = Communication.SizeTypes.KB;              /// then the type is kilobytes and so on
-                break;
-            case 2:
-                FilesizeType = Communication.SizeTypes.MB;
-                break;
-            case 3:
-                FilesizeType = Communication.SizeTypes.GB;
-                break;
-            case 4:
-                FilesizeType = Communication.SizeTypes.TB;
-                break;
-        }
+        FileSizeUnit = (SizeUnit)pow;                                   /// Assign the unit
     }
     public void FileReadAtByteIndex(long BufferIndx, out int BytesRead, out byte[] Buffer, int chunkSize = 1024)
     {
@@ -168,4 +173,6 @@ class FileOperations
         if (Fs != null)
             Fs.Close();
     }
+
+    #endregion
 }
