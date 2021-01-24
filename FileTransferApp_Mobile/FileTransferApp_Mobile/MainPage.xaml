@@ -2,9 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FileTransferApp_Mobile.MainPage"
-                          
              >
-
+        
     <Grid BackgroundColor="#353536">
         <Grid.RowDefinitions>
             <RowDefinition Height = "1*" />     <!--This is for title and logo-->
@@ -30,6 +29,8 @@
                 <Label x:Name="lbl_IP" Text="192.168.1.256" TextColor="White"  FontSize="Large" Margin="0,0,0,0" />
             </StackLayout>
             <Button x:Name="btn_SelectFile" Text="Select FILE" Clicked="btn_SelectFile_Clicked" TextColor="Blue" HorizontalOptions="Center" BorderWidth="2" 
+                     FontSize="50" Margin="30"/>
+            <Button x:Name="btn_Scan" Text="Scan" Clicked="btn_Scan_Clicked" TextColor="Blue" HorizontalOptions="Center" BorderWidth="2" 
                      FontSize="50" Margin="30"/>
         </StackLayout>
     </Grid>

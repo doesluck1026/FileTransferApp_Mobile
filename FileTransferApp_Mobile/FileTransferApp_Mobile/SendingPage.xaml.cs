@@ -11,17 +11,20 @@ using Xamarin.Forms.Xaml;
 namespace FileTransferApp_Mobile
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-   
+
     public partial class SendingPage : ContentPage
     {
         public static SendingPage Instance;
-        public string[] AvailableDeviceList ;
+        public string[] AvailableDeviceArray;
         public SendingPage()
         {
             InitializeComponent();
             Instance = this;
-            NetworkScanner.OnScanCompleted += NetworkScanner_OnScanCompleted;
-
+            if (MainPage.Instance.AvailableDeviceList!=null)
+            {
+                AvailableDeviceArray = MainPage.Instance.AvailableDeviceList.ToArray();
+                list_Devices.ItemsSource = AvailableDeviceArray;
+            }
         }
 
         private void btn_SendFile_Clicked(object sender, EventArgs e)
@@ -45,14 +48,6 @@ namespace FileTransferApp_Mobile
                     "demir",
                     "demir",
                 };
-        }
-        private void NetworkScanner_OnScanCompleted(string[] devices)
-        {
-            Debug.WriteLine("Ping Compeleted!");
-            AvailableDeviceList = new string[devices.Length];
-            devices.CopyTo(AvailableDeviceList, 0);
-            list_Devices.ItemsSource = AvailableDeviceList;
-
         }
     }
 }

@@ -10,50 +10,40 @@ using System.Threading.Tasks;
 
 class NetworkScanner
 {
-    public static List<string> DeviceList = new List<string>();
+    public delegate void ScanCompleteDelegate(string IPandHostName);
+    public  event ScanCompleteDelegate OnScanCompleted;
 
-    public delegate void ScanCompleteDelegate(string[] devices);
-    public static event ScanCompleteDelegate OnScanCompleted;
-
-    private static int numberofPingedDevice = 0;
-    private static int numberofPingResponses = 0;
-    public static void ScanAvailableDevices()
+    private int IPend;
+    public NetworkScanner(int ipend)
     {
-        Random r = new Random();
-        numberofPingResponses = 0;
-        isScanCompleted = false;
-        string gate_ip = NetworkGateway();
+        IPend = ipend;
+    }
+    public  void ScanAvailableDevices()
+    {
+        string gate_ip= "192.168.1.1";
         string[] array = gate_ip.Split('.');
-        for (int i = 2; i <= 40; i++)
-        {
-            string ping_var = array[0] + "." + array[1] + "." + array[2] + "." + i;
-            Ping(ping_var, 8, 4000);
-            
-
-            DeviceList.Add("gg : " + r.Next(0, 100));
-        }
+            string ping_var = array[0] + "." + array[1] + "." + array[2] + "." + IPend;
+        //if(ping_var!= thisIP)
+            Ping(ping_var, 8, 1000);
         //OnScanCompleted(DeviceList.ToArray());
     }
-    private static string NetworkGateway()
+    public static void GetDeviceAddress(out string deviceIP,out string deviceHostname)
     {
-        //string ip = null;
-
-        //foreach (NetworkInterface f in NetworkInterface.GetAllNetworkInterfaces())
-        //{
-        //    if (f.OperationalStatus == OperationalStatus.Up)
-        //    {
-        //        foreach (GatewayIPAddressInformation d in f.GetIPProperties().GatewayAddresses)
-        //        {
-        //            ip = d.Address.ToString();
-        //        }
-        //    }
-        //}
-        return "192.168.1.1";
+        IPAddress localAddr = null;
+        var host = Dns.GetHostEntry(Dns.GetHostName());
+        foreach (var ip in host.AddressList)
+        {
+            if (ip.AddressFamily == AddressFamily.InterNetwork)
+            {
+                localAddr = ip;
+            }
+        }
+        deviceIP = localAddr.ToString();
+        deviceHostname = host.HostName;
     }
 
-    private static void Ping(string host, int attempts, int timeout)
+    private  void Ping(string host, int attempts, int timeout)
     {
-        numberofPingedDevice++;
         for (int i = 0; i < attempts; i++)
         {
             new Thread(delegate ()
@@ -69,47 +59,25 @@ class NetworkScanner
                         // Do nothing and let it try again until the attempts are exausted.
                         // Exceptions are thrown for normal ping failurs like address lookup
                         // failed.  For this reason we are supressing errors.
-                    }
+                }
             }).Start();
         }
     }
-    private static bool isScanCompleted = false;
-    private static void PingCompleted(object sender, PingCompletedEventArgs e)
+    private  void PingCompleted(object sender, PingCompletedEventArgs e)
     {
-        numberofPingResponses++;
-
         string ip = (string)e.UserState;
         if (e.Reply != null && e.Reply.Status == IPStatus.Success)
         {
             string hostname = GetHostName(ip);
-            ///string macaddres = GetMacAddress(ip);
-            string[] arr = new string[2];
-
-            //store all three parameters to be shown on ListView
-            arr[0] = ip;
-            arr[1] = hostname;
-            //arr[2] = macaddres;
-            Debug.WriteLine("found device: " + arr[0]);
-            if (!DeviceList.Contains(arr[0]))
-            { 
-                DeviceList.Add(arr[0]);
-                Debug.WriteLine("new device: " + arr[0]);
-            }
+            Debug.WriteLine("found device: " + ip);
+            OnScanCompleted(ip);
         }
         else
         {
             // MessageBox.Show(e.Reply.Status.ToString());
         }
-        if (!isScanCompleted)
-        {
-            if (numberofPingResponses >= 50)
-            {
-                isScanCompleted = true;
-                OnScanCompleted(DeviceList.ToArray());
-            }
-        }
     }
-    public static string GetHostName(string ipAddress)
+    public  string GetHostName(string ipAddress)
     {
         try
         {
@@ -131,7 +99,7 @@ class NetworkScanner
     /// </summary>
     /// <param name="ipAddress"></param>
     /// <returns></returns>
-    public static string GetMacAddress(string ipAddress)
+    public  string GetMacAddress(string ipAddress)
     {
         string macAddress = string.Empty;
         System.Diagnostics.Process Process = new System.Diagnostics.Process();
@@ -160,7 +128,7 @@ class NetworkScanner
     /// Gets current device's hostname.
     /// </summary>
     /// <returns>ip as string</returns>
-    public static string GetDeviceHostName()
+    public  string GetDeviceHostName()
     {
         var host = Dns.GetHostEntry(Dns.GetHostName());
         return host.HostName;
