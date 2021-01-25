@@ -25,8 +25,19 @@ class Main
 
     public string ServerIP;
     public string ClientIP;
-    public FileStruct CurrentFile;
-
+    public Metrics TransferMetrics
+    {
+        get
+        {
+            lock (Lck_TransferMetrics)
+                return _transferMetrics;
+        }
+        private set
+        {
+            lock (Lck_TransferMetrics)
+                _transferMetrics = value;
+        }
+    }
     private bool IsTransferEnabled
     {
         get
@@ -54,10 +65,13 @@ class Main
     private FileOperations.SizeUnit[] SizeUnits;  /// Unit of filesizes
     private Thread Thread_Transfer;
     private bool _isTransferEnabled = false;
+    private FileStruct CurrentFile;
+    private Metrics _transferMetrics;
     #endregion
 
     #region Lock Objects
     private object Lck_IsTransferEnabled = new object();
+    private object Lck_TransferMetrics = new object();
     #endregion
 
     #region Enums and structures definitions
@@ -80,6 +94,18 @@ class Main
         public FileOperations.SizeUnit SizeUnit;    /// unit of size
         public long FileSizeAsBytes;                /// Size of file as bytes
     }
+    public struct Metrics
+    {
+        public FileStruct CurrentFile;
+        public double TransferSpeed;        /// MB/s
+        public int CountOfFiles;
+        public int IndexOfCurrentFile;
+        public long TotalDataSizeAsBytes;
+        public long TotalBytesSent;
+        public double Progress;             /// between 0 and 100
+    }
+
+
     #endregion
 
     #region Public Functions
@@ -129,7 +155,11 @@ class Main
     #endregion
     private void SendingCoreFcn()
     {
-        for(int i=0;i<FilePaths.Length;i++)
+        lock(Lck_TransferMetrics)
+            _transferMetrics.CountOfFiles = FilePaths.Length;
+        double transferSpeed = 3;
+        Stopwatch watch = Stopwatch.StartNew();
+        for (int i=0;i<FilePaths.Length;i++)
         {
             SendFileInformation(i);
             if (!WaitforReceiverToBeReady())
@@ -141,14 +171,40 @@ class Main
             CurrentFile.FileSize = File.FileSize;
             CurrentFile.FileSizeAsBytes = File.FileSizeAsBytes;
             CurrentFile.SizeUnit = File.FileSizeUnit;
+            lock (Lck_TransferMetrics)
+            {
+                _transferMetrics.CurrentFile = CurrentFile;
+                _transferMetrics.IndexOfCurrentFile = i;
+            }
+            int byteCounter = 0;
             long totalBytesRead=0;
             int numberOfBytesRead=0;
             byte[] buffer;
+            int mb = 1024 * 1024;
+            watch.Restart();
             while (IsTransferEnabled)
             {
                 File.FileReadAtByteIndex(totalBytesRead, out numberOfBytesRead, out buffer, chunkSize: BufferSize,functionByte: (byte)Functions.TransferMode);
                 client.SendDataServer(buffer);
                 totalBytesRead += numberOfBytesRead;
+                byteCounter += numberOfBytesRead;
+               
+                if (watch.Elapsed.TotalSeconds >= 0.5)
+                {
+                    double elapsedTime = watch.Elapsed.TotalSeconds;
+                    Task.Run(() => {
+                        transferSpeed = (transferSpeed * 0.95 + 0.05 * byteCounter) / (mb * watch.Elapsed.TotalSeconds);
+                        lock (Lck_TransferMetrics)
+                        {
+                            _transferMetrics.TotalBytesSent += byteCounter;
+                            _transferMetrics.TransferSpeed = transferSpeed;
+                            _transferMetrics.Progress = ((double)_transferMetrics.TotalBytesSent / _transferMetrics.TotalDataSizeAsBytes) * 100.0;
+                        }
+                    });
+                    
+                    byteCounter = 0;
+                    watch.Restart();
+                }
                 if (totalBytesRead == File.FileSizeAsBytes)
                     break;
             }
@@ -215,6 +271,8 @@ class Main
             SizeUnits[i] = File.FileSizeUnit;
             File.CloseFile();
         }
+        lock (Lck_TransferMetrics)
+            _transferMetrics.TotalDataSizeAsBytes = totalTransferSize;
         return totalTransferSize;
     }
 }
