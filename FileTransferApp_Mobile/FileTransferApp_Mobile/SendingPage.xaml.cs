@@ -27,27 +27,21 @@ namespace FileTransferApp_Mobile
             }
         }
 
-        private void btn_SendFile_Clicked(object sender, EventArgs e)
+        private async void btn_SendFile_Clicked(object sender, EventArgs e)
         {
-            Debug.WriteLine("Buton basıldı");
-            list_Devices.ItemsSource = new string[]
-                {
-                    "selam",
-                    "sana",
-                    "demir",
-                    "ayak",
-                    "demir",
-                    "demir",
-                    "demir",
-                    "demir",
-                    "demir",
-                    "demir",
-                    "demir",
-                    "demir",
-                    "demir",
-                    "demir",
-                    "demir",
-                };
+            //bool didDeviceAccept= Main.ConnectToTargetDevice(txt_ClientIP.Text);
+            //if(didDeviceAccept)
+            //{
+            //    Main.BeginSendingFiles();
+            //    /// open the third page here
+            //}
+
+            await Navigation.PushModalAsync(new TransferPage());
+        }
+
+        private void list_Devices_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            txt_ClientIP.Text = list_Devices.SelectedItem.ToString();
         }
     }
 }

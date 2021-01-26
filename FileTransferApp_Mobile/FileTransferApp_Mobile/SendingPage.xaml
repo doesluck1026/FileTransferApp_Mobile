@@ -7,7 +7,8 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height = "1*" />
                 <RowDefinition Height = "2*" />
-                <RowDefinition Height = "9*" />
+                <RowDefinition Height = "5*" />
+                <RowDefinition Height = "2*" />
                 <RowDefinition Height = "3*" />
             </Grid.RowDefinitions>
             <Frame BackgroundColor="Transparent" Padding="1" CornerRadius="2" BorderColor="LightBlue">
@@ -19,9 +20,20 @@
                 </Frame>
             </StackLayout>
             <ListView x:Name="list_Devices"  VerticalOptions="Center"  IsVisible="true" BackgroundColor="Gray" SeparatorColor="DarkGray"
-                    Grid.Row="2"/>
+                    Grid.Row="2" ItemSelected="list_Devices_ItemSelected" />
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Receiver IP:" Grid.Column="1" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Entry x:Name="txt_ClientIP" Text="192.168.1.2" Grid.Column="2" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            </Grid>
             <Button x:Name="btn_SendFile" Text="Send FILE" Clicked="btn_SendFile_Clicked" TextColor="Blue" HorizontalOptions="Center" BorderWidth="2" 
-                     FontSize="45" Margin="30" Grid.Row="3"/>
+                     FontSize="45" Margin="30" Grid.Row="4"/>
 
         </Grid>
     </ContentPage.Content>

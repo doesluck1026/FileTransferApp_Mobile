@@ -21,19 +21,24 @@ namespace FileTransferApp_Mobile
         public static MainPage Instance;
         private string DeviceIP;
         private string DeviceHostName;
-        private Main main;
         public MainPage()
         {
             InitializeComponent();
             Instance = this;
-            main = new Main();
-            main.StartServer();
+            Main.OnClientRequested += Main_OnClientRequested;
+            Main.StartServer();
             NetworkScanner.GetDeviceAddress(out DeviceIP, out DeviceHostName);
             Dispatcher.BeginInvokeOnMainThread(() =>
             {
                 lbl_IP.Text = DeviceIP;
                 lbl_HostName.Text = DeviceHostName;
             });
+        }
+
+        private void Main_OnClientRequested(string totalTransferSize)
+        {
+            /// Show file transfer request and ask for permission here
+            Debug.WriteLine("File request is received!: len: " + totalTransferSize);
         }
 
         /// <summary>
@@ -47,13 +52,18 @@ namespace FileTransferApp_Mobile
             {
                 var results = pickResult.ToArray();
                 string[] filepaths = new string[results.Length];
-                main.SetFilePaths(filepaths);
+                for(int i=0;i<filepaths.Length;i++)
+                {
+                    filepaths[i] = results[i].FullPath;
+                }
+                Main.SetFilePaths(filepaths);
+                await Navigation.PushModalAsync(new SendingPage());
             }
         }
 
-        private async void btn_SelectFile_Clicked(object sender, EventArgs e)
+        private void btn_SelectFile_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new SendingPage());
+            SelectFile();
         }
         private void btn_Scan_Clicked(object sender, EventArgs e)
         {

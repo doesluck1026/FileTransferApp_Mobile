@@ -11,21 +11,29 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 
-class Main
+public class Main
 {
     #region Parameters
 
-    private readonly byte StartByte = (byte)'J';
-    private readonly int BufferSize = 64 * 1024-1;
-    private readonly int Port = 32001;
+    private static readonly byte StartByte = (byte)'J';
+    private static readonly int BufferSize = 64 * 1024-1;
+    private static readonly int Port = 32001;
 
     #endregion
 
     #region Public Variables
+    /// <summary>
+    /// This Event is thrown when a client is connected and wants to send this device some files.
+    /// </summary>
+    /// <param name="files">files to be sent by client</param>
+    /// <returns></returns>
+    public delegate void ClientRequestDelegate(string totalTransferSize);
+    public static event ClientRequestDelegate OnClientRequested;
 
-    public string ServerIP;
-    public string ClientIP;
-    public Metrics TransferMetrics
+    public static string FileSaveURL = "";
+    public static string ServerIP;
+    public static string ClientIP;
+    public static Metrics TransferMetrics
     {
         get
         {
@@ -38,7 +46,7 @@ class Main
                 _transferMetrics = value;
         }
     }
-    private bool IsTransferEnabled
+    private static bool IsTransferEnabled
     {
         get
         {
@@ -55,29 +63,30 @@ class Main
 
     #region Private Variables
 
-    private Client client;
-    private Server server;
-    private FileOperations File;
-    private string[] FilePaths;
-    private string[] FileNames;                 /// Name of Files
-    private long[] FileSizeAsBytes;             /// Size of files as bytes
-    private double[] FileSizes;                 /// File Sizes as a double 
-    private FileOperations.SizeUnit[] SizeUnits;  /// Unit of filesizes
-    private Thread Thread_Transfer;
-    private bool _isTransferEnabled = false;
-    private FileStruct CurrentFile;
-    private Metrics _transferMetrics;
+    private static Client client;
+    private static Server server;
+    private static FileOperations File;
+    private static string[] FilePaths;
+    private static string[] FileNames;                     /// Name of Files
+    private static long[] FileSizeAsBytes;                 /// Size of files as bytes
+    private static double[] FileSizes;                     /// File Sizes as a double 
+    private static FileOperations.SizeUnit[] SizeUnits;    /// Unit of filesizes
+    private static Thread sendingThread;
+    private static bool _isTransferEnabled = false;
+    private static FileStruct CurrentFile;
+    private static Metrics _transferMetrics;
+    private static int MB = 1024 * 1024;
     #endregion
 
     #region Lock Objects
-    private object Lck_IsTransferEnabled = new object();
-    private object Lck_TransferMetrics = new object();
+    private static object Lck_IsTransferEnabled = new object();
+    private static object Lck_TransferMetrics = new object();
     #endregion
 
     #region Enums and structures definitions
     public enum Functions
     {
-        QueryTransfer,              /// ||Number of files || Size of All Data (8 bytes) || length of folder name (zero : if no folder given) || name of folder ==> true or false as response
+        QueryTransfer,              /// ||Number of files || Size of All Data (8 bytes) || length of folder name (zero : if no folder given) || name of folder ==> AcceptFiles or RejectFiles as response
         StartofFileTransfer,        /// || length of file name || name || size of file (8 bytes) ==> true when receiver is ready as response
         EndofFileTransfer,          /// || 4 bytes (spare) ==> no response expected   ( receiver should save the file)
         TransferMode,               /// || fileBytes
@@ -86,7 +95,7 @@ class Main
         RejectFiles,                /// Response to QueryTransfer function
         Ready                       /// Ready to receive file (response from receiver to StartofFileTransfer)
     }
-    public struct FileStruct
+    public  struct FileStruct
     {
         public string FilePath;                     /// Path of File
         public string FileName;                     /// Name of File 
@@ -103,36 +112,65 @@ class Main
         public long TotalDataSizeAsBytes;
         public long TotalBytesSent;
         public double Progress;             /// between 0 and 100
+        public double TotalElapsedTime;     /// Seconds
+        public double EstimatedTime;        /// Seconds
     }
-
-
     #endregion
 
-    #region Public Functions
+    #region Common Functions
 
-    public Main()
-    {
-
-    }
-
-    public void StartServer()
+    /// <summary>
+    /// Setups a server and listens the port asyncroniously.
+    /// All devices should Start a server on start up.
+    /// </summary>
+    public static void StartServer()
     {
         server = new Server(port: Port, bufferSize: BufferSize, StartByte: StartByte);
         ServerIP = server.SetupServer();
-        Task.Run(()=>
-        {
-            ClientIP= server.StartListener();
-        });
+        server.StartListener();
+        server.OnClientConnected += Server_OnClientConnected;
+        _transferMetrics = new Metrics();
+        IsTransferEnabled = true;
     }
-    public void SetFilePaths(string[] paths)
+    private static void Server_OnClientConnected(string clientIP)
+    {
+        ClientIP = clientIP;
+        byte[] receivedData = server.GetData();
+        if (receivedData == null)
+            return;
+        if(receivedData[0]==(byte)Functions.QueryTransfer)
+        {
+            int numberOfFiles = BitConverter.ToInt32(receivedData, 1);
+            long transferSize = BitConverter.ToInt64(receivedData, 5);
+            FilePaths = new string[numberOfFiles];
+            if (File == null)
+                File = new FileOperations();
+            File.CalculateFileSize(transferSize);
+            string fileSizeString = File.FileSize.ToString("0.00") + " " + File.FileSizeUnit.ToString();
+            Debug.WriteLine("numberOfFiles: "+ numberOfFiles + " transfer size: " + fileSizeString);
+            OnClientRequested(fileSizeString);
+        }
+    }
+    #endregion
+
+    #region Sender Functions
+
+    #region Public Functions
+
+    public static void SetFilePaths(string[] paths)
     {
         FilePaths = new string[paths.Length];
         paths.CopyTo(FilePaths, 0);
+
+        for (int i = 0; i < FilePaths.Length; i++)
+            Debug.WriteLine(i + " : " + FilePaths[i]);
     }
-    public bool ConnectToTargetDevice(string IP)
+    public static bool ConnectToTargetDevice(string IP)
     {
-        client=new Client(port: Port,ip: IP, bufferSize: BufferSize, StartByte: StartByte);
+        IsTransferEnabled = true;
+        client = new Client(port: Port,ip: IP, bufferSize: BufferSize, StartByte: StartByte);
         client.ConnectToServer();
+        _transferMetrics = new Metrics();
         SendFirstFrame();
         byte[] clientResponse = client.GetData();
         if (clientResponse == null)
@@ -142,22 +180,24 @@ class Main
         else
             return false;
     }
-    public void BeginSendingFiles()
+    public static void BeginSendingFiles()
     {
         IsTransferEnabled = true;
-        Thread_Transfer = new Thread(SendingCoreFcn);
-        Thread_Transfer.Start();
+        sendingThread = new Thread(SendingCoreFcn);
+        sendingThread.Start();
     }
-    public void AbortTransfer()
+    public static void AbortTransfer()
     {
         IsTransferEnabled = false;
     }
+
     #endregion
-    private void SendingCoreFcn()
+
+    #region Private Functions
+    private static void SendingCoreFcn()
     {
         lock(Lck_TransferMetrics)
             _transferMetrics.CountOfFiles = FilePaths.Length;
-        double transferSpeed = 3;
         Stopwatch watch = Stopwatch.StartNew();
         for (int i=0;i<FilePaths.Length;i++)
         {
@@ -180,7 +220,7 @@ class Main
             long totalBytesRead=0;
             int numberOfBytesRead=0;
             byte[] buffer;
-            int mb = 1024 * 1024;
+            
             watch.Restart();
             while (IsTransferEnabled)
             {
@@ -192,16 +232,7 @@ class Main
                 if (watch.Elapsed.TotalSeconds >= 0.5)
                 {
                     double elapsedTime = watch.Elapsed.TotalSeconds;
-                    Task.Run(() => {
-                        transferSpeed = (transferSpeed * 0.95 + 0.05 * byteCounter) / (mb * watch.Elapsed.TotalSeconds);
-                        lock (Lck_TransferMetrics)
-                        {
-                            _transferMetrics.TotalBytesSent += byteCounter;
-                            _transferMetrics.TransferSpeed = transferSpeed;
-                            _transferMetrics.Progress = ((double)_transferMetrics.TotalBytesSent / _transferMetrics.TotalDataSizeAsBytes) * 100.0;
-                        }
-                    });
-                    
+                    Task.Run(() => UpdateMetrics(byteCounter,elapsedTime));
                     byteCounter = 0;
                     watch.Restart();
                 }
@@ -219,22 +250,35 @@ class Main
         client.DisconnectFromServer();
         client = null;
     }
-    private void SendFirstFrame()
+    private static void UpdateMetrics(int byteCounter,double elapsedTime)
+    {
+        lock (Lck_TransferMetrics)
+        {
+            _transferMetrics.TotalBytesSent += byteCounter;
+            _transferMetrics.TransferSpeed = (_transferMetrics.TransferSpeed * 0.95 + 0.05 * byteCounter) / (MB * elapsedTime);
+            _transferMetrics.Progress = ((double)_transferMetrics.TotalBytesSent / _transferMetrics.TotalDataSizeAsBytes) * 100.0;
+            _transferMetrics.TotalElapsedTime += elapsedTime;
+            _transferMetrics.EstimatedTime=_transferMetrics.TotalBytesSent/_transferMetrics.TotalElapsedTime*(_transferMetrics.TotalDataSizeAsBytes- _transferMetrics.TotalBytesSent);
+        }
+    }
+    private static void SendFirstFrame()
     {
         long totalTransferSize = GetTransferSize();
-        byte[] data = new byte[10];
+        byte[] data = new byte[13];
         data[0] =(byte)Functions.QueryTransfer;
+        byte[] numFilesBytes =BitConverter.GetBytes(FilePaths.Length);
+        numFilesBytes.CopyTo(data, 1);
         byte[] sizeBytes = BitConverter.GetBytes(totalTransferSize);
-        sizeBytes.CopyTo(data, 1);
+        sizeBytes.CopyTo(data, 5);
         client.SendDataServer(data);
     }
-    private void SendLastFrame()
+    private static void SendLastFrame()
     {
         byte[] data = new byte[2];
         data[0] = (byte)Functions.AllisSent;
         client.SendDataServer(data);
     }
-    private void SendFileInformation(int indexOfFile)
+    private static void SendFileInformation(int indexOfFile)
     {
         byte[] nameBytes = Encoding.ASCII.GetBytes(FileNames[indexOfFile]);
         int nameLen = nameBytes.Length;
@@ -246,7 +290,7 @@ class Main
         lengthBytes.CopyTo(data,nameLen + 2);
         client.SendDataServer(data);
     }
-    private bool WaitforReceiverToBeReady()
+    private static bool WaitforReceiverToBeReady()
     {
         byte[] receivedData = client.GetData();
         if (receivedData == null)
@@ -256,7 +300,7 @@ class Main
         else
             return false;
     }
-    private long GetTransferSize()
+    private static long GetTransferSize()
     {
         long totalTransferSize = 0;     // bytes
         File = new FileOperations();
@@ -275,4 +319,130 @@ class Main
             _transferMetrics.TotalDataSizeAsBytes = totalTransferSize;
         return totalTransferSize;
     }
+
+    #endregion
+
+    #endregion
+
+    #region Receiver Functions
+
+    #region Public Functions
+
+    public static void ResponseToTransferRequest(bool isAccepted)
+    {
+        byte[] data = new byte[1];
+        if (isAccepted)
+        {
+            data[0] = (byte)Functions.AcceptFiles;
+            BeginReceivingFiles();
+        }
+        else
+            data[0] = (byte)Functions.RejectFiles;
+        server.SendDataToClient(data);
+    }
+
+    #endregion
+
+    #region Private Functions
+
+    private static void BeginReceivingFiles()
+    {
+        IsTransferEnabled = true;
+        sendingThread = new Thread(ReceivingCoreFcn);
+        sendingThread.Start();
+    }
+    private static void ReceivingCoreFcn()
+    {
+        lock (Lck_TransferMetrics)
+            _transferMetrics.CountOfFiles = FilePaths.Length;
+        Stopwatch watch = Stopwatch.StartNew();
+        for (int i = 0; i < FilePaths.Length; i++)
+        {
+            GetCurrentFileName();
+            SendReadySignal();
+            File = new FileOperations();
+            File.Init(FileSaveURL+CurrentFile.FileName, FileOperations.TransferMode.Receive);
+            
+            lock (Lck_TransferMetrics)
+            {
+                _transferMetrics.CurrentFile = CurrentFile;
+                _transferMetrics.IndexOfCurrentFile = i;
+            }
+            int byteCounter = 0;
+            long totalBytesWritten = 0;
+            int numberOfBytesRead = 0;
+            watch.Restart();
+            while (IsTransferEnabled)
+            {
+                byte[] receivedData=server.GetData();
+                if (receivedData == null)
+                    break;
+                if (receivedData[0] == (byte)Functions.TransferMode)
+                {
+                    File.FileWriteAtByteIndex(totalBytesWritten, receivedData);
+                    numberOfBytesRead = receivedData.Length - 1;
+                    totalBytesWritten += numberOfBytesRead;
+                    byteCounter += numberOfBytesRead;
+
+                    if (watch.Elapsed.TotalSeconds >= 0.5)
+                    {
+                        double elapsedTime = watch.Elapsed.TotalSeconds;
+                        Task.Run(() => UpdateMetrics(byteCounter, elapsedTime));
+                        byteCounter = 0;
+                        watch.Restart();
+                    }
+                }
+                else if (receivedData[0] == (byte)Functions.EndofFileTransfer)
+                    break;
+                else if (receivedData[0] == (byte)Functions.AllisSent)
+                {
+                    server.CloseServer();
+                    return;
+                }
+                else
+                {
+                    Debug.WriteLine("ReceivingCoreFcn :function byte was wrong:");
+                    break;
+                }
+            }
+            File.CloseFile();
+            if (!IsTransferEnabled)
+                break;
+        }
+        if(server!=null)
+        {
+            server.GetData();
+            server.CloseServer();
+        }
+    }
+
+    private static void SendReadySignal()
+    {
+        byte[] data = new byte[1];
+        data[0] = (byte)Functions.Ready;
+        server.SendDataToClient(data);
+    }
+    private static void GetCurrentFileName()
+    {
+        byte[] receivedData = server.GetData();
+        if (receivedData == null)
+            return;
+        if(receivedData[0]==(byte)Functions.StartofFileTransfer)
+        {
+            byte nameLen = receivedData[1];
+            string fileName = Encoding.ASCII.GetString(receivedData, 2, nameLen);
+            long fileSizeAsBytes = BitConverter.ToInt64(receivedData, nameLen + 2);
+            CurrentFile.FilePath = FileSaveURL+fileName;
+            CurrentFile.FileName =fileName;
+            CurrentFile.FileSizeAsBytes = fileSizeAsBytes;
+            if (File == null)
+                File = new FileOperations();
+            File.CalculateFileSize(fileSizeAsBytes);
+            CurrentFile.FileSize = File.FileSize;
+            CurrentFile.SizeUnit = File.FileSizeUnit;
+        }
+    }
+    #endregion
+
+    #endregion
 }

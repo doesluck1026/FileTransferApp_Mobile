@@ -18,6 +18,9 @@ class Server
     private byte StartByte;
     public bool IsCLientConnected = false;
     public bool IsServerStarted = false;
+
+    public delegate void ClientConnectedDelegate(string clientIP);
+    public event ClientConnectedDelegate OnClientConnected;
     #endregion
 
     public Server(int port = 38000, string ip = "", int bufferSize = 1024 * 64, byte StartByte = (byte)'A')
@@ -64,26 +67,30 @@ class Server
             return null;
         }
     }
-    public string StartListener()
+    public void StartListener()
     {
         try
         {
             if (Listener == null)
-                return null;
+                return ;
             Debug.WriteLine("Listener is Started IP:  " + IP + "  Port: " + Port);
-            Client = Listener.AcceptTcpClient();        /// this Line is Blocking
-            IsCLientConnected = true;
-            IPEndPoint endPoint = (IPEndPoint)Client.Client.RemoteEndPoint;
-            var ipAddress = endPoint.Address;
-            Client.ReceiveBufferSize = BufferSize;
-            Client.SendBufferSize = BufferSize;
-            Debug.WriteLine(ipAddress + " is connected");
-            return ipAddress.ToString();
+            Listener.BeginAcceptTcpClient(new AsyncCallback(DoAcceptTcpClientCallback),Listener);
         }
         catch
         {
-            return null;
         }
+    }
+    public  void DoAcceptTcpClientCallback(IAsyncResult ar)
+    {
+        TcpListener listener = (TcpListener)ar.AsyncState;
+        Client = listener.EndAcceptTcpClient(ar);
+        IsCLientConnected = true;
+        IPEndPoint endPoint = (IPEndPoint)Client.Client.RemoteEndPoint;
+        var ipAddress = endPoint.Address;
+        Client.ReceiveBufferSize = BufferSize;
+        Client.SendBufferSize = BufferSize;
+        Debug.WriteLine(ipAddress + " is connected");
+        OnClientConnected(ipAddress.ToString());
     }
     public void CloseServer()
     {

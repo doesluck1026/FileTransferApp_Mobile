@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using Xamarin.Forms;
 
-class FileOperations
+public class FileOperations
 {
     #region Public Variables
 
@@ -153,6 +153,10 @@ class FileOperations
         this.FileName = nameArray[nameArray.Length - 1];                /// Get the last string which will be the file name as "filename.extension"
         long fileSizeAsByte = Fs.Length;                                /// Get the Total length of the file as bytes
         FileSizeAsBytes = fileSizeAsByte;                              /// Store File Length as bytes in a global variable
+        CalculateFileSize(FileSizeAsBytes);
+    }
+    public void CalculateFileSize(long fileSizeAsByte)
+    {
         int pow = (int)Math.Log(fileSizeAsByte, 1024);                  /// calculate the greatest type ( byte megabyte gigabyte etc...) the filesize can be respresent as integer variable
         FileSize = fileSizeAsByte / Math.Pow(1024, pow);                /// Convert file size from bytes to the greatest type
         FileSizeUnit = (SizeUnit)pow;                                   /// Assign the unit
@@ -169,7 +173,7 @@ class FileOperations
     public void FileWriteAtByteIndex(long BufferIndx, byte[] Buffer)
     {
         Fs.Position = BufferIndx;
-        Fs.Write(Buffer, 0, Buffer.Length);
+        Fs.Write(Buffer, 1, Buffer.Length);
     }
     public void CloseFile()
     {
