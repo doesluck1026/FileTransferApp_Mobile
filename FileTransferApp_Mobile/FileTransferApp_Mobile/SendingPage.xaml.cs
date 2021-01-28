@@ -29,12 +29,12 @@ namespace FileTransferApp_Mobile
 
         private async void btn_SendFile_Clicked(object sender, EventArgs e)
         {
-            //bool didDeviceAccept= Main.ConnectToTargetDevice(txt_ClientIP.Text);
-            //if(didDeviceAccept)
-            //{
-            //    Main.BeginSendingFiles();
-            //    /// open the third page here
-            //}
+            bool didDeviceAccept = Main.ConnectToTargetDevice(txt_ClientIP.Text);
+            if (didDeviceAccept)
+            {
+                Main.BeginSendingFiles();
+                /// open the third page here
+            }
 
             await Navigation.PushModalAsync(new TransferPage());
         }
