@@ -30,7 +30,7 @@ public class Main
     public delegate void ClientRequestDelegate(string totalTransferSize);
     public static event ClientRequestDelegate OnClientRequested;
 
-    public static string FileSaveURL = "";
+    public static string FileSaveURL = "/storage/emulated/0/Download/";
     public static string ServerIP;
     public static string ClientIP;
     public static Metrics TransferMetrics
@@ -169,7 +169,8 @@ public class Main
     {
         IsTransferEnabled = true;
         client = new Client(port: Port,ip: IP, bufferSize: BufferSize, StartByte: StartByte);
-        client.ConnectToServer();
+        ServerIP= client.ConnectToServer();
+        Debug.WriteLine("Server IP: " + ServerIP);
         _transferMetrics = new Metrics();
         SendFirstFrame();
         byte[] clientResponse = client.GetData();
@@ -271,6 +272,7 @@ public class Main
         byte[] sizeBytes = BitConverter.GetBytes(totalTransferSize);
         sizeBytes.CopyTo(data, 5);
         client.SendDataServer(data);
+        Debug.WriteLine("Sent First Frame:" + FilePaths.Length);
     }
     private static void SendLastFrame()
     {
@@ -304,12 +306,17 @@ public class Main
     {
         long totalTransferSize = 0;     // bytes
         File = new FileOperations();
+        int len = FilePaths.Length;
+        FileNames = new string[len];
+        FileSizeAsBytes = new long[len];
+        FileSizes = new double[len];
+        SizeUnits = new FileOperations.SizeUnit[len];
         for (int i = 0; i < FilePaths.Length; i++)
         {
             File.Init(FilePaths[i], FileOperations.TransferMode.Send);
             totalTransferSize += File.FileSizeAsBytes;
             FileNames[i] = File.FileName;
-            FilePaths[i] = File.FilePath;
+            //FilePaths[i] = File.FilePath;
             FileSizeAsBytes[i] = File.FileSizeAsBytes;
             FileSizes[i] = File.FileSize;
             SizeUnits[i] = File.FileSizeUnit;
@@ -414,6 +421,7 @@ public class Main
             server.GetData();
             server.CloseServer();
         }
+        StartServer();
     }
 
     private static void SendReadySignal()

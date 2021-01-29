@@ -230,7 +230,7 @@ class Server
                 }
                 else
                 {
-                    Debug.WriteLine("number of received bytes are incorrect");
+                    Debug.WriteLine("number of received bytes are incorrect: TotalBytesReceived: " + TotalBytesReceived+ " DataLength: "+ DataLength);
                     return null;
                 }
             }

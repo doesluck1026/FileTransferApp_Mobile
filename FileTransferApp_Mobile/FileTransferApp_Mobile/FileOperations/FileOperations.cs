@@ -136,21 +136,25 @@ public class FileOperations
     public void Init(string filePath, TransferMode transferMode)
     {
         this.FilePath = filePath;                                       /// Assign path to FilePath variable
+        if (string.IsNullOrEmpty(FilePath))
+        {
+            Debug.WriteLine("Init File Ops: FilePath is null!");
+            return;
+        }
+        else
+        {
+            char[] splitterUsta = { '\\', '/' };                            /// Define splitter array that will be used to find file name
+            string[] nameArray = FilePath.Split(splitterUsta);              /// Split path string to array by '/' sign
+            this.FileName = nameArray[nameArray.Length - 1];                /// Get the last string which will be the file name as "filename.extension"
+        }
         if (transferMode == TransferMode.Receive)
         {
-            if (FileName == null || FileName == "")
-            {
-                Debug.WriteLine("Init File Ops: Filename is null!");
-                return;
-            }
             Debug.WriteLine("File is Created: " + (FilePath + "\\" + FileName));
             Fs = File.OpenWrite(FilePath + "\\" + FileName);
             return;
         }
-        Fs = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);                             /// Open File
-        char[] splitterUsta = { '\\', '/' };                                     /// Define splitter array that will be used to find file name
-        string[] nameArray = FilePath.Split(splitterUsta);              /// Split path string to array by '/' sign
-        this.FileName = nameArray[nameArray.Length - 1];                /// Get the last string which will be the file name as "filename.extension"
+        else
+            Fs = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);                             /// Open File
         long fileSizeAsByte = Fs.Length;                                /// Get the Total length of the file as bytes
         FileSizeAsBytes = fileSizeAsByte;                              /// Store File Length as bytes in a global variable
         CalculateFileSize(FileSizeAsBytes);
@@ -173,7 +177,7 @@ public class FileOperations
     public void FileWriteAtByteIndex(long BufferIndx, byte[] Buffer)
     {
         Fs.Position = BufferIndx;
-        Fs.Write(Buffer, 1, Buffer.Length);
+        Fs.Write(Buffer, 1, Buffer.Length-1);
     }
     public void CloseFile()
     {

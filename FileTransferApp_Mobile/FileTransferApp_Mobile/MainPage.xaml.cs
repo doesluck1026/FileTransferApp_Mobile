@@ -38,6 +38,7 @@ namespace FileTransferApp_Mobile
         private void Main_OnClientRequested(string totalTransferSize)
         {
             /// Show file transfer request and ask for permission here
+            Main.ResponseToTransferRequest(true);
             Debug.WriteLine("File request is received!: len: " + totalTransferSize);
         }
 
