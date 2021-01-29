@@ -149,8 +149,8 @@ public class FileOperations
         }
         if (transferMode == TransferMode.Receive)
         {
-            Debug.WriteLine("File is Created: " + (FilePath + "\\" + FileName));
-            Fs = File.OpenWrite(FilePath + "\\" + FileName);
+            Debug.WriteLine("File is Created: " + FilePath);
+            Fs = File.OpenWrite(FilePath);
             return;
         }
         else

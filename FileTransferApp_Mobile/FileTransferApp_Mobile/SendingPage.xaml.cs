@@ -20,13 +20,17 @@ namespace FileTransferApp_Mobile
         {
             InitializeComponent();
             Instance = this;
-            if (MainPage.Instance.AvailableDeviceList!=null)
+           
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            if (MainPage.Instance.AvailableDeviceList != null)
             {
                 AvailableDeviceArray = MainPage.Instance.AvailableDeviceList.ToArray();
                 list_Devices.ItemsSource = AvailableDeviceArray;
             }
         }
-
         private async void btn_SendFile_Clicked(object sender, EventArgs e)
         {
             bool didDeviceAccept = Main.ConnectToTargetDevice(txt_ClientIP.Text);
@@ -34,9 +38,9 @@ namespace FileTransferApp_Mobile
             {
                 Main.BeginSendingFiles();
                 /// open the third page here
+                await Navigation.PushModalAsync(new TransferPage());
             }
 
-            await Navigation.PushModalAsync(new TransferPage());
         }
 
         private void list_Devices_ItemSelected(object sender, SelectedItemChangedEventArgs e)

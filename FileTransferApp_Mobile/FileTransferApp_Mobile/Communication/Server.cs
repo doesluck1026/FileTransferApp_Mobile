@@ -115,6 +115,7 @@ class Server
     }
     public bool SendDataToClient(byte[] data)
     {
+        Debug.WriteLine("Function:: " + data[0]+" len: "+data.Length);
         bool success = false;
         byte[] headerBytes = PrepareDataHeader(data.Length);
         int DataLength = headerBytes.Length + data.Length;
@@ -230,7 +231,7 @@ class Server
                 }
                 else
                 {
-                    Debug.WriteLine("number of received bytes are incorrect: TotalBytesReceived: " + TotalBytesReceived+ " DataLength: "+ DataLength);
+                    Debug.WriteLine("number of received bytes are incorrect: TotalBytesReceived: " + TotalBytesReceived+ " DataLength: "+ DataLength +" First byte::"+ms.ToArray()[0]+" second first byte:"+ ms.ToArray()[DataLength]);
                     return null;
                 }
             }

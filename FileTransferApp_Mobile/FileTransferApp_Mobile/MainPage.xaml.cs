@@ -39,7 +39,7 @@ namespace FileTransferApp_Mobile
         {
             /// Show file transfer request and ask for permission here
             Main.ResponseToTransferRequest(true);
-            Debug.WriteLine("File request is received!: len: " + totalTransferSize);
+            //await Navigation.PushModalAsync(new TransferPage());
         }
 
         /// <summary>
