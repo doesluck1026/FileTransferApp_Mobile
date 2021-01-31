@@ -21,25 +21,37 @@ namespace FileTransferApp_Mobile
         public static MainPage Instance;
         private string DeviceIP;
         private string DeviceHostName;
+        private bool isScanned = false;
         public MainPage()
         {
             InitializeComponent();
             Instance = this;
+            DeviceDisplay.KeepScreenOn = true;
             Main.OnClientRequested += Main_OnClientRequested;
             Main.StartServer();
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();            
             NetworkScanner.GetDeviceAddress(out DeviceIP, out DeviceHostName);
+            Main.FileSaveURL = GetSaveFilePath();
+            Debug.WriteLine("Save file path: " + Main.FileSaveURL);
             Dispatcher.BeginInvokeOnMainThread(() =>
             {
                 lbl_IP.Text = DeviceIP;
                 lbl_HostName.Text = DeviceHostName;
             });
+            if(!isScanned)
+            {
+                ScanNetwork();
+                isScanned = true;
+            }
         }
-
         private void Main_OnClientRequested(string totalTransferSize)
         {
             /// Show file transfer request and ask for permission here
+            
             Main.ResponseToTransferRequest(true);
-            //await Navigation.PushModalAsync(new TransferPage());
         }
 
         /// <summary>
@@ -66,9 +78,9 @@ namespace FileTransferApp_Mobile
         {
             SelectFile();
         }
-        private void btn_Scan_Clicked(object sender, EventArgs e)
+        private async void btn_Scan_Clicked(object sender, EventArgs e)
         {
-            ScanNetwork();
+            await Navigation.PushModalAsync(new TransferPage());
         }
         private async void ScanNetwork()
         {
@@ -100,6 +112,13 @@ namespace FileTransferApp_Mobile
         {
             if (!AvailableDeviceList.Contains(IPandHostName))
                 AvailableDeviceList.Add(IPandHostName);
+        }
+        private string GetSaveFilePath()
+        {
+            if (Device.RuntimePlatform == Device.Android)
+                return "/storage/emulated/0/Download/";
+            else
+                return Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)+"/";
         }
     }
 }

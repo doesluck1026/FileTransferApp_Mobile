@@ -126,6 +126,9 @@ public enum Functions
         public int IndexOfCurrentFile;
         public long TotalDataSizeAsBytes;
         public long TotalBytesSent;
+        public double TotalDataSize;        /// MB KB GB...
+        public double TotalDataSent;        /// MB KB GB...
+        public FileOperations.SizeUnit SizeUnit;
         public double Progress;             /// between 0 and 100
         public double TotalElapsedTime;     /// Seconds
         public double EstimatedTime;        /// Seconds
@@ -144,11 +147,11 @@ public enum Functions
         ServerIP = server.SetupServer();
         server.StartListener();
         server.OnClientConnected += Server_OnClientConnected;
-        _transferMetrics = new Metrics();
         IsTransferEnabled = true;
     }
     private static void Server_OnClientConnected(string clientIP)
     {
+        _transferMetrics = new Metrics();
         ClientIP = clientIP;
         byte[] receivedData = server.GetData();
         if (receivedData == null)
@@ -164,6 +167,7 @@ public enum Functions
             string fileSizeString = File.FileSize.ToString("0.00") + " " + File.FileSizeUnit.ToString();
             Debug.WriteLine("numberOfFiles: "+ numberOfFiles + " transfer size: " + fileSizeString);
             OnClientRequested(fileSizeString);
+            _transferMetrics.TotalDataSizeAsBytes = transferSize;
         }
     }
     #endregion
@@ -213,7 +217,11 @@ public enum Functions
     private static void SendingCoreFcn()
     {
         lock(Lck_TransferMetrics)
+        {
             _transferMetrics.CountOfFiles = FilePaths.Length;
+            _transferMetrics.TotalBytesSent = 0;
+            _transferMetrics.TotalDataSent = 0;
+        }
         Stopwatch watch = Stopwatch.StartNew();
         IsTransfering = true;
         for (int i=0;i<FilePaths.Length;i++)
@@ -234,7 +242,7 @@ public enum Functions
             lock (Lck_TransferMetrics)
             {
                 _transferMetrics.CurrentFile = CurrentFile;
-                _transferMetrics.IndexOfCurrentFile = i;
+                _transferMetrics.IndexOfCurrentFile = i+1;
             }
             long byteCounter = 0;
             long totalBytesRead=0;
@@ -244,27 +252,26 @@ public enum Functions
             watch.Restart();
             while (IsTransferEnabled)
             {
-                File.FileReadAtByteIndex(totalBytesRead, out numberOfBytesRead, out buffer, chunkSize: BufferSize*16,functionByte: (byte)Functions.TransferMode);
+                File.FileReadAtByteIndex(totalBytesRead, out numberOfBytesRead, out buffer, chunkSize: BufferSize*4,functionByte: (byte)Functions.TransferMode);
                 if (numberOfBytesRead == 0)
+                {
+                    UpdateMetrics(watch, byteCounter);
+                    watch.Restart();
                     break;
-                client.SendDataServer(buffer);
+                }
+                 client.SendDataServer(buffer);
                 totalBytesRead += numberOfBytesRead;
                 byteCounter += numberOfBytesRead;
                 CheckAck(Functions.TransferMode);
                 if (watch.Elapsed.TotalSeconds >= 0.5)
                 {
-                    double elapsedTime = watch.Elapsed.TotalSeconds;
-                    long cnt = byteCounter;
+                    UpdateMetrics(watch, byteCounter);
                     byteCounter = 0;
-                    Task.Run(() => UpdateMetrics(cnt, elapsedTime));
                     watch.Restart();
                 }
                 if (totalBytesRead == File.FileSizeAsBytes)
                 {
-                    double elapsedTime = watch.Elapsed.TotalSeconds;
-                    long cnt = byteCounter;
-                    byteCounter = 0;
-                    Task.Run(() => UpdateMetrics(cnt, elapsedTime));
+                    UpdateMetrics(watch, byteCounter);
                     watch.Restart();
                     break;
                 }
@@ -281,6 +288,8 @@ public enum Functions
         SendLastFrame();
         client.DisconnectFromServer();
         client = null;
+        server.CloseServer();
+        StartServer();
     }
     private static bool CheckAck(Functions func)
     {
@@ -290,15 +299,26 @@ public enum Functions
         else
             return false;
     }
-    private static void UpdateMetrics(long byteCounter,double elapsedTime)
+    private static void UpdateMetrics(Stopwatch watch,long byteCount)
+    {
+        double elapsedTime = watch.Elapsed.TotalSeconds;
+        Task.Run(() => UpdateTransferMetrics(byteCount, elapsedTime));
+    }
+    private static void UpdateTransferMetrics(long byteCounter,double elapsedTime)
     {
         lock (Lck_TransferMetrics)
         {
             _transferMetrics.TotalBytesSent += byteCounter;
-            _transferMetrics.TransferSpeed = (_transferMetrics.TransferSpeed * 0.9 + 0.1 * byteCounter) / (MB * elapsedTime);
+            _transferMetrics.TransferSpeed = (_transferMetrics.TransferSpeed * 0.9 + 0.1 *( byteCounter / (MB * elapsedTime)));
             _transferMetrics.Progress = ((double)_transferMetrics.TotalBytesSent / (double)_transferMetrics.TotalDataSizeAsBytes) * 100.0;
             _transferMetrics.TotalElapsedTime += elapsedTime;
-            _transferMetrics.EstimatedTime=(_transferMetrics.TotalBytesSent/_transferMetrics.TotalElapsedTime)*(_transferMetrics.TotalDataSizeAsBytes- _transferMetrics.TotalBytesSent);
+            _transferMetrics.EstimatedTime=(_transferMetrics.TotalDataSizeAsBytes- _transferMetrics.TotalBytesSent)/ (_transferMetrics.TotalBytesSent / _transferMetrics.TotalElapsedTime);
+            var file = new FileOperations();
+            file.CalculateFileSize(_transferMetrics.TotalDataSizeAsBytes);
+            _transferMetrics.TotalDataSize = file.FileSize;
+            _transferMetrics.SizeUnit = file.FileSizeUnit;
+            file.CalculateFileSize(_transferMetrics.TotalBytesSent);
+            _transferMetrics.TotalDataSent = file.FileSize;
         }
     }
     private static void SendFirstFrame()
@@ -396,6 +416,7 @@ public enum Functions
         IsTransferEnabled = true;
         sendingThread = new Thread(ReceivingCoreFcn);
         sendingThread.Start();
+        
     }
     private static void SendAck(Functions func)
     {
@@ -406,7 +427,11 @@ public enum Functions
     private static void ReceivingCoreFcn()
     {
         lock (Lck_TransferMetrics)
+        {
+            _transferMetrics.TotalBytesSent = 0;
+            _transferMetrics.TotalDataSent = 0;
             _transferMetrics.CountOfFiles = FilePaths.Length;
+        }
         Stopwatch watch = Stopwatch.StartNew();
         IsTransfering = true;
         for (int i = 0; i < FilePaths.Length; i++)
@@ -419,7 +444,7 @@ public enum Functions
             lock (Lck_TransferMetrics)
             {
                 _transferMetrics.CurrentFile = CurrentFile;
-                _transferMetrics.IndexOfCurrentFile = i;
+                _transferMetrics.IndexOfCurrentFile = i+1;
             }
             long byteCounter = 0;
             long totalBytesWritten = 0;
@@ -429,7 +454,11 @@ public enum Functions
             {
                 byte[] receivedData=server.GetData();
                 if (receivedData == null)
+                {
+                    UpdateMetrics(watch, byteCounter);
+                    watch.Restart();
                     break;
+                }
                 if (receivedData[0] == (byte)Functions.TransferMode)
                 {
                     SendAck(Functions.TransferMode);
@@ -440,20 +469,22 @@ public enum Functions
 
                     if (watch.Elapsed.TotalSeconds >= 0.5)
                     {
-                        double elapsedTime = watch.Elapsed.TotalSeconds;
-                        long cnt = byteCounter;
+                        UpdateMetrics(watch, byteCounter);
                         byteCounter = 0;
-                        Task.Run(() => UpdateMetrics(cnt, elapsedTime));
                         watch.Restart();
                     }
                 }
                 else if (receivedData[0] == (byte)Functions.EndofFileTransfer)
                 {
                     SendAck(Functions.EndofFileTransfer);
+                    UpdateMetrics(watch, byteCounter);
+                    watch.Restart();
                     break;
                 }
                 else if (receivedData[0] == (byte)Functions.AllisSent)
                 {
+                    UpdateMetrics(watch, byteCounter);
+                    watch.Restart();
                     server.CloseServer();
                     IsTransfering = false;
                     return;

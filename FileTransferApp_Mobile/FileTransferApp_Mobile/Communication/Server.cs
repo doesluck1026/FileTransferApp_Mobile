@@ -82,7 +82,10 @@ class Server
     }
     public  void DoAcceptTcpClientCallback(IAsyncResult ar)
     {
+        
         TcpListener listener = (TcpListener)ar.AsyncState;
+        if (listener.Server.LocalEndPoint == null)
+            return;
         Client = listener.EndAcceptTcpClient(ar);
         IsCLientConnected = true;
         IPEndPoint endPoint = (IPEndPoint)Client.Client.RemoteEndPoint;

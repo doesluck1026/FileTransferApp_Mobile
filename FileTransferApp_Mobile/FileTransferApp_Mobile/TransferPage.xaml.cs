@@ -15,7 +15,7 @@ namespace FileTransferApp_Mobile
     public partial class TransferPage : ContentPage
     {
         private Timer UpdateTimer;
-        private int updatePeriod = 40;          ///ms
+        private int updatePeriod = 100;          ///ms
         public TransferPage()
         {
             InitializeComponent();
@@ -66,6 +66,8 @@ namespace FileTransferApp_Mobile
                     (((int)Main.TransferMetrics.TotalElapsedTime % 3600) % 60).ToString("00");
                 lbl_RemainingTime.Text = ((int)Main.TransferMetrics.EstimatedTime / 3600).ToString("00") + ":" + (((int)Main.TransferMetrics.EstimatedTime % 3600) / 60).ToString("00") + ":" +
                     (((int)Main.TransferMetrics.EstimatedTime % 3600) % 60).ToString("00");
+                lbl_totalSent.Text = Main.TransferMetrics.TotalDataSent.ToString("0.00") + " "+Main.TransferMetrics.SizeUnit.ToString();
+                lbl_totalSize.Text = Main.TransferMetrics.TotalDataSize.ToString("0.00") + " "+Main.TransferMetrics.SizeUnit.ToString();
             });
             
             if (!Main.IsTransfering)
