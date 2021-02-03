@@ -184,16 +184,5 @@ public class FileOperations
         if (Fs != null)
             Fs.Close();
     }
-    /// <summary>
-    /// this function is used to select a folder on current machine and returns folder path
-    /// </summary>
-    /// <returns>Folder path</returns>
-    private string GetFolder()
-    {
-        if (Device.RuntimePlatform == Device.Android)
-            return "/storage/emulated/0/Download/";
-        else
-            return "";
-    }
     #endregion
 }
