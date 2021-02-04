@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "Rssdp/4.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Rssdp.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Rssdp.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.5.3.2": {
         "type": "package",
         "frameworkAssemblies": [
@@ -140,6 +149,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
+          "Rssdp": "4.0.4",
           "Xamarin.Essentials": "1.6.1-preview1",
           "Xamarin.Forms": "5.0.0.1874"
         },
@@ -152,6 +162,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "Rssdp/4.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Rssdp.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Rssdp.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.5.3.2": {
         "type": "package",
         "frameworkAssemblies": [
@@ -290,6 +309,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
+          "Rssdp": "4.0.4",
           "Xamarin.Essentials": "1.6.1-preview1",
           "Xamarin.Forms": "5.0.0.1874"
         },
@@ -302,6 +322,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Rssdp/4.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Rssdp.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Rssdp.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.5.3.2": {
         "type": "package",
         "frameworkAssemblies": [
@@ -440,6 +469,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
+          "Rssdp": "4.0.4",
           "Xamarin.Essentials": "1.6.1-preview1",
           "Xamarin.Forms": "5.0.0.1874"
         },
@@ -452,6 +482,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Rssdp/4.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Rssdp.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Rssdp.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.5.3.2": {
         "type": "package",
         "frameworkAssemblies": [
@@ -590,6 +629,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
+          "Rssdp": "4.0.4",
           "Xamarin.Essentials": "1.6.1-preview1",
           "Xamarin.Forms": "5.0.0.1874"
         },
@@ -603,6 +643,37 @@
     }
   },
   "libraries": {
+    "Rssdp/4.0.4": {
+      "sha512": "5E2icl0iAODR/EuS0nExzKPxbjgpkUjS1tJyEFdiITZG6fftvoEtdbzKWvR7tgwhN1R1fZpyu0j6bRLl70OuIQ==",
+      "type": "package",
+      "path": "rssdp/4.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Xamarin.iOS10/Rssdp.dll",
+        "lib/Xamarin.iOS10/Rssdp.xml",
+        "lib/monoandroid/Rssdp.dll",
+        "lib/monoandroid/Rssdp.xml",
+        "lib/net40/Rssdp.dll",
+        "lib/net40/Rssdp.xml",
+        "lib/net45/Rssdp.dll",
+        "lib/net45/Rssdp.xml",
+        "lib/netcore451/Rssdp.dll",
+        "lib/netcore451/Rssdp.xml",
+        "lib/netstandard13/Rssdp.dll",
+        "lib/netstandard13/Rssdp.xml",
+        "lib/portable-net45+win+wpa81+wp80/Rssdp.dll",
+        "lib/portable-net45+win+wpa81+wp80/Rssdp.xml",
+        "lib/uap10.0/Rssdp.dll",
+        "lib/uap10.0/Rssdp.xml",
+        "lib/wp8/Rssdp.dll",
+        "lib/wp8/Rssdp.xml",
+        "lib/wpa81/Rssdp.dll",
+        "lib/wpa81/Rssdp.xml",
+        "rssdp.4.0.4.nupkg.sha512",
+        "rssdp.nuspec"
+      ]
+    },
     "Xamarin.Essentials/1.5.3.2": {
       "sha512": "BSLgDJUOPFRwTpQaftM+s4qb/MsTjrqXulEYDOcK6KF3i0Orf75zo3RwRfqnQ8WfpoEFxW/v0jgcPWCvOMgHxg==",
       "type": "package",

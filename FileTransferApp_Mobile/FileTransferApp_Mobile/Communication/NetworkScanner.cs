@@ -6,7 +6,7 @@ using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
-
+using Rssdp;
 
 class NetworkScanner
 {
@@ -14,18 +14,77 @@ class NetworkScanner
     public  event ScanCompleteDelegate OnScanCompleted;
 
     private int IPend;
+    private static SsdpDevicePublisher _Publisher;
+
+    
+
     public NetworkScanner(int ipend)
     {
         IPend = ipend;
     }
     public void ScanAvailableDevices()
     {
-        string gate_ip= "192.168.1.1";
-        string[] array = gate_ip.Split('.');
-            string ping_var = array[0] + "." + array[1] + "." + array[2] + "." + IPend;
-        //if(ping_var!= thisIP)
-            Ping(ping_var, 1, 100);
+        //string gate_ip= "192.168.1.1";
+        //string[] array = gate_ip.Split('.');
+        //    string ping_var = array[0] + "." + array[1] + "." + array[2] + "." + IPend;
+        ////if(ping_var!= thisIP)
+        //    Ping(ping_var, 1, 100);
+        
         //OnScanCompleted(DeviceList.ToArray());
+
+    }
+    // Call this method from somewhere to actually do the publish.
+    public static void PublishDevice()
+    {
+        // As this is a sample, we are only setting the minimum required properties.
+        var deviceDefinition = new SsdpRootDevice()
+        {
+            CacheLifetime = TimeSpan.FromMinutes(30), //How long SSDP clients can cache this info.
+            Location = new Uri("http://mydevice/descriptiondocument.xml"), // Must point to the URL that serves your devices UPnP description document. 
+            DeviceTypeNamespace = Xamarin.Essentials.DeviceInfo.Version.ToString(),
+            DeviceType = Xamarin.Essentials.DeviceInfo.DeviceType.ToString(),
+            FriendlyName = Xamarin.Essentials.DeviceInfo.Model,
+            Manufacturer = Xamarin.Essentials.DeviceInfo.Manufacturer,
+            ModelName = Xamarin.Essentials.DeviceInfo.Name,
+            Uuid = Xamarin.Essentials.DeviceInfo.Idiom.ToString() // This must be a globally unique value that survives reboots etc. Get from storage or embedded hardware etc.
+        };
+        _Publisher = new SsdpDevicePublisher();
+        _Publisher.AddDevice(deviceDefinition);
+    }
+    private static SsdpDeviceLocator _DeviceLocator;
+
+    // Call this method from somewhere in your code to start the search.
+    public static void BeginSearch()
+    {
+        _DeviceLocator = new SsdpDeviceLocator();
+
+        // (Optional) Set the filter so we only see notifications for devices we care about 
+        // (can be any search target value i.e device type, uuid value etc - any value that appears in the 
+        // DiscoverdSsdpDevice.NotificationType property or that is used with the searchTarget parameter of the Search method).
+        _DeviceLocator.NotificationFilter = "";
+
+        // Connect our event handler so we process devices as they are found
+        _DeviceLocator.DeviceAvailable += deviceLocator_DeviceAvailable;
+
+        // Enable listening for notifications (optional)
+        _DeviceLocator.StartListeningForNotifications();
+
+        // Perform a search so we don't have to wait for devices to broadcast notifications 
+        // again to get any results right away (notifications are broadcast periodically).
+        _DeviceLocator.SearchAsync();
+
+        Console.ReadLine();
+    }
+
+    // Process each found device in the event handler
+    async static void deviceLocator_DeviceAvailable(object sender, DeviceAvailableEventArgs e)
+    {
+        //Device data returned only contains basic device details and location of full device description.
+        Debug.WriteLine("Found " + e.DiscoveredDevice.Usn + " at " + e.DiscoveredDevice.DescriptionLocation.ToString());
+
+        //Can retrieve the full device description easily though.
+        var fullDevice = await e.DiscoveredDevice.GetDeviceInfo();
+        Debug.WriteLine("name: "+fullDevice.FriendlyName);
     }
     public static void GetDeviceAddress(out string deviceIP,out string deviceHostname)
     {
@@ -53,6 +112,7 @@ class NetworkScanner
                     System.Net.NetworkInformation.Ping ping = new System.Net.NetworkInformation.Ping();
                     ping.PingCompleted += new PingCompletedEventHandler(PingCompleted);
                     ping.SendAsync(host, timeout, host);
+                    Debug.WriteLine("Hostname: " + Dns.GetHostEntry(host).HostName);
                 }
                 catch
                 {
@@ -68,9 +128,10 @@ class NetworkScanner
         string ip = (string)e.UserState;
         if (e.Reply != null && e.Reply.Status == IPStatus.Success)
         {
-            string hostname = GetHostName(ip);
-            Debug.WriteLine("found device: " + ip);
-            OnScanCompleted(ip);
+            string hostname = Dns.GetHostEntry(ip).HostName;
+
+            Debug.WriteLine("found device: " + ip + "hotname: " + hostname) ;
+            OnScanCompleted(hostname);
         }
         else
         {

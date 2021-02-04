@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+L9Ga7pCgOX95DuxWNbSnaNhYrKTV4c3GG7re8IM3m4Vh2KazuZkO9p84CHTkbKTILAoNIhzbribclQuEwTImA==",
+  "dgSpecHash": "NL795HQkDSZA31HJ8VqWYvkl0Nj19e6uObh8QSX8gLXqiKYcG9MNv34r2FjCDyrtVz3i7EF1WO7deLqaGE5/TA==",
   "success": true,
   "projectFilePath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.Android\\FileTransferApp_Mobile.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\rssdp\\4.0.4\\rssdp.4.0.4.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.androidx.activity\\1.1.0.3\\xamarin.androidx.activity.1.1.0.3.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.androidx.annotation\\1.1.0.6\\xamarin.androidx.annotation.1.1.0.6.nupkg.sha512",

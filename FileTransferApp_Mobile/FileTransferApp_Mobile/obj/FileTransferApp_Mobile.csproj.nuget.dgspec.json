@@ -44,6 +44,10 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "dependencies": {
+            "Rssdp": {
+              "target": "Package",
+              "version": "[4.0.4, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1-preview1, )"

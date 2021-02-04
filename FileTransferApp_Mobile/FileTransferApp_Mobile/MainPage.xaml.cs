@@ -34,12 +34,13 @@ namespace FileTransferApp_Mobile
         {
             base.OnAppearing();            
             NetworkScanner.GetDeviceAddress(out DeviceIP, out DeviceHostName);
+            NetworkScanner.PublishDevice();
             Main.FileSaveURL = GetSaveFilePath();
             Debug.WriteLine("Save file path: " + Main.FileSaveURL);
             Dispatcher.BeginInvokeOnMainThread(() =>
             {
                 lbl_IP.Text = DeviceIP;
-                lbl_HostName.Text = DeviceHostName;
+                lbl_HostName.Text = DeviceInfo.Name;
             });
             if(!isScanned)
             {
@@ -82,9 +83,10 @@ namespace FileTransferApp_Mobile
         {
             await Navigation.PushModalAsync(new TransferPage());
         }
-        private async void ScanNetwork()
+        private void ScanNetwork()
         {
-            await Task.Run(() => PartialScan(2, 100));
+           NetworkScanner.BeginSearch();
+           // await Task.Run(() => PartialScan(2, 100));
         }
         private void PartialScan(int startx,int endx)
         {
