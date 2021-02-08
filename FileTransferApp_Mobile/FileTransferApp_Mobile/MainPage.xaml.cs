@@ -48,11 +48,14 @@ namespace FileTransferApp_Mobile
                 isScanned = true;
             }
         }
-        private void Main_OnClientRequested(string totalTransferSize)
+        private void Main_OnClientRequested(string totalTransferSize, string deviceName)
         {
             /// Show file transfer request and ask for permission here
-            
-            Main.ResponseToTransferRequest(true);
+
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                Navigation.PushModalAsync(new TransferPermissionPage(totalTransferSize, deviceName));
+            });
         }
 
         /// <summary>

@@ -28,3 +28,4 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debu
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\FileTransferApp_Mobile.pdb
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\SendingPage.xaml.g.cs
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\TransferPage.xaml.g.cs
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\TransferPermissionPage.xaml.g.cs

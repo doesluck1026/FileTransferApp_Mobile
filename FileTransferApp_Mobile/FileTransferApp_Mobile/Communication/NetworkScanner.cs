@@ -11,9 +11,9 @@ class NetworkScanner
 {
     public delegate void ScanCompleteDelegate(string IPandHostName);
     public event ScanCompleteDelegate OnScanCompleted;
-
-    private static string DeviceIP;
-    public static string DeviceName;
+        
+    private static string DeviceIP;             /// ip of this device
+    public static string DeviceName;            /// name of this device
     private static readonly int PublishPort = 42019;
     private static Server publisherServer;
     private static Client client;
@@ -90,8 +90,8 @@ class NetworkScanner
     {
         publisherServer = new Server(port: PublishPort);
         publisherServer.SetupServer();
-        publisherServer.StartListener();
         publisherServer.OnClientConnected += PublisherServer_OnClientConnected;
+        publisherServer.StartListener();
     }
 
     private static void PublisherServer_OnClientConnected(string clientIP)
