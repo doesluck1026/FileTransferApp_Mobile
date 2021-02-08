@@ -85,35 +85,7 @@ namespace FileTransferApp_Mobile
         }
         private void ScanNetwork()
         {
-           NetworkScanner.BeginSearch();
-           // await Task.Run(() => PartialScan(2, 100));
-        }
-        private void PartialScan(int startx,int endx)
-        {
-            for(int i = startx; i < endx; i++)
-            {
-                try
-                {
-                    PingADevice(i);
-                    Debug.WriteLine("pinged: " + i);
-                }
-                catch
-                {
-                    Debug.WriteLine("failed: " + i);
-
-                }
-            }
-        }
-        private void PingADevice(int ipend)
-        {
-            var dummyDevice = new NetworkScanner(ipend);
-            dummyDevice.OnScanCompleted += DummyDevice_OnScanCompleted;
-            dummyDevice.ScanAvailableDevices();
-        }
-        private void DummyDevice_OnScanCompleted(string IPandHostName)
-        {
-            if (!AvailableDeviceList.Contains(IPandHostName))
-                AvailableDeviceList.Add(IPandHostName);
+           NetworkScanner.ScanAvailableDevices();
         }
         private string GetSaveFilePath()
         {

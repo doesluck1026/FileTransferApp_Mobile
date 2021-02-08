@@ -84,6 +84,8 @@ class Server
     {
         
         TcpListener listener = (TcpListener)ar.AsyncState;
+        if (listener.Server== null)
+            return;
         if (listener.Server.LocalEndPoint == null)
             return;
         Client = listener.EndAcceptTcpClient(ar);

@@ -16,6 +16,7 @@ namespace FileTransferApp_Mobile
     {
         public static SendingPage Instance;
         public string[] AvailableDeviceArray;
+        private string TargetDeviceIP;
         public SendingPage()
         {
             InitializeComponent();
@@ -25,9 +26,9 @@ namespace FileTransferApp_Mobile
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            if (MainPage.Instance.AvailableDeviceList != null)
+            if (NetworkScanner.DeviceNames!= null)
             {
-                AvailableDeviceArray = MainPage.Instance.AvailableDeviceList.ToArray();
+                AvailableDeviceArray = NetworkScanner.DeviceNames.ToArray();
                 list_Devices.ItemsSource = AvailableDeviceArray;
             }
         }
@@ -46,7 +47,8 @@ namespace FileTransferApp_Mobile
 
         private void list_Devices_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            txt_ClientIP.Text = list_Devices.SelectedItem.ToString();
+            TargetDeviceIP = NetworkScanner.DeviceIPs[NetworkScanner.DeviceNames.IndexOf(list_Devices.SelectedItem.ToString())];
+            txt_ClientIP.Text = TargetDeviceIP;//list_Clients.SelectedItem.ToString();
         }
     }
 }
