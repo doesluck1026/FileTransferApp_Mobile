@@ -16,7 +16,7 @@ class NetworkScanner
     private int IPend;
     private static SsdpDevicePublisher _Publisher;
 
-    
+    private static string IP;
 
     public NetworkScanner(int ipend)
     {
@@ -41,7 +41,7 @@ class NetworkScanner
         {
             CacheLifetime = TimeSpan.FromMinutes(30), //How long SSDP clients can cache this info.
             Location = new Uri("http://mydevice/descriptiondocument.xml"), // Must point to the URL that serves your devices UPnP description document. 
-            DeviceTypeNamespace = Xamarin.Essentials.DeviceInfo.Version.ToString(),
+            DeviceTypeNamespace = "da",
             DeviceType = Xamarin.Essentials.DeviceInfo.DeviceType.ToString(),
             FriendlyName = Xamarin.Essentials.DeviceInfo.Model,
             Manufacturer = Xamarin.Essentials.DeviceInfo.Manufacturer,
@@ -71,9 +71,7 @@ class NetworkScanner
 
         // Perform a search so we don't have to wait for devices to broadcast notifications 
         // again to get any results right away (notifications are broadcast periodically).
-        _DeviceLocator.SearchAsync();
-
-        Console.ReadLine();
+       // _DeviceLocator.SearchAsync();
     }
 
     // Process each found device in the event handler
@@ -99,6 +97,7 @@ class NetworkScanner
         }
         deviceIP = localAddr.ToString();
         deviceHostname = host.HostName;
+        IP = localAddr.ToString();
     }
 
     private  void Ping(string host, int attempts, int timeout)

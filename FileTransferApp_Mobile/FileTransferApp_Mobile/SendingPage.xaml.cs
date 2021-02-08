@@ -34,6 +34,7 @@ namespace FileTransferApp_Mobile
         private async void btn_SendFile_Clicked(object sender, EventArgs e)
         {
             bool didDeviceAccept = Main.ConnectToTargetDevice(txt_ClientIP.Text);
+            Debug.WriteLine("Receiver Response: " + didDeviceAccept);
             if (didDeviceAccept)
             {
                 Main.BeginSendingFiles();
