@@ -32,8 +32,17 @@
                 <Label Text="Receiver IP:" Grid.Column="1" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
                 <Entry x:Name="txt_ClientIP" Text="192.168.1.2" Grid.Column="2" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
             </Grid>
-            <Button x:Name="btn_SendFile" Text="Send FILE" Clicked="btn_SendFile_Clicked" TextColor="Blue" HorizontalOptions="Center" BorderWidth="2" 
-                     FontSize="45" Margin="30" Grid.Row="4"/>
+            <Grid Grid.Row="4" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btn_SendFile" Text="Send FILE" Clicked="btn_SendFile_Clicked" TextColor="Blue" HorizontalOptions="Center" BorderWidth="2" 
+                     FontSize="25" Margin="30" Grid.Column="0"/>
+                <Button x:Name="btn_ScanDevices" Text="Scan Devices" Clicked="btn_ScanDevices_Clicked" TextColor="Blue" HorizontalOptions="Center" BorderWidth="2" 
+                     FontSize="25" Margin="30" Grid.Column="1"/>
+            </Grid>
+            
 
         </Grid>
     </ContentPage.Content>

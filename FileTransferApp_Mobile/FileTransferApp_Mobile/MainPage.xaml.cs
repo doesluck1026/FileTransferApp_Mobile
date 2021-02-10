@@ -28,8 +28,12 @@ namespace FileTransferApp_Mobile
             Instance = this;
             DeviceDisplay.KeepScreenOn = true;
             Main.OnClientRequested += Main_OnClientRequested;
+            NetworkScanner.OnScanCompleted += NetworkScanner_OnScanCompleted;
             Main.StartServer();
         }
+
+       
+
         protected override void OnAppearing()
         {
             base.OnAppearing();            
@@ -57,7 +61,10 @@ namespace FileTransferApp_Mobile
                 Navigation.PushModalAsync(new TransferPermissionPage(totalTransferSize, deviceName));
             });
         }
+        private void NetworkScanner_OnScanCompleted()
+        {
 
+        }
         /// <summary>
         /// The address of the file to be processed is selected
         /// </summary>
@@ -81,10 +88,6 @@ namespace FileTransferApp_Mobile
         private void btn_SelectFile_Clicked(object sender, EventArgs e)
         {
             SelectFile();
-        }
-        private async void btn_Scan_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new TransferPage());
         }
         private void ScanNetwork()
         {

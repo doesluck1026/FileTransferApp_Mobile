@@ -82,20 +82,26 @@ class Server
     }
     public  void DoAcceptTcpClientCallback(IAsyncResult ar)
     {
-        
-        TcpListener listener = (TcpListener)ar.AsyncState;
-        if (listener.Server== null)
-            return;
-        if (listener.Server.LocalEndPoint == null)
-            return;
-        Client = listener.EndAcceptTcpClient(ar);
-        IsCLientConnected = true;
-        IPEndPoint endPoint = (IPEndPoint)Client.Client.RemoteEndPoint;
-        var ipAddress = endPoint.Address;
-        Client.ReceiveBufferSize = BufferSize;
-        Client.SendBufferSize = BufferSize;
-        Debug.WriteLine(ipAddress + " is connected");
-        OnClientConnected(ipAddress.ToString());
+        try
+        {
+            TcpListener listener = (TcpListener)ar.AsyncState;
+            if (listener.Server == null)
+                return;
+            if (listener.Server.LocalEndPoint == null)
+                return;
+            Client = listener.EndAcceptTcpClient(ar);
+            IsCLientConnected = true;
+            IPEndPoint endPoint = (IPEndPoint)Client.Client.RemoteEndPoint;
+            var ipAddress = endPoint.Address;
+            Client.ReceiveBufferSize = BufferSize;
+            Client.SendBufferSize = BufferSize;
+            Debug.WriteLine(ipAddress + " is connected");
+            OnClientConnected(ipAddress.ToString());
+        }
+        catch
+        {
+
+        }
     }
     public void CloseServer()
     {

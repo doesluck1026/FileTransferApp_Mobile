@@ -21,8 +21,21 @@ namespace FileTransferApp_Mobile
         {
             InitializeComponent();
             Instance = this;
-           
+            NetworkScanner.OnScanCompleted += NetworkScanner_OnScanCompleted;
         }
+
+        private void NetworkScanner_OnScanCompleted()
+        {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                if (NetworkScanner.DeviceNames != null)
+                {
+                    AvailableDeviceArray = NetworkScanner.DeviceNames.ToArray();
+                    list_Devices.ItemsSource = AvailableDeviceArray;
+                }
+            });
+        }
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
@@ -39,7 +52,6 @@ namespace FileTransferApp_Mobile
             if (didDeviceAccept)
             {
                 Main.BeginSendingFiles();
-                /// open the third page here
                 await Navigation.PushModalAsync(new TransferPage());
             }
 
@@ -49,6 +61,12 @@ namespace FileTransferApp_Mobile
         {
             TargetDeviceIP = NetworkScanner.DeviceIPs[NetworkScanner.DeviceNames.IndexOf(list_Devices.SelectedItem.ToString())];
             txt_ClientIP.Text = TargetDeviceIP;//list_Clients.SelectedItem.ToString();
+        }
+
+        private void btn_ScanDevices_Clicked(object sender, EventArgs e)
+        {
+            NetworkScanner.DeviceNames = new List<string>();
+            NetworkScanner.ScanAvailableDevices();
         }
     }
 }

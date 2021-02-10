@@ -30,6 +30,9 @@ public class Main
     public delegate void ClientRequestDelegate(string totalTransferSize,string senderDevice);
     public static event ClientRequestDelegate OnClientRequested;
 
+    public delegate void TransferFinishedDelegate();
+    public static event TransferFinishedDelegate OnTransferFinished;
+
     public static string FileSaveURL = "/storage/emulated/0/Download/";
     public static string ServerIP;
     public static string ClientIP;
@@ -288,6 +291,7 @@ public enum Functions
         }
         IsTransfering = false;
         SendLastFrame();
+        OnTransferFinished();
         client.DisconnectFromServer();
         client = null;
         server.CloseServer();
@@ -492,6 +496,7 @@ public enum Functions
                     watch.Restart();
                     server.CloseServer();
                     IsTransfering = false;
+                    OnTransferFinished();
                     return;
                 }
                 else
@@ -507,6 +512,7 @@ public enum Functions
         if(server!=null)
         {
             server.GetData();
+            OnTransferFinished();
             server.CloseServer();
         }
         IsTransfering = false;

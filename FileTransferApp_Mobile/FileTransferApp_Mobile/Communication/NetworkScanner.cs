@@ -9,8 +9,8 @@ using Xamarin.Essentials;
 
 class NetworkScanner
 {
-    public delegate void ScanCompleteDelegate(string IPandHostName);
-    public event ScanCompleteDelegate OnScanCompleted;
+    public delegate void ScanCompleteDelegate();
+    public static event ScanCompleteDelegate OnScanCompleted;
         
     private static string DeviceIP;             /// ip of this device
     public static string DeviceName;            /// name of this device
@@ -56,6 +56,7 @@ class NetworkScanner
             }
         }
         Debug.WriteLine("scanning time: " + stp.Elapsed.TotalSeconds + " s");
+        OnScanCompleted();
     }
     private static void GetDeviceData(string IP)
     {
@@ -88,6 +89,7 @@ class NetworkScanner
     }
     public static void PublishDevice()
     {
+        DeviceName = DeviceInfo.Name;
         publisherServer = new Server(port: PublishPort);
         publisherServer.SetupServer();
         publisherServer.OnClientConnected += PublisherServer_OnClientConnected;
@@ -97,7 +99,7 @@ class NetworkScanner
     private static void PublisherServer_OnClientConnected(string clientIP)
     {
         Debug.WriteLine("Client IP: " + clientIP);
-        publisherServer.SendDataToClient(Encoding.ASCII.GetBytes("IP:" + DeviceIP + "&DeviceName:" + DeviceInfo.Name));
+        publisherServer.SendDataToClient(Encoding.ASCII.GetBytes("IP:" + DeviceIP + "&DeviceName:" + DeviceName));
 
         publisherServer.GetData();
 

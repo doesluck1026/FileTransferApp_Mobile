@@ -28,6 +28,7 @@ namespace FileTransferApp_Mobile
         private async void btn_Accept_Clicked(object sender, EventArgs e)
         {
             Main.ResponseToTransferRequest(true);
+            await Navigation.PopModalAsync();
             await Navigation.PushModalAsync(new TransferPage());
         }
 

@@ -19,12 +19,23 @@ namespace FileTransferApp_Mobile
         public TransferPage()
         {
             InitializeComponent();
+            Main.OnTransferFinished += Main_OnTransferFinished;
             //
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
             StartUpdatingUI();
+        }
+        private  void Main_OnTransferFinished()
+        {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                Navigation.PopModalAsync();
+                Navigation.PushModalAsync(new TransferDonePage());
+            });
+           // await Navigation.PopModalAsync();
+            //await Navigation.PushModalAsync(new TransferDonePage());
         }
         private void StartUpdatingUI()
         {

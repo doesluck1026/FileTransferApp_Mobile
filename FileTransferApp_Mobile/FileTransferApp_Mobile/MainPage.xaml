@@ -30,8 +30,6 @@
             </StackLayout>
             <Button x:Name="btn_SelectFile" Text="Select FILE" Clicked="btn_SelectFile_Clicked" TextColor="Blue" HorizontalOptions="Center" BorderWidth="2" 
                      FontSize="50" Margin="30"/>
-            <Button x:Name="btn_Scan" Text="Scan" Clicked="btn_Scan_Clicked" TextColor="Blue" HorizontalOptions="Center" BorderWidth="2" 
-                     FontSize="50" Margin="30"/>
         </StackLayout>
     </Grid>
 </ContentPage>
