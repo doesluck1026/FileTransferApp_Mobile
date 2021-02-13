@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"FileTransferApp_Mobile.Android.dll",
 		"FileTransferApp_Mobile.dll",
 		"FormsViewGroup.dll",
+		"Rssdp.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.AppCompat.AppCompatResources.dll",

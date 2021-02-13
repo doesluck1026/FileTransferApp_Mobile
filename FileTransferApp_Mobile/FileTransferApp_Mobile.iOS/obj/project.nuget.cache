@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "hkw/vKDWDUNPwNfU6PpG6I4qMuuox3OvpfjcckiDI3C9RyEi+cxT/iizUV82UyTN0jVZGKmFUI9MkRVmiuJwvA==",
+  "dgSpecHash": "qia9s9onqT4W+g4H6W3rYyNqdoPKUIfmrodecaX9aBegTkpA01O559C90vngHwc8UeaUXev/mOnujh/RRjFSBQ==",
   "success": true,
-  "projectFilePath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\FileTransferApp_Mobile.iOS.csproj",
+  "projectFilePath": "E:\\Github\\FileTransferApp_Mobile-New-Design\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\FileTransferApp_Mobile.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\aslan\\.nuget\\packages\\rssdp\\4.0.4\\rssdp.4.0.4.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
   ],
@@ -12,7 +13,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.0-rc1 to 1.5.3.2. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> FileTransferApp_Mobile -> Xamarin.Essentials (>= 1.6.0-rc1) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Essentials (>= 1.5.3.2)",
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1-preview1 to 1.5.3.2. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> FileTransferApp_Mobile -> Xamarin.Essentials (>= 1.6.1-preview1) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Essentials (>= 1.5.3.2)",
       "libraryId": "Xamarin.Essentials",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",
@@ -25,7 +26,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.1791-pre5 to 4.8.0.1451. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> FileTransferApp_Mobile -> Xamarin.Forms (>= 5.0.0.1791-pre5) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Forms (>= 4.8.0.1451)",
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.1874 to 4.8.0.1451. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> FileTransferApp_Mobile -> Xamarin.Forms (>= 5.0.0.1874) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Forms (>= 4.8.0.1451)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",

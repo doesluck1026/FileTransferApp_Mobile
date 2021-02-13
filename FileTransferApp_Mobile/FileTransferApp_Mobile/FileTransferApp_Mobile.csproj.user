@@ -3,4 +3,5 @@
   <PropertyGroup>
     <HasHotReloadOverlayBeenDismissed>true</HasHotReloadOverlayBeenDismissed>
   </PropertyGroup>
+  <ItemGroup />
 </Project>

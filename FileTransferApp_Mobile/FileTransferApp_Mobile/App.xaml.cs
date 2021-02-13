@@ -10,7 +10,10 @@ namespace FileTransferApp_Mobile
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            // First display Spalsh screen
+            MainPage = new NavigationPage(new SplashScreen());
+
         }
 
         protected override void OnStart()

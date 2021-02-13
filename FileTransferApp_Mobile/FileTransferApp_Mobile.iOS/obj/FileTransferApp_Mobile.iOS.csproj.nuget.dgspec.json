@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\FileTransferApp_Mobile.iOS.csproj": {}
+    "E:\\Github\\FileTransferApp_Mobile-New-Design\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\FileTransferApp_Mobile.iOS.csproj": {}
   },
   "projects": {
-    "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\FileTransferApp_Mobile.iOS.csproj": {
+    "E:\\Github\\FileTransferApp_Mobile-New-Design\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\FileTransferApp_Mobile.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\FileTransferApp_Mobile.iOS.csproj",
+        "projectUniqueName": "E:\\Github\\FileTransferApp_Mobile-New-Design\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\FileTransferApp_Mobile.iOS.csproj",
         "projectName": "FileTransferApp_Mobile.iOS",
-        "projectPath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\FileTransferApp_Mobile.iOS.csproj",
-        "packagesPath": "C:\\Users\\CDS_Software02\\.nuget\\packages\\",
-        "outputPath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\obj\\",
+        "projectPath": "E:\\Github\\FileTransferApp_Mobile-New-Design\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\FileTransferApp_Mobile.iOS.csproj",
+        "packagesPath": "C:\\Users\\aslan\\.nuget\\packages\\",
+        "outputPath": "E:\\Github\\FileTransferApp_Mobile-New-Design\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\CDS_Software02\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aslan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj": {
-                "projectPath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj"
+              "E:\\Github\\FileTransferApp_Mobile-New-Design\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj": {
+                "projectPath": "E:\\Github\\FileTransferApp_Mobile-New-Design\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj"
               }
             }
           }
@@ -65,20 +65,20 @@
         }
       }
     },
-    "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj": {
+    "E:\\Github\\FileTransferApp_Mobile-New-Design\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj",
+        "projectUniqueName": "E:\\Github\\FileTransferApp_Mobile-New-Design\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj",
         "projectName": "FileTransferApp_Mobile",
-        "projectPath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj",
-        "packagesPath": "C:\\Users\\CDS_Software02\\.nuget\\packages\\",
-        "outputPath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\obj\\",
+        "projectPath": "E:\\Github\\FileTransferApp_Mobile-New-Design\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj",
+        "packagesPath": "C:\\Users\\aslan\\.nuget\\packages\\",
+        "outputPath": "E:\\Github\\FileTransferApp_Mobile-New-Design\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\CDS_Software02\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aslan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -105,13 +105,17 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "dependencies": {
+            "Rssdp": {
+              "target": "Package",
+              "version": "[4.0.4, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.6.0-rc1, )"
+              "version": "[1.6.1-preview1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.1791-pre5, )"
+              "version": "[5.0.0.1874, )"
             }
           },
           "imports": [
