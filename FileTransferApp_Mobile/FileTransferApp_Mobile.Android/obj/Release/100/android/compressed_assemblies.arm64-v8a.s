@@ -17,7 +17,7 @@
 
 	/* 1: FileTransferApp_Mobile.dll */
 	/* uncompressed_file_size */
-	.word	65536
+	.word	66560
 	/* loaded */
 	.byte	0
 	/* data */
@@ -494,7 +494,7 @@
 
 	/* 54: Xamarin.Essentials.dll */
 	/* uncompressed_file_size */
-	.word	45056
+	.word	45568
 	/* loaded */
 	.byte	0
 	/* data */

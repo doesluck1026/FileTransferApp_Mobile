@@ -37,7 +37,7 @@
 
 	/* 1: FileTransferApp_Mobile.dll */
 	/* uncompressed_file_size */
-	.long	65536
+	.long	66560
 	/* loaded */
 	.byte	0
 	/* data */
@@ -514,7 +514,7 @@
 
 	/* 54: Xamarin.Essentials.dll */
 	/* uncompressed_file_size */
-	.long	45056
+	.long	45568
 	/* loaded */
 	.byte	0
 	/* data */

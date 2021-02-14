@@ -31,32 +31,32 @@
 	.section	.rodata.map_aname.5,"aMS",@progbits,1
 	.type	.L.map_aname.5, @object
 .L.map_aname.5:
-	.asciz	"FormsViewGroup"
-	.size	.L.map_aname.5, 15
+	.asciz	"Xamarin.Essentials"
+	.size	.L.map_aname.5, 19
 
 	.section	.rodata.map_aname.6,"aMS",@progbits,1
 	.type	.L.map_aname.6, @object
 .L.map_aname.6:
-	.asciz	"Xamarin.AndroidX.Activity"
-	.size	.L.map_aname.6, 26
+	.asciz	"FormsViewGroup"
+	.size	.L.map_aname.6, 15
 
 	.section	.rodata.map_aname.7,"aMS",@progbits,1
 	.type	.L.map_aname.7, @object
 .L.map_aname.7:
-	.asciz	"Xamarin.Forms.Platform.Android"
-	.size	.L.map_aname.7, 31
+	.asciz	"Xamarin.AndroidX.Activity"
+	.size	.L.map_aname.7, 26
 
 	.section	.rodata.map_aname.8,"aMS",@progbits,1
 	.type	.L.map_aname.8, @object
 .L.map_aname.8:
-	.asciz	"Xamarin.AndroidX.Fragment"
-	.size	.L.map_aname.8, 26
+	.asciz	"Xamarin.Forms.Platform.Android"
+	.size	.L.map_aname.8, 31
 
 	.section	.rodata.map_aname.9,"aMS",@progbits,1
 	.type	.L.map_aname.9, @object
 .L.map_aname.9:
-	.asciz	"FileTransferApp_Mobile.Android"
-	.size	.L.map_aname.9, 31
+	.asciz	"Xamarin.AndroidX.Fragment"
+	.size	.L.map_aname.9, 26
 
 	.section	.rodata.map_aname.10,"aMS",@progbits,1
 	.type	.L.map_aname.10, @object
@@ -103,8 +103,8 @@
 	.section	.rodata.map_aname.17,"aMS",@progbits,1
 	.type	.L.map_aname.17, @object
 .L.map_aname.17:
-	.asciz	"Xamarin.Essentials"
-	.size	.L.map_aname.17, 19
+	.asciz	"FileTransferApp_Mobile.Android"
+	.size	.L.map_aname.17, 31
 
 	.section	.rodata.map_aname.18,"aMS",@progbits,1
 	.type	.L.map_aname.18, @object
