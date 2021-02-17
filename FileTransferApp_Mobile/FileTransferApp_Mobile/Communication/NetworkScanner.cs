@@ -14,7 +14,6 @@ class NetworkScanner
     public static event ScanCompleteDelegate OnScanCompleted;
         
     private static string DeviceIP;             /// ip of this device
-    public static string DeviceName;            /// name of this device
     private static readonly int PublishPort = 42019;
     private static Server publisherServer;
     private static Client client;
@@ -90,9 +89,7 @@ class NetworkScanner
     }
     public static void PublishDevice()
     {
-        if(Application.Current.Properties.ContainsKey("DeviceName") ==false)
-            Application.Current.Properties.Add("DeviceName", DeviceInfo.Name);
-        DeviceName =(string)Application.Current.Properties["DeviceName"];
+        
         publisherServer = new Server(port: PublishPort);
         publisherServer.SetupServer();
         publisherServer.OnClientConnected += PublisherServer_OnClientConnected;
@@ -102,7 +99,7 @@ class NetworkScanner
     private static void PublisherServer_OnClientConnected(string clientIP)
     {
         Debug.WriteLine("Client IP: " + clientIP);
-        publisherServer.SendDataToClient(Encoding.ASCII.GetBytes("IP:" + DeviceIP + "&DeviceName:" + DeviceName));
+        publisherServer.SendDataToClient(Encoding.ASCII.GetBytes("IP:" + DeviceIP + "&DeviceName:" + Parameters.DeviceName));
 
         publisherServer.GetData();
 

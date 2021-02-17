@@ -36,7 +36,8 @@ namespace FileTransferApp_Mobile
 
         protected override void OnAppearing()
         {
-            base.OnAppearing();            
+            base.OnAppearing();
+            Parameters.Init();
             NetworkScanner.GetDeviceAddress(out DeviceIP, out DeviceHostName);
             NetworkScanner.PublishDevice();
             Main.FileSaveURL = GetSaveFilePath();
@@ -44,7 +45,7 @@ namespace FileTransferApp_Mobile
             Dispatcher.BeginInvokeOnMainThread(() =>
             {
                 lbl_IP.Text = DeviceIP;
-                lbl_HostName.Text = NetworkScanner.DeviceName;
+                lbl_HostName.Text = Parameters.DeviceName;
             });
             if(!isScanned)
             {

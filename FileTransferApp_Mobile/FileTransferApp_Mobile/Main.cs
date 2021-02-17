@@ -311,7 +311,7 @@ public enum Functions
     private static void SendFirstFrame()
     {
         long totalTransferSize = GetTransferSize();
-        int lenName = NetworkScanner.DeviceName.Length;
+        int lenName = Parameters.DeviceName.Length;
         byte[] data = new byte[15+ lenName];
         data[0] =(byte)Functions.QueryTransfer;
         byte[] numFilesBytes =BitConverter.GetBytes(FilePaths.Length);
@@ -319,7 +319,7 @@ public enum Functions
         byte[] sizeBytes = BitConverter.GetBytes(totalTransferSize);
         sizeBytes.CopyTo(data, 5);
         data[13] = (byte)lenName;
-        Encoding.ASCII.GetBytes(NetworkScanner.DeviceName).CopyTo(data, 14);
+        Encoding.ASCII.GetBytes(Parameters.DeviceName).CopyTo(data, 14);
         client.SendDataServer(data);
         Debug.WriteLine("Sent First Frame:" + FilePaths.Length);
     }
