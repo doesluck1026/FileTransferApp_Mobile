@@ -44,7 +44,7 @@ namespace FileTransferApp_Mobile
             Dispatcher.BeginInvokeOnMainThread(() =>
             {
                 lbl_IP.Text = DeviceIP;
-                lbl_HostName.Text = DeviceInfo.Name;
+                lbl_HostName.Text = NetworkScanner.DeviceName;
             });
             if(!isScanned)
             {

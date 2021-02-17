@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using Xamarin.Essentials;
+using Xamarin.Forms;
 
 class NetworkScanner
 {
@@ -89,7 +90,9 @@ class NetworkScanner
     }
     public static void PublishDevice()
     {
-        DeviceName = DeviceInfo.Name;
+        if(Application.Current.Properties.ContainsKey("DeviceName") ==false)
+            Application.Current.Properties.Add("DeviceName", DeviceInfo.Name);
+        DeviceName =(string)Application.Current.Properties["DeviceName"];
         publisherServer = new Server(port: PublishPort);
         publisherServer.SetupServer();
         publisherServer.OnClientConnected += PublisherServer_OnClientConnected;

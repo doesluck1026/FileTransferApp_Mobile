@@ -15,7 +15,7 @@ namespace FileTransferApp_Mobile
     public partial class TransferPage : ContentPage
     {
         private Timer UpdateTimer;
-        private int updatePeriod = 100;          ///ms
+        private int updatePeriod = 50;          ///ms
         public TransferPage()
         {
             InitializeComponent();
@@ -25,7 +25,15 @@ namespace FileTransferApp_Mobile
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            StartUpdatingUI();
+            Task.Run(() =>
+            {
+                while (!Main.IsTransfering)//&& TimeSpan.FromSeconds(5).TotalSeconds<5) ;
+                {
+                    Thread.Sleep(1);
+                }
+                StartUpdatingUI();
+            });
+            
         }
         private  void Main_OnTransferFinished()
         {
@@ -34,8 +42,6 @@ namespace FileTransferApp_Mobile
                 Navigation.PopModalAsync();
                 Navigation.PushModalAsync(new TransferDonePage());
             });
-           // await Navigation.PopModalAsync();
-            //await Navigation.PushModalAsync(new TransferDonePage());
         }
         private void StartUpdatingUI()
         {
