@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FileTransferApp_Mobile.SendingPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#353536">
+            <Grid.RowDefinitions>
+                <RowDefinition Height = "1*" />
+                <RowDefinition Height = "2*" />
+                <RowDefinition Height = "5*" />
+                <RowDefinition Height = "2*" />
+                <RowDefinition Height = "3*" />
+            </Grid.RowDefinitions>
+            <Frame BackgroundColor="Transparent" Padding="1" CornerRadius="2" BorderColor="LightBlue">
+                <Label Text="Wifi File Transfer" HorizontalTextAlignment="Center" TextColor="White" FontSize="40" />
+            </Frame>
+            <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Center"  >
+                <Frame BackgroundColor="Transparent" Margin="4,4" Padding="1" CornerRadius="2" BorderColor="LightBlue">
+                    <Label x:Name="lbl_info" Text="Select target device from list" HorizontalTextAlignment="Center" TextColor="White" FontSize="Title"/>
+                </Frame>
+            </StackLayout>
+            <ListView x:Name="list_Devices"  VerticalOptions="Center"  IsVisible="true" BackgroundColor="Gray" SeparatorColor="DarkGray"
+                    Grid.Row="2" ItemSelected="list_Devices_ItemSelected" />
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Receiver IP:" Grid.Column="1" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Entry x:Name="txt_ClientIP" Text="192.168.1.2" Grid.Column="2" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            </Grid>
+            <Grid Grid.Row="4" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btn_SendFile" Text="Send FILE" Clicked="btn_SendFile_Clicked" TextColor="Blue" HorizontalOptions="Center" BorderWidth="2" 
+                     FontSize="25" Margin="30" Grid.Column="0"/>
+                <Button x:Name="btn_ScanDevices" Text="Scan Devices" Clicked="btn_ScanDevices_Clicked" TextColor="Blue" HorizontalOptions="Center" BorderWidth="2" 
+                     FontSize="25" Margin="30" Grid.Column="1"/>
+            </Grid>
+            
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

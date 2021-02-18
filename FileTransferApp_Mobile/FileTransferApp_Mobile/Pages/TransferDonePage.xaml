@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FileTransferApp_Mobile.TransferDonePage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="#353536">
+            <Grid.RowDefinitions >
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Image Source="checked.png" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100"/>
+            <Label Grid.Row="2" Text="File Transfer is Succesful!" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="Title"/>
+            <ListView x:Name="list_Files" ItemTapped="list_Files_ItemTapped" Grid.Row="3" VerticalOptions="CenterAndExpand"
+                      HorizontalOptions="CenterAndExpand" BackgroundColor="White" Margin="50"/>
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btn_MainMenu" Grid.Column="1" Text="Main Menu" Clicked="btn_MainMenu_Clicked" 
+                    FontSize="Large" TextColor="Black"/>
+                <Button x:Name="btn_OpenFolder" Grid.Column="3" Text="Open FILE" Clicked="btn_OpenFolder_Clicked" 
+                    FontSize="Large" TextColor="Black"/>
+            </Grid>
+            
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "p9wri2T2b6RALOOFi5zA3+BXVBbQHgMfzvnaxSh1uRNcn8T3CpHgwHoYiNYg6PakdIr9DRGX25/WJZRYkvaJKw==",
+  "dgSpecHash": "IktwH2h86ag+i5wKTCj303xVIrxKIWnASk07rKnEWmMC36DFQG3AsseHOB3by7Fyaann/ly4usroLWJdxTWHXw==",
   "success": true,
   "projectFilePath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.Android\\FileTransferApp_Mobile.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\rssdp\\4.0.4\\rssdp.4.0.4.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.androidx.activity\\1.1.0.3\\xamarin.androidx.activity.1.1.0.3.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.androidx.annotation\\1.1.0.6\\xamarin.androidx.annotation.1.1.0.6.nupkg.sha512",
@@ -56,8 +57,18 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.0-rc1 to 1.6.0-pre5. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.Android -> FileTransferApp_Mobile -> Xamarin.Essentials (>= 1.6.0-rc1) \r\n FileTransferApp_Mobile.Android -> Xamarin.Essentials (>= 1.6.0-pre5)",
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1-preview1 to 1.6.0-pre5. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.Android -> FileTransferApp_Mobile -> Xamarin.Essentials (>= 1.6.1-preview1) \r\n FileTransferApp_Mobile.Android -> Xamarin.Essentials (>= 1.6.0-pre5)",
       "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "MonoAndroid,Version=v10.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.1874 to 5.0.0.1791-pre5. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.Android -> FileTransferApp_Mobile -> Xamarin.Forms (>= 5.0.0.1874) \r\n FileTransferApp_Mobile.Android -> Xamarin.Forms (>= 5.0.0.1791-pre5)",
+      "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "MonoAndroid,Version=v10.0"
       ]

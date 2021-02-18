@@ -105,13 +105,17 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "dependencies": {
+            "Rssdp": {
+              "target": "Package",
+              "version": "[4.0.4, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.6.0-rc1, )"
+              "version": "[1.6.1-preview1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.1791-pre5, )"
+              "version": "[5.0.0.1874, )"
             }
           },
           "imports": [
@@ -129,7 +133,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
