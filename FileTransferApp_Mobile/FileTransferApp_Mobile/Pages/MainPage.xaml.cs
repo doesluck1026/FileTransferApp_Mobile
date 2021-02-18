@@ -28,7 +28,6 @@ namespace FileTransferApp_Mobile
             Instance = this;
             DeviceDisplay.KeepScreenOn = true;
             Main.OnClientRequested += Main_OnClientRequested;
-            NetworkScanner.OnScanCompleted += NetworkScanner_OnScanCompleted;
             Main.StartServer();
         }
 
@@ -56,15 +55,10 @@ namespace FileTransferApp_Mobile
         private void Main_OnClientRequested(string totalTransferSize, string deviceName)
         {
             /// Show file transfer request and ask for permission here
-
             Device.BeginInvokeOnMainThread(() =>
             {
                 Navigation.PushModalAsync(new TransferPermissionPage(totalTransferSize, deviceName));
             });
-        }
-        private void NetworkScanner_OnScanCompleted()
-        {
-
         }
         /// <summary>
         /// The address of the file to be processed is selected

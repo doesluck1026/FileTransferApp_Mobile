@@ -26,6 +26,7 @@ com.google.android.material.bottomnavigation.BottomNavigationView;D:\FileTransfe
 com.google.android.material.tabs.TabLayout;D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\44\jl\res\layout\fallbacktabbardonotuse.xml
 com.google.android.material.tabs.TabLayout;D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\44\jl\res\layout\rootlayout.xml
 com.google.android.material.tabs.TabLayout;D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\44\jl\res\layout\tabbar.xml
+crc64720bb2db43a66fe9.FormsViewPager;D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\44\jl\res\layout\rootlayout.xml
 declare-styleable;D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\44\jl\res\values\attrs.xml
 external-cache-path;D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\43\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\43\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
