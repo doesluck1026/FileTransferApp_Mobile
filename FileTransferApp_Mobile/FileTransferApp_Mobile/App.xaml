@@ -4,5 +4,10 @@
              x:Class="FileTransferApp_Mobile.App">
     <Application.Resources>
 
+        <!-- Set navigation Bar Background color -->
+        <Style TargetType="NavigationPage" >
+            <Setter Property="BarBackgroundColor" Value="#1E88FA"></Setter>
+        </Style>
+
     </Application.Resources>
 </Application>

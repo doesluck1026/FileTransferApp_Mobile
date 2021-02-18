@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FileTransferApp_Mobile.Pages.ActionPage"
+             NavigationPage.HasBackButton="False"
+             >
+    <NavigationPage.TitleView >
+        <StackLayout  Orientation="Horizontal" BackgroundColor="#1E88FA"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <ImageButton  Source="info.png" HeightRequest="25" WidthRequest="25" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="Start" Margin="0, 0, 50, 0" />
+            <Image HeightRequest="30" WidthRequest="30" Source="BC_logo_1.png" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Label Text="Wi-Fi File Transfer" BackgroundColor="#1E88FA" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="20" Padding="0" Margin="0,0,0,0" />
+            <ImageButton x:Name="btn_Settings" Clicked="btn_Settings_Clicked" Source="settings.png" HeightRequest="25" WidthRequest="25" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="End" Margin="50, 0, 0, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout  BackgroundColor="#2f3452">
+
+            <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10" >
+                <Label Text="Select the action you want to do!" 
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center"
+                   HorizontalOptions="End"
+                   FontSize="20" />
+            </Frame>
+
+            <StackLayout Margin="0,75,0,50">
+                <ImageButton x:Name="btn_Send" Clicked="btn_Send_Clicked" Padding="20,0,20,0"  Source="inbox1.png" BackgroundColor="#87feaf" CornerRadius="50" WidthRequest="100" HeightRequest="100" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"  />
+                <Label Text="Send" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
+            </StackLayout>
+
+            <StackLayout Margin="0,25,0,25">
+                <ImageButton x:Name="btn_Receive" Clicked="btn_Receive_Clicked"  Padding="20,0,20,0"  Source="inbox2.png" BackgroundColor="#3d63eb" CornerRadius="50" WidthRequest="100" HeightRequest="100" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"  />
+                <Label Text="Receive" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

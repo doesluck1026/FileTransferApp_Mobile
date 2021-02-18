@@ -76,7 +76,7 @@ namespace FileTransferApp_Mobile
                     filepaths[i] = results[i].FullPath;
                 }
                 Main.SetFilePaths(filepaths);
-                await Navigation.PushModalAsync(new SendingPage());
+                await Navigation.PushAsync(new SendingPage());
             }
         }
 

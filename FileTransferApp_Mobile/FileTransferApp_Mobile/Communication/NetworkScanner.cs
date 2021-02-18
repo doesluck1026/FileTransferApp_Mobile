@@ -37,12 +37,14 @@ class NetworkScanner
         IPHolder holder = new IPHolder(2, 256, ipHeader);
         Thread t = new Thread(new ParameterizedThreadStart(ParallelScan));
         t.Start(holder);
+
     }
 
     private static void ParallelScan(object sender)
     {
         Stopwatch stp = Stopwatch.StartNew();
         IPHolder holder = (IPHolder)sender;
+        Debug.WriteLine("Buradaydı");
         for (int i = holder.StartIP; i < holder.StopIP; i++)
         {
             try
@@ -50,14 +52,20 @@ class NetworkScanner
                 //Debug.WriteLine("Pinging: " + holder.IpHeader + i.ToString());
                 GetDeviceData(holder.IpHeader + i.ToString());
             }
-            catch
+            catch(Exception e)
             {
-
+                Debug.WriteLine(e.ToString());
             }
         }
+
         Debug.WriteLine("scanning time: " + stp.Elapsed.TotalSeconds + " s");
-        OnScanCompleted();
+
+        if (OnScanCompleted != null)
+            OnScanCompleted.Invoke();
     }
+
+
+
     private static void GetDeviceData(string IP)
     {
         //Stopwatch stp = Stopwatch.StartNew();

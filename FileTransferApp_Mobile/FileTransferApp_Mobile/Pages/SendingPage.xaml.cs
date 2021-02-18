@@ -52,7 +52,7 @@ namespace FileTransferApp_Mobile
             if (didDeviceAccept)
             {
                 Main.BeginSendingFiles();
-                await Navigation.PushModalAsync(new TransferPage());
+                await Navigation.PushAsync(new TransferPage());
             }
 
         }

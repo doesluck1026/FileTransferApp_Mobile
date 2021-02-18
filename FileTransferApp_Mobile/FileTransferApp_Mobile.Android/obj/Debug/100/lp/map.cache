@@ -1,3 +1,5 @@
+Acr.UserDialogs
+AndHUD
 FormsViewGroup
 Rssdp
 Xamarin.AndroidX.Activity
@@ -42,6 +44,7 @@ Xamarin.AndroidX.VectorDrawable
 Xamarin.AndroidX.VersionedParcelable
 Xamarin.AndroidX.ViewPager
 Xamarin.Essentials
+Xamarin.Forms.PancakeView
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Google.Android.Material
