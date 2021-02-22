@@ -46,6 +46,14 @@
               "target": "Package",
               "version": "[1.6.0-pre5, )"
             },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.0-pre5, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.1791-pre5, )"
+            },
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.1791-pre5, )"
