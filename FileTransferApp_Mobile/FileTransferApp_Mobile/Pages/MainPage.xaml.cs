@@ -17,15 +17,12 @@ namespace FileTransferApp_Mobile
 {
     public partial class MainPage : ContentPage
     {
-        public List<string> AvailableDeviceList=new List<string>();
-        public static MainPage Instance;
         private string DeviceIP;
         private string DeviceHostName;
         private bool isScanned = false;
         public MainPage()
         {
             InitializeComponent();
-            Instance = this;
             DeviceDisplay.KeepScreenOn = true;
             Main.OnClientRequested += Main_OnClientRequested;
             Main.StartServer();

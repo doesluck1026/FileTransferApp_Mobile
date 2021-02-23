@@ -32,8 +32,7 @@ namespace FileTransferApp_Mobile
                     Thread.Sleep(1);
                 }
                 StartUpdatingUI();
-            });
-            
+            });            
         }
         private  void Main_OnTransferFinished()
         {

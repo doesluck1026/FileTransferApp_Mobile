@@ -54,7 +54,6 @@ namespace FileTransferApp_Mobile
                 Main.BeginSendingFiles();
                 await Navigation.PushModalAsync(new TransferPage());
             }
-
         }
 
         private void list_Devices_ItemSelected(object sender, SelectedItemChangedEventArgs e)
