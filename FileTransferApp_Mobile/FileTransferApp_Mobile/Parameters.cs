@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -31,7 +32,7 @@ class Parameters
             Application.Current.Properties.Add("TransferSize", "1 Byte");
         if (Application.Current.Properties.ContainsKey("NumFiles") == false)
             Application.Current.Properties.Add("NumFiles", 0);
-
+        didInit = true;
         DeviceName = (string)Application.Current.Properties["DeviceName"];
         TotalTransferedDataSize = (string)Application.Current.Properties["TransferSize"];
         NumberOfFilesTransfered = (int)Application.Current.Properties["NumFiles"];
@@ -43,6 +44,7 @@ class Parameters
     {
         if (!didInit)
             return;
+        Debug.WriteLine("Saving Parameters..");
         Application.Current.Properties["DeviceName"] = DeviceName;
         Application.Current.Properties["TransferSize"] = TotalTransferedDataSize;
         Application.Current.Properties["NumFiles"] = NumberOfFilesTransfered;

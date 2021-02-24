@@ -15,11 +15,21 @@ namespace FileTransferApp_Mobile.Pages
         public ReceivingPage()
         {
             InitializeComponent();
+            Main.OnClientRequested += Main_OnClientRequested;
+        }
+
+        private void Main_OnClientRequested(string totalTransferSize, string senderDevice)
+        {
+            /// Show file transfer request and ask for permission here
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                Navigation.PushModalAsync(new TransferPermissionPage(totalTransferSize, senderDevice));
+            });
         }
 
         private async void ContentPage_Appearing(object sender, EventArgs e)
         {
-            using (var progress = Acr.UserDialogs.UserDialogs.Instance.Loading("Waiting..."))
+            using (var progress = Acr.UserDialogs.UserDialogs.Instance.Loading("Waiting For Connection..."))
             {
                 for (var i = 0; i < 100; i++)
                 {

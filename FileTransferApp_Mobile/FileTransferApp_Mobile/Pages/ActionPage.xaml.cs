@@ -15,6 +15,20 @@ namespace FileTransferApp_Mobile.Pages
         public ActionPage()
         {
             InitializeComponent();
+            Main.OnClientRequested += Main_OnClientRequested;
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Parameters.Init();
+        }
+        private void Main_OnClientRequested(string totalTransferSize, string senderDevice)
+        {
+            /// Show file transfer request and ask for permission here
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                Navigation.PushModalAsync(new TransferPermissionPage(totalTransferSize, senderDevice));
+            });
         }
 
         private async void btn_Send_Clicked(object sender, EventArgs e)

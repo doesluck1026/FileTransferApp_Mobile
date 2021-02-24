@@ -37,7 +37,6 @@
                       SeparatorColor="DarkGray"
                       ItemSelected="list_Devices_ItemSelected" 
                       RefreshControlColor="LightGreen"
-                                                    
                               />
                 </StackLayout>
 
@@ -46,8 +45,8 @@
             <StackLayout Orientation="Horizontal">
                 <Frame  BackgroundColor="#501E88FA" CornerRadius="20" HorizontalOptions="FillAndExpand" Margin="10,0">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
-                        <Label Text="Receiver IP:" HorizontalOptions="CenterAndExpand" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-                        <Entry x:Name="txt_ClientIP" Text="192.168.1.2" HorizontalOptions="CenterAndExpand" Grid.Column="2" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                        <Label Text="Target IP:" HorizontalOptions="CenterAndExpand" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                        <Entry x:Name="txt_ClientIP" Text="192.168.1.25" HorizontalOptions="CenterAndExpand" Grid.Column="2" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
                     </StackLayout>
 
                 </Frame>

@@ -16,5 +16,26 @@ namespace FileTransferApp_Mobile.Pages
         {
             InitializeComponent();
         }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Device.InvokeOnMainThreadAsync(() =>
+            {
+                txt_DeviceName.Text = Parameters.DeviceName;
+            });
+        }
+        private async void btn_SelectFile_Clicked(object sender, EventArgs e)
+        {
+            Parameters.DeviceName = txt_DeviceName.Text;
+            Parameters.Save();
+            using (var progress = Acr.UserDialogs.UserDialogs.Instance.Loading("Saving Parameters"))
+            {
+                for (var i = 0; i < 100; i++)
+                {
+                    //progress.PercentComplete = i;
+                    await Task.Delay(20);
+                }
+            }
+        }
     }
 }

@@ -52,3 +52,7 @@ E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\o
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\FileTransferApp_Mobile.dll
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\ref\FileTransferApp_Mobile.dll
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\FileTransferApp_Mobile.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\Pages\ActionPage.xaml.g.cs
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\Pages\ReceivingPage.xaml.g.cs
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\Pages\SettingsPage.xaml.g.cs
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\Pages\SplashPage.xaml.g.cs

@@ -25,7 +25,7 @@
                    HorizontalOptions="End"
                    FontSize="20" />
 
-                    <Entry Text="OldDeviceName" />
+                    <Entry x:Name="txt_DeviceName" Text="OldDeviceName" />
                 </StackLayout>
             </Frame>
 
@@ -56,9 +56,6 @@
                     <Entry Text="Setting 3" />
                 </StackLayout>
             </Frame>
-
-
-
             <Button x:Name="btn_SelectFile" 
                 CornerRadius="35" 
                 HeightRequest="75" 
@@ -70,6 +67,7 @@
                 FontAttributes="Bold" 
                 TextColor="#0A2A4D" 
                 VerticalOptions="EndAndExpand"
+                Clicked="btn_SelectFile_Clicked"
                 />
 
         </StackLayout>

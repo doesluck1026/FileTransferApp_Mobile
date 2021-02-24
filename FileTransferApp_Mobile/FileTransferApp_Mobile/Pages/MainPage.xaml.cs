@@ -26,13 +26,10 @@ namespace FileTransferApp_Mobile
         {
             InitializeComponent();
             Instance = this;
-            DeviceDisplay.KeepScreenOn = true;
+            DeviceDisplay.KeepScreenOn = false;
             Main.OnClientRequested += Main_OnClientRequested;
             Main.StartServer();
         }
-
-       
-
         protected override void OnAppearing()
         {
             base.OnAppearing();

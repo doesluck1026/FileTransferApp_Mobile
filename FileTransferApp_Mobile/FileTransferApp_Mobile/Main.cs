@@ -16,7 +16,7 @@ public class Main
     #region Parameters
 
     private static readonly byte StartByte = (byte)'J';
-    private static readonly int BufferSize = 64 * 1024-1;
+    private static readonly int BufferSize = 64 * 1024 - 1;
     private static readonly int Port = 42009;
 
     #endregion
@@ -27,11 +27,14 @@ public class Main
     /// </summary>
     /// <param name="files">files to be sent by client</param>
     /// <returns></returns>
-    public delegate void ClientRequestDelegate(string totalTransferSize,string senderDevice);
+    public delegate void ClientRequestDelegate(string totalTransferSize, string senderDevice);
     public static event ClientRequestDelegate OnClientRequested;
 
     public delegate void TransferFinishedDelegate();
     public static event TransferFinishedDelegate OnTransferFinished;
+
+    public delegate void TransferRespondedDelegate(bool isAccepted);
+    public static event TransferRespondedDelegate OnTransferResponded;
 
     public static string FileSaveURL = "/storage/emulated/0/Download/";
     public static string ServerIP;
@@ -75,11 +78,11 @@ public class Main
                 _isTransferEnabled = value;
         }
     }
-#endregion
+    #endregion
 
-#region Private Variables
+    #region Private Variables
 
-private static Client client;
+    private static Client client;
     private static Server server;
     private static FileOperations File;
     public static string[] FilePaths;
@@ -99,10 +102,10 @@ private static Client client;
     private static object Lck_IsTransferEnabled = new object();
     private static object Lck_TransferMetrics = new object();
     private static object Lck_IsTransfering = new object();
-#endregion
+    #endregion
 
-#region Enums and structures definitions
-public enum Functions
+    #region Enums and structures definitions
+    public enum Functions
     {
         QueryTransfer,              /// || Number of files || Size of All Data (8 bytes) || length of deviceName(1 byte) || deviceNameBytes || length of folder name (zero : if no folder given) || name of folder ==> AcceptFiles or RejectFiles as response
         StartofFileTransfer,        /// || length of file name || name || size of file (8 bytes) ==> true when receiver is ready as response
@@ -113,7 +116,7 @@ public enum Functions
         RejectFiles,                /// Response to QueryTransfer function
         Ready                       /// Ready to receive file (response from receiver to StartofFileTransfer)
     }
-    public  struct FileStruct
+    public struct FileStruct
     {
         public string FilePath;                     /// Path of File
         public string FileName;                     /// Name of File 
@@ -146,6 +149,8 @@ public enum Functions
     /// </summary>
     public static void StartServer()
     {
+        if (server != null)
+            return;
         server = new Server(port: Port, bufferSize: BufferSize, StartByte: StartByte);
         ServerIP = server.SetupServer();
         server.StartListener();
@@ -170,21 +175,28 @@ public enum Functions
             Debug.WriteLine(i + " : " + FilePaths[i]);
         }
     }
-    public static bool ConnectToTargetDevice(string IP)
+    public static void ConnectToTargetDevice(string IP)
     {
         IsTransferEnabled = true;
-        client = new Client(port: Port,ip: IP, bufferSize: BufferSize, StartByte: StartByte);
-        ServerIP= client.ConnectToServer();
+        client = new Client(port: Port, ip: IP, bufferSize: BufferSize, StartByte: StartByte);
+        ServerIP = client.ConnectToServer();
         Debug.WriteLine("Server IP: " + ServerIP);
         _transferMetrics = new Metrics();
         SendFirstFrame();
-        byte[] clientResponse = client.GetData();
-        if (clientResponse == null)
-            return false;
-        if ((Functions)clientResponse[0] == Functions.AcceptFiles)
-            return true;
-        else
-            return false;
+        Task.Run(() =>
+        {
+            byte[] clientResponse = client.GetData();
+            bool isAccepted = false;
+            if (clientResponse != null)
+            {
+                if ((Functions)clientResponse[0] == Functions.AcceptFiles)
+                    isAccepted = true;
+            }
+            Debug.WriteLine("Rising event");
+            if (OnTransferResponded != null)
+                OnTransferResponded(isAccepted);
+        });
+
     }
     public static void BeginSendingFiles()
     {
@@ -202,7 +214,7 @@ public enum Functions
     #region Private Functions
     private static void SendingCoreFcn()
     {
-        lock(Lck_TransferMetrics)
+        lock (Lck_TransferMetrics)
         {
             _transferMetrics.CountOfFiles = FilePaths.Length;
             _transferMetrics.TotalBytesSent = 0;
@@ -210,7 +222,7 @@ public enum Functions
         }
         Stopwatch watch = Stopwatch.StartNew();
         IsTransfering = true;
-        for (int i=0;i<FilePaths.Length;i++)
+        for (int i = 0; i < FilePaths.Length; i++)
         {
             SendFileInformation(i);
             if (!WaitforReceiverToBeReady())
@@ -228,24 +240,24 @@ public enum Functions
             lock (Lck_TransferMetrics)
             {
                 _transferMetrics.CurrentFile = CurrentFile;
-                _transferMetrics.IndexOfCurrentFile = i+1;
+                _transferMetrics.IndexOfCurrentFile = i + 1;
             }
             long byteCounter = 0;
-            long totalBytesRead=0;
-            int numberOfBytesRead=0;
+            long totalBytesRead = 0;
+            int numberOfBytesRead = 0;
             byte[] buffer;
-            
+
             watch.Restart();
             while (IsTransferEnabled)
             {
-                File.FileReadAtByteIndex(totalBytesRead, out numberOfBytesRead, out buffer, chunkSize: BufferSize*4,functionByte: (byte)Functions.TransferMode);
+                File.FileReadAtByteIndex(totalBytesRead, out numberOfBytesRead, out buffer, chunkSize: BufferSize * 4, functionByte: (byte)Functions.TransferMode);
                 if (numberOfBytesRead == 0)
                 {
                     UpdateMetrics(watch, byteCounter);
                     watch.Restart();
                     break;
                 }
-                 client.SendDataServer(buffer);
+                client.SendDataServer(buffer);
                 totalBytesRead += numberOfBytesRead;
                 byteCounter += numberOfBytesRead;
                 CheckAck(Functions.TransferMode);
@@ -272,10 +284,12 @@ public enum Functions
         }
         IsTransfering = false;
         SendLastFrame();
-        OnTransferFinished();
+        if (OnTransferFinished != null)
+            OnTransferFinished();
         client.DisconnectFromServer();
         client = null;
         server.CloseServer();
+        server = null;
         StartServer();
     }
     private static bool CheckAck(Functions func)
@@ -286,20 +300,20 @@ public enum Functions
         else
             return false;
     }
-    private static void UpdateMetrics(Stopwatch watch,long byteCount)
+    private static void UpdateMetrics(Stopwatch watch, long byteCount)
     {
         double elapsedTime = watch.Elapsed.TotalSeconds;
         Task.Run(() => UpdateTransferMetrics(byteCount, elapsedTime));
     }
-    private static void UpdateTransferMetrics(long byteCounter,double elapsedTime)
+    private static void UpdateTransferMetrics(long byteCounter, double elapsedTime)
     {
         lock (Lck_TransferMetrics)
         {
             _transferMetrics.TotalBytesSent += byteCounter;
-            _transferMetrics.TransferSpeed = (_transferMetrics.TransferSpeed * 0.9 + 0.1 *( byteCounter / (MB * elapsedTime)));
+            _transferMetrics.TransferSpeed = (_transferMetrics.TransferSpeed * 0.9 + 0.1 * (byteCounter / (MB * elapsedTime)));
             _transferMetrics.Progress = ((double)_transferMetrics.TotalBytesSent / (double)_transferMetrics.TotalDataSizeAsBytes) * 100.0;
             _transferMetrics.TotalElapsedTime += elapsedTime;
-            _transferMetrics.EstimatedTime=(_transferMetrics.TotalDataSizeAsBytes- _transferMetrics.TotalBytesSent)/ (_transferMetrics.TotalBytesSent / _transferMetrics.TotalElapsedTime);
+            _transferMetrics.EstimatedTime = (_transferMetrics.TotalDataSizeAsBytes - _transferMetrics.TotalBytesSent) / (_transferMetrics.TotalBytesSent / _transferMetrics.TotalElapsedTime);
             var file = new FileOperations();
             file.CalculateFileSize(_transferMetrics.TotalDataSizeAsBytes);
             _transferMetrics.TotalDataSize = file.FileSize;
@@ -312,9 +326,9 @@ public enum Functions
     {
         long totalTransferSize = GetTransferSize();
         int lenName = Parameters.DeviceName.Length;
-        byte[] data = new byte[15+ lenName];
-        data[0] =(byte)Functions.QueryTransfer;
-        byte[] numFilesBytes =BitConverter.GetBytes(FilePaths.Length);
+        byte[] data = new byte[15 + lenName];
+        data[0] = (byte)Functions.QueryTransfer;
+        byte[] numFilesBytes = BitConverter.GetBytes(FilePaths.Length);
         numFilesBytes.CopyTo(data, 1);
         byte[] sizeBytes = BitConverter.GetBytes(totalTransferSize);
         sizeBytes.CopyTo(data, 5);
@@ -337,8 +351,8 @@ public enum Functions
         data[0] = (byte)Functions.StartofFileTransfer;
         data[1] = (byte)nameLen;
         nameBytes.CopyTo(data, 2);
-        byte[] lengthBytes=BitConverter.GetBytes(FileSizeAsBytes[indexOfFile]);
-        lengthBytes.CopyTo(data,nameLen + 2);
+        byte[] lengthBytes = BitConverter.GetBytes(FileSizeAsBytes[indexOfFile]);
+        lengthBytes.CopyTo(data, nameLen + 2);
         client.SendDataServer(data);
     }
     private static bool WaitforReceiverToBeReady()
@@ -429,7 +443,7 @@ public enum Functions
         IsTransferEnabled = true;
         sendingThread = new Thread(ReceivingCoreFcn);
         sendingThread.Start();
-        
+
     }
     private static void SendAck(Functions func)
     {
@@ -455,12 +469,12 @@ public enum Functions
             FilePaths[i] = FileSaveURL + CurrentFile.FileName;
             SendReadySignal();
             File = new FileOperations();
-            File.Init(FileSaveURL+CurrentFile.FileName, FileOperations.TransferMode.Receive);
+            File.Init(FileSaveURL + CurrentFile.FileName, FileOperations.TransferMode.Receive);
             Debug.WriteLine("saveURL:" + FileSaveURL + " name: " + CurrentFile.FileName);
             lock (Lck_TransferMetrics)
             {
                 _transferMetrics.CurrentFile = CurrentFile;
-                _transferMetrics.IndexOfCurrentFile = i+1;
+                _transferMetrics.IndexOfCurrentFile = i + 1;
             }
             long byteCounter = 0;
             long totalBytesWritten = 0;
@@ -468,7 +482,7 @@ public enum Functions
             watch.Restart();
             while (IsTransferEnabled)
             {
-                byte[] receivedData=server.GetData();
+                byte[] receivedData = server.GetData();
                 if (receivedData == null)
                 {
                     UpdateMetrics(watch, byteCounter);
@@ -502,6 +516,7 @@ public enum Functions
                     UpdateMetrics(watch, byteCounter);
                     watch.Restart();
                     server.CloseServer();
+                    server = null;
                     IsTransfering = false;
                     OnTransferFinished();
                     return;
@@ -516,11 +531,12 @@ public enum Functions
             if (!IsTransferEnabled)
                 break;
         }
-        if(server!=null)
+        if (server != null)
         {
             server.GetData();
             OnTransferFinished();
             server.CloseServer();
+            server = null;
         }
         IsTransfering = false;
         StartServer();
@@ -540,13 +556,13 @@ public enum Functions
             Debug.WriteLine("GetCurrentFileName: received dataa was null");
             return;
         }
-        if(receivedData[0]==(byte)Functions.StartofFileTransfer)
+        if (receivedData[0] == (byte)Functions.StartofFileTransfer)
         {
             byte nameLen = receivedData[1];
             string fileName = Encoding.ASCII.GetString(receivedData, 2, nameLen);
             long fileSizeAsBytes = BitConverter.ToInt64(receivedData, nameLen + 2);
             CurrentFile.FilePath = FileSaveURL;
-            CurrentFile.FileName =fileName;
+            CurrentFile.FileName = fileName;
             CurrentFile.FileSizeAsBytes = fileSizeAsBytes;
             if (File == null)
                 File = new FileOperations();
@@ -555,7 +571,7 @@ public enum Functions
             CurrentFile.SizeUnit = File.FileSizeUnit;
         }
         else
-            Debug.WriteLine("GetCurrentFileName: function byte was wrong: "+receivedData[0]);
+            Debug.WriteLine("GetCurrentFileName: function byte was wrong: " + receivedData[0]);
     }
     #endregion
 

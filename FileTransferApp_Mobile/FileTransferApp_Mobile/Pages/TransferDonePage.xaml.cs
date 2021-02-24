@@ -24,8 +24,7 @@ namespace FileTransferApp_Mobile
         }
         private async void btn_MainMenu_Clicked(object sender, EventArgs e)
         {
-            //await Navigation.PopModalAsync();
-            await Navigation.PushModalAsync(new MainPage());
+            await Navigation.PushModalAsync(new Pages.ActionPage());
         }
 
         private async void btn_OpenFolder_Clicked(object sender, EventArgs e)
