@@ -44,6 +44,10 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.1.0.475, )"
+            },
             "Rssdp": {
               "target": "Package",
               "version": "[4.0.4, )"
@@ -55,6 +59,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.1874, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[2.3.0.763-beta, )"
             }
           },
           "imports": [

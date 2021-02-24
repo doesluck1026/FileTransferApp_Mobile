@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FileTransferApp_Mobile.Pages.ReceivingPage" 
+             Appearing="ContentPage_Appearing"
+             NavigationPage.HasBackButton="False"
+             >
+    <NavigationPage.TitleView >
+        <StackLayout  Orientation="Horizontal" BackgroundColor="#1E88FA"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <ImageButton  Source="info.png" HeightRequest="25" WidthRequest="25" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="Start" Margin="0, 0, 50, 0" />
+            <Image HeightRequest="30" WidthRequest="30" Source="BC_logo_1.png" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Label Text="Wi-Fi File Transfer" BackgroundColor="#1E88FA" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="20" Padding="0" Margin="0,0,0,0" />
+            <ImageButton x:Name="btn_Settings" Source="settings.png" HeightRequest="25" WidthRequest="25" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="End" Margin="50, 0, 0, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#2f3452" >
+
+            <Frame Padding="20" BackgroundColor="#501E88FA" CornerRadius="20" HorizontalOptions="Center" Margin="10" >
+                <Label Text="Please wait to connect sender!" 
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center"
+                   HorizontalOptions="End"
+                   FontSize="20" />
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

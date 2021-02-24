@@ -22,6 +22,21 @@ namespace FileTransferApp_Mobile
             InitializeComponent();
             Instance = this;
             NetworkScanner.OnScanCompleted += NetworkScanner_OnScanCompleted;
+            Main.OnTransferResponded += Main_OnTransferResponded;
+        }
+
+        private void Main_OnTransferResponded(bool isAccepted)
+        {
+            Debug.WriteLine("Receiver Response: " + isAccepted);
+            if (isAccepted)
+            {
+                Device.InvokeOnMainThreadAsync(() =>
+                {
+                    Navigation.PushAsync(new TransferPage());
+                });
+                Main.BeginSendingFiles();
+                Main.OnTransferResponded -= Main_OnTransferResponded;
+            }
         }
 
         private void NetworkScanner_OnScanCompleted()
@@ -45,15 +60,9 @@ namespace FileTransferApp_Mobile
                 list_Devices.ItemsSource = AvailableDeviceArray;
             }
         }
-        private async void btn_SendFile_Clicked(object sender, EventArgs e)
+        private void btn_SendFile_Clicked(object sender, EventArgs e)
         {
-            bool didDeviceAccept = Main.ConnectToTargetDevice(txt_ClientIP.Text);
-            Debug.WriteLine("Receiver Response: " + didDeviceAccept);
-            if (didDeviceAccept)
-            {
-                Main.BeginSendingFiles();
-                await Navigation.PushModalAsync(new TransferPage());
-            }
+            Main.ConnectToTargetDevice(txt_ClientIP.Text);
         }
 
         private void list_Devices_ItemSelected(object sender, SelectedItemChangedEventArgs e)

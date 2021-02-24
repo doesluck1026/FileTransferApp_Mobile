@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FileTransferApp_Mobile.Pages;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,9 @@ namespace FileTransferApp_Mobile
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            // First display Spalsh screen
+            MainPage = new NavigationPage(new SplashPage());
         }
 
         protected override void OnStart()

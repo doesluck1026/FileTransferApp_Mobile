@@ -1,49 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FileTransferApp_Mobile.SendingPage">
-    <ContentPage.Content>
-        <Grid BackgroundColor="#353536">
-            <Grid.RowDefinitions>
-                <RowDefinition Height = "1*" />
-                <RowDefinition Height = "2*" />
-                <RowDefinition Height = "5*" />
-                <RowDefinition Height = "2*" />
-                <RowDefinition Height = "3*" />
-            </Grid.RowDefinitions>
-            <Frame BackgroundColor="Transparent" Padding="1" CornerRadius="2" BorderColor="LightBlue">
-                <Label Text="Wifi File Transfer" HorizontalTextAlignment="Center" TextColor="White" FontSize="40" />
-            </Frame>
-            <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Center"  >
-                <Frame BackgroundColor="Transparent" Margin="4,4" Padding="1" CornerRadius="2" BorderColor="LightBlue">
-                    <Label x:Name="lbl_info" Text="Select target device from list" HorizontalTextAlignment="Center" TextColor="White" FontSize="Title"/>
-                </Frame>
-            </StackLayout>
-            <ListView x:Name="list_Devices"  VerticalOptions="Center"  IsVisible="true" BackgroundColor="Gray" SeparatorColor="DarkGray"
-                    Grid.Row="2" ItemSelected="list_Devices_ItemSelected" />
-            <Grid Grid.Row="3">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="3*"/>
-                    <ColumnDefinition Width="3*"/>
-                    <ColumnDefinition Width="3*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Label Text="Receiver IP:" Grid.Column="1" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-                <Entry x:Name="txt_ClientIP" Text="192.168.1.2" Grid.Column="2" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-            </Grid>
-            <Grid Grid.Row="4" >
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Button x:Name="btn_SendFile" Text="Send FILE" Clicked="btn_SendFile_Clicked" TextColor="Blue" HorizontalOptions="Center" BorderWidth="2" 
-                     FontSize="25" Margin="30" Grid.Column="0"/>
-                <Button x:Name="btn_ScanDevices" Text="Scan Devices" Clicked="btn_ScanDevices_Clicked" TextColor="Blue" HorizontalOptions="Center" BorderWidth="2" 
-                     FontSize="25" Margin="30" Grid.Column="1"/>
-            </Grid>
-            
+             x:Class="FileTransferApp_Mobile.SendingPage"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             NavigationPage.HasBackButton="false"
+             >
+    <NavigationPage.TitleView >
+        <StackLayout  Orientation="Horizontal" BackgroundColor="#1E88FA"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Image HeightRequest="30" WidthRequest="30" Source="BC_logo_1.png" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Label Text="Wi-Fi File Transfer" BackgroundColor="#1E88FA" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="20" Padding="0" Margin="0,0,0,0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
 
-        </Grid>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#2f3452" >
+
+
+            <Frame Padding="20" BackgroundColor="#501E88FA" CornerRadius="20" HorizontalOptions="Center" Margin="10,20,10,10" >
+                <Label Text="Select thet target device!" 
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center"
+                   HorizontalOptions="End"
+                   FontSize="20" />
+            </Frame>
+
+            <yummy:PancakeView BackgroundColor="#501E88FA" CornerRadius ="20" HorizontalOptions="CenterAndExpand" Margin="10" >
+
+                <StackLayout>
+                    <yummy:PancakeView Padding="20,5" BackgroundColor="#501E88FA" >
+                        <Label Text="Device list on Network :" FontSize="15" TextColor="White" />
+
+                    </yummy:PancakeView>
+                    <ListView x:Name="list_Devices"  
+                      VerticalOptions="Center"  
+                      SeparatorColor="DarkGray"
+                      ItemSelected="list_Devices_ItemSelected" 
+                      RefreshControlColor="LightGreen"
+                              />
+                </StackLayout>
+
+            </yummy:PancakeView>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame  BackgroundColor="#501E88FA" CornerRadius="20" HorizontalOptions="FillAndExpand" Margin="10,0">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
+                        <Label Text="Target IP:" HorizontalOptions="CenterAndExpand" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                        <Entry x:Name="txt_ClientIP" Text="192.168.1.25" HorizontalOptions="CenterAndExpand" Grid.Column="2" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+
+                </Frame>
+                <Button x:Name="btn_ScanDevices" Text="Refresh" Clicked="btn_ScanDevices_Clicked"  HorizontalOptions="EndAndExpand" Margin="0,0,10,0" />
+            </StackLayout>
+
+            <StackLayout Margin="0,30">
+                <ImageButton x:Name="btn_SendFile" 
+                             Clicked="btn_SendFile_Clicked" 
+                             Padding="20,0,20,0" 
+                             Source="inbox1.png"
+                             BackgroundColor="#87feaf" 
+                             CornerRadius="50" 
+                             WidthRequest="100" 
+                             HeightRequest="100"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand"  />
+
+                <Label Text="Send" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
+            </StackLayout>
+
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

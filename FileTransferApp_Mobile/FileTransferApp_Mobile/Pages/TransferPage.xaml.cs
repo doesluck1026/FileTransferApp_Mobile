@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -20,14 +20,14 @@ namespace FileTransferApp_Mobile
         {
             InitializeComponent();
             Main.OnTransferFinished += Main_OnTransferFinished;
-            //
+            DeviceDisplay.KeepScreenOn = true;
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
             Task.Run(() =>
             {
-                while (!Main.IsTransfering)//&& TimeSpan.FromSeconds(5).TotalSeconds<5) ;
+                while (!Main.IsTransfering)
                 {
                     Thread.Sleep(1);
                 }
@@ -38,8 +38,7 @@ namespace FileTransferApp_Mobile
         {
             Device.BeginInvokeOnMainThread(() =>
             {
-                Navigation.PopModalAsync();
-                Navigation.PushModalAsync(new TransferDonePage());
+                Navigation.PushAsync(new TransferDonePage());
             });
         }
         private void StartUpdatingUI()

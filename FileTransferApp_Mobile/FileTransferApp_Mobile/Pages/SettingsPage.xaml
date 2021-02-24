@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FileTransferApp_Mobile.Pages.SettingsPage"
+             NavigationPage.HasBackButton="False"
+             >
+    <NavigationPage.TitleView >
+        <StackLayout  Orientation="Horizontal" BackgroundColor="#1E88FA"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <ImageButton  Source="info.png" HeightRequest="25" WidthRequest="25" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="Start" Margin="0, 0, 50, 0" />
+            <Image HeightRequest="30" WidthRequest="30" Source="BC_logo_1.png" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Label Text="Wi-Fi File Transfer" BackgroundColor="#1E88FA" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="20" Padding="0" Margin="0,0,0,0" />
+            <ImageButton x:Name="btn_Settings" Source="settings_selected.png" HeightRequest="25" WidthRequest="25" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="End" Margin="50, 0, 0, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout  BackgroundColor="#2f3452" HorizontalOptions="FillAndExpand" >
+
+            <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="FillAndExpand" Margin="10, 30, 10, 5" >
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+                    <Label Text="Device Name : " 
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center"
+                   HorizontalOptions="End"
+                   FontSize="20" />
+
+                    <Entry x:Name="txt_DeviceName" Text="OldDeviceName" />
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" 
+                   HorizontalOptions="FillAndExpand" Margin="10,5"  IsVisible="True">
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+                    <Label Text=" Language : " 
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center"
+                   HorizontalOptions="End"
+                   FontSize="20" />
+
+                    <Entry Text="English"  />
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" 
+                   HorizontalOptions="FillAndExpand" Margin="10,5" IsVisible="False">
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
+                    <Label Text=" Setting 3 : " 
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center"
+                   HorizontalOptions="End"
+                   FontSize="20" />
+
+                    <Entry Text="Setting 3" />
+                </StackLayout>
+            </Frame>
+            <Button x:Name="btn_SelectFile" 
+                CornerRadius="35" 
+                HeightRequest="75" 
+                WidthRequest="75" 
+                BackgroundColor="#87feaf" 
+                Text="Save" 
+                Margin="40, 50, 50, 50" 
+                FontSize="20" 
+                FontAttributes="Bold" 
+                TextColor="#0A2A4D" 
+                VerticalOptions="EndAndExpand"
+                Clicked="btn_SelectFile_Clicked"
+                />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

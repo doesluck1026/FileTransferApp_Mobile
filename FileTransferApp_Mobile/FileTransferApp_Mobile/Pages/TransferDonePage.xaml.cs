@@ -21,11 +21,13 @@ namespace FileTransferApp_Mobile
         {
             base.OnAppearing();
             list_Files.ItemsSource = Main.FileNames;
+            list_Files.SelectedItem = Main.FileNames[selectedFileIndex];
         }
         private async void btn_MainMenu_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new MainPage());
+            await Navigation.PushAsync(new Pages.ActionPage());
         }
+
         private async void btn_OpenFolder_Clicked(object sender, EventArgs e)
         {
             string selectedFilePath = Main.FilePaths[selectedFileIndex];

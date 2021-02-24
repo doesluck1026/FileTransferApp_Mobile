@@ -2,6 +2,31 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v10.0": {
+      "Acr.UserDialogs/7.1.0.475": {
+        "type": "package",
+        "dependencies": {
+          "AndHUD": "1.4.2",
+          "Xamarin.Google.Android.Material": "1.0.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/Acr.UserDialogs.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/Acr.UserDialogs.dll": {}
+        }
+      },
+      "AndHUD/1.4.2": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid81/AndHUD.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid81/AndHUD.dll": {}
+        }
+      },
       "Rssdp/4.0.4": {
         "type": "package",
         "compile": {
@@ -9,6 +34,15 @@
         },
         "runtime": {
           "lib/monoandroid/Rssdp.dll": {}
+        }
+      },
+      "System.ComponentModel/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -61,16 +95,15 @@
           "buildTransitive/monoandroid90/Xamarin.AndroidX.Annotation.targets": {}
         }
       },
-      "Xamarin.AndroidX.AppCompat/1.1.0.1": {
+      "Xamarin.AndroidX.AppCompat/1.2.0.4": {
         "type": "package",
         "dependencies": {
-          "Xamarin.AndroidX.Annotation": "1.1.0.1",
-          "Xamarin.AndroidX.AppCompat.AppCompatResources": "1.1.0.1",
-          "Xamarin.AndroidX.Collection": "1.1.0.1",
-          "Xamarin.AndroidX.Core": "1.1.0.1",
-          "Xamarin.AndroidX.CursorAdapter": "1.0.0.1",
-          "Xamarin.AndroidX.DrawerLayout": "1.0.0.1",
-          "Xamarin.AndroidX.Fragment": "1.1.0.1"
+          "Xamarin.AndroidX.Annotation": "1.1.0.6",
+          "Xamarin.AndroidX.AppCompat.AppCompatResources": "1.2.0.4",
+          "Xamarin.AndroidX.Core": "1.3.0.3",
+          "Xamarin.AndroidX.CursorAdapter": "1.0.0.5",
+          "Xamarin.AndroidX.DrawerLayout": "1.0.0.5",
+          "Xamarin.AndroidX.Fragment": "1.2.5.3"
         },
         "frameworkAssemblies": [
           "Java.Interop"
@@ -85,14 +118,13 @@
           "buildTransitive/monoandroid90/Xamarin.AndroidX.AppCompat.targets": {}
         }
       },
-      "Xamarin.AndroidX.AppCompat.AppCompatResources/1.1.0.1": {
+      "Xamarin.AndroidX.AppCompat.AppCompatResources/1.2.0.4": {
         "type": "package",
         "dependencies": {
-          "Xamarin.AndroidX.Annotation": "1.1.0.1",
-          "Xamarin.AndroidX.Collection": "1.1.0.1",
-          "Xamarin.AndroidX.Core": "1.1.0.1",
-          "Xamarin.AndroidX.VectorDrawable": "1.1.0.1",
-          "Xamarin.AndroidX.VectorDrawable.Animated": "1.1.0.1"
+          "Xamarin.AndroidX.Annotation": "1.1.0.6",
+          "Xamarin.AndroidX.Core": "1.3.0.3",
+          "Xamarin.AndroidX.VectorDrawable": "1.1.0.5",
+          "Xamarin.AndroidX.VectorDrawable.Animated": "1.1.0.5"
         },
         "frameworkAssemblies": [
           "Java.Interop"
@@ -782,12 +814,12 @@
           "buildTransitive/monoandroid90/Xamarin.AndroidX.Transition.targets": {}
         }
       },
-      "Xamarin.AndroidX.VectorDrawable/1.1.0.1": {
+      "Xamarin.AndroidX.VectorDrawable/1.1.0.5": {
         "type": "package",
         "dependencies": {
-          "Xamarin.AndroidX.Annotation": "1.1.0.1",
-          "Xamarin.AndroidX.Collection": "1.1.0.1",
-          "Xamarin.AndroidX.Core": "1.1.0.1"
+          "Xamarin.AndroidX.Annotation": "1.1.0.6",
+          "Xamarin.AndroidX.Collection": "1.1.0.5",
+          "Xamarin.AndroidX.Core": "1.3.0.3"
         },
         "frameworkAssemblies": [
           "Java.Interop"
@@ -802,12 +834,12 @@
           "buildTransitive/monoandroid90/Xamarin.AndroidX.VectorDrawable.targets": {}
         }
       },
-      "Xamarin.AndroidX.VectorDrawable.Animated/1.1.0.1": {
+      "Xamarin.AndroidX.VectorDrawable.Animated/1.1.0.5": {
         "type": "package",
         "dependencies": {
-          "Xamarin.AndroidX.Collection": "1.1.0.1",
-          "Xamarin.AndroidX.Interpolator": "1.0.0.1",
-          "Xamarin.AndroidX.VectorDrawable": "1.1.0.1"
+          "Xamarin.AndroidX.Collection": "1.1.0.5",
+          "Xamarin.AndroidX.Interpolator": "1.0.0.5",
+          "Xamarin.AndroidX.VectorDrawable": "1.1.0.5"
         },
         "frameworkAssemblies": [
           "Java.Interop"
@@ -905,6 +937,23 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/2.3.0.763-beta": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel": "4.3.0",
+          "Xamarin.AndroidX.AppCompat": "1.2.0.4",
+          "Xamarin.Forms": "4.8.0.1451"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "Xamarin.Google.Android.Material/1.0.0.1": {
         "type": "package",
         "dependencies": {
@@ -935,9 +984,11 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
+          "Acr.UserDialogs": "7.1.0.475",
           "Rssdp": "4.0.4",
           "Xamarin.Essentials": "1.6.1-preview1",
-          "Xamarin.Forms": "5.0.0.1874"
+          "Xamarin.Forms": "5.0.0.1874",
+          "Xamarin.Forms.PancakeView": "2.3.0.763-beta"
         },
         "compile": {
           "bin/placeholder/FileTransferApp_Mobile.dll": {}
@@ -949,6 +1000,53 @@
     }
   },
   "libraries": {
+    "Acr.UserDialogs/7.1.0.475": {
+      "sha512": "iGW0uda9bmbGcPABm0UzDjSd5DtGwcTCkOg265aUxKhG9IW0HtoNA3gASMXK64hMye2A+9mfkcmWJDOudbhJWw==",
+      "type": "package",
+      "path": "acr.userdialogs/7.1.0.475",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "acr.userdialogs.7.1.0.475.nupkg.sha512",
+        "acr.userdialogs.nuspec",
+        "lib/monoandroid10.0/Acr.UserDialogs.dll",
+        "lib/monoandroid10.0/Acr.UserDialogs.pdb",
+        "lib/monoandroid10.0/Acr.UserDialogs.xml",
+        "lib/monoandroid90/Acr.UserDialogs.dll",
+        "lib/monoandroid90/Acr.UserDialogs.pdb",
+        "lib/monoandroid90/Acr.UserDialogs.xml",
+        "lib/netstandard2.0/Acr.UserDialogs.dll",
+        "lib/netstandard2.0/Acr.UserDialogs.pdb",
+        "lib/netstandard2.0/Acr.UserDialogs.xml",
+        "lib/uap10.0.16299/Acr.UserDialogs.dll",
+        "lib/uap10.0.16299/Acr.UserDialogs.pdb",
+        "lib/uap10.0.16299/Acr.UserDialogs.pri",
+        "lib/uap10.0.16299/Acr.UserDialogs.xml",
+        "lib/uap10.0.16299/Acr.UserDialogs/Acr.UserDialogs.xr.xml",
+        "lib/xamarinios10/Acr.UserDialogs.dll",
+        "lib/xamarinios10/Acr.UserDialogs.pdb",
+        "lib/xamarinios10/Acr.UserDialogs.xml",
+        "lib/xamarinmac20/Acr.UserDialogs.dll",
+        "lib/xamarinmac20/Acr.UserDialogs.pdb",
+        "lib/xamarinmac20/Acr.UserDialogs.xml",
+        "lib/xamarintvos10/Acr.UserDialogs.dll",
+        "lib/xamarintvos10/Acr.UserDialogs.pdb",
+        "lib/xamarintvos10/Acr.UserDialogs.xml",
+        "readme.txt"
+      ]
+    },
+    "AndHUD/1.4.2": {
+      "sha512": "talAByCb4/g2hXaFXuWFqb/bxvpUecX3V04WO1D3l11ghR0R2eNMi1GhP4u+36tOgKk738+78UxyugQNyPP7Vw==",
+      "type": "package",
+      "path": "andhud/1.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "andhud.1.4.2.nupkg.sha512",
+        "andhud.nuspec",
+        "lib/MonoAndroid81/AndHUD.dll"
+      ]
+    },
     "Rssdp/4.0.4": {
       "sha512": "5E2icl0iAODR/EuS0nExzKPxbjgpkUjS1tJyEFdiITZG6fftvoEtdbzKWvR7tgwhN1R1fZpyu0j6bRLl70OuIQ==",
       "type": "package",
@@ -978,6 +1076,65 @@
         "lib/wpa81/Rssdp.xml",
         "rssdp.4.0.4.nupkg.sha512",
         "rssdp.nuspec"
+      ]
+    },
+    "System.ComponentModel/4.3.0": {
+      "sha512": "VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
+      "type": "package",
+      "path": "system.componentmodel/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.ComponentModel.dll",
+        "lib/netstandard1.3/System.ComponentModel.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.ComponentModel.dll",
+        "ref/netcore50/System.ComponentModel.xml",
+        "ref/netcore50/de/System.ComponentModel.xml",
+        "ref/netcore50/es/System.ComponentModel.xml",
+        "ref/netcore50/fr/System.ComponentModel.xml",
+        "ref/netcore50/it/System.ComponentModel.xml",
+        "ref/netcore50/ja/System.ComponentModel.xml",
+        "ref/netcore50/ko/System.ComponentModel.xml",
+        "ref/netcore50/ru/System.ComponentModel.xml",
+        "ref/netcore50/zh-hans/System.ComponentModel.xml",
+        "ref/netcore50/zh-hant/System.ComponentModel.xml",
+        "ref/netstandard1.0/System.ComponentModel.dll",
+        "ref/netstandard1.0/System.ComponentModel.xml",
+        "ref/netstandard1.0/de/System.ComponentModel.xml",
+        "ref/netstandard1.0/es/System.ComponentModel.xml",
+        "ref/netstandard1.0/fr/System.ComponentModel.xml",
+        "ref/netstandard1.0/it/System.ComponentModel.xml",
+        "ref/netstandard1.0/ja/System.ComponentModel.xml",
+        "ref/netstandard1.0/ko/System.ComponentModel.xml",
+        "ref/netstandard1.0/ru/System.ComponentModel.xml",
+        "ref/netstandard1.0/zh-hans/System.ComponentModel.xml",
+        "ref/netstandard1.0/zh-hant/System.ComponentModel.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.componentmodel.4.3.0.nupkg.sha512",
+        "system.componentmodel.nuspec"
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
@@ -1061,10 +1218,10 @@
         "xamarin.androidx.annotation.nuspec"
       ]
     },
-    "Xamarin.AndroidX.AppCompat/1.1.0.1": {
-      "sha512": "yB3zeO5EVcawOG82J48mToAKl0gB02YPXetawuh3CWMUBz+21jH2UYJzUGnO9IrBgVtcy7hRy4B2FHav/Co1Ww==",
+    "Xamarin.AndroidX.AppCompat/1.2.0.4": {
+      "sha512": "EOLvmuZa8dbhkcKwaMuBRnxPceYIxa2zdAU/aHK27O8tEBLazkTAE2ouDd92rAHWrjgd00xLTmz4LeEe5o0E1w==",
       "type": "package",
-      "path": "xamarin.androidx.appcompat/1.1.0.1",
+      "path": "xamarin.androidx.appcompat/1.2.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1075,14 +1232,14 @@
         "lib/monoandroid90/Xamarin.AndroidX.AppCompat.dll",
         "lib/monoandroid90/Xamarin.AndroidX.AppCompat.pdb",
         "proguard/proguard.txt",
-        "xamarin.androidx.appcompat.1.1.0.1.nupkg.sha512",
+        "xamarin.androidx.appcompat.1.2.0.4.nupkg.sha512",
         "xamarin.androidx.appcompat.nuspec"
       ]
     },
-    "Xamarin.AndroidX.AppCompat.AppCompatResources/1.1.0.1": {
-      "sha512": "GiOCqARHWmr/3CUgqkDdot/4360VP9T5Q/qVx0AWo+cASVilQXenB0fdmPi9y05BGyytYiATSa+LsnMMbCMUvw==",
+    "Xamarin.AndroidX.AppCompat.AppCompatResources/1.2.0.4": {
+      "sha512": "wF2/M7/EbIfqYwS81bAtSsAEqHHJMaUfBuU1NhOwrHjlQt6oVahqm6y4Td3jOsof+E2TTcMUr+Tjq3o4bpb7aQ==",
       "type": "package",
-      "path": "xamarin.androidx.appcompat.appcompatresources/1.1.0.1",
+      "path": "xamarin.androidx.appcompat.appcompatresources/1.2.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1092,7 +1249,7 @@
         "buildTransitive/monoandroid90/Xamarin.AndroidX.AppCompat.AppCompatResources.targets",
         "lib/monoandroid90/Xamarin.AndroidX.AppCompat.AppCompatResources.dll",
         "lib/monoandroid90/Xamarin.AndroidX.AppCompat.AppCompatResources.pdb",
-        "xamarin.androidx.appcompat.appcompatresources.1.1.0.1.nupkg.sha512",
+        "xamarin.androidx.appcompat.appcompatresources.1.2.0.4.nupkg.sha512",
         "xamarin.androidx.appcompat.appcompatresources.nuspec"
       ]
     },
@@ -1714,10 +1871,10 @@
         "xamarin.androidx.transition.nuspec"
       ]
     },
-    "Xamarin.AndroidX.VectorDrawable/1.1.0.1": {
-      "sha512": "cpiq+wyPDkognYlScZpFQsNjTOOsBKWRggDrB15JBNjBTjYn7Va6s8xuoigNBGil2drDBT0TGHduqSCeNl/9aw==",
+    "Xamarin.AndroidX.VectorDrawable/1.1.0.5": {
+      "sha512": "Z+kgMpZQSpFGYv9xsKRp2oUYm4xnMAjIa7Go2Cxdhj+B5JuY9CvMtgSQUy473/95rxCuGtmoSUYSrVyXGu0sZQ==",
       "type": "package",
-      "path": "xamarin.androidx.vectordrawable/1.1.0.1",
+      "path": "xamarin.androidx.vectordrawable/1.1.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1727,14 +1884,14 @@
         "buildTransitive/monoandroid90/Xamarin.AndroidX.VectorDrawable.targets",
         "lib/monoandroid90/Xamarin.AndroidX.VectorDrawable.dll",
         "lib/monoandroid90/Xamarin.AndroidX.VectorDrawable.pdb",
-        "xamarin.androidx.vectordrawable.1.1.0.1.nupkg.sha512",
+        "xamarin.androidx.vectordrawable.1.1.0.5.nupkg.sha512",
         "xamarin.androidx.vectordrawable.nuspec"
       ]
     },
-    "Xamarin.AndroidX.VectorDrawable.Animated/1.1.0.1": {
-      "sha512": "hXNBRyWtlWtHDErFQ4AS3KQjImV1PwX1EQyOMte7oGAVQFM77ZQBKWR5eROViQd2gEI9plqSrZTXAAfPmQ0//g==",
+    "Xamarin.AndroidX.VectorDrawable.Animated/1.1.0.5": {
+      "sha512": "V+JfnfaBrmsvAbsGsSuakgOJcnxWQXp+WiAnUh4p/V8rpuQTpLv4/AR7WUqoRrGSvvuCgo2cp2nyXGMyMnDTLg==",
       "type": "package",
-      "path": "xamarin.androidx.vectordrawable.animated/1.1.0.1",
+      "path": "xamarin.androidx.vectordrawable.animated/1.1.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1745,7 +1902,7 @@
         "lib/monoandroid90/Xamarin.AndroidX.VectorDrawable.Animated.dll",
         "lib/monoandroid90/Xamarin.AndroidX.VectorDrawable.Animated.pdb",
         "proguard/proguard.txt",
-        "xamarin.androidx.vectordrawable.animated.1.1.0.1.nupkg.sha512",
+        "xamarin.androidx.vectordrawable.animated.1.1.0.5.nupkg.sha512",
         "xamarin.androidx.vectordrawable.animated.nuspec"
       ]
     },
@@ -2049,6 +2206,42 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
         "xamarin.forms.5.0.0.1791-pre5.nupkg.sha512",
         "xamarin.forms.nuspec"
+      ]
+    },
+    "Xamarin.Forms.PancakeView/2.3.0.763-beta": {
+      "sha512": "GghetVBkMzzb6L1Ul3SH9JnHIvdmhgjRacAQaD5IUGMr2yxFtSeB0lRYTT0QjNJFK6TSgyh/lDwqMSaCMBjbMg==",
+      "type": "package",
+      "path": "xamarin.forms.pancakeview/2.3.0.763-beta",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/Xamarin.Forms.PancakeView.dll",
+        "lib/monoandroid10.0/Xamarin.Forms.PancakeView.xml",
+        "lib/monoandroid90/Xamarin.Forms.PancakeView.dll",
+        "lib/monoandroid90/Xamarin.Forms.PancakeView.xml",
+        "lib/net471/Xamarin.Forms.PancakeView.dll",
+        "lib/net471/Xamarin.Forms.PancakeView.xml",
+        "lib/net472/Xamarin.Forms.PancakeView.dll",
+        "lib/net472/Xamarin.Forms.PancakeView.xml",
+        "lib/netcoreapp3.1/Xamarin.Forms.PancakeView.dll",
+        "lib/netcoreapp3.1/Xamarin.Forms.PancakeView.xml",
+        "lib/netstandard1.0/Xamarin.Forms.PancakeView.dll",
+        "lib/netstandard1.0/Xamarin.Forms.PancakeView.xml",
+        "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll",
+        "lib/netstandard2.0/Xamarin.Forms.PancakeView.xml",
+        "lib/netstandard2.1/Xamarin.Forms.PancakeView.dll",
+        "lib/netstandard2.1/Xamarin.Forms.PancakeView.xml",
+        "lib/tizen40/Xamarin.Forms.PancakeView.dll",
+        "lib/tizen40/Xamarin.Forms.PancakeView.xml",
+        "lib/uap10.0.17763/Xamarin.Forms.PancakeView.dll",
+        "lib/uap10.0.17763/Xamarin.Forms.PancakeView.pri",
+        "lib/uap10.0.17763/Xamarin.Forms.PancakeView.xml",
+        "lib/xamarinios10/Xamarin.Forms.PancakeView.dll",
+        "lib/xamarinios10/Xamarin.Forms.PancakeView.xml",
+        "lib/xamarinmac20/Xamarin.Forms.PancakeView.dll",
+        "lib/xamarinmac20/Xamarin.Forms.PancakeView.xml",
+        "xamarin.forms.pancakeview.2.3.0.763-beta.nupkg.sha512",
+        "xamarin.forms.pancakeview.nuspec"
       ]
     },
     "Xamarin.Google.Android.Material/1.0.0.1": {

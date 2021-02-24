@@ -9,6 +9,7 @@ using Android.OS;
 using AndroidX.Core.Content;
 using Android;
 using AndroidX.Core.App;
+using Acr.UserDialogs;
 
 namespace FileTransferApp_Mobile.Droid
 {
@@ -34,6 +35,9 @@ namespace FileTransferApp_Mobile.Droid
                 ActivityCompat.RequestPermissions(this, new string[] { Manifest.Permission.ReadExternalStorage }, 0);
             }
             LoadApplication(new App());
+            
+            // for diolagbox usage
+            UserDialogs.Init(this);
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
