@@ -23,7 +23,7 @@ namespace FileTransferApp_Mobile.Pages
             /// Show file transfer request and ask for permission here
             Device.BeginInvokeOnMainThread(() =>
             {
-                Navigation.PushModalAsync(new TransferPermissionPage(totalTransferSize, senderDevice));
+                Navigation.PushAsync(new TransferPermissionPage(totalTransferSize, senderDevice));
             });
         }
 

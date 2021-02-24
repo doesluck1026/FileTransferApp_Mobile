@@ -25,7 +25,7 @@
                     <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="btn_MainMenu" Grid.Column="1" Text="Main Menu" Clicked="btn_MainMenu_Clicked" 
+                <Button x:Name="btn_MainMenu" Grid.Column="1" Text="MaIn Menu" Clicked="btn_MainMenu_Clicked" 
                     FontSize="Large" TextColor="Black"/>
                 <Button x:Name="btn_OpenFolder" Grid.Column="3" Text="Open FILE" Clicked="btn_OpenFolder_Clicked" 
                     FontSize="Large" TextColor="Black"/>

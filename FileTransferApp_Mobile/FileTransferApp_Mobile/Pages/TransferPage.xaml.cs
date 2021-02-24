@@ -39,8 +39,7 @@ namespace FileTransferApp_Mobile
         {
             Device.BeginInvokeOnMainThread(() =>
             {
-                Navigation.PopModalAsync();
-                Navigation.PushModalAsync(new TransferDonePage());
+                Navigation.PushAsync(new TransferDonePage());
             });
         }
         private void StartUpdatingUI()

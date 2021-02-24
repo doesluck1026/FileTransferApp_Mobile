@@ -15,19 +15,22 @@ namespace FileTransferApp_Mobile.Pages
         public ActionPage()
         {
             InitializeComponent();
+            Main.StartServer();
+            Parameters.Init();
+            NetworkScanner.PublishDevice();
+            Main.FileSaveURL = GetSaveFilePath();
             Main.OnClientRequested += Main_OnClientRequested;
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            Parameters.Init();
         }
         private void Main_OnClientRequested(string totalTransferSize, string senderDevice)
         {
             /// Show file transfer request and ask for permission here
             Device.BeginInvokeOnMainThread(() =>
             {
-                Navigation.PushModalAsync(new TransferPermissionPage(totalTransferSize, senderDevice));
+                Navigation.PushAsync(new TransferPermissionPage(totalTransferSize, senderDevice));
             });
         }
 
@@ -45,6 +48,12 @@ namespace FileTransferApp_Mobile.Pages
         {
             await Navigation.PushAsync((new SettingsPage()));
         }
-
+        private string GetSaveFilePath()
+        {
+            if (Device.RuntimePlatform == Device.Android)
+                return "/storage/emulated/0/Download/";
+            else
+                return Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/";
+        }
     }
 }

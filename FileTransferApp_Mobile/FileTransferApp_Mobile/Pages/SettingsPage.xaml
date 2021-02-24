@@ -29,21 +29,23 @@
                 </StackLayout>
             </Frame>
 
-            <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="FillAndExpand" Margin="10,5" >
+            <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" 
+                   HorizontalOptions="FillAndExpand" Margin="10,5"  IsVisible="True">
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
-                    <Label Text=" Setting 2 : " 
+                    <Label Text=" Language : " 
                    TextColor="White"
                    VerticalOptions="Center"
                    VerticalTextAlignment="Center"
                    HorizontalOptions="End"
                    FontSize="20" />
 
-                    <Entry Text="Setting 2" />
+                    <Entry Text="English"  />
                 </StackLayout>
             </Frame>
 
-            <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="FillAndExpand" Margin="10,5" >
+            <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" 
+                   HorizontalOptions="FillAndExpand" Margin="10,5" IsVisible="False">
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
                     <Label Text=" Setting 3 : " 

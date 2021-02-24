@@ -28,16 +28,11 @@ namespace FileTransferApp_Mobile
             Instance = this;
             DeviceDisplay.KeepScreenOn = false;
             Main.OnClientRequested += Main_OnClientRequested;
-            Main.StartServer();
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            Parameters.Init();
             NetworkScanner.GetDeviceAddress(out DeviceIP, out DeviceHostName);
-            NetworkScanner.PublishDevice();
-            Main.FileSaveURL = GetSaveFilePath();
-            Debug.WriteLine("Save file path: " + Main.FileSaveURL);
             Dispatcher.BeginInvokeOnMainThread(() =>
             {
                 lbl_IP.Text = DeviceIP;
@@ -54,7 +49,7 @@ namespace FileTransferApp_Mobile
             /// Show file transfer request and ask for permission here
             Device.BeginInvokeOnMainThread(() =>
             {
-                Navigation.PushModalAsync(new TransferPermissionPage(totalTransferSize, deviceName));
+                Navigation.PushAsync(new TransferPermissionPage(totalTransferSize, deviceName));
             });
         }
         /// <summary>
@@ -73,7 +68,7 @@ namespace FileTransferApp_Mobile
                     filepaths[i] = results[i].FullPath;
                 }
                 Main.SetFilePaths(filepaths);
-                await Navigation.PushAsync(new SendingPage());
+                await Navigation.PushAsync(new Pages.FilesPage());
             }
         }
 
@@ -85,12 +80,6 @@ namespace FileTransferApp_Mobile
         {
            NetworkScanner.ScanAvailableDevices();
         }
-        private string GetSaveFilePath()
-        {
-            if (Device.RuntimePlatform == Device.Android)
-                return "/storage/emulated/0/Download/";
-            else
-                return Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)+"/";
-        }
+        
     }
 }
