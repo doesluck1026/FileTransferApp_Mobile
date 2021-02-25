@@ -36,6 +36,7 @@ class Parameters
         DeviceName = (string)Application.Current.Properties["DeviceName"];
         TotalTransferedDataSize = (string)Application.Current.Properties["TransferSize"];
         NumberOfFilesTransfered = (int)Application.Current.Properties["NumFiles"];
+        didInit = true;
     }
     /// <summary>
     /// Saves Parameters to device memory which are assigned above
