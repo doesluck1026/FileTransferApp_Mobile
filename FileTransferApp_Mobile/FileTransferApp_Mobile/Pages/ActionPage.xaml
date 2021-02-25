@@ -6,7 +6,7 @@
              >
     <NavigationPage.TitleView >
         <StackLayout  Orientation="Horizontal" BackgroundColor="#1E88FA"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-            <ImageButton  Source="info.png" HeightRequest="25" WidthRequest="25" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="Start" Margin="0, 0, 50, 0" />
+            <ImageButton x:Name="btn_Info" Clicked="btn_Info_Clicked" Source="info.png" HeightRequest="25" WidthRequest="25" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="Start" Margin="0, 0, 50, 0"  />
             <Image HeightRequest="30" WidthRequest="30" Source="BC_logo_1.png" VerticalOptions="Center" HorizontalOptions="Center" />
             <Label Text="Wi-Fi File Transfer" BackgroundColor="#1E88FA" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="20" Padding="0" Margin="0,0,0,0" />
             <ImageButton x:Name="btn_Settings" Clicked="btn_Settings_Clicked" Source="settings.png" HeightRequest="25" WidthRequest="25" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="End" Margin="50, 0, 0, 0" />
@@ -14,7 +14,7 @@
     </NavigationPage.TitleView>
 
     <ContentPage.Content>
-        <StackLayout  BackgroundColor="#2f3452">
+        <StackLayout BackgroundColor="#2f3452">
 
             <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10" >
                 <Label Text="Select the action you want to do!" 

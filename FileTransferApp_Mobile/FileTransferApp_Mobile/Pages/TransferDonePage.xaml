@@ -1,37 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FileTransferApp_Mobile.TransferDonePage">
-    <ContentPage.Content>
-        <Grid BackgroundColor="#353536">
-            <Grid.RowDefinitions >
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="15*"/>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="2*"/>
-            </Grid.RowDefinitions>
-            <Image Source="checked.png" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="100" HeightRequest="100"/>
-            <Label Grid.Row="2" Text="File Transfer is Succesful!" VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="Title"/>
-            <ListView x:Name="list_Files" ItemTapped="list_Files_ItemTapped" Grid.Row="3" VerticalOptions="CenterAndExpand"
-                      HorizontalOptions="CenterAndExpand" BackgroundColor="White" Margin="50"/>
-            <Grid Grid.Row="4">
-                <Grid.ColumnDefinitions >
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Button x:Name="btn_MainMenu" Grid.Column="1" Text="MaIn Menu" Clicked="btn_MainMenu_Clicked" 
-                    FontSize="Large" TextColor="Black"/>
-                <Button x:Name="btn_OpenFolder" Grid.Column="3" Text="Open FILE" Clicked="btn_OpenFolder_Clicked" 
-                    FontSize="Large" TextColor="Black"/>
-            </Grid>
-            
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="FileTransferApp_Mobile.TransferDonePage"
+             NavigationPage.HasBackButton="false"
+             >
 
-        </Grid>
+    <NavigationPage.TitleView >
+        <StackLayout  Orientation="Horizontal" BackgroundColor="#1E88FA"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Image HeightRequest="30" WidthRequest="30" Source="BC_logo_1.png" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Label Text="Wi-Fi File Transfer" BackgroundColor="#1E88FA" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="20" Padding="0" Margin="0,0,0,0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#2f3452" >
+
+            <Image Source="checked.png" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="50" HeightRequest="50"  Margin="10,20,10,0" />
+            <Frame Padding="20" BackgroundColor="#501E88FA" CornerRadius="20" HorizontalOptions="Center" Margin="10,20,10,10" >
+                <Label Text="File transfer is successful!" 
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center"
+                   HorizontalOptions="End"
+                   FontSize="20" />
+            </Frame>
+
+            <yummy:PancakeView BackgroundColor="#501E88FA" CornerRadius ="20" HorizontalOptions="CenterAndExpand" Margin="10" >
+
+                <StackLayout>
+                    <yummy:PancakeView Padding="20,5" BackgroundColor="#501E88FA" >
+                        <Label Text="Files :" FontSize="15" TextColor="White" />
+
+                    </yummy:PancakeView>
+                    <ListView x:Name="list_Files"  
+                      VerticalOptions="Center"  
+                      SeparatorColor="DarkGray"
+                      ItemTapped="list_Files_ItemTapped"
+                      RefreshControlColor="LightGreen"
+                              />
+                </StackLayout>
+
+            </yummy:PancakeView>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="0,0,0,30" >
+
+                <StackLayout Margin="75,0,10,0" HorizontalOptions="StartAndExpand">
+                    <ImageButton x:Name="btn_MainMenu" 
+                             Clicked="btn_MainMenu_Clicked" 
+                             Padding="10,0,10,0" 
+                             Source="home.png"
+                             BackgroundColor="#7E82E6 " 
+                             CornerRadius="25" 
+                             WidthRequest="50" 
+                             HeightRequest="50"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand"  />
+                    <Label Text="Home" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold" TextColor="GhostWhite" />
+                </StackLayout>
+
+                <StackLayout Margin="0,0,75,0" HorizontalOptions="EndAndExpand">
+
+                    <ImageButton x:Name="btn_OpenFolder" 
+                             Clicked="btn_OpenFolder_Clicked" 
+                             Padding="10,0,10,0" 
+                             Source="open1.png"
+                             BackgroundColor="#7E82E6 " 
+                             CornerRadius="25" 
+                             WidthRequest="50" 
+                             HeightRequest="50"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand"  />
+
+                    <Label Text="Open" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold" TextColor="GhostWhite" />
+                </StackLayout>
+                
+            </StackLayout>
+
+        </StackLayout>
+
+
     </ContentPage.Content>
 </ContentPage>

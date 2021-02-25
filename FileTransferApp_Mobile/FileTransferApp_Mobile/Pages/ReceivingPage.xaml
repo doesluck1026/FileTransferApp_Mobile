@@ -17,7 +17,7 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="#2f3452" >
 
-            <Frame Padding="20" BackgroundColor="#501E88FA" CornerRadius="20" HorizontalOptions="Center" Margin="10" >
+            <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10" >
                 <Label Text="Please wait to connect sender!" 
                    TextColor="White"
                    VerticalOptions="Center"

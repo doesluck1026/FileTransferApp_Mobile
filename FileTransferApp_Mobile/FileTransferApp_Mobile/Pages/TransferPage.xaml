@@ -1,103 +1,100 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:FileTransferApp_Mobile.Controls"
              x:Class="FileTransferApp_Mobile.TransferPage"
-             BackgroundColor="#353536">
-
+              NavigationPage.HasBackButton="false"
+             >
+    
+    <NavigationPage.TitleView >
+        <StackLayout  Orientation="Horizontal" BackgroundColor="#1E88FA"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Image HeightRequest="30" WidthRequest="30" Source="BC_logo_1.png" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Label Text="Wi-Fi File Transfer" BackgroundColor="#1E88FA" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="20" Padding="0" Margin="0,0,0,0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
+    
     <ContentPage.Content>
-        <Grid Margin="5,5,5,5" >
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="5*"/>
-                <RowDefinition Height="4*"/>
-            </Grid.RowDefinitions>
-            <Frame BackgroundColor="Transparent" Grid.Row="0" Padding="1" CornerRadius="2" BorderColor="LightBlue">
-                <Label Text="Wifi File Transfer" HorizontalTextAlignment="Center" TextColor="White" FontSize="40" />
+        <StackLayout BackgroundColor="#2f3452">
+
+            <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10,20,10,10" >
+                <Label Text="File Are being tranferred be patient!" 
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center"
+                   HorizontalOptions="End"
+                   FontSize="20"
+                       />
             </Frame>
-            <Frame BackgroundColor="Transparent" Grid.Row="1" Padding="10" CornerRadius="2" BorderColor="LightBlue">
-                <Label Text="File Are being tranferred   be patient..." VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="White" FontSize="Title"/>
+
+            <Frame Padding="10" BackgroundColor="#501E88FA" CornerRadius="20"  HorizontalOptions="Fill" VerticalOptions="Fill" Margin="10,20,10,0"  >
+                <StackLayout Orientation="Vertical" HorizontalOptions="Start" Margin="5,0,0,0" >
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="File Name: " TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                        <Label x:Name="lbl_FileName" Text="dawdawdaw" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal"  >
+                        <Label Text="File Size: "  TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                        <Label x:Name="lbl_FileSize" Text="dawdawdaw" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" >
+                        <Label Text="Transfer Speed: " Grid.Column="0" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                        <Label x:Name="lbl_transferSpeed" Text="dawdawdaw"  TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
             </Frame>
-            <Grid Grid.Row="2">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid Grid.Row="0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="3*"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Text="File Name: " Grid.Column="0" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
-                    <Label x:Name="lbl_FileName" Text="dawdawdaw" Grid.Column="1" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
-                </Grid>
-                <Grid Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="3*"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Text="File Size: " Grid.Column="0" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
-                    <Label x:Name="lbl_FileSize" Text="dawdawdaw" Grid.Column="1" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
-                </Grid>
-                <Grid Grid.Row="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="3*"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Text="Transfer Speed: " Grid.Column="0" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
-                    <Label x:Name="lbl_transferSpeed" Text="dawdawdaw" Grid.Column="1" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
-                </Grid>
-                <Grid Grid.Row="3">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="15*"/>
-                        <ColumnDefinition Width="2*"/>
-                        <ColumnDefinition Width="2*"/>
-                        <ColumnDefinition Width="2*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <StackLayout Orientation="Horizontal" Grid.Column="0" Spacing="1">
+           
+            <Frame Padding="10" BackgroundColor="#501E88FA" CornerRadius="20" HorizontalOptions="FillAndExpand" Margin="10,5,10,0" >
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
                         <Label x:Name="lbl_totalSent" Text="125.56 MB" VerticalOptions="Center" TextColor="White" FontSize="Subtitle"/>
                         <Label Text="/" TextColor="White" VerticalOptions="Center" FontSize="Subtitle"/>
                         <Label x:Name="lbl_totalSize" Text="500.56 MB" VerticalOptions="Center" TextColor="White" FontSize="Subtitle"/>
                     </StackLayout>
-                    <Label x:Name="lbl_currentFileNumber" Text="10" Grid.Column="1" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="End"/>
-                    <Label Text="/" Grid.Column="2" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
-                    <Label x:Name="lbl_FileCount" Text="14" Grid.Column="3" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
-                </Grid>
-                <ProgressBar x:Name="prg_Transfer" Grid.Row="4" FlowDirection="LeftToRight" HorizontalOptions="Center" 
-                             VerticalOptions="CenterAndExpand"   HeightRequest="50" MinimumWidthRequest="10" WidthRequest="300" Progress="0.5" ProgressColor="DarkGreen" BackgroundColor="White" Visual="Default"/>
-                <Label x:Name="lbl_progress" Text="%50" Grid.Row="4" TextColor="Red" BackgroundColor="Transparent"
-                       VerticalOptions="Center" HorizontalOptions="Center" FontSize="Title"/>
-                <Grid Grid.Row="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Text="Time: " Grid.Column="0" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
-                    <Label x:Name="lbl_PassedTime" Text="dawdawdaw" Grid.Column="1" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
-                </Grid>
-                <Grid Grid.Row="6">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Text="Remainig: " Grid.Column="0" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
-                    <Label x:Name="lbl_RemainingTime" Text="dawdawdaw" Grid.Column="1" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
-                </Grid>
-            </Grid>
-            <Grid Grid.Row="3">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Button x:Name="btn_AbortTransfer" Grid.Column="0" Text="Abort" Clicked="btn_AbortTransfer_Clicked" FontSize="30" 
-                        VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
-            </Grid>
-        </Grid>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                        <Label x:Name="lbl_currentFileNumber" Text="10" Grid.Column="1" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="End"/>
+                        <Label Text="/" Grid.Column="2" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
+                        <Label x:Name="lbl_FileCount" Text="14" Grid.Column="3" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+            </Frame>
+
+            <controls:GradientProgressBar
+                    x:Name="prg_Transfer"
+                    AlternativeTextColor="#0463E1"
+                    BarBackgroundColor="#bcd8f6"
+                    CornerRadius="6"
+                    FontSize="18"
+                    GradientEndColor="#87feaf"
+                    GradientStartColor="#398efe"
+                    HeightRequest="30"
+                    Percentage="{Binding Percentage}"
+                    TextColor="White" />
+
+            <Frame Padding="10" BackgroundColor="#501E88FA" CornerRadius="20" HorizontalOptions="Fill" Margin="10,5,10,0" >
+                <StackLayout Orientation="Vertical" HorizontalOptions="Start" >
+                    <StackLayout Orientation="Horizontal" >
+                        <Label Text="Time: " Grid.Column="0" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                        <Label x:Name="lbl_PassedTime" Text="dawdawdaw" Grid.Column="1" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" >
+                        <Label Text="Remainig: " Grid.Column="0" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                        <Label x:Name="lbl_RemainingTime" Text="dawdawdaw" Grid.Column="1" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
+                    </StackLayout>
+
+                </StackLayout>
+              
+            </Frame>
+
+            <StackLayout Margin="0,75,0,50">
+                <ImageButton x:Name="btn_AbortTransfer" Clicked="btn_AbortTransfer_Clicked" Padding="20,0,20,0"  Source="abort.png" BackgroundColor="#F20C10" CornerRadius="50" WidthRequest="100" HeightRequest="100" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"  />
+                <Label Text="Abort" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
+            </StackLayout>
+
+
+        </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

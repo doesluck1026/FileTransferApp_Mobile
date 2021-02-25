@@ -15,7 +15,6 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="#2f3452" >
 
-
             <Frame Padding="20" BackgroundColor="#501E88FA" CornerRadius="20" HorizontalOptions="Center" Margin="10,20,10,10" >
                 <Label Text="Select thet target device!" 
                    TextColor="White"
@@ -50,7 +49,23 @@
                     </StackLayout>
 
                 </Frame>
-                <Button x:Name="btn_ScanDevices" Text="Refresh" Clicked="btn_ScanDevices_Clicked"  HorizontalOptions="EndAndExpand" Margin="0,0,10,0" />
+
+                <StackLayout Margin="0,0,10,0">
+                    <ImageButton x:Name="btn_ScanDevices" 
+                             Clicked="btn_ScanDevices_Clicked" 
+                             Padding="10,0,10,0" 
+                             Source="refresh.png"
+                             BackgroundColor="#7E82E6 " 
+                             CornerRadius="25" 
+                             WidthRequest="50" 
+                             HeightRequest="50"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand"  />
+                    <Label Text="Refresh" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold" TextColor="GhostWhite" />
+
+                </StackLayout>
+
+
             </StackLayout>
 
             <StackLayout Margin="0,30">
@@ -59,9 +74,9 @@
                              Padding="20,0,20,0" 
                              Source="inbox1.png"
                              BackgroundColor="#87feaf" 
-                             CornerRadius="50" 
-                             WidthRequest="100" 
-                             HeightRequest="100"
+                             CornerRadius="40" 
+                             WidthRequest="80" 
+                             HeightRequest="80"
                              VerticalOptions="CenterAndExpand"
                              HorizontalOptions="CenterAndExpand"  />
 

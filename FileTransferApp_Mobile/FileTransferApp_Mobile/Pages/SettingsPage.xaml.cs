@@ -24,7 +24,7 @@ namespace FileTransferApp_Mobile.Pages
                 txt_DeviceName.Text = Parameters.DeviceName;
             });
         }
-        private async void btn_SelectFile_Clicked(object sender, EventArgs e)
+        private async void btn_Save_Clicked(object sender, EventArgs e)
         {
             Parameters.DeviceName = txt_DeviceName.Text;
             Parameters.Save();

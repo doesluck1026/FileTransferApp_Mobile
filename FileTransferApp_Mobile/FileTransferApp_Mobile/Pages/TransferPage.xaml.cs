@@ -74,8 +74,8 @@ namespace FileTransferApp_Mobile
                 lbl_FileCount.Text = Main.TransferMetrics.CountOfFiles.ToString();
                 lbl_FileSize.Text = Main.TransferMetrics.CurrentFile.FileSize.ToString("0.00") + " " + Main.TransferMetrics.CurrentFile.SizeUnit;
                 lbl_FileName.Text = Main.TransferMetrics.CurrentFile.FileName;
-                lbl_progress.Text = "%"+Main.TransferMetrics.Progress.ToString("0.0");
-                prg_Transfer.Progress = Main.TransferMetrics.Progress / 100.0;
+                //lbl_progress.Text = "%"+Main.TransferMetrics.Progress.ToString("0.0");
+                prg_Transfer.Percentage = (float)(Main.TransferMetrics.Progress / 100.0);
                 lbl_transferSpeed.Text = Main.TransferMetrics.TransferSpeed.ToString("0.00") + " MB/s";
                 lbl_PassedTime.Text = ((int)Main.TransferMetrics.TotalElapsedTime / 3600).ToString("00") + ":" + (((int)Main.TransferMetrics.TotalElapsedTime % 3600) / 60).ToString("00") + ":" +
                     (((int)Main.TransferMetrics.TotalElapsedTime % 3600) % 60).ToString("00");

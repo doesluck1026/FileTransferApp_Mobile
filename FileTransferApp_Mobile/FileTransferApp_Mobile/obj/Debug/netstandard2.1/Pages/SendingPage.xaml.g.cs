@@ -23,7 +23,7 @@ namespace FileTransferApp_Mobile {
         private global::Xamarin.Forms.Entry txt_ClientIP;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Button btn_ScanDevices;
+        private global::Xamarin.Forms.ImageButton btn_ScanDevices;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.ImageButton btn_SendFile;
@@ -33,7 +33,7 @@ namespace FileTransferApp_Mobile {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SendingPage));
             list_Devices = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "list_Devices");
             txt_ClientIP = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txt_ClientIP");
-            btn_ScanDevices = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btn_ScanDevices");
+            btn_ScanDevices = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "btn_ScanDevices");
             btn_SendFile = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "btn_SendFile");
         }
     }

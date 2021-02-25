@@ -55,5 +55,11 @@ namespace FileTransferApp_Mobile.Pages
             else
                 return Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/";
         }
+
+        private async void btn_Info_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync((new InfoPage()));
+
+        }
     }
 }

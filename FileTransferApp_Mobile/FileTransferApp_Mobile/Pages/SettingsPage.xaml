@@ -58,7 +58,7 @@
                     <Entry Text="Setting 3" />
                 </StackLayout>
             </Frame>
-            <Button x:Name="btn_SelectFile" 
+            <Button x:Name="btn_Save" 
                 CornerRadius="35" 
                 HeightRequest="75" 
                 WidthRequest="75" 
@@ -69,7 +69,7 @@
                 FontAttributes="Bold" 
                 TextColor="#0A2A4D" 
                 VerticalOptions="EndAndExpand"
-                Clicked="btn_SelectFile_Clicked"
+                Clicked="btn_Save_Clicked"
                 />
 
         </StackLayout>

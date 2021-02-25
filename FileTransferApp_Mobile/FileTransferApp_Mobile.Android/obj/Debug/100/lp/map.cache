@@ -2,6 +2,9 @@ Acr.UserDialogs
 AndHUD
 FormsViewGroup
 Rssdp
+SkiaSharp
+SkiaSharp.Views.Android
+SkiaSharp.Views.Forms
 Xamarin.AndroidX.Activity
 Xamarin.AndroidX.Annotation
 Xamarin.AndroidX.AppCompat.AppCompatResources

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FileTransferApp_Mobile.Pages.InfoPage"
+             NavigationPage.HasBackButton="false"
+             >
+    <NavigationPage.TitleView >
+        <StackLayout  Orientation="Horizontal" BackgroundColor="#1E88FA"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Image HeightRequest="30" WidthRequest="30" Source="BC_logo_1.png" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Label Text="Wi-Fi File Transfer" BackgroundColor="#1E88FA" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="20" Padding="0" Margin="0,0,0,0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="#2f3452">
+            <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10" >
+                <Label Text="Thanks for using this application. You can follow and support us for more!" 
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center"
+                   HorizontalOptions="End"
+                   FontSize="20" />
+            </Frame>
+
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Margin="20,0,10,0" HorizontalOptions="StartAndExpand" >
+                    <ImageButton x:Name="btn_youtube" 
+                             Clicked="btn_youtube_Clicked" 
+                             Padding="10,0,10,0" 
+                             Source="youtube.png"
+                             BackgroundColor="#1E88FA " 
+                             CornerRadius="25" 
+                             WidthRequest="50" 
+                             HeightRequest="50"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand"  />
+                    <Label Text="Youtube" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold" TextColor="GhostWhite" />
+                </StackLayout>
+
+                <StackLayout Margin="20,0,10,0" HorizontalOptions="StartAndExpand" >
+                    <ImageButton x:Name="btn_insta" 
+                             Clicked="btn_insta_Clicked" 
+                             Padding="10,0,10,0" 
+                             Source="instagram.png"
+                             BackgroundColor="#1E88FA " 
+                             CornerRadius="25" 
+                             WidthRequest="50" 
+                             HeightRequest="50"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand"  />
+                    <Label Text="Instagram" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold" TextColor="GhostWhite" />
+                </StackLayout>
+
+                <StackLayout Margin="20,0,10,0" HorizontalOptions="StartAndExpand" >
+                    <ImageButton x:Name="btn_github" 
+                             Clicked="btn_github_Clicked" 
+                             Padding="10,0,10,0" 
+                             Source="github.png"
+                             BackgroundColor="#1E88FA " 
+                             CornerRadius="25" 
+                             WidthRequest="50" 
+                             HeightRequest="50"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand"  />
+                    <Label Text="Github" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold" TextColor="GhostWhite" />
+                </StackLayout>
+
+                <StackLayout Margin="20,0,10,0" HorizontalOptions="StartAndExpand" >
+                    <ImageButton x:Name="btn_patreon" 
+                             Clicked="btn_patreon_Clicked" 
+                             Padding="10,0,10,0" 
+                             Source="patreon.png"
+                             BackgroundColor="#1E88FA " 
+                             CornerRadius="25" 
+                             WidthRequest="50" 
+                             HeightRequest="50"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand"  />
+                    <Label Text="Patreon" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold" TextColor="GhostWhite" />
+                </StackLayout>
+                
+            </StackLayout>
+
+            <Frame BackgroundColor="#1E88FA"  CornerRadius="20" HorizontalOptions="Center" Margin="10" >
+                <StackLayout Orientation="Vertical" >
+
+                    <CarouselView
+                    x:Name="TheCarousel"
+                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    AbsoluteLayout.LayoutFlags="All"
+                    IndicatorView="indicatorview">
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <AbsoluteLayout>
+                                    <StackLayout
+                                    AbsoluteLayout.LayoutBounds=
+                                    "0.5,0.3,AutoSize,AutoSize"
+                                    AbsoluteLayout.LayoutFlags=
+                                    "PositionProportional"
+                                    HorizontalOptions="Center">
+                                        <Label
+                                        FontSize="Title"
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        Text="{Binding .}"
+                                        VerticalOptions="Center" />
+                                    </StackLayout>
+                                </AbsoluteLayout>
+                            </DataTemplate>
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
+                    <IndicatorView
+                    x:Name="indicatorview"
+                    AbsoluteLayout.LayoutBounds="0.5,0.95,100,100"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    IndicatorColor="LightGray"
+                    IndicatorSize="10"
+                    SelectedIndicatorColor="Black" 
+                    Margin="5"/>
+
+                </StackLayout>
+            </Frame>
+            
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
