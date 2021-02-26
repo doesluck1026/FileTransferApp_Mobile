@@ -5,9 +5,13 @@
              NavigationPage.HasBackButton="false"
              >
     <NavigationPage.TitleView >
-        <StackLayout  Orientation="Horizontal" BackgroundColor="#1E88FA"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-            <Image HeightRequest="30" WidthRequest="30" Source="BC_logo_1.png" VerticalOptions="Center" HorizontalOptions="Center" />
-            <Label Text="Wi-Fi File Transfer" BackgroundColor="#1E88FA" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="20" Padding="0" Margin="0,0,0,0" />
+        <StackLayout  Orientation="Horizontal" BackgroundColor="#1E88FA"  VerticalOptions="CenterAndExpand" HorizontalOptions="Fill">
+            <ImageButton x:Name="btn_Info" IsVisible="True"  Source="info_selected.png" HeightRequest="25" WidthRequest="25" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="StartAndExpand" Margin="10" />
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+                <Image HeightRequest="30" WidthRequest="30" Source="BC_logo_1.png" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Label Text="Wi-Fi File Transfer" BackgroundColor="#1E88FA" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="20" Padding="0" />
+            </StackLayout>
+            <ImageButton x:Name="btn_Settings" Source="settings.png" HeightRequest="25" WidthRequest="25" BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="EndAndExpand" Margin="10" />
         </StackLayout>
     </NavigationPage.TitleView>
     
