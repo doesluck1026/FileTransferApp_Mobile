@@ -135,6 +135,7 @@ public class Main
         public double TotalDataSize;        /// MB KB GB...
         public double TotalDataSent;        /// MB KB GB...
         public FileOperations.SizeUnit SizeUnit;
+        public FileOperations.SizeUnit SentSizeUnit;
         public double Progress;             /// between 0 and 100
         public double TotalElapsedTime;     /// Seconds
         public double EstimatedTime;        /// Seconds
@@ -327,6 +328,7 @@ public class Main
             _transferMetrics.SizeUnit = file.FileSizeUnit;
             file.CalculateFileSize(_transferMetrics.TotalBytesSent);
             _transferMetrics.TotalDataSent = file.FileSize;
+            _transferMetrics.SentSizeUnit = file.FileSizeUnit;
         }
     }
     private static void SendFirstFrame()

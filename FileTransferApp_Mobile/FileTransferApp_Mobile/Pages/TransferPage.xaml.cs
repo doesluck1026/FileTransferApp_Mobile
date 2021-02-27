@@ -46,6 +46,21 @@ namespace FileTransferApp_Mobile
                 Navigation.PushAsync(new TransferDonePage());
             });
         }
+        protected override bool OnBackButtonPressed()
+        {
+            if(Main.IsTransfering)
+            {
+                using (Acr.UserDialogs.UserDialogs.Instance.Loading("Do you want to cancel?"));
+                {
+                    Task.Delay(500);
+                }
+            }
+            else
+            {
+                Navigation.PushAsync(new Pages.ActionPage());
+            }
+            return true;
+        }
         private void StartUpdatingUI()
         {
             UpdateTimer = new Timer(Timer_Tick, null, 0, updatePeriod);
@@ -86,7 +101,7 @@ namespace FileTransferApp_Mobile
                     (((int)Main.TransferMetrics.TotalElapsedTime % 3600) % 60).ToString("00");
                 lbl_RemainingTime.Text = ((int)Main.TransferMetrics.EstimatedTime / 3600).ToString("00") + ":" + (((int)Main.TransferMetrics.EstimatedTime % 3600) / 60).ToString("00") + ":" +
                     (((int)Main.TransferMetrics.EstimatedTime % 3600) % 60).ToString("00");
-                lbl_totalSent.Text = Main.TransferMetrics.TotalDataSent.ToString("0.00") + " "+Main.TransferMetrics.SizeUnit.ToString();
+                lbl_totalSent.Text = Main.TransferMetrics.TotalDataSent.ToString("0.00") + " "+Main.TransferMetrics.SentSizeUnit.ToString();
                 lbl_totalSize.Text = Main.TransferMetrics.TotalDataSize.ToString("0.00") + " "+Main.TransferMetrics.SizeUnit.ToString();
             });
             

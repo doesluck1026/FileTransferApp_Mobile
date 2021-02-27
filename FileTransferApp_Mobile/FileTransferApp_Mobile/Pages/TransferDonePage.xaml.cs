@@ -20,6 +20,11 @@ namespace FileTransferApp_Mobile
             list_Files.ItemsSource = Main.FileNames;
             list_Files.SelectedItem = Main.FileNames[selectedFileIndex];
         }
+        protected override bool OnBackButtonPressed()
+        {
+            Navigation.PushAsync(new Pages.ActionPage());
+            return true;
+        }
         private async void btn_MainMenu_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Pages.ActionPage());

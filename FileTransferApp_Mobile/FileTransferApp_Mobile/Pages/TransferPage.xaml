@@ -17,7 +17,7 @@
         <StackLayout BackgroundColor="#2f3452">
 
             <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10,20,10,10" >
-                <Label Text="File Are being tranferred be patient!" 
+                <Label Text="Files are being tranferred. be patient!" 
                    TextColor="White"
                    VerticalOptions="Center"
                    VerticalTextAlignment="Center"
