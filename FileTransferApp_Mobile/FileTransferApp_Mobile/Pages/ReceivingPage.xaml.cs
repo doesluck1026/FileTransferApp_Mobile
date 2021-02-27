@@ -12,9 +12,11 @@ namespace FileTransferApp_Mobile.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ReceivingPage : ContentPage
     {
+
         public ReceivingPage()
         {
             InitializeComponent();
+            loader.Easing = Easing.CubicIn;
             Main.OnClientRequested += Main_OnClientRequested;
         }
 
@@ -27,16 +29,23 @@ namespace FileTransferApp_Mobile.Pages
             });
         }
 
-        private async void ContentPage_Appearing(object sender, EventArgs e)
+        private void ContentPage_Appearing(object sender, EventArgs e)
         {
-            using (var progress = Acr.UserDialogs.UserDialogs.Instance.Loading("Waiting For Connection..."))
+            NetworkScanner.GetDeviceAddress(out string DeviceIP, out string DeviceHostName);
+            Dispatcher.BeginInvokeOnMainThread(() =>
             {
-                for (var i = 0; i < 100; i++)
-                {
-                    //progress.PercentComplete = i;
-                    await Task.Delay(20);
-                }
-            }
+                lbl_IP.Text = DeviceIP;
+                lbl_HostName.Text = Parameters.DeviceName;
+            });
+
+            //using (var progress = Acr.UserDialogs.UserDialogs.Instance.Loading("Waiting For Connection..."))
+            //{
+            //    for (var i = 0; i < 1000; i++)
+            //    {
+            //        //progress.PercentComplete = i;
+            //        await Task.Delay(50);
+            //    }
+            //}
         }
 
     }

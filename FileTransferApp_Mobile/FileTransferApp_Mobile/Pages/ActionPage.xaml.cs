@@ -26,6 +26,12 @@ namespace FileTransferApp_Mobile.Pages
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            NetworkScanner.GetDeviceAddress(out string DeviceIP, out string DeviceHostName);
+            Dispatcher.BeginInvokeOnMainThread(() =>
+            {
+                lbl_IP.Text = DeviceIP;
+                lbl_HostName.Text = Parameters.DeviceName;
+            });
         }
         private void Main_OnClientRequested(string totalTransferSize, string senderDevice)
         {

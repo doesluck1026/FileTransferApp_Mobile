@@ -70,7 +70,9 @@
                     GradientStartColor="#398efe"
                     HeightRequest="30"
                     Percentage="{Binding Percentage}"
-                    TextColor="White" />
+                    TextColor="White" 
+                    Margin="10"
+                />
 
             <Frame Padding="10" BackgroundColor="#501E88FA" CornerRadius="20" HorizontalOptions="Fill" Margin="10,5,10,0" >
                 <StackLayout Orientation="Vertical" HorizontalOptions="Start" >
