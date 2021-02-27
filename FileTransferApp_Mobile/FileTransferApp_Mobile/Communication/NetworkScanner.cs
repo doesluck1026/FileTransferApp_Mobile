@@ -5,20 +5,20 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
-using Xamarin.Essentials;
-using Xamarin.Forms;
 
 class NetworkScanner
 {
     public delegate void ScanCompleteDelegate();
     public static event ScanCompleteDelegate OnScanCompleted;
-        
-    private static string DeviceIP;             /// ip of this device
+    private static string DeviceIP;
     private static readonly int PublishPort = 42019;
     private static Server publisherServer;
     private static Client client;
     public static List<string> DeviceNames = new List<string>();
     public static List<string> DeviceIPs = new List<string>();
+    private static Thread scanThread;
+    private static string IPHeader;
+    public static bool IsDevicePublished = false;
     public static void ScanAvailableDevices()
     {
         Thread.Sleep(500);
@@ -29,51 +29,51 @@ class NetworkScanner
         DeviceIPs.Clear();
         char[] splitter = new char[] { '.' };
         var ipStack = deviceIP.Split(splitter);
-        string ipHeader = "";
+        IPHeader = "";
         for (int i = 0; i < 3; i++)
         {
-            ipHeader += ipStack[i] + ".";
+            IPHeader += ipStack[i] + ".";
         }
-        IPHolder holder = new IPHolder(2, 256, ipHeader);
-        Thread t = new Thread(new ParameterizedThreadStart(ParallelScan));
-        t.Start(holder);
-
+        if (scanThread != null)
+        {
+            if (scanThread.IsAlive)
+                scanThread.Abort();
+        }
+        Debug.WriteLine("Scan Started: ");
+        scanThread = new Thread(ParallelScan);
+        scanThread.Start();
     }
 
-    private static void ParallelScan(object sender)
+    private static void ParallelScan()
     {
         Stopwatch stp = Stopwatch.StartNew();
-        IPHolder holder = (IPHolder)sender;
-        Debug.WriteLine("Buradaydı");
-        for (int i = holder.StartIP; i < holder.StopIP; i++)
+        for (int i = 2; i < 256; i++)
         {
             try
             {
                 //Debug.WriteLine("Pinging: " + holder.IpHeader + i.ToString());
-                GetDeviceData(holder.IpHeader + i.ToString());
+                string targetIP = IPHeader + i.ToString();
+                if (targetIP == DeviceIP)
+                    continue;
+                GetDeviceData(targetIP);
             }
-            catch(Exception e)
+            catch
             {
-                Debug.WriteLine(e.ToString());
+
             }
         }
-
-        Debug.WriteLine("scanning time: " + stp.Elapsed.TotalSeconds + " s");
-
         if (OnScanCompleted != null)
-            OnScanCompleted.Invoke();
+            OnScanCompleted();
+        Debug.WriteLine("scanning time: " + stp.Elapsed.TotalSeconds + " s");
     }
-
-
-
     private static void GetDeviceData(string IP)
     {
         //Stopwatch stp = Stopwatch.StartNew();
         client = new Client(port: PublishPort, ip: IP);
-        string clientIP = client.ConnectToServer(25);
+        string clientIP = client.ConnectToServer(35);
         if (string.IsNullOrEmpty(clientIP))
         {
-            //Debug.WriteLine("Connection Failed on: " + IP);
+            Debug.WriteLine("Connection Failed on: " + IP);
         }
         else
         {
@@ -97,11 +97,11 @@ class NetworkScanner
     }
     public static void PublishDevice()
     {
-        
         publisherServer = new Server(port: PublishPort);
         publisherServer.SetupServer();
-        publisherServer.OnClientConnected += PublisherServer_OnClientConnected;
         publisherServer.StartListener();
+        publisherServer.OnClientConnected += PublisherServer_OnClientConnected;
+        IsDevicePublished = true;
     }
 
     private static void PublisherServer_OnClientConnected(string clientIP)
@@ -151,18 +151,5 @@ class NetworkScanner
     {
         var host = Dns.GetHostEntry(Dns.GetHostName());
         return host.HostName;
-    }
-
-    private class IPHolder
-    {
-        public int StartIP;
-        public int StopIP;
-        public string IpHeader;
-        public IPHolder(int startIP, int stopIP, string ipHeader)
-        {
-            this.StartIP = startIP;
-            this.StopIP = stopIP;
-            this.IpHeader = ipHeader;
-        }
     }
 }

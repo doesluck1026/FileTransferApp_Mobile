@@ -21,7 +21,6 @@ namespace FileTransferApp_Mobile
         public static MainPage Instance;
         private string DeviceIP;
         private string DeviceHostName;
-        private bool isScanned = false;
         public MainPage()
         {
             InitializeComponent();
@@ -38,11 +37,6 @@ namespace FileTransferApp_Mobile
                 lbl_IP.Text = DeviceIP;
                 lbl_HostName.Text = Parameters.DeviceName;
             });
-            if(!isScanned)
-            {
-                ScanNetwork();
-                isScanned = true;
-            }
         }
         private void Main_OnClientRequested(string totalTransferSize, string deviceName)
         {
@@ -76,10 +70,5 @@ namespace FileTransferApp_Mobile
         {
             SelectFile();
         }
-        private void ScanNetwork()
-        {
-           NetworkScanner.ScanAvailableDevices();
-        }
-        
     }
 }

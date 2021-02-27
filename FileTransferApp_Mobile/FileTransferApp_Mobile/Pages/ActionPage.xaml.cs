@@ -16,8 +16,10 @@ namespace FileTransferApp_Mobile.Pages
         {
             InitializeComponent();
             Main.StartServer();
+            if(!NetworkScanner.IsDevicePublished)
+                NetworkScanner.PublishDevice();
+            NetworkScanner.ScanAvailableDevices();
             Parameters.Init();
-            NetworkScanner.PublishDevice();
             Main.FileSaveURL = GetSaveFilePath();
             Main.OnClientRequested += Main_OnClientRequested;
         }

@@ -295,6 +295,8 @@ public class Main
     private static bool CheckAck(Functions func)
     {
         byte[] data = client.GetData();
+        if (data == null)
+            return false;
         if (data[0] == (byte)func)
             return true;
         else
