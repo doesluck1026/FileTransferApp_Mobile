@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
@@ -19,6 +16,11 @@ namespace FileTransferApp_Mobile.Pages
         public SplashPage()
         {
             InitializeComponent();
+            Main.StartServer();
+            if (!NetworkScanner.IsDevicePublished)
+                NetworkScanner.PublishDevice();
+            NetworkScanner.ScanAvailableDevices();
+            Parameters.Init();
         }
         private void ContentPage_Appearing(object sender, EventArgs e)
         {

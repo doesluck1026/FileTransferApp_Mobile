@@ -19,12 +19,12 @@ namespace FileTransferApp_Mobile
         public TransferPage()
         {
             InitializeComponent();
-            Main.OnTransferFinished += Main_OnTransferFinished;
             DeviceDisplay.KeepScreenOn = true;
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            Main.OnTransferFinished += Main_OnTransferFinished;
             Task.Run(() =>
             {
                 while (!Main.IsTransfering)
@@ -33,6 +33,11 @@ namespace FileTransferApp_Mobile
                 }
                 StartUpdatingUI();
             });            
+        }
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            Main.OnTransferFinished -= Main_OnTransferFinished;
         }
         private  void Main_OnTransferFinished()
         {

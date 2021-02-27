@@ -30,7 +30,7 @@
             </Frame>
 
             <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10" >
-                <Label Text="Please wait to connect sender!" 
+                <Label Text="Waiting for connection..." 
                    TextColor="White"
                    VerticalOptions="Center"
                    VerticalTextAlignment="Center"

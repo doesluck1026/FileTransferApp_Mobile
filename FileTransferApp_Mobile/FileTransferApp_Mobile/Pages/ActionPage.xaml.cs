@@ -14,24 +14,34 @@ namespace FileTransferApp_Mobile.Pages
     {
         public ActionPage()
         {
-            InitializeComponent();
-            Main.StartServer();
-            if(!NetworkScanner.IsDevicePublished)
-                NetworkScanner.PublishDevice();
-            NetworkScanner.ScanAvailableDevices();
-            Parameters.Init();
+            InitializeComponent();            
             Main.FileSaveURL = GetSaveFilePath();
-            Main.OnClientRequested += Main_OnClientRequested;
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            Main.OnClientRequested += Main_OnClientRequested;
+            if (Parameters.IsFirstTime)
+            {
+                Parameters.IsFirstTime = false;
+                Parameters.Save();
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    Navigation.PushAsync(new SettingsPage());
+                });
+                
+            }
             NetworkScanner.GetDeviceAddress(out string DeviceIP, out string DeviceHostName);
             Dispatcher.BeginInvokeOnMainThread(() =>
             {
                 lbl_IP.Text = DeviceIP;
                 lbl_HostName.Text = Parameters.DeviceName;
             });
+        }
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            Main.OnClientRequested -= Main_OnClientRequested;
         }
         private void Main_OnClientRequested(string totalTransferSize, string senderDevice)
         {

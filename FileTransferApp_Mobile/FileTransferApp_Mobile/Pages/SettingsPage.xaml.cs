@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -21,6 +17,10 @@ namespace FileTransferApp_Mobile.Pages
             base.OnAppearing();
             Device.InvokeOnMainThreadAsync(() =>
             {
+                if (Parameters.IsFirstTime)
+                    Frame_firstTimeInfo.IsVisible = true;
+                else
+                    Frame_firstTimeInfo.IsVisible = false;
                 txt_DeviceName.Text = Parameters.DeviceName;
             });
         }
@@ -33,7 +33,7 @@ namespace FileTransferApp_Mobile.Pages
                 for (var i = 0; i < 100; i++)
                 {
                     //progress.PercentComplete = i;
-                    await Task.Delay(20);
+                    await Task.Delay(10);
                 }
             }
         }

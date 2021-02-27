@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,16 +13,36 @@ namespace FileTransferApp_Mobile
     public partial class SendingPage : ContentPage
     {
         public static SendingPage Instance;
-        public string[] AvailableDeviceArray;
         private string TargetDeviceIP;
         public SendingPage()
         {
             InitializeComponent();
             Instance = this;
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            list_Devices.SeparatorColor = Color.AliceBlue;
+            list_Devices.RefreshControlColor = Color.Black;
+
             NetworkScanner.OnScanCompleted += NetworkScanner_OnScanCompleted;
             Main.OnTransferResponded += Main_OnTransferResponded;
+            if (NetworkScanner.DeviceNames != null)
+            {
+                if (NetworkScanner.DeviceNames.Count > 0)
+                {
+                    list_Devices.ItemsSource = NetworkScanner.DeviceNames.ToArray();
+                    list_Devices.SelectedItem = NetworkScanner.DeviceNames[0];
+                    list_Devices_ItemSelected(null, null);
+                }
+            }
         }
-
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            NetworkScanner.OnScanCompleted -= NetworkScanner_OnScanCompleted;
+            Main.OnTransferResponded -= Main_OnTransferResponded;
+        }
         private void Main_OnTransferResponded(bool isAccepted)
         {
             Debug.WriteLine("Receiver Response: " + isAccepted);
@@ -35,7 +53,6 @@ namespace FileTransferApp_Mobile
                     Navigation.PushAsync(new TransferPage());
                 });
                 Main.BeginSendingFiles();
-                Main.OnTransferResponded -= Main_OnTransferResponded;
             }
         }
 
@@ -45,21 +62,13 @@ namespace FileTransferApp_Mobile
             {
                 if (NetworkScanner.DeviceNames != null)
                 {
-                    AvailableDeviceArray = NetworkScanner.DeviceNames.ToArray();
-                    list_Devices.ItemsSource = AvailableDeviceArray;
+                    if(NetworkScanner.DeviceNames.Count>0)
+                        list_Devices.ItemsSource = NetworkScanner.DeviceNames.ToArray();
                 }
             });
         }
 
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-            if (NetworkScanner.DeviceNames!= null)
-            {
-                AvailableDeviceArray = NetworkScanner.DeviceNames.ToArray();
-                list_Devices.ItemsSource = AvailableDeviceArray;
-            }
-        }
+       
         private void btn_SendFile_Clicked(object sender, EventArgs e)
         {
             Main.ConnectToTargetDevice(txt_ClientIP.Text);
@@ -75,6 +84,25 @@ namespace FileTransferApp_Mobile
         {
             NetworkScanner.DeviceNames = new List<string>();
             NetworkScanner.ScanAvailableDevices();
+            Task.Run(() =>
+            {
+                Thread.Sleep(500);
+                using (var progress = Acr.UserDialogs.UserDialogs.Instance.Progress("Scanning Network..."))
+                {
+                    while (NetworkScanner.IsScanning)
+                    {
+                        Device.BeginInvokeOnMainThread(() =>
+                        {
+                            if (NetworkScanner.DeviceNames != null)
+                                if (NetworkScanner.DeviceNames.Count > 0)
+                                    list_Devices.ItemsSource = NetworkScanner.DeviceNames.ToArray();
+
+                            progress.PercentComplete = NetworkScanner.ScanPercentage;
+                        });
+                        Thread.Sleep(100);
+                    }
+                }
+            });
         }
     }
 }

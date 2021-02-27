@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -29,7 +26,7 @@ namespace FileTransferApp_Mobile.Pages
 
         private void btn_youtube_Clicked(object sender, EventArgs e)
         {
-
+            Launcher.OpenAsync("https://www.youtube.com/channel/UCkUWRx8ozzEgi7R2I6OY-BQ");
         }
 
         private void btn_insta_Clicked(object sender, EventArgs e)
@@ -39,7 +36,7 @@ namespace FileTransferApp_Mobile.Pages
 
         private void btn_github_Clicked(object sender, EventArgs e)
         {
-
+            Launcher.OpenAsync("https://github.com/doesluck1026");
         }
 
         private void btn_patreon_Clicked(object sender, EventArgs e)

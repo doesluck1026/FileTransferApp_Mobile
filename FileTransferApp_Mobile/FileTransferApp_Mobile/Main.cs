@@ -195,6 +195,11 @@ public class Main
             Debug.WriteLine("Rising event");
             if (OnTransferResponded != null)
                 OnTransferResponded(isAccepted);
+            else
+            {
+                client.DisconnectFromServer();
+                client = null;
+            }
         });
 
     }
@@ -411,6 +416,20 @@ public class Main
         else
             data[0] = (byte)Functions.RejectFiles;
         server.SendDataToClient(data);
+        Task.Run(() =>
+        {
+            Thread.Sleep(500);
+            try
+            {
+                server.CloseServer();
+                server = null;
+                StartServer();
+            }
+            catch
+            {
+
+            }
+        });
     }
 
     #endregion
@@ -420,6 +439,7 @@ public class Main
     {
         _transferMetrics = new Metrics();
         ClientIP = clientIP;
+        Debug.WriteLine("Connectied");
         byte[] receivedData = server.GetData();
         if (receivedData == null)
             return;

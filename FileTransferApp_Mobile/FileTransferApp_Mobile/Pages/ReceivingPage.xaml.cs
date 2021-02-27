@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -17,9 +12,17 @@ namespace FileTransferApp_Mobile.Pages
         {
             InitializeComponent();
             loader.Easing = Easing.CubicIn;
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
             Main.OnClientRequested += Main_OnClientRequested;
         }
-
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            Main.OnClientRequested -= Main_OnClientRequested;
+        }
         private void Main_OnClientRequested(string totalTransferSize, string senderDevice)
         {
             /// Show file transfer request and ask for permission here
@@ -37,16 +40,6 @@ namespace FileTransferApp_Mobile.Pages
                 lbl_IP.Text = DeviceIP;
                 lbl_HostName.Text = Parameters.DeviceName;
             });
-
-            //using (var progress = Acr.UserDialogs.UserDialogs.Instance.Loading("Waiting For Connection..."))
-            //{
-            //    for (var i = 0; i < 1000; i++)
-            //    {
-            //        //progress.PercentComplete = i;
-            //        await Task.Delay(50);
-            //    }
-            //}
         }
-
     }
 }

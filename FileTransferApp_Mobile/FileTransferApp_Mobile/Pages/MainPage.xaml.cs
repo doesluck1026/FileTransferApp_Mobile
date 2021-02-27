@@ -1,16 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Globalization;
 using System.Linq;
-using System.Resources;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Essentials;
-using System.IO;
 
 
 namespace FileTransferApp_Mobile
@@ -26,17 +18,22 @@ namespace FileTransferApp_Mobile
             InitializeComponent();
             Instance = this;
             DeviceDisplay.KeepScreenOn = false;
-            Main.OnClientRequested += Main_OnClientRequested;
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            Main.OnClientRequested += Main_OnClientRequested;
             NetworkScanner.GetDeviceAddress(out DeviceIP, out DeviceHostName);
             Dispatcher.BeginInvokeOnMainThread(() =>
             {
                 lbl_IP.Text = DeviceIP;
                 lbl_HostName.Text = Parameters.DeviceName;
             });
+        }
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            Main.OnClientRequested -= Main_OnClientRequested;
         }
         private void Main_OnClientRequested(string totalTransferSize, string deviceName)
         {

@@ -34,7 +34,7 @@ namespace FileTransferApp_Mobile
         private async void btn_Reject_Clicked(object sender, EventArgs e)
         {
             Main.ResponseToTransferRequest(false);
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PushAsync(new Pages.ActionPage());
         }
     }
 }

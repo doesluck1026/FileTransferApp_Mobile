@@ -50,7 +50,7 @@
                 HeightRequest="75" 
                 WidthRequest="75" 
                 BackgroundColor="#87feaf" 
-                Text="Select File" 
+                Text="Select FIle" 
                 Margin="40, 50, 50, 50" 
                 FontSize="20" 
                 FontAttributes="Bold" 

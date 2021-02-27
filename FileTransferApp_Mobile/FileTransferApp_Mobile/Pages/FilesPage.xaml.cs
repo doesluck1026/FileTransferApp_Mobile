@@ -41,20 +41,22 @@ namespace FileTransferApp_Mobile.Pages
                 {
                     FilePaths.Add(results[i].FullPath);
                 }
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    list_Files.ItemsSource = FilePaths.ToArray();
+                    list_Files.SelectedItem = FilePaths[SelectedIndex];
+                });
             }
         }
         private void btn_Add_Clicked(object sender, EventArgs e)
         {
             SelectFile();
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                list_Files.ItemsSource = FilePaths.ToArray();
-                list_Files.SelectedItem = FilePaths[SelectedIndex];
-            });
         }
 
         private async void btn_Open_Clicked(object sender, EventArgs e)
         {
+            if (FilePaths.Count == 0)
+                return;
             string selectedFilePath = Main.FilePaths[SelectedIndex];
             await Launcher.OpenAsync(new OpenFileRequest
             {

@@ -10,18 +10,51 @@ class NetworkScanner
 {
     public delegate void ScanCompleteDelegate();
     public static event ScanCompleteDelegate OnScanCompleted;
+    public static List<string> DeviceNames = new List<string>();
+    public static List<string> DeviceIPs = new List<string>();
+    public static bool IsScanning
+    {
+        get
+        {
+            lock (Lck_IsScanning)
+                return _isScanning;
+        }
+        private set
+        {
+            lock (Lck_IsScanning)
+                _isScanning = value;
+        }
+    }
+    public static int ScanPercentage
+    {
+        get
+        {
+            lock (Lck_ScanPercentage)
+                return _scanPercentage;
+        }
+        private set
+        {
+            lock (Lck_ScanPercentage)
+                _scanPercentage = value;
+        }
+    }
     private static string DeviceIP;
     private static readonly int PublishPort = 42019;
     private static Server publisherServer;
     private static Client client;
-    public static List<string> DeviceNames = new List<string>();
-    public static List<string> DeviceIPs = new List<string>();
+
     private static Thread scanThread;
     private static string IPHeader;
     public static bool IsDevicePublished = false;
+
+    private static bool _isScanning = false;
+    private static int _scanPercentage = 0;
+
+    private static object Lck_IsScanning = new object();
+    private static object Lck_ScanPercentage = new object();
     public static void ScanAvailableDevices()
     {
-        Thread.Sleep(500);
+        ScanPercentage = 0;
         string deviceIP, deviceHostname;
         GetDeviceAddress(out deviceIP, out deviceHostname);
         DeviceIP = deviceIP;
@@ -42,12 +75,13 @@ class NetworkScanner
         Debug.WriteLine("Scan Started: ");
         scanThread = new Thread(ParallelScan);
         scanThread.Start();
+        IsScanning = true;
     }
 
     private static void ParallelScan()
     {
         Stopwatch stp = Stopwatch.StartNew();
-        for (int i = 2; i < 256; i++)
+        for (int i = 2; i < 255; i++)
         {
             try
             {
@@ -56,12 +90,15 @@ class NetworkScanner
                 if (targetIP == DeviceIP)
                     continue;
                 GetDeviceData(targetIP);
+                ScanPercentage=(int)(((i-2)/253.0)*100);
             }
             catch
             {
 
             }
         }
+        IsScanning = false;
+        ScanPercentage = 100;
         if (OnScanCompleted != null)
             OnScanCompleted();
         Debug.WriteLine("scanning time: " + stp.Elapsed.TotalSeconds + " s");
@@ -73,7 +110,7 @@ class NetworkScanner
         string clientIP = client.ConnectToServer(35);
         if (string.IsNullOrEmpty(clientIP))
         {
-            Debug.WriteLine("Connection Failed on: " + IP);
+            //Debug.WriteLine("Connection Failed on: " + IP);
         }
         else
         {

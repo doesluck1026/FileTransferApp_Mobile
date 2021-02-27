@@ -1236,3 +1236,5 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc64bb223c2be3a01e03\SKCanvasViewRendererBase_2.java
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc64bb223c2be3a01e03\SKGLViewRenderer.java
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc64bb223c2be3a01e03\SKGLViewRendererBase_2.java
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\res\drawable\file_p.png
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\res\drawable\confirm.png

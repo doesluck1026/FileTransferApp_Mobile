@@ -11,14 +11,8 @@ class Parameters
     /// User defined name of the device that is shown during scan process
     /// </summary>
     public static string DeviceName { get; set; }  
-    /// <summary>
-    /// Total size of files transfered via this app since download
-    /// </summary>
-    public static string TotalTransferedDataSize { get; set; }
-    /// <summary>
-    /// Total number of files transfered via this app since download
-    /// </summary>
-    public static int NumberOfFilesTransfered { get; set; }
+
+    public static bool IsFirstTime { get; set; }
 
     private static bool didInit = false;
     /// <summary>
@@ -28,14 +22,11 @@ class Parameters
     {
         if (Application.Current.Properties.ContainsKey("DeviceName") == false)
             Application.Current.Properties.Add("DeviceName", DeviceInfo.Name);
-        if (Application.Current.Properties.ContainsKey("TransferSize") == false)
-            Application.Current.Properties.Add("TransferSize", "1 Byte");
-        if (Application.Current.Properties.ContainsKey("NumFiles") == false)
-            Application.Current.Properties.Add("NumFiles", 0);
+        if(Application.Current.Properties.ContainsKey("FirstTime")==false)
+            Application.Current.Properties.Add("FirstTime", true);
         didInit = true;
         DeviceName = (string)Application.Current.Properties["DeviceName"];
-        TotalTransferedDataSize = (string)Application.Current.Properties["TransferSize"];
-        NumberOfFilesTransfered = (int)Application.Current.Properties["NumFiles"];
+        IsFirstTime = (bool)Application.Current.Properties["FirstTime"];
         didInit = true;
     }
     /// <summary>
@@ -47,7 +38,6 @@ class Parameters
             return;
         Debug.WriteLine("Saving Parameters..");
         Application.Current.Properties["DeviceName"] = DeviceName;
-        Application.Current.Properties["TransferSize"] = TotalTransferedDataSize;
-        Application.Current.Properties["NumFiles"] = NumberOfFilesTransfered;
+        Application.Current.Properties["FirstTime"] = IsFirstTime;
     }
 }
