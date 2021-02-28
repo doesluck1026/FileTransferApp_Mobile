@@ -37,12 +37,12 @@
 
                 <StackLayout HorizontalOptions="StartAndExpand" Margin="30,0">
                     <ImageButton x:Name="btn_Reject" Clicked="btn_Reject_Clicked" Padding="20,0,20,0"  Source="abort.png" BackgroundColor="#F20C10" CornerRadius="50" WidthRequest="100" HeightRequest="100" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"  />
-                    <Label Text="Abort" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
+                    <Label Text="Decline" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
                 </StackLayout>
 
                 <StackLayout HorizontalOptions="EndAndExpand" Margin="30,0">
                     <ImageButton x:Name="btn_Accept" Clicked="btn_Accept_Clicked" Padding="20,0,20,0"  Source="accept.png" BackgroundColor="#87feaf" CornerRadius="50" WidthRequest="100" HeightRequest="100" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"  />
-                    <Label Text="Send" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
+                    <Label Text="Accept" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
                 </StackLayout>
 
             </StackLayout>

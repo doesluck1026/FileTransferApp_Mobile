@@ -27,8 +27,8 @@ namespace FileTransferApp_Mobile
         }
         private async void btn_Accept_Clicked(object sender, EventArgs e)
         {
+            Main.IsSending = false;
             await Navigation.PushAsync(new TransferPage());
-            Main.ResponseToTransferRequest(true);
         }
 
         private async void btn_Reject_Clicked(object sender, EventArgs e)

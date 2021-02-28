@@ -38,6 +38,11 @@ namespace FileTransferApp_Mobile.Pages
             base.OnDisappearing();
             Main.OnClientRequested -= Main_OnClientRequested;
         }
+        protected override bool OnBackButtonPressed()
+        {
+            Environment.Exit(0);
+            return true;
+        }
         private void Main_OnClientRequested(string totalTransferSize, string senderDevice)
         {
             /// Show file transfer request and ask for permission here

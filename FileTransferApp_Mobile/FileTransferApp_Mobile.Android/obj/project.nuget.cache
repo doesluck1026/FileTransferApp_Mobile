@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "lxxeMKagoinauTh0coMrKbLO3y4hahQMVb0a8P0Xl6Gd3LdAnQa6rqRdA7MT9esFL+N3I8lN+RpqNUFrYyx+HA==",
+  "dgSpecHash": "TLs76Atvzhmc+QpBbptqg+c5bi/0OYki1AE7LJkbPUbkVy4HR6Dhc+LGgGQ1ZSKfKfdYBpKght09nuL+rqg1qw==",
   "success": true,
   "projectFilePath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.Android\\FileTransferApp_Mobile.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\acr.userdialogs\\7.1.0.475\\acr.userdialogs.7.1.0.475.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\andhud\\1.4.2\\andhud.1.4.2.nupkg.sha512",
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\marctron.admob\\1.6.0\\marctron.admob.1.6.0.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\rssdp\\4.0.4\\rssdp.4.0.4.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\skiasharp.views\\1.68.1.1\\skiasharp.views.1.68.1.1.nupkg.sha512",
@@ -57,10 +58,16 @@
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.androidx.vectordrawable.animated\\1.1.0.5\\xamarin.androidx.vectordrawable.animated.1.1.0.5.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.androidx.versionedparcelable\\1.1.1.5\\xamarin.androidx.versionedparcelable.1.1.1.5.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.androidx.viewpager\\1.0.0.5\\xamarin.androidx.viewpager.1.0.0.5.nupkg.sha512",
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.build.download\\0.10.0\\xamarin.build.download.0.10.0.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.essentials\\1.6.0-pre5\\xamarin.essentials.1.6.0-pre5.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.forms\\5.0.0.1791-pre5\\xamarin.forms.5.0.0.1791-pre5.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.763-beta\\xamarin.forms.pancakeview.2.3.0.763-beta.nupkg.sha512",
-    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.google.android.material\\1.0.0.1\\xamarin.google.android.material.1.0.0.1.nupkg.sha512"
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.google.android.material\\1.0.0.1\\xamarin.google.android.material.1.0.0.1.nupkg.sha512",
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.googleplayservices.ads.base\\119.1.0\\xamarin.googleplayservices.ads.base.119.1.0.nupkg.sha512",
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.googleplayservices.ads.lite\\119.1.0\\xamarin.googleplayservices.ads.lite.119.1.0.nupkg.sha512",
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.googleplayservices.basement\\117.2.1\\xamarin.googleplayservices.basement.117.2.1.nupkg.sha512",
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.googleplayservices.measurement.base\\117.4.1\\xamarin.googleplayservices.measurement.base.117.4.1.nupkg.sha512",
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.googleplayservices.measurement.sdk.api\\117.4.1\\xamarin.googleplayservices.measurement.sdk.api.117.4.1.nupkg.sha512"
   ],
   "logs": [
     {

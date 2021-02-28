@@ -49,10 +49,7 @@ namespace FileTransferApp_Mobile
                 return base.OnBackButtonPressed();
             else
             {
-                using (Acr.UserDialogs.UserDialogs.Instance.Alert("You can't go back after sending a request. Sorry..."))
-                {
-                    Task.Delay(200);
-                }
+                Acr.UserDialogs.UserDialogs.Instance.Alert("You can't go back after sending a request. Sorry...");
                 return true;
             }
         }
@@ -64,16 +61,13 @@ namespace FileTransferApp_Mobile
             {
                 Device.InvokeOnMainThreadAsync(() =>
                 {
+                    Main.IsSending = true;
                     Navigation.PushAsync(new TransferPage());
                 });
-                Main.BeginSendingFiles();
             }
             else
             {
-                using (Acr.UserDialogs.UserDialogs.Instance.Alert("Transfer request is rejected by "+ TargetDeviceName + ". Sorry..."))
-                {
-                    Task.Delay(200);
-                }
+                Acr.UserDialogs.UserDialogs.Instance.Alert("Transfer request is rejected by " + TargetDeviceName + ". Sorry...");
             }
         }
 
@@ -107,6 +101,8 @@ namespace FileTransferApp_Mobile
 
         private void list_Devices_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            if (NetworkScanner.DeviceNames.Count <= 0)
+                return;
             TargetDeviceIP = NetworkScanner.DeviceIPs[NetworkScanner.DeviceNames.IndexOf(list_Devices.SelectedItem.ToString())];
             txt_ClientIP.Text = TargetDeviceIP;//list_Clients.SelectedItem.ToString();
         }

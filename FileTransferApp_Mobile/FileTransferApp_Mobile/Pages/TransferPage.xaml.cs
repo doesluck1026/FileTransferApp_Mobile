@@ -24,6 +24,10 @@ namespace FileTransferApp_Mobile
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            if (Main.IsSending)
+                Main.BeginSendingFiles();
+            else
+                Main.ResponseToTransferRequest(true);
             Main.OnTransferFinished += Main_OnTransferFinished;
             Task.Run(() =>
             {

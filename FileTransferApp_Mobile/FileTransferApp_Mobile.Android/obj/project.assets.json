@@ -27,6 +27,24 @@
           "lib/MonoAndroid81/AndHUD.dll": {}
         }
       },
+      "MarcTron.Admob/1.6.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.1.0.1",
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.Forms": "4.2.0.815419",
+          "Xamarin.GooglePlayServices.Ads.Lite": "119.1.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Plugin.MtAdmob.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Plugin.MtAdmob.dll": {}
+        }
+      },
       "Rssdp/4.0.4": {
         "type": "package",
         "compile": {
@@ -984,6 +1002,13 @@
           "buildTransitive/monoandroid90/Xamarin.AndroidX.ViewPager.targets": {}
         }
       },
+      "Xamarin.Build.Download/0.10.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
       "Xamarin.Essentials/1.6.0-pre5": {
         "type": "package",
         "dependencies": {
@@ -1071,11 +1096,111 @@
           "buildTransitive/monoandroid90/Xamarin.Google.Android.Material.targets": {}
         }
       },
+      "Xamarin.GooglePlayServices.Ads.Base/119.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Base.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Base.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/_._": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Ads.Lite/119.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.GooglePlayServices.Ads.Base": "119.1.0",
+          "Xamarin.GooglePlayServices.Basement": "117.2.1",
+          "Xamarin.GooglePlayServices.Measurement.Sdk.Api": "117.4.1"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Lite.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Lite.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/_._": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/117.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.1.0.1",
+          "Xamarin.AndroidX.Core": "1.2.0.1",
+          "Xamarin.AndroidX.Fragment": "1.1.0.1",
+          "Xamarin.Build.Download": "0.10.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Basement.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Basement.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/_._": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Measurement.Base/117.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.GooglePlayServices.Basement": "117.2.1"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Base.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Base.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/_._": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Measurement.Sdk.Api/117.4.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.10.0",
+          "Xamarin.GooglePlayServices.Basement": "117.2.1",
+          "Xamarin.GooglePlayServices.Measurement.Base": "117.4.1"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/_._": {}
+        }
+      },
       "FileTransferApp_Mobile/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.475",
+          "MarcTron.Admob": "1.6.0",
           "Rssdp": "4.0.4",
           "SkiaSharp.Views.Forms": "1.68.1.1",
           "Xamarin.Essentials": "1.6.1-preview1",
@@ -1137,6 +1262,25 @@
         "andhud.1.4.2.nupkg.sha512",
         "andhud.nuspec",
         "lib/MonoAndroid81/AndHUD.dll"
+      ]
+    },
+    "MarcTron.Admob/1.6.0": {
+      "sha512": "TmgkmPdrtuutjWmxJtVTtDg+QzoENXL9BfF8SI2ptj3lB1gmxc706WvhhYGpEuzC7GSCUujrIu3B/4SU9AGX/g==",
+      "type": "package",
+      "path": "marctron.admob/1.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid81/Plugin.MtAdmob.dll",
+        "lib/monoandroid90/Plugin.MtAdmob.dll",
+        "lib/netstandard1.0/Plugin.MtAdmob.dll",
+        "lib/netstandard2.0/Plugin.MtAdmob.dll",
+        "lib/uap10.0.18362/Plugin.MtAdmob.dll",
+        "lib/uap10.0.18362/Plugin.MtAdmob.pri",
+        "lib/xamarinios10/Plugin.MtAdmob.dll",
+        "marctron.admob.1.6.0.nupkg.sha512",
+        "marctron.admob.nuspec",
+        "readme.txt"
       ]
     },
     "Rssdp/4.0.4": {
@@ -2214,6 +2358,28 @@
         "xamarin.androidx.viewpager.nuspec"
       ]
     },
+    "Xamarin.Build.Download/0.10.0": {
+      "sha512": "XiQNxx6Jox00O80sJRlZv6jXDZ/r3KC7SMwzQNQcD1gZ+vsZyJH3LcSpdJ5NiZhRrWZlTGNSbooHsOBF7lBOyQ==",
+      "type": "package",
+      "path": "xamarin.build.download/0.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICE.txt",
+        "build/Microsoft.Win32.Registry.dll",
+        "build/Newtonsoft.Json.dll",
+        "build/Xamarin.Build.Download.dll",
+        "build/Xamarin.Build.Download.props",
+        "build/Xamarin.Build.Download.targets",
+        "buildTransitive/Microsoft.Win32.Registry.dll",
+        "buildTransitive/Newtonsoft.Json.dll",
+        "buildTransitive/Xamarin.Build.Download.dll",
+        "buildTransitive/Xamarin.Build.Download.props",
+        "buildTransitive/Xamarin.Build.Download.targets",
+        "xamarin.build.download.0.10.0.nupkg.sha512",
+        "xamarin.build.download.nuspec"
+      ]
+    },
     "Xamarin.Essentials/1.6.0-pre5": {
       "sha512": "iEbd8Lxt/4fO/jIugh8Boh9brPif81oFDXryaow2xuVRI1b/9hbmgJrQtbN7RfI+m197dkTCAsaacgfiFP2U8A==",
       "type": "package",
@@ -2533,6 +2699,81 @@
         "proguard/proguard.txt",
         "xamarin.google.android.material.1.0.0.1.nupkg.sha512",
         "xamarin.google.android.material.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Ads.Base/119.1.0": {
+      "sha512": "6hipOOl3NeOefjUB6+JKrIMCnHPJlyaDdgKAH9+wLSJSGBHmyT9j//Lx5wE2sQ0TgmEp07C+JYCtauqx4dlNhA==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.ads.base/119.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Ads.Base.targets",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Base.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Base.pdb",
+        "xamarin.googleplayservices.ads.base.119.1.0.nupkg.sha512",
+        "xamarin.googleplayservices.ads.base.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Ads.Lite/119.1.0": {
+      "sha512": "e+XHyEkisnmjqeihwv3VK1SAzccEQnet7hpG10kRZYMnnFxI8OfpH5nAXY7+J4BCqYJXlorh216vSjR0RWlY4A==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.ads.lite/119.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Ads.Lite.targets",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Lite.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Lite.pdb",
+        "proguard/MonoAndroid90/proguard.txt",
+        "xamarin.googleplayservices.ads.lite.119.1.0.nupkg.sha512",
+        "xamarin.googleplayservices.ads.lite.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Basement/117.2.1": {
+      "sha512": "Y01OMr4SkfEiTFFUk1jHjv3ZEx3fFaZC0AV3QsEEV89lLI/wMQ/NtSFd4iwF5dFIYEg92iE8FoJWj03sIgtTww==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.basement/117.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Basement.targets",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Tasks.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Basement.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Basement.pdb",
+        "proguard/MonoAndroid90/proguard.txt",
+        "xamarin.googleplayservices.basement.117.2.1.nupkg.sha512",
+        "xamarin.googleplayservices.basement.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Measurement.Base/117.4.1": {
+      "sha512": "VXibLkxOi2Kgtt889E0dCRuNuqiHB5g0hmDNy4yf1/iMuPBA7ej3Cd4BkO/g/6iq8k69fztvdbA/WOaRE4TJeA==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.measurement.base/117.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Measurement.Base.targets",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Base.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Base.pdb",
+        "proguard/MonoAndroid90/proguard.txt",
+        "xamarin.googleplayservices.measurement.base.117.4.1.nupkg.sha512",
+        "xamarin.googleplayservices.measurement.base.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Measurement.Sdk.Api/117.4.1": {
+      "sha512": "aYPOLa4bPCf4FUApkrpE+9H67Be9xMXDAhYmnlNgTyjb5bs4QDhO6PxNTYUYOXLDhziTjfVs6dAJBPo5z/OXrw==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.measurement.sdk.api/117.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.targets",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.pdb",
+        "proguard/MonoAndroid90/proguard.txt",
+        "xamarin.googleplayservices.measurement.sdk.api.117.4.1.nupkg.sha512",
+        "xamarin.googleplayservices.measurement.sdk.api.nuspec"
       ]
     },
     "FileTransferApp_Mobile/1.0.0": {

@@ -9,14 +9,11 @@ namespace FileTransferApp_Mobile
 {
     public partial class MainPage : ContentPage
     {
-        public List<string> AvailableDeviceList=new List<string>();
-        public static MainPage Instance;
         private string DeviceIP;
         private string DeviceHostName;
         public MainPage()
         {
             InitializeComponent();
-            Instance = this;
             DeviceDisplay.KeepScreenOn = false;
         }
         protected override void OnAppearing()

@@ -88,3 +88,9 @@ androidx.media.media
 androidx.lifecycle.lifecycle-livedata
 androidx.legacy.legacy-support-v4
 androidx.browser.browser
+Plugin.MtAdmob
+Xamarin.GooglePlayServices.Ads.Base
+Xamarin.GooglePlayServices.Ads.Lite
+Xamarin.GooglePlayServices.Basement
+Xamarin.GooglePlayServices.Measurement.Base
+Xamarin.GooglePlayServices.Measurement.Sdk.Api

@@ -15,12 +15,21 @@ namespace FileTransferApp_Mobile.Pages
 
         public SplashPage()
         {
-            InitializeComponent();
-            Main.StartServer();
-            if (!NetworkScanner.IsDevicePublished)
-                NetworkScanner.PublishDevice();
-            NetworkScanner.ScanAvailableDevices();
-            Parameters.Init();
+            InitializeComponent();            
+        }
+        protected override void OnAppearing()
+        {
+           // Task.Run(() =>
+            //{
+                Main.StartServer();
+                string deviceIP, deviceHostname;
+                NetworkScanner.GetDeviceAddress(out deviceIP, out deviceHostname);
+                if (!NetworkScanner.IsDevicePublished)
+                    NetworkScanner.PublishDevice();
+                NetworkScanner.ScanAvailableDevices();
+                Parameters.Init();
+           // });
+            base.OnAppearing();
         }
         private void ContentPage_Appearing(object sender, EventArgs e)
         {

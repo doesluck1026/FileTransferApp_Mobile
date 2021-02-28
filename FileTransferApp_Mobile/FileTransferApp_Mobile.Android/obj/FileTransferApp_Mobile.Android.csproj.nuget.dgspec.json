@@ -98,6 +98,10 @@
               "target": "Package",
               "version": "[7.1.0.475, )"
             },
+            "MarcTron.Admob": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
             "Rssdp": {
               "target": "Package",
               "version": "[4.0.4, )"

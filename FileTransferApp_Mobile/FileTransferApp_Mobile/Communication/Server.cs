@@ -59,7 +59,7 @@ class Server
             IsServerStarted = true;
             IP = localAddr.ToString();
             Debug.WriteLine("Server is ready:  IP: " + IP);
-            return localAddr.ToString();
+            return IP;
         }
         catch (Exception e)
         {

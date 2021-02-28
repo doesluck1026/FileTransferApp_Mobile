@@ -60,7 +60,7 @@ namespace FileTransferApp_Mobile.Pages
                     await Task.Delay(5);
                 }
             }
-            base.OnBackButtonPressed();         /// Close this page.
+            Navigation.PushAsync(new Pages.ActionPage());         /// Close this page.
         }
 
         private void btn_Settings_Clicked(object sender, EventArgs e)
