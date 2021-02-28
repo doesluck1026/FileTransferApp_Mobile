@@ -35,6 +35,19 @@ namespace FileTransferApp_Mobile
             base.OnDisappearing();
             Main.OnClientRequested -= Main_OnClientRequested;
         }
+        protected override bool OnBackButtonPressed()
+        {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                Navigation.PushAsync(new Pages.ActionPage());
+            });
+            return true;
+        }
+        /// <summary>
+        /// This event occurs when a device connected to this device to send som files.
+        /// </summary>
+        /// <param name="totalTransferSize">Total size of transfer as the unit of byte</param>
+        /// <param name="deviceName">Name of the device which has connected to this device.</param>
         private void Main_OnClientRequested(string totalTransferSize, string deviceName)
         {
             /// Show file transfer request and ask for permission here

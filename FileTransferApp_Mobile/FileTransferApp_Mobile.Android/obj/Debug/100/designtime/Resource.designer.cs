@@ -14216,52 +14216,52 @@ namespace FileTransferApp_Mobile.Droid
 			public const int @checked = 2131165287;
 			
 			// aapt resource value: 0x7F070068
-			public const int design_bottom_navigation_item_background = 2131165288;
+			public const int confirm = 2131165288;
 			
 			// aapt resource value: 0x7F070069
-			public const int design_fab_background = 2131165289;
+			public const int design_bottom_navigation_item_background = 2131165289;
 			
 			// aapt resource value: 0x7F07006A
-			public const int design_ic_visibility = 2131165290;
+			public const int design_fab_background = 2131165290;
 			
 			// aapt resource value: 0x7F07006B
-			public const int design_ic_visibility_off = 2131165291;
+			public const int design_ic_visibility = 2131165291;
 			
 			// aapt resource value: 0x7F07006C
-			public const int design_password_eye = 2131165292;
+			public const int design_ic_visibility_off = 2131165292;
 			
 			// aapt resource value: 0x7F07006D
-			public const int design_snackbar_background = 2131165293;
+			public const int design_password_eye = 2131165293;
 			
 			// aapt resource value: 0x7F07006E
-			public const int error = 2131165294;
+			public const int design_snackbar_background = 2131165294;
+			
+			// aapt resource value: 0x7F07006F
+			public const int error = 2131165295;
 			
 			// aapt resource value: 0x7F070001
 			public const int File_p = 2131165185;
 			
-			// aapt resource value: 0x7F07006F
-			public const int github = 2131165295;
-			
 			// aapt resource value: 0x7F070070
-			public const int home = 2131165296;
-			
-			// aapt resource value: 0x7F070076
-			public const int iconfinder_Aproved_Outline_Folder_Approved_3545099 = 2131165302;
+			public const int github = 2131165296;
 			
 			// aapt resource value: 0x7F070071
-			public const int ic_errorstatus = 2131165297;
+			public const int home = 2131165297;
 			
 			// aapt resource value: 0x7F070072
-			public const int ic_mtrl_chip_checked_black = 2131165298;
+			public const int ic_errorstatus = 2131165298;
 			
 			// aapt resource value: 0x7F070073
-			public const int ic_mtrl_chip_checked_circle = 2131165299;
+			public const int ic_mtrl_chip_checked_black = 2131165299;
 			
 			// aapt resource value: 0x7F070074
-			public const int ic_mtrl_chip_close_circle = 2131165300;
+			public const int ic_mtrl_chip_checked_circle = 2131165300;
 			
 			// aapt resource value: 0x7F070075
-			public const int ic_successstatus = 2131165301;
+			public const int ic_mtrl_chip_close_circle = 2131165301;
+			
+			// aapt resource value: 0x7F070076
+			public const int ic_successstatus = 2131165302;
 			
 			// aapt resource value: 0x7F070077
 			public const int inbox1 = 2131165303;

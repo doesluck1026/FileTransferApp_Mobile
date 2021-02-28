@@ -50,7 +50,7 @@ namespace FileTransferApp_Mobile
         {
             if(Main.IsTransfering)
             {
-                using (Acr.UserDialogs.UserDialogs.Instance.Loading("Do you want to cancel?"));
+                using (Acr.UserDialogs.UserDialogs.Instance.Alert("You can't go back while transferring!"));
                 {
                     Task.Delay(500);
                 }

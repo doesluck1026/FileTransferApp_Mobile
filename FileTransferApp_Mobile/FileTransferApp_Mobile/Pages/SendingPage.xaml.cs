@@ -12,12 +12,12 @@ namespace FileTransferApp_Mobile
 
     public partial class SendingPage : ContentPage
     {
-        public static SendingPage Instance;
         private string TargetDeviceIP;
+        private string TargetDeviceName;
+        private bool isRequestSent = false;
         public SendingPage()
         {
             InitializeComponent();
-            Instance = this;
         }
         protected override void OnAppearing()
         {
@@ -43,9 +43,23 @@ namespace FileTransferApp_Mobile
             NetworkScanner.OnScanCompleted -= NetworkScanner_OnScanCompleted;
             Main.OnTransferResponded -= Main_OnTransferResponded;
         }
+        protected override bool OnBackButtonPressed()
+        {
+            if(!isRequestSent)
+                return base.OnBackButtonPressed();
+            else
+            {
+                using (Acr.UserDialogs.UserDialogs.Instance.Alert("You can't go back after sending a request. Sorry..."))
+                {
+                    Task.Delay(200);
+                }
+                return true;
+            }
+        }
         private void Main_OnTransferResponded(bool isAccepted)
         {
             Debug.WriteLine("Receiver Response: " + isAccepted);
+            isRequestSent = false;
             if (isAccepted)
             {
                 Device.InvokeOnMainThreadAsync(() =>
@@ -53,6 +67,13 @@ namespace FileTransferApp_Mobile
                     Navigation.PushAsync(new TransferPage());
                 });
                 Main.BeginSendingFiles();
+            }
+            else
+            {
+                using (Acr.UserDialogs.UserDialogs.Instance.Alert("Transfer request is rejected by "+ TargetDeviceName + ". Sorry..."))
+                {
+                    Task.Delay(200);
+                }
             }
         }
 
@@ -71,7 +92,17 @@ namespace FileTransferApp_Mobile
        
         private void btn_SendFile_Clicked(object sender, EventArgs e)
         {
-            Main.ConnectToTargetDevice(txt_ClientIP.Text);
+            if (!isRequestSent)
+            {
+                isRequestSent = true;
+                Main.ConnectToTargetDevice(txt_ClientIP.Text);
+                if(NetworkScanner.DeviceNames.Count>0)
+                {
+                    int index = NetworkScanner.DeviceIPs.IndexOf(txt_ClientIP.Text.ToString());
+                    if(index>=0&& index< NetworkScanner.DeviceNames.Count)
+                        TargetDeviceName = NetworkScanner.DeviceNames[index];
+                }
+            }
         }
 
         private void list_Devices_ItemSelected(object sender, SelectedItemChangedEventArgs e)
