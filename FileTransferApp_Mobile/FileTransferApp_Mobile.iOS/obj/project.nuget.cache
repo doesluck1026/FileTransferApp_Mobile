@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tSU9GR5JpCn30zsIciFTE2EJStVutZFawcMP5L4MtCA2JtzMqE6x5fSbzIPD2DkIUblQ1p4p7C7uQKRooi9Kkw==",
+  "dgSpecHash": "pRYXIEQNTHscFoNwasiyFnTfaZJgESlVdhAmoJ+J1zF1Yzyqop58G1oICoDIJNHRvaavPBqh9rDXdNUTScWdkw==",
   "success": true,
   "projectFilePath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\FileTransferApp_Mobile.iOS.csproj",
   "expectedPackageFiles": [
@@ -24,7 +24,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1-preview1 to 1.5.3.2. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> FileTransferApp_Mobile -> Xamarin.Essentials (>= 1.6.1-preview1) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Essentials (>= 1.5.3.2)",
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1-preview1 to 1.5.3.2. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> Buggy File Transfer -> Xamarin.Essentials (>= 1.6.1-preview1) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Essentials (>= 1.5.3.2)",
       "libraryId": "Xamarin.Essentials",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",
@@ -37,7 +37,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.1874 to 4.8.0.1451. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> FileTransferApp_Mobile -> Xamarin.Forms (>= 5.0.0.1874) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Forms (>= 4.8.0.1451)",
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.1874 to 4.8.0.1451. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> Buggy File Transfer -> Xamarin.Forms (>= 5.0.0.1874) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Forms (>= 4.8.0.1451)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",

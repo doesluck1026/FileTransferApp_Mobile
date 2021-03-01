@@ -100,9 +100,7 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\FileTransferApp_Mobile.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\FileTransferApp_Mobile.pdb
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.pdb
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
@@ -115,3 +113,17 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\FileTransferApp_Mobile.iOS.csproj.CopyComplete
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\FileTransferApp_Mobile.iOS.exe
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\FileTransferApp_Mobile.iOS.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\Acr.UserDialogs.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\Acr.UserDialogs.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\BTProgressHUD.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\BTProgressHUD.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\Plugin.MtAdmob.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\Rssdp.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\SkiaSharp.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\SkiaSharp.Views.iOS.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\SkiaSharp.Views.Forms.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\Firebase.Core.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\Xamarin.Forms.PancakeView.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\Google.MobileAds.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\Buggy File Transfer.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\Buggy File Transfer.pdb

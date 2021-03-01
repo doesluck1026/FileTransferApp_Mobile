@@ -15,6 +15,8 @@ namespace FileTransferApp_Mobile
         {
             InitializeComponent();
             DeviceDisplay.KeepScreenOn = false;
+            if (!Admob.TestMode)
+                BannerView.AdsId = Admob.BannerAdID;
         }
         protected override void OnAppearing()
         {

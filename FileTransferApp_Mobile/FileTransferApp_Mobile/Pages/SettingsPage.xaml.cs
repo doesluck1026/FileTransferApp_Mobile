@@ -11,6 +11,8 @@ namespace FileTransferApp_Mobile.Pages
         public SettingsPage()
         {
             InitializeComponent();
+            if (!Admob.TestMode)
+                BannerView.AdsId = Admob.BannerAdID;
         }
         protected override void OnAppearing()
         {

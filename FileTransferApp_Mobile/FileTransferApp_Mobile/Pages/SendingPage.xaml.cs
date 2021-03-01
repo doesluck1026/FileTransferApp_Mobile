@@ -18,6 +18,8 @@ namespace FileTransferApp_Mobile
         public SendingPage()
         {
             InitializeComponent();
+            if (!Admob.TestMode)
+                BannerView.AdsId = Admob.BannerAdID;
         }
         protected override void OnAppearing()
         {

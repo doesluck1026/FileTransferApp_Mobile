@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("FileTransferApp_Mobile.Pages.TransferPage.xaml", "Pages/TransferPage.xaml", typeof(global::FileTransferApp_Mobile.TransferPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Buggy File Transfer.Pages.TransferPage.xaml", "Pages/TransferPage.xaml", typeof(global::FileTransferApp_Mobile.TransferPage))]
 
 namespace FileTransferApp_Mobile {
     
@@ -38,10 +38,7 @@ namespace FileTransferApp_Mobile {
         private global::Xamarin.Forms.Label lbl_FileCount;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ProgressBar prg_Transfer;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Label lbl_progress;
+        private global::FileTransferApp_Mobile.Controls.GradientProgressBar prg_Transfer;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Label lbl_PassedTime;
@@ -50,7 +47,10 @@ namespace FileTransferApp_Mobile {
         private global::Xamarin.Forms.Label lbl_RemainingTime;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Button btn_AbortTransfer;
+        private global::Xamarin.Forms.ImageButton btn_AbortTransfer;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::MarcTron.Plugin.Controls.MTAdView BannerView;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
@@ -62,11 +62,11 @@ namespace FileTransferApp_Mobile {
             lbl_totalSize = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl_totalSize");
             lbl_currentFileNumber = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl_currentFileNumber");
             lbl_FileCount = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl_FileCount");
-            prg_Transfer = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ProgressBar>(this, "prg_Transfer");
-            lbl_progress = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl_progress");
+            prg_Transfer = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::FileTransferApp_Mobile.Controls.GradientProgressBar>(this, "prg_Transfer");
             lbl_PassedTime = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl_PassedTime");
             lbl_RemainingTime = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl_RemainingTime");
-            btn_AbortTransfer = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btn_AbortTransfer");
+            btn_AbortTransfer = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "btn_AbortTransfer");
+            BannerView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MarcTron.Plugin.Controls.MTAdView>(this, "BannerView");
         }
     }
 }

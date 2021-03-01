@@ -12,7 +12,8 @@ namespace FileTransferApp_Mobile.Pages
         public InfoPage()
         {
             InitializeComponent();
-
+            if (!Admob.TestMode)
+                BannerView.AdsId = Admob.BannerAdID;
             var list = new List<string>
             {
                 "Welcome to B.C. File Transfer ",
@@ -62,7 +63,7 @@ namespace FileTransferApp_Mobile.Pages
 
         private void btn_github_Clicked(object sender, EventArgs e)
         {
-            Launcher.OpenAsync("https://github.com/doesluck1026");
+            //Launcher.OpenAsync("https://github.com/doesluck1026");
         }
 
         private void btn_patreon_Clicked(object sender, EventArgs e)

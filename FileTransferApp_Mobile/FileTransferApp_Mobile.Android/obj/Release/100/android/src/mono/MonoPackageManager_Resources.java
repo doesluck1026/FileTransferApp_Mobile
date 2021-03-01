@@ -3,9 +3,15 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "FileTransferApp_Mobile.Android.dll" comes first in this list. */
 		"FileTransferApp_Mobile.Android.dll",
-		"FileTransferApp_Mobile.dll",
+		"Acr.UserDialogs.dll",
+		"AndHUD.dll",
+		"Buggy File Transfer.dll",
 		"FormsViewGroup.dll",
+		"Plugin.MtAdmob.dll",
 		"Rssdp.dll",
+		"SkiaSharp.dll",
+		"SkiaSharp.Views.Android.dll",
+		"SkiaSharp.Views.Forms.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.AppCompat.AppCompatResources.dll",
@@ -47,10 +53,16 @@ public class MonoPackageManager_Resources {
 		"Xamarin.AndroidX.ViewPager.dll",
 		"Xamarin.Essentials.dll",
 		"Xamarin.Forms.Core.dll",
+		"Xamarin.Forms.PancakeView.dll",
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
 		"Xamarin.Google.Android.Material.dll",
+		"Xamarin.GooglePlayServices.Ads.Base.dll",
+		"Xamarin.GooglePlayServices.Ads.Lite.dll",
+		"Xamarin.GooglePlayServices.Basement.dll",
+		"Xamarin.GooglePlayServices.Measurement.Base.dll",
+		"Xamarin.GooglePlayServices.Measurement.Sdk.Api.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

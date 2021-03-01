@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MarcTron.Plugin;
+using System;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,8 +11,12 @@ namespace FileTransferApp_Mobile.Pages
     {
         public ActionPage()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            DeviceDisplay.KeepScreenOn = false;
             Main.FileSaveURL = GetSaveFilePath();
+            Admob.LoadInterstitialAd();
+            if (!Admob.TestMode)
+                BannerView.AdsId = Admob.BannerAdID;
         }
         protected override void OnAppearing()
         {

@@ -1195,7 +1195,7 @@
           "build/MonoAndroid90/_._": {}
         }
       },
-      "FileTransferApp_Mobile/1.0.0": {
+      "Buggy File Transfer/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
@@ -1208,10 +1208,10 @@
           "Xamarin.Forms.PancakeView": "2.3.0.763-beta"
         },
         "compile": {
-          "bin/placeholder/FileTransferApp_Mobile.dll": {}
+          "bin/placeholder/Buggy File Transfer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/FileTransferApp_Mobile.dll": {}
+          "bin/placeholder/Buggy File Transfer.dll": {}
         }
       }
     }
@@ -2776,7 +2776,7 @@
         "xamarin.googleplayservices.measurement.sdk.api.nuspec"
       ]
     },
-    "FileTransferApp_Mobile/1.0.0": {
+    "Buggy File Transfer/1.0.0": {
       "type": "project",
       "path": "../FileTransferApp_Mobile/FileTransferApp_Mobile.csproj",
       "msbuildProject": "../FileTransferApp_Mobile/FileTransferApp_Mobile.csproj"
@@ -2784,7 +2784,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v10.0": [
-      "FileTransferApp_Mobile >= 1.0.0",
+      "Buggy File Transfer >= 1.0.0",
       "Xamarin.Essentials >= 1.6.0-pre5",
       "Xamarin.Forms >= 5.0.0.1791-pre5"
     ]
@@ -2848,7 +2848,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1-preview1 to 1.6.0-pre5. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.Android -> FileTransferApp_Mobile -> Xamarin.Essentials (>= 1.6.1-preview1) \r\n FileTransferApp_Mobile.Android -> Xamarin.Essentials (>= 1.6.0-pre5)",
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1-preview1 to 1.6.0-pre5. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.Android -> Buggy File Transfer -> Xamarin.Essentials (>= 1.6.1-preview1) \r\n FileTransferApp_Mobile.Android -> Xamarin.Essentials (>= 1.6.0-pre5)",
       "libraryId": "Xamarin.Essentials",
       "targetGraphs": [
         "MonoAndroid,Version=v10.0"
@@ -2858,7 +2858,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.1874 to 5.0.0.1791-pre5. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.Android -> FileTransferApp_Mobile -> Xamarin.Forms (>= 5.0.0.1874) \r\n FileTransferApp_Mobile.Android -> Xamarin.Forms (>= 5.0.0.1791-pre5)",
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.1874 to 5.0.0.1791-pre5. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.Android -> Buggy File Transfer -> Xamarin.Forms (>= 5.0.0.1874) \r\n FileTransferApp_Mobile.Android -> Xamarin.Forms (>= 5.0.0.1791-pre5)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "MonoAndroid,Version=v10.0"

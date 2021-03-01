@@ -8,16 +8,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("FileTransferApp_Mobile.Pages.MainPage.xaml", "Pages/MainPage.xaml", typeof(global::FileTransferApp_Mobile.MainPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Buggy File Transfer.Pages.MainPage.xaml", "Pages/MainPage.xaml", typeof(global::FileTransferApp_Mobile.MainPage))]
 
 namespace FileTransferApp_Mobile {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Label lbl_info;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Label lbl_HostName;
@@ -29,12 +26,15 @@ namespace FileTransferApp_Mobile {
         private global::Xamarin.Forms.Button btn_SelectFile;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::MarcTron.Plugin.Controls.MTAdView BannerView;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
-            lbl_info = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl_info");
             lbl_HostName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl_HostName");
             lbl_IP = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl_IP");
             btn_SelectFile = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btn_SelectFile");
+            BannerView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MarcTron.Plugin.Controls.MTAdView>(this, "BannerView");
         }
     }
 }

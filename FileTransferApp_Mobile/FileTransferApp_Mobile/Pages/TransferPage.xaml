@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:FileTransferApp_Mobile.Controls"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:FileTransferApp_Mobile.Controls" xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
              x:Class="FileTransferApp_Mobile.TransferPage"
               NavigationPage.HasBackButton="false"
              >
@@ -14,7 +14,12 @@
     
     
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#2f3452">
+        <Grid BackgroundColor="#2f3452">
+            <Grid.RowDefinitions >
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        <StackLayout BackgroundColor="#2f3452" Grid.Row="0">
 
             <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10,20,10,10" >
                 <Label Text="Files are being tranferred. be patient!" 
@@ -97,6 +102,8 @@
 
 
         </StackLayout>
-        
+            <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" HeightRequest="50" 
+                            VerticalOptions="End" Grid.Row="1" x:Name="BannerView"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("FileTransferApp_Mobile.Pages.TransferPermissionPage.xaml", "Pages/TransferPermissionPage.xaml", typeof(global::FileTransferApp_Mobile.TransferPermissionPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Buggy File Transfer.Pages.TransferPermissionPage.xaml", "Pages/TransferPermissionPage.xaml", typeof(global::FileTransferApp_Mobile.TransferPermissionPage))]
 
 namespace FileTransferApp_Mobile {
     
@@ -26,11 +26,15 @@ namespace FileTransferApp_Mobile {
         private global::Xamarin.Forms.ImageButton btn_Accept;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::MarcTron.Plugin.Controls.MTAdView BannerView;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TransferPermissionPage));
             lbl_TransferInfo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl_TransferInfo");
             btn_Reject = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "btn_Reject");
             btn_Accept = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "btn_Accept");
+            BannerView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MarcTron.Plugin.Controls.MTAdView>(this, "BannerView");
         }
     }
 }

@@ -10,6 +10,7 @@ using AndroidX.Core.Content;
 using Android;
 using AndroidX.Core.App;
 using Acr.UserDialogs;
+using Android.Gms.Ads;
 
 namespace FileTransferApp_Mobile.Droid
 {
@@ -34,6 +35,7 @@ namespace FileTransferApp_Mobile.Droid
             {
                 ActivityCompat.RequestPermissions(this, new string[] { Manifest.Permission.ReadExternalStorage }, 0);
             }
+            MobileAds.Initialize(ApplicationContext);
             LoadApplication(new App());
             
             // for diolagbox usage

@@ -5,8 +5,8 @@ public class MonoPackageManager_Resources {
 		"FileTransferApp_Mobile.Android.dll",
 		"Acr.UserDialogs.dll",
 		"AndHUD.dll",
-		"FileTransferApp_Mobile.dll",
 		"FormsViewGroup.dll",
+		"Plugin.MtAdmob.dll",
 		"Rssdp.dll",
 		"SkiaSharp.dll",
 		"SkiaSharp.Views.Android.dll",
@@ -59,6 +59,12 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
 		"Xamarin.Google.Android.Material.dll",
+		"Xamarin.GooglePlayServices.Ads.Base.dll",
+		"Xamarin.GooglePlayServices.Ads.Lite.dll",
+		"Xamarin.GooglePlayServices.Basement.dll",
+		"Xamarin.GooglePlayServices.Measurement.Base.dll",
+		"Xamarin.GooglePlayServices.Measurement.Sdk.Api.dll",
+		"Buggy File Transfer.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

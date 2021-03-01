@@ -464,7 +464,6 @@ public class Main
     {
         _transferMetrics = new Metrics();
         ClientIP = clientIP;
-        Debug.WriteLine("Connectied");
         byte[] receivedData = server.GetData();
         if (receivedData == null)
             return;
@@ -481,7 +480,10 @@ public class Main
             string fileSizeString = File.FileSize.ToString("0.00") + " " + File.FileSizeUnit.ToString();
             Debug.WriteLine("numberOfFiles: " + numberOfFiles + " transfer size: " + fileSizeString + " device Name: " + senderDevice);
             IsSending = false;
-            OnClientRequested(fileSizeString, senderDevice);
+            if (OnClientRequested != null)
+                OnClientRequested(fileSizeString, senderDevice);
+            else
+                ResponseToTransferRequest(false);
             _transferMetrics.TotalDataSizeAsBytes = transferSize;
         }
     }

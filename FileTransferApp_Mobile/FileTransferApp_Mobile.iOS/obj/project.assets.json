@@ -306,7 +306,7 @@
           "buildTransitive/Xamarin.Google.iOS.MobileAds.targets": {}
         }
       },
-      "FileTransferApp_Mobile/1.0.0": {
+      "Buggy File Transfer/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
@@ -319,10 +319,10 @@
           "Xamarin.Forms.PancakeView": "2.3.0.763-beta"
         },
         "compile": {
-          "bin/placeholder/FileTransferApp_Mobile.dll": {}
+          "bin/placeholder/Buggy File Transfer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/FileTransferApp_Mobile.dll": {}
+          "bin/placeholder/Buggy File Transfer.dll": {}
         }
       }
     },
@@ -609,7 +609,7 @@
           "buildTransitive/Xamarin.Google.iOS.MobileAds.targets": {}
         }
       },
-      "FileTransferApp_Mobile/1.0.0": {
+      "Buggy File Transfer/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
@@ -622,10 +622,10 @@
           "Xamarin.Forms.PancakeView": "2.3.0.763-beta"
         },
         "compile": {
-          "bin/placeholder/FileTransferApp_Mobile.dll": {}
+          "bin/placeholder/Buggy File Transfer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/FileTransferApp_Mobile.dll": {}
+          "bin/placeholder/Buggy File Transfer.dll": {}
         }
       }
     },
@@ -915,7 +915,7 @@
           "buildTransitive/Xamarin.Google.iOS.MobileAds.targets": {}
         }
       },
-      "FileTransferApp_Mobile/1.0.0": {
+      "Buggy File Transfer/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
@@ -928,10 +928,10 @@
           "Xamarin.Forms.PancakeView": "2.3.0.763-beta"
         },
         "compile": {
-          "bin/placeholder/FileTransferApp_Mobile.dll": {}
+          "bin/placeholder/Buggy File Transfer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/FileTransferApp_Mobile.dll": {}
+          "bin/placeholder/Buggy File Transfer.dll": {}
         }
       }
     },
@@ -1221,7 +1221,7 @@
           "buildTransitive/Xamarin.Google.iOS.MobileAds.targets": {}
         }
       },
-      "FileTransferApp_Mobile/1.0.0": {
+      "Buggy File Transfer/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
@@ -1234,10 +1234,10 @@
           "Xamarin.Forms.PancakeView": "2.3.0.763-beta"
         },
         "compile": {
-          "bin/placeholder/FileTransferApp_Mobile.dll": {}
+          "bin/placeholder/Buggy File Transfer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/FileTransferApp_Mobile.dll": {}
+          "bin/placeholder/Buggy File Transfer.dll": {}
         }
       }
     }
@@ -1969,7 +1969,7 @@
         "xamarin.google.ios.mobileads.nuspec"
       ]
     },
-    "FileTransferApp_Mobile/1.0.0": {
+    "Buggy File Transfer/1.0.0": {
       "type": "project",
       "path": "../FileTransferApp_Mobile/FileTransferApp_Mobile.csproj",
       "msbuildProject": "../FileTransferApp_Mobile/FileTransferApp_Mobile.csproj"
@@ -1977,7 +1977,7 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
-      "FileTransferApp_Mobile >= 1.0.0",
+      "Buggy File Transfer >= 1.0.0",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.8.0.1451"
     ]
@@ -2052,7 +2052,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1-preview1 to 1.5.3.2. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> FileTransferApp_Mobile -> Xamarin.Essentials (>= 1.6.1-preview1) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Essentials (>= 1.5.3.2)",
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1-preview1 to 1.5.3.2. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> Buggy File Transfer -> Xamarin.Essentials (>= 1.6.1-preview1) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Essentials (>= 1.5.3.2)",
       "libraryId": "Xamarin.Essentials",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",
@@ -2065,7 +2065,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.1874 to 4.8.0.1451. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> FileTransferApp_Mobile -> Xamarin.Forms (>= 5.0.0.1874) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Forms (>= 4.8.0.1451)",
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.1874 to 4.8.0.1451. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> Buggy File Transfer -> Xamarin.Forms (>= 5.0.0.1874) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Forms (>= 4.8.0.1451)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",

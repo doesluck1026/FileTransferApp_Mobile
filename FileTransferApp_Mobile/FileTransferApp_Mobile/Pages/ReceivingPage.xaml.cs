@@ -12,6 +12,8 @@ namespace FileTransferApp_Mobile.Pages
         {
             InitializeComponent();
             loader.Easing = Easing.CubicIn;
+            if (!Admob.TestMode)
+                BannerView.AdsId = Admob.BannerAdID;
         }
         protected override void OnAppearing()
         {

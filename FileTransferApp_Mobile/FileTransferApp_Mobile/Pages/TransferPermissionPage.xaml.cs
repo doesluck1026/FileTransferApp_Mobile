@@ -17,6 +17,8 @@ namespace FileTransferApp_Mobile
         public TransferPermissionPage(string transferSize,string senderName)
         {
             InitializeComponent();
+            if (!Admob.TestMode)
+                BannerView.AdsId = Admob.BannerAdID;
             this.TransferSize = transferSize;
             this.SenderDevice = senderName;
         }

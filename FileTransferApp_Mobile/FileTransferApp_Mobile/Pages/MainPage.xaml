@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
              x:Class="FileTransferApp_Mobile.MainPage"
              NavigationPage.HasBackButton="False"
              >
@@ -10,8 +10,13 @@
             <Label Text="Wi-Fi File Transfer" BackgroundColor="#1E88FA" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="20" Padding="0" Margin="0,0,0,0" />
         </StackLayout>
     </NavigationPage.TitleView>
-
-    <StackLayout BackgroundColor="#2f3452">
+    
+    <Grid BackgroundColor="#2f3452">
+        <Grid.RowDefinitions >
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackLayout BackgroundColor="#2f3452">
 
         <Frame BackgroundColor="#0A2A4D" CornerRadius="10" HorizontalOptions="FillAndExpand" Padding="5" Margin="10,20,10,0">
             <StackLayout Orientation="Horizontal">
@@ -60,4 +65,7 @@
                 />
 
     </StackLayout>
+        <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" HeightRequest="50" 
+                            VerticalOptions="End" Grid.Row="1" x:Name="BannerView"/>
+    </Grid>
 </ContentPage>

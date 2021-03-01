@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MarcTron.Plugin;
+using System;
 using System.Linq;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -13,13 +14,29 @@ namespace FileTransferApp_Mobile
         public TransferDonePage()
         {
             InitializeComponent();
+            if (!Admob.TestMode)
+                BannerView.AdsId = Admob.BannerAdID;
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            if (Admob.IsInterstitialLoaded)
+                Admob.ShowInterstitialAd();
+            else
+                CrossMTAdmob.Current.OnInterstitialLoaded += Current_OnInterstitialLoaded;
             list_Files.ItemsSource = Main.FileNames;
             list_Files.SelectedItem = Main.FileNames[selectedFileIndex];
         }
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            CrossMTAdmob.Current.OnInterstitialLoaded -= Current_OnInterstitialLoaded;
+        }
+        private void Current_OnInterstitialLoaded(object sender, EventArgs e)
+        {
+            Admob.ShowInterstitialAd();
+        }
+
         protected override bool OnBackButtonPressed()
         {
             Navigation.PushAsync(new Pages.ActionPage());
@@ -41,6 +58,10 @@ namespace FileTransferApp_Mobile
         private void list_Files_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             selectedFileIndex = Main.FileNames.ToList().IndexOf(list_Files.SelectedItem.ToString());
+        }
+        private void ShowInterstitialAd()
+        {
+            CrossMTAdmob.Current.ShowInterstitial();
         }
     }
 }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("FileTransferApp_Mobile.Pages.TransferPage.xaml", "Pages/TransferPage.xaml", typeof(global::FileTransferApp_Mobile.TransferPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Buggy File Transfer.Pages.TransferPage.xaml", "Pages/TransferPage.xaml", typeof(global::FileTransferApp_Mobile.TransferPage))]
 
 namespace FileTransferApp_Mobile {
     
@@ -50,6 +50,9 @@ namespace FileTransferApp_Mobile {
         private global::Xamarin.Forms.ImageButton btn_AbortTransfer;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::MarcTron.Plugin.Controls.MTAdView BannerView;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TransferPage));
             lbl_FileName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl_FileName");
@@ -63,6 +66,7 @@ namespace FileTransferApp_Mobile {
             lbl_PassedTime = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl_PassedTime");
             lbl_RemainingTime = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl_RemainingTime");
             btn_AbortTransfer = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "btn_AbortTransfer");
+            BannerView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MarcTron.Plugin.Controls.MTAdView>(this, "BannerView");
         }
     }
 }

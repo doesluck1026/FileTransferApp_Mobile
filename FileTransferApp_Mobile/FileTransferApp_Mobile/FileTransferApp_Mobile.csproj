@@ -6,6 +6,9 @@
   </PropertyGroup>
 <PropertyGroup>
     <UseShortFileNames>True</UseShortFileNames>
+    <AssemblyName>Buggy File Transfer</AssemblyName>
+    <RootNamespace>Buggy File Transfer</RootNamespace>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
 </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>portable</DebugType>
@@ -14,6 +17,7 @@
 
   <ItemGroup>
     <PackageReference Include="Acr.UserDialogs" Version="7.1.0.475" />
+    <PackageReference Include="MarcTron.Admob" Version="1.6.0" />
     <PackageReference Include="Rssdp" Version="4.0.4" />
     <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.1.1" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.1874" />
