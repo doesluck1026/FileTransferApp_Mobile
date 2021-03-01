@@ -26,7 +26,7 @@
 
 	/* 2: Buggy File Transfer.dll */
 	/* uncompressed_file_size */
-	.word	254976
+	.word	252928
 	/* loaded */
 	.byte	0
 	/* data */

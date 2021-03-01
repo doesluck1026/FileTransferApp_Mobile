@@ -1,10 +1,5 @@
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\FileTransferApp_Mobile.Android.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\FileTransferApp_Mobile.Android.pdb
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\com.jvb.filetransferapp_mobile.apk
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\com.jvb.filetransferapp_mobile.aab
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\com.jvb.filetransferapp_mobile-Signed.aab
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\com.jvb.filetransferapp_mobile-Signed.apk
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\com.jvb.filetransferapp_mobile-Signed.apk.idsig
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\MonoAndroid,Version=v10.0.AssemblyAttributes.cs
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\build.props
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\adb.props
@@ -17,10 +12,7 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\FileTransferApp_Mobile.Android.csproj.CopyComplete
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\FileTransferApp_Mobile.Android.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\FileTransferApp_Mobile.Android.pdb
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\bin\com.jvb.filetransferapp_mobile.apk
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\bin\base.zip
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\bin\com.jvb.filetransferapp_mobile.aab
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\bin\com.jvb.filetransferapp_mobile.apks
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\layout\tabbar.xml
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\layout\toolbar.xml
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\values\styles.xml
@@ -555,3 +547,12 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\src\mono\com\google\android\material\behavior\SwipeDismissBehavior_OnDismissListenerImplementor.java
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\src\xamarin\essentials\fileProvider.java
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\FileTransferApp_Mobile.Android.csprojAssemblyReference.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\com.BuggyComp.BuggyFileTransfer.apk
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\com.BuggyComp.BuggyFileTransfer.aab
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\com.BuggyComp.BuggyFileTransfer-Signed.aab
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\com.BuggyComp.BuggyFileTransfer-Signed.apk
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\com.BuggyComp.BuggyFileTransfer-Signed.apk.idsig
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\bin\com.BuggyComp.BuggyFileTransfer.apk
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\bin\com.BuggyComp.BuggyFileTransfer.aab
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\bin\com.BuggyComp.BuggyFileTransfer.apks
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\src\com\buggycomp\buggyfiletransfer\R.java

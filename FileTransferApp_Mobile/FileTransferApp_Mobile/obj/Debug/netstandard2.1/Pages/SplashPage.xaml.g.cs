@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Buggy File Transfer.Pages.SplashPage.xaml", "Pages/SplashPage.xaml", typeof(global::FileTransferApp_Mobile.Pages.SplashPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("FileTransferApp_Mobile.Pages.SplashPage.xaml", "Pages/SplashPage.xaml", typeof(global::FileTransferApp_Mobile.Pages.SplashPage))]
 
 namespace FileTransferApp_Mobile.Pages {
     

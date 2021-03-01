@@ -9,6 +9,8 @@
     <AssemblyName>Buggy File Transfer</AssemblyName>
     <RootNamespace>FileTransferApp_Mobile</RootNamespace>
     <ApplicationIcon>Logo.ico</ApplicationIcon>
+    <Company>Buggy Company</Company>
+    <PackageIcon>Logo.png</PackageIcon>
 </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>portable</DebugType>
@@ -63,5 +65,12 @@
     <EmbeddedResource Update="Pages\TransferPermissionPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\CDS_Software02\Desktop\Logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 </Project>

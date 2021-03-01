@@ -46,7 +46,7 @@
 
 	/* 2: Buggy File Transfer.dll */
 	/* uncompressed_file_size */
-	.long	254976
+	.long	252928
 	/* loaded */
 	.byte	0
 	/* data */
