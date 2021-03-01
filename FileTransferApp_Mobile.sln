@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTransferApp_Mobile.Andr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTransferApp_Mobile.iOS", "FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\FileTransferApp_Mobile.iOS.csproj", "{44E36254-B190-48D7-A978-57BCCBA024E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTransferApp_Mobile", "FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.csproj", "{D8947A03-39AF-4722-975B-1613F60BAD77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileTransferApp_Mobile", "FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.csproj", "{D8947A03-39AF-4722-975B-1613F60BAD77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

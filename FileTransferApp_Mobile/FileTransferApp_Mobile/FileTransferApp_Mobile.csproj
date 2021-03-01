@@ -7,7 +7,7 @@
 <PropertyGroup>
     <UseShortFileNames>True</UseShortFileNames>
     <AssemblyName>Buggy File Transfer</AssemblyName>
-    <RootNamespace>Buggy File Transfer</RootNamespace>
+    <RootNamespace>FileTransferApp_Mobile</RootNamespace>
     <ApplicationIcon>Logo.ico</ApplicationIcon>
 </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
