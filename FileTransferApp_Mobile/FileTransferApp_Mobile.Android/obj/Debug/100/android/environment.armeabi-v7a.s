@@ -23,8 +23,8 @@
 	.section	.rodata.env.str.1,"aMS",%progbits,1
 	.type	.L.env.str.1, %object
 .L.env.str.1:
-	.asciz	"com.jvb.filetransferapp_mobile"
-	.size	.L.env.str.1, 31
+	.asciz	"com.BuggyComp.BuggyFileTransfer"
+	.size	.L.env.str.1, 32
 	.section	.data.application_config,"aw",%progbits
 	.type	application_config, %object
 	.p2align	2
@@ -92,7 +92,7 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",%progbits,1
 	.type	.L.env.str.8, %object
 .L.env.str.8:
-	.asciz	"ec9c3ab1-deb4-4293-a7e6-b9c27826a532"
+	.asciz	"2dd42b1d-e7c8-4bf3-a1cf-9fa5de1072a1"
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",%progbits,1
 	.type	.L.env.str.9, %object

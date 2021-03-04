@@ -87,7 +87,7 @@
                     </StackLayout>
 
                     <StackLayout Orientation="Horizontal" >
-                        <Label Text="Remainig: " Grid.Column="0" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                        <Label Text="Remaining: " Grid.Column="0" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
                         <Label x:Name="lbl_RemainingTime" Text="dawdawdaw" Grid.Column="1" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
                     </StackLayout>
 

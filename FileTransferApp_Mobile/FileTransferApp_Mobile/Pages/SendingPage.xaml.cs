@@ -112,7 +112,10 @@ namespace FileTransferApp_Mobile
         private void btn_ScanDevices_Clicked(object sender, EventArgs e)
         {
             NetworkScanner.DeviceNames = new List<string>();
+            if (NetworkScanner.IsScanning)
+                return;
             NetworkScanner.ScanAvailableDevices();
+            
             Task.Run(() =>
             {
                 Thread.Sleep(500);

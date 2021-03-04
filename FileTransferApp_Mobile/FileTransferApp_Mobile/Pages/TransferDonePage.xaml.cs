@@ -59,9 +59,5 @@ namespace FileTransferApp_Mobile
         {
             selectedFileIndex = Main.FileNames.ToList().IndexOf(list_Files.SelectedItem.ToString());
         }
-        private void ShowInterstitialAd()
-        {
-            CrossMTAdmob.Current.ShowInterstitial();
-        }
     }
 }

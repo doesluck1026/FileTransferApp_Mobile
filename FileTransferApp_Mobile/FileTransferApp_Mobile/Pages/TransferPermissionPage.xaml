@@ -19,7 +19,7 @@
             </Grid.RowDefinitions>
             <StackLayout BackgroundColor="#2f3452" Grid.Row="0" >
                     <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10,10" >
-                <Label Text="Please make sure that your phone is connected to Wi-Fi!" 
+                <Label Text="New Request!" 
                    TextColor="White"
                    VerticalOptions="Center"
                    VerticalTextAlignment="Center"

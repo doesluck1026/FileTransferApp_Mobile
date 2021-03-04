@@ -46,7 +46,7 @@
                 x:Name="loader"
                 Grid.Row="0" 
                 Source="BC_logo_1.png"
-                RotationLenght="2500"
+                RotationLenght="2000"
                 IsVisible="True" 
                 IsRunning="True"
                 VerticalOptions="CenterAndExpand" 

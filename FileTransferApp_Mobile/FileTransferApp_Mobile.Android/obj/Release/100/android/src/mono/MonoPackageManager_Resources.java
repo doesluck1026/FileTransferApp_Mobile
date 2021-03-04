@@ -8,6 +8,8 @@ public class MonoPackageManager_Resources {
 		"Buggy File Transfer.dll",
 		"FormsViewGroup.dll",
 		"Plugin.MtAdmob.dll",
+		"Plugin.Multilingual.Abstractions.dll",
+		"Plugin.Multilingual.dll",
 		"Rssdp.dll",
 		"SkiaSharp.dll",
 		"SkiaSharp.Views.Android.dll",
