@@ -116,35 +116,6 @@
           "lib/netstandard1.0/Plugin.Multilingual.dll": {}
         }
       },
-      "Rssdp/4.0.4": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Diagnostics.Tools": "4.0.1",
-          "System.IO": "4.1.0",
-          "System.Linq": "4.1.0",
-          "System.Net.Http": "4.1.0",
-          "System.Net.Primitives": "4.0.11",
-          "System.Net.Sockets": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0",
-          "System.Text.Encoding": "4.0.11",
-          "System.Text.Encoding.Extensions": "4.0.11",
-          "System.Threading": "4.0.11",
-          "System.Threading.Tasks": "4.0.11",
-          "System.Threading.Timer": "4.0.1",
-          "System.Xml.ReaderWriter": "4.0.11"
-        },
-        "compile": {
-          "lib/netstandard13/Rssdp.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard13/Rssdp.dll": {}
-        }
-      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -1602,37 +1573,6 @@
         "lib/netstandard1.0/Plugin.Multilingual.xml",
         "plugin.multilingual.1.1.6-beta.nupkg.sha512",
         "plugin.multilingual.nuspec"
-      ]
-    },
-    "Rssdp/4.0.4": {
-      "sha512": "5E2icl0iAODR/EuS0nExzKPxbjgpkUjS1tJyEFdiITZG6fftvoEtdbzKWvR7tgwhN1R1fZpyu0j6bRLl70OuIQ==",
-      "type": "package",
-      "path": "rssdp/4.0.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/Xamarin.iOS10/Rssdp.dll",
-        "lib/Xamarin.iOS10/Rssdp.xml",
-        "lib/monoandroid/Rssdp.dll",
-        "lib/monoandroid/Rssdp.xml",
-        "lib/net40/Rssdp.dll",
-        "lib/net40/Rssdp.xml",
-        "lib/net45/Rssdp.dll",
-        "lib/net45/Rssdp.xml",
-        "lib/netcore451/Rssdp.dll",
-        "lib/netcore451/Rssdp.xml",
-        "lib/netstandard13/Rssdp.dll",
-        "lib/netstandard13/Rssdp.xml",
-        "lib/portable-net45+win+wpa81+wp80/Rssdp.dll",
-        "lib/portable-net45+win+wpa81+wp80/Rssdp.xml",
-        "lib/uap10.0/Rssdp.dll",
-        "lib/uap10.0/Rssdp.xml",
-        "lib/wp8/Rssdp.dll",
-        "lib/wp8/Rssdp.xml",
-        "lib/wpa81/Rssdp.dll",
-        "lib/wpa81/Rssdp.xml",
-        "rssdp.4.0.4.nupkg.sha512",
-        "rssdp.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -5434,7 +5374,6 @@
       "Acr.UserDialogs >= 7.1.0.475",
       "MarcTron.Admob >= 1.6.0",
       "Plugin.Multilingual >= 1.1.6-beta",
-      "Rssdp >= 4.0.4",
       "SkiaSharp.Views.Forms >= 1.68.1.1",
       "Xamarin.Essentials >= 1.6.1-preview1",
       "Xamarin.Forms >= 5.0.0.1874",
@@ -5496,10 +5435,6 @@
           "Plugin.Multilingual": {
             "target": "Package",
             "version": "[1.1.6-beta, )"
-          },
-          "Rssdp": {
-            "target": "Package",
-            "version": "[4.0.4, )"
           },
           "SkiaSharp.Views.Forms": {
             "target": "Package",

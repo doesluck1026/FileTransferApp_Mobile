@@ -12,7 +12,6 @@
           "Acr.UserDialogs": "7.1.0.475",
           "MarcTron.Admob": "1.6.0",
           "Plugin.Multilingual": "1.1.6-beta",
-          "Rssdp": "4.0.4",
           "SkiaSharp.Views.Forms": "1.68.1.1",
           "Xamarin.Essentials": "1.6.1-preview1",
           "Xamarin.Forms": "5.0.0.1874",
@@ -111,34 +110,6 @@
           "lib/netstandard1.0/Plugin.Multilingual.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Rssdp/4.0.4": {
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Diagnostics.Tools": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Net.Http": "4.3.0",
-          "System.Net.Primitives": "4.3.0",
-          "System.Net.Sockets": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Encoding.Extensions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Tasks": "4.3.0",
-          "System.Threading.Timer": "4.3.0",
-          "System.Xml.ReaderWriter": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard13/Rssdp.dll": {
-            "assemblyVersion": "4.0.4.0",
-            "fileVersion": "4.0.4.0"
           }
         }
       },
@@ -1054,13 +1025,6 @@
       "sha512": "sha512-wYAkxNEGklTvEr7ee4YNQ+43pVM3FwpOd/PdCR0dmwWj4k/m7vwdRm+SPmUyDNSDXxaXwRDFqL8LWKuHnNsx+A==",
       "path": "plugin.multilingual/1.1.6-beta",
       "hashPath": "plugin.multilingual.1.1.6-beta.nupkg.sha512"
-    },
-    "Rssdp/4.0.4": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-5E2icl0iAODR/EuS0nExzKPxbjgpkUjS1tJyEFdiITZG6fftvoEtdbzKWvR7tgwhN1R1fZpyu0j6bRLl70OuIQ==",
-      "path": "rssdp/4.0.4",
-      "hashPath": "rssdp.4.0.4.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

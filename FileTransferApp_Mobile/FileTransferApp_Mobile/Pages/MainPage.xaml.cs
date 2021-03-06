@@ -20,7 +20,10 @@ namespace FileTransferApp_Mobile
         }
         protected override void OnAppearing()
         {
-            base.OnAppearing();
+            if (Device.Idiom == TargetIdiom.Phone)
+                BannerView.HeightRequest = 50;
+            else
+                BannerView.HeightRequest = 100;
             Main.OnClientRequested += Main_OnClientRequested;
             NetworkScanner.GetDeviceAddress(out DeviceIP, out DeviceHostName);
             Dispatcher.BeginInvokeOnMainThread(() =>
@@ -31,7 +34,6 @@ namespace FileTransferApp_Mobile
         }
         protected override void OnDisappearing()
         {
-            base.OnDisappearing();
             Main.OnClientRequested -= Main_OnClientRequested;
         }
         protected override bool OnBackButtonPressed()

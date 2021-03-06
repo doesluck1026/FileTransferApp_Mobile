@@ -23,7 +23,10 @@ namespace FileTransferApp_Mobile
         }
         protected override void OnAppearing()
         {
-            base.OnAppearing();
+            if (Device.Idiom == TargetIdiom.Phone)
+                BannerView.HeightRequest = 50;
+            else
+                BannerView.HeightRequest = 100;
             list_Devices.SeparatorColor = Color.AliceBlue;
             list_Devices.RefreshControlColor = Color.Black;
 
@@ -41,7 +44,6 @@ namespace FileTransferApp_Mobile
         }
         protected override void OnDisappearing()
         {
-            base.OnDisappearing();
             NetworkScanner.OnScanCompleted -= NetworkScanner_OnScanCompleted;
             Main.OnTransferResponded -= Main_OnTransferResponded;
         }

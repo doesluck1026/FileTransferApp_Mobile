@@ -25,7 +25,10 @@ namespace FileTransferApp_Mobile
         }
         protected override void OnAppearing()
         {
-            base.OnAppearing();
+            if (Device.Idiom == TargetIdiom.Phone)
+                BannerView.HeightRequest = 50;
+            else
+                BannerView.HeightRequest = 100;
             if (Main.IsSending)
                 Main.BeginSendingFiles();
             else
@@ -42,7 +45,6 @@ namespace FileTransferApp_Mobile
         }
         protected override void OnDisappearing()
         {
-            base.OnDisappearing();
             Main.OnTransferFinished -= Main_OnTransferFinished;
         }
         private  void Main_OnTransferFinished()

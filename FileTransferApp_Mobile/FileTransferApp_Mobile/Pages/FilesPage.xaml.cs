@@ -25,7 +25,10 @@ namespace FileTransferApp_Mobile.Pages
         }
         protected override void OnAppearing()
         {
-            base.OnAppearing();
+            if (Device.Idiom == TargetIdiom.Phone)
+                BannerView.HeightRequest = 50;
+            else
+                BannerView.HeightRequest = 100;
             list_Files.ItemsSource = FilePaths;
             list_Files.SelectedItem = FilePaths[SelectedIndex];
         }

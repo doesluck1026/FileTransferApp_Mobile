@@ -19,7 +19,10 @@ namespace FileTransferApp_Mobile
         }
         protected override void OnAppearing()
         {
-            base.OnAppearing();
+            if (Device.Idiom == TargetIdiom.Phone)
+                BannerView.HeightRequest = 50;
+            else
+                BannerView.HeightRequest = 100;
             if (Admob.IsInterstitialLoaded)
                 Admob.ShowInterstitialAd();
             else
@@ -29,7 +32,6 @@ namespace FileTransferApp_Mobile
         }
         protected override void OnDisappearing()
         {
-            base.OnDisappearing();
             CrossMTAdmob.Current.OnInterstitialLoaded -= Current_OnInterstitialLoaded;
         }
         private void Current_OnInterstitialLoaded(object sender, EventArgs e)

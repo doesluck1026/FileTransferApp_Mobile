@@ -10,7 +10,6 @@ public class MonoPackageManager_Resources {
 		"Plugin.MtAdmob.dll",
 		"Plugin.Multilingual.Abstractions.dll",
 		"Plugin.Multilingual.dll",
-		"Rssdp.dll",
 		"SkiaSharp.dll",
 		"SkiaSharp.Views.Android.dll",
 		"SkiaSharp.Views.Forms.dll",

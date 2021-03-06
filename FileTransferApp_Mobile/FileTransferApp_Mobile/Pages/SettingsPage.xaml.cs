@@ -16,7 +16,10 @@ namespace FileTransferApp_Mobile.Pages
         }
         protected override void OnAppearing()
         {
-            base.OnAppearing();
+            if (Device.Idiom == TargetIdiom.Phone)
+                BannerView.HeightRequest = 50;
+            else
+                BannerView.HeightRequest = 100;
             Main.OnClientRequested += Main_OnClientRequested;
             Device.InvokeOnMainThreadAsync(() =>
             {
@@ -29,7 +32,6 @@ namespace FileTransferApp_Mobile.Pages
         }
         protected override void OnDisappearing()
         {
-            base.OnDisappearing();
             Main.OnClientRequested -= Main_OnClientRequested;
         }
         protected override bool OnBackButtonPressed()

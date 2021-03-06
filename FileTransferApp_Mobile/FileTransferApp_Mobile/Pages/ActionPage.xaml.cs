@@ -14,13 +14,17 @@ namespace FileTransferApp_Mobile.Pages
             InitializeComponent();
             DeviceDisplay.KeepScreenOn = false;
             Main.FileSaveURL = GetSaveFilePath();
+            
             Admob.LoadInterstitialAd();
             if (!Admob.TestMode)
                 BannerView.AdsId = Admob.BannerAdID;
         }
         protected override void OnAppearing()
         {
-            base.OnAppearing();
+            if (Device.Idiom == TargetIdiom.Phone)
+                BannerView.HeightRequest = 50;
+            else
+                BannerView.HeightRequest = 100;
             Main.OnClientRequested += Main_OnClientRequested;
             if (Parameters.IsFirstTime)
             {
