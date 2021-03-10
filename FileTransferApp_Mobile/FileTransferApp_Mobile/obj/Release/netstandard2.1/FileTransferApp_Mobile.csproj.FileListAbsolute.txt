@@ -23,3 +23,4 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Rele
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\Buggy File Transfer.pdb
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\FileTransferApp_Mobile.Resources.LanguageResource.resources
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\FileTransferApp_Mobile.csproj.GenerateResource.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\FileTransferApp_Mobile.csprojAssemblyReference.cache
