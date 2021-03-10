@@ -41,19 +41,8 @@ class NetworkScanner
                 _scanPercentage = value;
         }
     }
-    private static int ScanProgress
-    {
-        get
-        {
-            lock (Lck_ScanProgress)
-                return _scanProgress;
-        }
-        set
-        {
-            lock (Lck_ScanProgress)
-                _scanProgress = value;
-        }
-    }
+
+    private static int[] scanProgressArr;
     private static string DeviceIP;
     private static readonly int PublishPort = 41019;
     private static Server publisherServer;
@@ -63,15 +52,15 @@ class NetworkScanner
 
     private static bool _isScanning = false;
     private static int _scanPercentage = 0;
-    private static int _scanProgress = 0;
 
     private static object Lck_IsScanning = new object();
     private static object Lck_ScanPercentage = new object();
-    private static object Lck_ScanProgress = new object();
 
     private static int ScanCounter = 0;
-    public static void ScanAvailableDevices(int timeout = 350)
+    public static void ScanAvailableDevices(int timeout = 200)
     {
+        if (IsScanning)
+            return;
         ConnectionTimeout = timeout;
         ScanPercentage = 0;
         string deviceIP, deviceHostname;
@@ -86,29 +75,32 @@ class NetworkScanner
         {
             IPHeader += ipStack[i] + ".";
         }
-        if (IsScanning)
-            return;
 
         IsScanning = true;
         Task.Run(() =>
         {
-            int numTasks = 20;
-            int stackSize = 260 / numTasks;
-            ScanProgress = 0;
+            int numTasks = 8;
+            int stackSize = 256 / numTasks;
+            scanProgressArr = new int[numTasks];
             for (int i = 0; i < numTasks; i++)
             {
-                ParallelScan(stackSize * i + 1, stackSize * (i + 1) + 1);
+                ParallelScan(stackSize * i, stackSize * (i + 1), i);
                 // Debug.WriteLine("i: "+ i+"  stx:"+ (stackSize * i + 1)+" endx: "+(stackSize * (i + 1) + 1));
             }
             Task.Run(() =>
             {
                 Stopwatch stopwatch = Stopwatch.StartNew();
                 while (true)
-                {                    
-                    int percentage = (int)(ScanProgress/255.0*100);
+                {
+                    int percentage = 0;
+                    for (int i = 0; i < numTasks; i++)
+                    {
+                        percentage += scanProgressArr[i];
+                    }
+                    percentage /= numTasks;
                     //Debug.WriteLine("percentage: " + percentage);
                     ScanPercentage = percentage;
-                    if (percentage >= 99)
+                    if (percentage >= 99 || stopwatch.Elapsed.TotalSeconds > 12)
                         break;
                     Thread.Sleep(50);
                 }
@@ -125,17 +117,17 @@ class NetworkScanner
                         ScanCounter = 3;
                 }
                 IsScanning = false;
-                ScanProgress = 0;
             });
         });
 
     }
 
-    private static void ParallelScan(int startx, int endx)
+    private static void ParallelScan(int startx, int endx, int progressIndex)
     {
         Task.Run(() =>
         {
             Stopwatch stp = Stopwatch.StartNew();
+            int progress = 0;
             for (int i = startx; i < endx; i++)
             {
                 try
@@ -145,6 +137,8 @@ class NetworkScanner
                     if (targetIP == DeviceIP)
                         continue;
                     GetDeviceData(targetIP);
+                    progress = (int)(((i - startx) / (double)(endx - startx - 1)) * 100.0);
+                    scanProgressArr[progressIndex] = progress;
                     // Debug.WriteLine("index: "+progressIndex+" progress: "+ progress);
                 }
                 catch
@@ -183,7 +177,6 @@ class NetworkScanner
             client.SendDataServer(Encoding.ASCII.GetBytes("Gotcha"));
             client.DisconnectFromServer();
         }
-        ScanProgress++;
     }
     public static void PublishDevice()
     {
