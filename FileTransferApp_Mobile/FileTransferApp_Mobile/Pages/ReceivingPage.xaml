@@ -13,12 +13,9 @@
     </NavigationPage.TitleView>
 
     <ContentPage.Content>
-        <Grid BackgroundColor="#2f3452">
-            <Grid.RowDefinitions >
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <StackLayout BackgroundColor="#2f3452" Grid.Row="0">
+        <StackLayout BackgroundColor="#2f3452" Orientation="Vertical">
+     
+            <StackLayout BackgroundColor="#2f3452" >
             <Frame BackgroundColor="#0A2A4D" CornerRadius="10" HorizontalOptions="FillAndExpand" Padding="5" Margin="10,20,10,0">
                 <StackLayout Orientation="Horizontal">
                     <Label Text=" Your Device Name : " WidthRequest="150"  HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="15" Margin="10" />
@@ -57,7 +54,7 @@
                 />
         </StackLayout>
             <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" HeightRequest="50" 
-                            VerticalOptions="EndAndExpand" Grid.Row="1" x:Name="BannerView" Margin="0,0,0,5"/>
-        </Grid>
+                            VerticalOptions="EndAndExpand" x:Name="BannerView" Margin="0,0,0,5"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

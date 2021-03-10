@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using MarcTron.Plugin;
+using Xamarin.Forms;
 
 namespace FileTransferApp_Mobile
 {
@@ -12,6 +13,7 @@ namespace FileTransferApp_Mobile
         private static string InterstitialAdID = "ca-app-pub-9174890030718712/5478349310";
         private static string Test_InterstitialAdID= "ca-app-pub-3940256099942544/8691691433";
         public static string BannerAdID = "ca-app-pub-9174890030718712/5131413691";
+
         public static readonly bool TestMode = false;
         #endregion
 
@@ -44,9 +46,23 @@ namespace FileTransferApp_Mobile
 
         #endregion
 
+        public static void AdjustBannerView(MarcTron.Plugin.Controls.MTAdView bannerView)
+        {
+            if (Device.Idiom == TargetIdiom.Phone)
+            {
+                bannerView.MinimumHeightRequest = 50;
+                bannerView.HeightRequest = 50;
+               
+            }
+            else
+            {
+                bannerView.MinimumHeightRequest = 100;
+                bannerView.HeightRequest = 100;
+            }
+        }
         public static void LoadInterstitialAd()
         {
-            if(TestMode)
+            if (TestMode)
                 CrossMTAdmob.Current.LoadInterstitial(Test_InterstitialAdID);
             else
                 CrossMTAdmob.Current.LoadInterstitial(InterstitialAdID);

@@ -25,10 +25,7 @@ namespace FileTransferApp_Mobile
         }
         protected override void OnAppearing()
         {
-            if (Device.Idiom == TargetIdiom.Phone)
-                BannerView.HeightRequest = 50;
-            else
-                BannerView.HeightRequest = 100;
+            Admob.AdjustBannerView(BannerView);
             if (Main.IsSending)
                 Main.BeginSendingFiles();
             else

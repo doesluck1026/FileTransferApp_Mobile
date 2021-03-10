@@ -22,12 +22,9 @@
     </NavigationPage.TitleView>
 
     <ContentPage.Content>
-        <Grid BackgroundColor="#2f3452">
-            <Grid.RowDefinitions >
-                <RowDefinition Height="10*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-          <StackLayout BackgroundColor="#2f3452" HorizontalOptions="FillAndExpand" Grid.Row="0" >
+        <StackLayout BackgroundColor="#2f3452" Orientation="Vertical">
+
+          <StackLayout BackgroundColor="#2f3452" HorizontalOptions="FillAndExpand">
             <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" 
                    x:Name="Frame_firstTimeInfo" IsVisible="false" 
                    HorizontalOptions="FillAndExpand" Margin="10, 30, 10, 5" >
@@ -106,7 +103,7 @@
 
         </StackLayout>
             <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" HeightRequest="50" 
-                            VerticalOptions="EndAndExpand" Grid.Row="1" x:Name="BannerView" Margin="0,0,0,5"/>
-        </Grid>
+                            VerticalOptions="EndAndExpand" x:Name="BannerView" Margin="0,0,0,5"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

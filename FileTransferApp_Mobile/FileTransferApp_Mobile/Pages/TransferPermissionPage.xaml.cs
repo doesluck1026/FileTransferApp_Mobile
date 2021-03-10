@@ -24,10 +24,7 @@ namespace FileTransferApp_Mobile
         }
         protected override void OnAppearing()
         {
-            if (Device.Idiom == TargetIdiom.Phone)
-                BannerView.HeightRequest = 50;
-            else
-                BannerView.HeightRequest = 100;
+            Admob.AdjustBannerView(BannerView);
             lbl_TransferInfo.Text = SenderDevice + " wants to send you files: " + TransferSize + " \n Do you want to receive?";
         }
         private async void btn_Accept_Clicked(object sender, EventArgs e)
