@@ -1330,10 +1330,12 @@
         ".signature.p7s",
         "content/netstandard1.0/Helpers/TranslateExtension.txt.pp",
         "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.dll.mdb",
         "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.pdb",
         "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.xml",
         "lib/MonoAndroid10/Plugin.Multilingual.XML",
         "lib/MonoAndroid10/Plugin.Multilingual.dll",
+        "lib/MonoAndroid10/Plugin.Multilingual.dll.mdb",
         "lib/MonoAndroid10/Plugin.Multilingual.pdb",
         "lib/UAP10/Plugin.Multilingual.Abstractions.dll",
         "lib/UAP10/Plugin.Multilingual.Abstractions.pdb",
@@ -2016,7 +2018,8 @@
   },
   "packageFolders": {
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2029,10 +2032,12 @@
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\CDS_Software02\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

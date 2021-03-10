@@ -19,6 +19,7 @@ namespace FileTransferApp_Mobile
         }
         protected override void OnAppearing()
         {
+            Main.OnClientRequested += Main_OnClientRequested;
             if (Device.Idiom == TargetIdiom.Phone)
                 BannerView.HeightRequest = 50;
             else
@@ -38,7 +39,14 @@ namespace FileTransferApp_Mobile
         {
             Admob.ShowInterstitialAd();
         }
-
+        private void Main_OnClientRequested(string totalTransferSize, string senderDevice)
+        {
+            /// Show file transfer request and ask for permission here
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                Navigation.PushAsync(new TransferPermissionPage(totalTransferSize, senderDevice));
+            });
+        }
         protected override bool OnBackButtonPressed()
         {
             Navigation.PushAsync(new Pages.ActionPage());
