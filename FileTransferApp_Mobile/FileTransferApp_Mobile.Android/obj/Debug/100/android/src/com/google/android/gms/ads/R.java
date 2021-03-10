@@ -8,15 +8,15 @@ package com.google.android.gms.ads;
 
 public final class R {
 	public static final class attr {
-		public static final int adSize = 0x7f030022;
-		public static final int adSizes = 0x7f030023;
-		public static final int adUnitId = 0x7f030024;
+		public static final int adSize = 0x7f030023;
+		public static final int adSizes = 0x7f030024;
+		public static final int adUnitId = 0x7f030025;
 	}
 	public static final class style {
-		public static final int Theme_IAPTheme = 0x7f0e0158;
+		public static final int Theme_IAPTheme = 0x7f0f01a4;
 	}
 	public static final class styleable {
-		public static final int[] AdsAttrs = new int[] { 0x7f030022, 0x7f030023, 0x7f030024 };
+		public static final int[] AdsAttrs = new int[] { 0x7f030023, 0x7f030024, 0x7f030025 };
 		public static final int AdsAttrs_adSize = 0;
 		public static final int AdsAttrs_adSizes = 1;
 		public static final int AdsAttrs_adUnitId = 2;

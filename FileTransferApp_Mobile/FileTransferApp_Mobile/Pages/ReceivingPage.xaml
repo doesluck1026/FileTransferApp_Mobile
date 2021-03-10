@@ -46,7 +46,7 @@
                 x:Name="loader"
                 Grid.Row="0" 
                 Source="BC_logo_1.png"
-                RotationLenght="2000"
+                RotationLenght="4000"          
                 IsVisible="True" 
                 IsRunning="True"
                 VerticalOptions="CenterAndExpand" 
@@ -57,7 +57,7 @@
                 />
         </StackLayout>
             <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" HeightRequest="50" 
-                            VerticalOptions="End" Grid.Row="1" x:Name="BannerView"/>
+                            VerticalOptions="EndAndExpand" Grid.Row="1" x:Name="BannerView" Margin="0,0,0,5"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

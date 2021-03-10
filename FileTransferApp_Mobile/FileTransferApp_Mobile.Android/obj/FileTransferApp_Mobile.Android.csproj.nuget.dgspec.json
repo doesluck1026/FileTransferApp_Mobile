@@ -50,7 +50,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.1791-pre5, )"
+              "version": "[5.0.0.2012, )"
             }
           }
         }
@@ -120,7 +120,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.1874, )"
+              "version": "[5.0.0.2012, )"
             },
             "Xamarin.Forms.PancakeView": {
               "target": "Package",
