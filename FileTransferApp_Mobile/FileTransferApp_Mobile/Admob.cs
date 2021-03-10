@@ -12,7 +12,7 @@ namespace FileTransferApp_Mobile
         private static string InterstitialAdID = "ca-app-pub-9174890030718712/5478349310";
         private static string Test_InterstitialAdID= "ca-app-pub-3940256099942544/8691691433";
         public static string BannerAdID = "ca-app-pub-9174890030718712/5131413691";
-        public static readonly bool TestMode = true;
+        public static readonly bool TestMode = false;
         #endregion
 
         #region Public Variables
