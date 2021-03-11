@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Globalization;
 using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using FileTransferApp_Mobile.Resources;
 namespace FileTransferApp_Mobile.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -28,7 +29,11 @@ namespace FileTransferApp_Mobile.Pages
                     NetworkScanner.PublishDevice();
                 NetworkScanner.ScanAvailableDevices();
                 Parameters.Init();
-           // });
+
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("tr");
+
+            AppResources.Culture = new CultureInfo("tr");
+            // });
             base.OnAppearing();
         }
         private void ContentPage_Appearing(object sender, EventArgs e)
