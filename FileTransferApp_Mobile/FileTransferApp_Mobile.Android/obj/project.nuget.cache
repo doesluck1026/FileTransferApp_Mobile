@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "eOo/fbymZuosQ+P9bCqRBAaap7ZGx3kof0td7UZ+9qccjFzhwg+RnW2Rn1YGgps29V8GtnEd7n5uqhE/eYCTig==",
+  "dgSpecHash": "P1UsfH7M6/vMjnrQ5eSgcZnry6CaQXJh1QyMjXNRooCdiGXzsKLo2zaPAtp4eba0JfCRw1KceUZJyzokZimKHw==",
   "success": true,
   "projectFilePath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.Android\\FileTransferApp_Mobile.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\acr.userdialogs\\7.1.0.475\\acr.userdialogs.7.1.0.475.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\andhud\\1.4.2\\andhud.1.4.2.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\marctron.admob\\1.6.0\\marctron.admob.1.6.0.nupkg.sha512",
-    "C:\\Users\\CDS_Software02\\.nuget\\packages\\plugin.multilingual\\1.1.6-beta\\plugin.multilingual.1.1.6-beta.nupkg.sha512",
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\plugin.multilingual\\1.0.2\\plugin.multilingual.1.0.2.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\skiasharp.views\\1.68.1.1\\skiasharp.views.1.68.1.1.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\skiasharp.views.forms\\1.68.1.1\\skiasharp.views.forms.1.68.1.1.nupkg.sha512",

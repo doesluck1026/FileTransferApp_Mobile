@@ -45,7 +45,7 @@
           "lib/monoandroid90/Plugin.MtAdmob.dll": {}
         }
       },
-      "Plugin.Multilingual/1.1.6-beta": {
+      "Plugin.Multilingual/1.0.2": {
         "type": "package",
         "compile": {
           "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.dll": {},
@@ -1255,7 +1255,6 @@
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.475",
           "MarcTron.Admob": "1.6.0",
-          "Plugin.Multilingual": "1.1.6-beta",
           "SkiaSharp.Views.Forms": "1.68.1.1",
           "Xamarin.Essentials": "1.6.1-preview1",
           "Xamarin.Forms": "5.0.0.2012",
@@ -1337,21 +1336,20 @@
         "readme.txt"
       ]
     },
-    "Plugin.Multilingual/1.1.6-beta": {
-      "sha512": "wYAkxNEGklTvEr7ee4YNQ+43pVM3FwpOd/PdCR0dmwWj4k/m7vwdRm+SPmUyDNSDXxaXwRDFqL8LWKuHnNsx+A==",
+    "Plugin.Multilingual/1.0.2": {
+      "sha512": "aDPTIQCOCGxCvcFs98nSswcFTHfHUpUSiSltobV5NoRELUQREl4n95dLZSuqey9cIb5G2Ni53YDG6KCnD9ZWYw==",
       "type": "package",
-      "path": "plugin.multilingual/1.1.6-beta",
+      "path": "plugin.multilingual/1.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "content/net45/Helpers/TranslateExtension.txt.pp",
         "content/netstandard1.0/Helpers/TranslateExtension.txt.pp",
         "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.dll",
-        "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.dll.mdb",
         "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.pdb",
         "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.xml",
         "lib/MonoAndroid10/Plugin.Multilingual.XML",
         "lib/MonoAndroid10/Plugin.Multilingual.dll",
-        "lib/MonoAndroid10/Plugin.Multilingual.dll.mdb",
         "lib/MonoAndroid10/Plugin.Multilingual.pdb",
         "lib/UAP10/Plugin.Multilingual.Abstractions.dll",
         "lib/UAP10/Plugin.Multilingual.Abstractions.pdb",
@@ -1370,11 +1368,13 @@
         "lib/Xamarin.iOS10/Plugin.Multilingual.XML",
         "lib/Xamarin.iOS10/Plugin.Multilingual.dll",
         "lib/XamarinTVOS/Plugin.Multilingual.Abstractions.dll",
+        "lib/XamarinTVOS/Plugin.Multilingual.Abstractions.dll.mdb",
         "lib/XamarinTVOS/Plugin.Multilingual.Abstractions.pdb",
         "lib/XamarinTVOS/Plugin.Multilingual.Abstractions.xml",
         "lib/XamarinTVOS/Plugin.Multilingual.dll",
         "lib/XamarinTVOS/Plugin.Multilingual.pdb",
         "lib/XamarinWatchOS/Plugin.Multilingual.Abstractions.dll",
+        "lib/XamarinWatchOS/Plugin.Multilingual.Abstractions.dll.mdb",
         "lib/XamarinWatchOS/Plugin.Multilingual.Abstractions.pdb",
         "lib/XamarinWatchOS/Plugin.Multilingual.Abstractions.xml",
         "lib/XamarinWatchOS/Plugin.Multilingual.dll",
@@ -1390,7 +1390,7 @@
         "lib/netstandard1.0/Plugin.Multilingual.deps.json",
         "lib/netstandard1.0/Plugin.Multilingual.dll",
         "lib/netstandard1.0/Plugin.Multilingual.xml",
-        "plugin.multilingual.1.1.6-beta.nupkg.sha512",
+        "plugin.multilingual.1.0.2.nupkg.sha512",
         "plugin.multilingual.nuspec"
       ]
     },
@@ -2916,6 +2916,7 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v10.0": [
       "Buggy File Transfer >= 1.0.0",
+      "Plugin.Multilingual >= 1.0.2",
       "Xamarin.Essentials >= 1.6.0-pre5",
       "Xamarin.Forms >= 5.0.0.2012"
     ]
@@ -2965,6 +2966,10 @@
     "frameworks": {
       "monoandroid10.0": {
         "dependencies": {
+          "Plugin.Multilingual": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.6.0-pre5, )"
