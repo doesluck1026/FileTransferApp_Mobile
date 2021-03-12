@@ -246,12 +246,6 @@
   <data name="Setting_Warning_Saving" xml:space="preserve">
     <value>Saving Parameters...</value>
   </data>
-  <data name="TransferDone" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TransferPage" xml:space="preserve">
-    <value />
-  </data>
   <data name="TransferPermissionPage" xml:space="preserve">
     <value />
   </data>

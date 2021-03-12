@@ -522,24 +522,6 @@ namespace FileTransferApp_Mobile.Resources {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        internal static string TransferDone {
-            get {
-                return ResourceManager.GetString("TransferDone", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string TransferPage {
-            get {
-                return ResourceManager.GetString("TransferPage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
         internal static string TransferPermissionPage {
             get {
                 return ResourceManager.GetString("TransferPermissionPage", resourceCulture);
