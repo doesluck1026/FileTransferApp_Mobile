@@ -20,21 +20,15 @@ namespace FileTransferApp_Mobile.Pages
         }
         protected override void OnAppearing()
         {
-           // Task.Run(() =>
-            //{
-                Main.StartServer();
-                string deviceIP, deviceHostname;
-                NetworkScanner.GetDeviceAddress(out deviceIP, out deviceHostname);
-                if (!NetworkScanner.IsDevicePublished)
-                    NetworkScanner.PublishDevice();
-                NetworkScanner.ScanAvailableDevices();
-                Parameters.Init();
-
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("tr");
-
-            AppResources.Culture = new CultureInfo("tr");
-            // });
-            base.OnAppearing();
+            Main.StartServer();
+            string deviceIP, deviceHostname;
+            NetworkScanner.GetDeviceAddress(out deviceIP, out deviceHostname);
+            if (!NetworkScanner.IsDevicePublished)
+                NetworkScanner.PublishDevice();
+            NetworkScanner.ScanAvailableDevices();
+            Parameters.Init();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(Parameters.DeviceLanguage);
+            AppResources.Culture = new CultureInfo(Parameters.DeviceLanguage);
         }
         private void ContentPage_Appearing(object sender, EventArgs e)
         {

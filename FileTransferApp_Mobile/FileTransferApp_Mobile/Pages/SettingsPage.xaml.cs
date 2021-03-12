@@ -1,18 +1,25 @@
-﻿using System;
+﻿using FileTransferApp_Mobile.Resources;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using System.Linq;
 namespace FileTransferApp_Mobile.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SettingsPage : ContentPage
     {
+        Dictionary<string, string> LanguageList = new Dictionary<string, string>();
         public SettingsPage()
         {
             InitializeComponent();
             if (!Admob.TestMode)
                 BannerView.AdsId = Admob.BannerAdID;
+            LanguageList.Add("English", "en");
+            LanguageList.Add("Türkçe", "tr");
         }
         protected override void OnAppearing()
         {
@@ -25,11 +32,15 @@ namespace FileTransferApp_Mobile.Pages
                 else
                     Frame_firstTimeInfo.IsVisible = false;
                 txt_DeviceName.Text = Parameters.DeviceName;
+                var languageCodeList = LanguageList.Values.ToList();
+                Picker_Languages.ItemsSource = LanguageList.Keys.ToArray();
+                Picker_Languages.SelectedIndex = languageCodeList.IndexOf(Parameters.DeviceLanguage);
             });
         }
         protected override void OnDisappearing()
         {
             Main.OnClientRequested -= Main_OnClientRequested;
+            
         }
         protected override bool OnBackButtonPressed()
         {
@@ -52,8 +63,14 @@ namespace FileTransferApp_Mobile.Pages
         private async void btn_Save_Clicked(object sender, EventArgs e)
         {
             Parameters.DeviceName = txt_DeviceName.Text;
+            string selectedLanguage = Picker_Languages.SelectedItem.ToString();
+            string languageCode;
+            LanguageList.TryGetValue(selectedLanguage, out languageCode);
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(languageCode);
+            AppResources.Culture = new CultureInfo(languageCode);
+            Parameters.DeviceLanguage = languageCode;
             Parameters.Save();
-            using (var progress = Acr.UserDialogs.UserDialogs.Instance.Loading("Saving Parameters"))
+            using (var progress = Acr.UserDialogs.UserDialogs.Instance.Loading(AppResources.Setting_Warning_Saving))
             {
                 for (var i = 0; i < 100; i++)
                 {
@@ -61,7 +78,7 @@ namespace FileTransferApp_Mobile.Pages
                     await Task.Delay(5);
                 }
             }
-            Navigation.PushAsync(new Pages.ActionPage());         /// Close this page.
+            await Navigation.PushAsync(new Pages.ActionPage());         /// Close this page.
         }
 
         private void btn_Settings_Clicked(object sender, EventArgs e)

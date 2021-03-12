@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             xmlns:resource="clr-namespace:FileTransferApp_Mobile.Resources"
              x:Class="FileTransferApp_Mobile.TransferPermissionPage"
              NavigationPage.HasBackButton="False"
              >
@@ -15,7 +17,7 @@
         <StackLayout BackgroundColor="#2f3452" Orientation="Vertical">
             <StackLayout BackgroundColor="#2f3452" >
                     <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10,10" >
-                <Label Text="New Request!" 
+                    <Label Text="{x:Static resource:AppResources.Permission_InfoMessage}" 
                    TextColor="White"
                    VerticalOptions="Center"
                    VerticalTextAlignment="Center"
@@ -36,12 +38,12 @@
 
                 <StackLayout HorizontalOptions="StartAndExpand" Margin="30,0">
                     <ImageButton x:Name="btn_Reject" Clicked="btn_Reject_Clicked" Padding="20,0,20,0"  Source="abort.png" BackgroundColor="#F20C10" CornerRadius="50" WidthRequest="100" HeightRequest="100" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"  />
-                    <Label Text="Decline" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
+                        <Label Text="{x:Static resource:AppResources.Permisson_btnDecline}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
                 </StackLayout>
 
                 <StackLayout HorizontalOptions="EndAndExpand" Margin="30,0">
                     <ImageButton x:Name="btn_Accept" Clicked="btn_Accept_Clicked" Padding="20,0,20,0"  Source="accept.png" BackgroundColor="#87feaf" CornerRadius="50" WidthRequest="100" HeightRequest="100" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"  />
-                    <Label Text="Accept" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
+                        <Label Text="{x:Static resource:AppResources.Permission_btnAccept}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
                 </StackLayout>
 
             </StackLayout>

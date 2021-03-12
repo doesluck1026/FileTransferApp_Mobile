@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Acr.UserDialogs;
+using FileTransferApp_Mobile.Resources;
 
 namespace FileTransferApp_Mobile
 {
@@ -55,10 +54,7 @@ namespace FileTransferApp_Mobile
         {
             if(Main.IsTransfering)
             {
-                using (Acr.UserDialogs.UserDialogs.Instance.Alert("You can't go back while transferring!"));
-                {
-                    Task.Delay(500);
-                }
+                UserDialogs.Instance.Alert(AppResources.Send_Warning_Goback);
             }
             else
             {
@@ -113,9 +109,12 @@ namespace FileTransferApp_Mobile
             if (!Main.IsTransfering)
                 StopUpdateingUI();
         }
-        private void btn_AbortTransfer_Clicked(object sender, EventArgs e)
+        private async void btn_AbortTransfer_Clicked(object sender, EventArgs e)
         {
-            Main.AbortTransfer();
+            var result = await UserDialogs.Instance.ConfirmAsync(AppResources.Transfer_ConfirmAbortMessage,AppResources.Transfer_ConfirmAbortTitle,
+                AppResources.Transfer_ConfirmAbortNo, AppResources.Transfer_ConfirmAbortNo);
+            if(result.ToString()== "True")
+                Main.AbortTransfer();
         }
     }
 }

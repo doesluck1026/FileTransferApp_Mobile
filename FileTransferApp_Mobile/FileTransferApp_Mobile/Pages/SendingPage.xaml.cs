@@ -50,7 +50,7 @@ namespace FileTransferApp_Mobile
                 return base.OnBackButtonPressed();
             else
             {
-                Acr.UserDialogs.UserDialogs.Instance.Alert("You can't go back after sending a request. Sorry...");
+                Acr.UserDialogs.UserDialogs.Instance.Alert(FileTransferApp_Mobile.Resources.AppResources.Send_Warning_Goback);
                 return true;
             }
         }

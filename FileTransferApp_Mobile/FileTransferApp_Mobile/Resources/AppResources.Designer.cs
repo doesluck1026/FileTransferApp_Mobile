@@ -88,15 +88,6 @@ namespace FileTransferApp_Mobile.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string ActionPage {
-            get {
-                return ResourceManager.GetString("ActionPage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         internal static string Done_btnHome {
@@ -196,29 +187,11 @@ namespace FileTransferApp_Mobile.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string FilesPage {
-            get {
-                return ResourceManager.GetString("FilesPage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Thanks for using this application. You can follow and support us for more!.
         /// </summary>
         internal static string Info_InfoMessage {
             get {
                 return ResourceManager.GetString("Info_InfoMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string InfoPage {
-            get {
-                return ResourceManager.GetString("InfoPage", resourceCulture);
             }
         }
         
@@ -246,15 +219,6 @@ namespace FileTransferApp_Mobile.Resources {
         internal static string Main_InfoMessage2 {
             get {
                 return ResourceManager.GetString("Main_InfoMessage2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string MainPage {
-            get {
-                return ResourceManager.GetString("MainPage", resourceCulture);
             }
         }
         
@@ -309,15 +273,6 @@ namespace FileTransferApp_Mobile.Resources {
         internal static string Rec_InfoMessage {
             get {
                 return ResourceManager.GetString("Rec_InfoMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string ReceivingPage {
-            get {
-                return ResourceManager.GetString("ReceivingPage", resourceCulture);
             }
         }
         
@@ -394,15 +349,6 @@ namespace FileTransferApp_Mobile.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string Sending_Page {
-            get {
-                return ResourceManager.GetString("Sending Page", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Save.
         /// </summary>
         internal static string Setting_btnSave {
@@ -439,11 +385,21 @@ namespace FileTransferApp_Mobile.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to It is better to change the name of your device so that you can easily recognize it later.
+        ///                           This name will be seen when you want to receive files. You can also change the language of this app.
         /// </summary>
-        internal static string Settings {
+        internal static string Settings_fristTimeInfo {
             get {
-                return ResourceManager.GetString("Settings", resourceCulture);
+                return ResourceManager.GetString("Settings_fristTimeInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome to Buggy File Transfer App!.
+        /// </summary>
+        internal static string Settings_WelcomeMessage {
+            get {
+                return ResourceManager.GetString("Settings_WelcomeMessage", resourceCulture);
             }
         }
         
@@ -453,6 +409,42 @@ namespace FileTransferApp_Mobile.Resources {
         internal static string Transfer_btnAbort {
             get {
                 return ResourceManager.GetString("Transfer_btnAbort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Do you really want to cancel transfer?.
+        /// </summary>
+        internal static string Transfer_ConfirmAbortMessage {
+            get {
+                return ResourceManager.GetString("Transfer_ConfirmAbortMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        internal static string Transfer_ConfirmAbortNo {
+            get {
+                return ResourceManager.GetString("Transfer_ConfirmAbortNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirmation.
+        /// </summary>
+        internal static string Transfer_ConfirmAbortTitle {
+            get {
+                return ResourceManager.GetString("Transfer_ConfirmAbortTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        internal static string Transfer_ConfirmAbortYes {
+            get {
+                return ResourceManager.GetString("Transfer_ConfirmAbortYes", resourceCulture);
             }
         }
         
@@ -516,15 +508,6 @@ namespace FileTransferApp_Mobile.Resources {
         internal static string Transfer_Warning_GoBack {
             get {
                 return ResourceManager.GetString("Transfer_Warning_GoBack", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string TransferPermissionPage {
-            get {
-                return ResourceManager.GetString("TransferPermissionPage", resourceCulture);
             }
         }
         

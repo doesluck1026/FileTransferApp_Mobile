@@ -31,15 +31,14 @@
                    x:Name="Frame_firstTimeInfo" IsVisible="false" 
                    HorizontalOptions="FillAndExpand" Margin="10, 30, 10, 5" >
                 <StackLayout Orientation="Vertical"  HorizontalOptions="StartAndExpand" >
-                    <Label Text="Welcome to Buggy File Transfer App! " 
+                        <Label Text="{x:Static resource:AppResources.Settings_WelcomeMessage}"
                        TextColor="White"
                        VerticalOptions="Center"
                        VerticalTextAlignment="Start"
                        HorizontalTextAlignment="Start"
                        HorizontalOptions="Center"
                        FontSize="30" Margin="0,0,0,50"/>
-                    <Label Text="It is better to change the name of your device so that you can easily recognize it later.
-                           This name will be seen when you want to receive files. You can also change the language of this app" 
+                        <Label Text="{x:Static resource:AppResources.Settings_fristTimeInfo}" 
                        TextColor="White"
                        VerticalOptions="Center"
                        VerticalTextAlignment="Center"
@@ -49,7 +48,7 @@
             </Frame>
             <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="FillAndExpand" Margin="10, 30, 10, 5" >
                 <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
-                    <Label Text="Device Name : " 
+                        <Label Text="{x:Static resource:AppResources.Setting_DeviceName}"
                    TextColor="White"
                    VerticalOptions="Center"
                    VerticalTextAlignment="Center"
@@ -64,14 +63,14 @@
                    HorizontalOptions="FillAndExpand" Margin="10,5"  IsVisible="True">
 
                 <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" >
-                    <Label Text=" Language : " 
+                        <Label Text="{x:Static resource:AppResources.Setting_Language}"
                    TextColor="White"
                    VerticalOptions="Center"
                    VerticalTextAlignment="Center"
                    HorizontalOptions="End"
                    FontSize="20" />
 
-                    <Entry Text="English"  />
+                    <Picker x:Name="Picker_Languages" HorizontalOptions="EndAndExpand" WidthRequest="150"/>
                 </StackLayout>
             </Frame>
 
@@ -94,7 +93,7 @@
                 HeightRequest="75" 
                 WidthRequest="75" 
                 BackgroundColor="#87feaf" 
-                Text="Save" 
+                Text="{x:Static resource:AppResources.Setting_btnSave}"
                 Margin="40, 50, 50, 50" 
                 FontSize="20" 
                 FontAttributes="Bold" 

@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:FileTransferApp_Mobile.Controls" xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:controls="clr-namespace:FileTransferApp_Mobile.Controls" 
+             xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             xmlns:resource="clr-namespace:FileTransferApp_Mobile.Resources"
              x:Class="FileTransferApp_Mobile.TransferPage"
               NavigationPage.HasBackButton="false"
              >
@@ -18,7 +21,7 @@
             <StackLayout BackgroundColor="#2f3452">
 
             <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10,20,10,10" >
-                <Label Text="Files are being tranferred. be patient!" 
+                    <Label Text="{x:Static resource:AppResources.Transfer_InfoMessage}"
                    TextColor="White"
                    VerticalOptions="Center"
                    VerticalTextAlignment="Center"
@@ -30,15 +33,15 @@
             <Frame Padding="10" BackgroundColor="#501E88FA" CornerRadius="20"  HorizontalOptions="Fill" VerticalOptions="Fill" Margin="10,20,10,0"  >
                 <StackLayout Orientation="Vertical" HorizontalOptions="Start" Margin="5,0,0,0" >
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="File Name: " TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                            <Label Text="{x:Static resource:AppResources.Transfer_Filename}" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
                         <Label x:Name="lbl_FileName" Text="dawdawdaw" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal"  >
-                        <Label Text="File Size: "  TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                            <Label Text="{x:Static resource:AppResources.Transfer_FileSize}"  TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
                         <Label x:Name="lbl_FileSize" Text="dawdawdaw" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal" >
-                        <Label Text="Transfer Speed: " Grid.Column="0" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                            <Label Text="{x:Static resource:AppResources.Transfer_TransferSpeed}" Grid.Column="0" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
                         <Label x:Name="lbl_transferSpeed" Text="dawdawdaw"  TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
@@ -78,12 +81,12 @@
             <Frame Padding="10" BackgroundColor="#501E88FA" CornerRadius="20" HorizontalOptions="Fill" Margin="10,5,10,0" >
                 <StackLayout Orientation="Vertical" HorizontalOptions="Start" >
                     <StackLayout Orientation="Horizontal" >
-                        <Label Text="Time: " Grid.Column="0" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                            <Label Text="{x:Static resource:AppResources.Transfer_Time}" Grid.Column="0" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
                         <Label x:Name="lbl_PassedTime" Text="dawdawdaw" Grid.Column="1" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
                     </StackLayout>
 
                     <StackLayout Orientation="Horizontal" >
-                        <Label Text="Remaining: " Grid.Column="0" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                            <Label Text="{x:Static resource:AppResources.Transfer_Remaining}" Grid.Column="0" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
                         <Label x:Name="lbl_RemainingTime" Text="dawdawdaw" Grid.Column="1" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
                     </StackLayout>
 
@@ -93,7 +96,7 @@
 
             <StackLayout Margin="0,75,0,50">
                 <ImageButton x:Name="btn_AbortTransfer" Clicked="btn_AbortTransfer_Clicked" Padding="20,0,20,0"  Source="abort.png" BackgroundColor="#F20C10" CornerRadius="50" WidthRequest="100" HeightRequest="100" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"  />
-                <Label Text="Abort" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
+                    <Label Text="{x:Static resource:AppResources.Transfer_btnAbort}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
             </StackLayout>
 
 

@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using FileTransferApp_Mobile.Resources;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -25,7 +21,8 @@ namespace FileTransferApp_Mobile
         protected override void OnAppearing()
         {
             Admob.AdjustBannerView(BannerView);
-            lbl_TransferInfo.Text = SenderDevice + " wants to send you files: " + TransferSize + " \n Do you want to receive?";
+            
+            lbl_TransferInfo.Text = SenderDevice + AppResources.Permission_RequestMessage + TransferSize + " \n "+AppResources.Permission_RequestMessage2;
         }
         private async void btn_Accept_Clicked(object sender, EventArgs e)
         {
