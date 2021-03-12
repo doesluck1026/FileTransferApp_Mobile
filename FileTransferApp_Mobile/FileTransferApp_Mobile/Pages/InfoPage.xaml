@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             xmlns:resource="clr-namespace:FileTransferApp_Mobile.Resources"
              x:Class="FileTransferApp_Mobile.Pages.InfoPage"
              NavigationPage.HasBackButton="false"
              >
@@ -26,7 +28,7 @@
             
         <StackLayout Orientation="Vertical" BackgroundColor="#2f3452">
             <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10" >
-                <Label Text="Thanks for using this application. You can follow and support us for more!" 
+                    <Label Text="{x:Static resource:AppResources.Info_InfoMessage}"
                    HorizontalTextAlignment="Center"
                    TextColor="White"
                    VerticalOptions="Center"

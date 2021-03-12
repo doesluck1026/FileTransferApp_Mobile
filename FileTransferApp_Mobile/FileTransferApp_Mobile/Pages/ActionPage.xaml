@@ -46,12 +46,12 @@
 
             <StackLayout Margin="0,20,0,10">
                 <ImageButton x:Name="btn_Send" Clicked="btn_Send_Clicked" Padding="20,0,20,0"  Source="inbox1.png" BackgroundColor="#87feaf" CornerRadius="50" WidthRequest="100" HeightRequest="100" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"  />
-                <Label Text="Send" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
+                    <Label Text="{x:Static resource:AppResources.Ac_btnSend}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
             </StackLayout>
 
             <StackLayout Margin="0,10,0,25">
                 <ImageButton x:Name="btn_Receive" Clicked="btn_Receive_Clicked"  Padding="20,0,20,0"  Source="inbox2.png" BackgroundColor="#3d63eb" CornerRadius="50" WidthRequest="100" HeightRequest="100" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"  />
-                <Label Text="Receive" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
+                    <Label Text="{x:Static resource:AppResources.Ac_btnReceive}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
             </StackLayout>
         </StackLayout>
             <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" MinimumHeightRequest="50" HeightRequest="100"

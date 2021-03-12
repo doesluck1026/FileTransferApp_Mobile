@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:FileTransferApp_Mobile.Controls" xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:FileTransferApp_Mobile.Controls" 
+             xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             xmlns:resource="clr-namespace:FileTransferApp_Mobile.Resources"
              x:Class="FileTransferApp_Mobile.Pages.ReceivingPage" 
              Appearing="ContentPage_Appearing"
              NavigationPage.HasBackButton="False"
@@ -18,20 +21,20 @@
             <StackLayout BackgroundColor="#2f3452" >
             <Frame BackgroundColor="#0A2A4D" CornerRadius="10" HorizontalOptions="FillAndExpand" Padding="5" Margin="10,20,10,0">
                 <StackLayout Orientation="Horizontal">
-                    <Label Text=" Your Device Name : " WidthRequest="150"  HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="15" Margin="10" />
+                        <Label Text="{x:Static resource:AppResources.YourDeviceName}" WidthRequest="150"  HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="15" Margin="10" />
                     <Label  x:Name="lbl_HostName" Text=" Bug'sPhone" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="15" Margin="10" />
                 </StackLayout>
             </Frame>
 
             <Frame BackgroundColor="#0A2A4D" CornerRadius="10" HorizontalOptions="FillAndExpand" Padding="5" Margin="10,10,10,0">
                 <StackLayout Orientation="Horizontal">
-                    <Label Text=" Your IP Address : " WidthRequest="150" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="15" Margin="10" />
+                        <Label Text="{x:Static resource:AppResources.YourIPAddress}" WidthRequest="150" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="15" Margin="10" />
                     <Label  x:Name="lbl_IP" Text=" 192.18.1.3" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="15" Margin="10" />
                 </StackLayout>
             </Frame>
 
             <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10" >
-                <Label Text="Waiting for connection..." 
+                <Label Text="{x:Static resource:AppResources.Rec_InfoMessage}"
                    TextColor="White"
                    VerticalOptions="Center"
                    VerticalTextAlignment="Center"

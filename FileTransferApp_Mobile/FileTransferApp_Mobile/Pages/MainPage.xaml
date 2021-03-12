@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             xmlns:resource="clr-namespace:FileTransferApp_Mobile.Resources"
              x:Class="FileTransferApp_Mobile.MainPage"
              NavigationPage.HasBackButton="False"
              >
@@ -17,20 +19,20 @@
 
         <Frame BackgroundColor="#0A2A4D" CornerRadius="10" HorizontalOptions="FillAndExpand" Padding="5" Margin="10,20,10,0">
             <StackLayout Orientation="Horizontal">
-                <Label Text=" Your Device Name : " WidthRequest="150"  HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="15" Margin="10" />
+                    <Label Text="{x:Static resource:AppResources.YourDeviceName}" WidthRequest="150"  HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="15" Margin="10" />
                 <Label  x:Name="lbl_HostName" Text=" Bug'sPhone" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="15" Margin="10" />
             </StackLayout>
         </Frame>
 
         <Frame BackgroundColor="#0A2A4D" CornerRadius="10" HorizontalOptions="FillAndExpand" Padding="5" Margin="10,10,10,0">
             <StackLayout Orientation="Horizontal">
-                <Label Text=" Your IP Address : " WidthRequest="150" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="15" Margin="10" />
+                    <Label Text="{x:Static resource:AppResources.YourIPAddress}" WidthRequest="150" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="15" Margin="10" />
                 <Label  x:Name="lbl_IP" Text=" 192.18.1.3" HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="15" Margin="10" />
             </StackLayout>
         </Frame>
 
         <Frame Padding="20" CornerRadius="10" BackgroundColor="#501E88FA" HorizontalOptions="Center" Margin="10" >
-            <Label Text="Plase make sure that your phone and the receiver device are connected to same Wi-Fi!" 
+                <Label Text="{x:Static resource:AppResources.Main_InfoMessage1}"
                    TextColor="White"
                    VerticalOptions="Center"
                    VerticalTextAlignment="Center"
@@ -39,7 +41,7 @@
         </Frame>
 
         <Frame Padding="20" BackgroundColor="#501E88FA" CornerRadius="10" HorizontalOptions="Center" Margin="10" >
-            <Label Text="Select the files you want to send. You can select multiple files." 
+                <Label Text="{x:Static resource:AppResources.Main_InfoMessage2}"
                    TextColor="White"
                    VerticalOptions="Center"
                    VerticalTextAlignment="Center"
@@ -52,7 +54,7 @@
                 HeightRequest="75" 
                 WidthRequest="75" 
                 BackgroundColor="#87feaf" 
-                Text="Select FIles" 
+                Text="{x:Static resource:AppResources.Main_btnSelect}"
                 Margin="40, 50, 50, 50" 
                 FontSize="20" 
                 FontAttributes="Bold" 

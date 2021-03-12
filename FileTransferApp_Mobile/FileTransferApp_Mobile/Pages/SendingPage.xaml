@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FileTransferApp_Mobile.SendingPage"
-             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             xmlns:resource="clr-namespace:FileTransferApp_Mobile.Resources"
              NavigationPage.HasBackButton="false"
              >
     <NavigationPage.TitleView >
@@ -18,7 +20,7 @@
             <StackLayout BackgroundColor="#2f3452" >
 
                 <Frame Padding="20" BackgroundColor="#501E88FA" CornerRadius="20" HorizontalOptions="Center" Margin="10,20,10,10" >
-                <Label Text="Select the target device" 
+                    <Label Text="{x:Static resource:AppResources.Send_infoMessage}"
                    TextColor="White"
                    VerticalOptions="Center"
                    VerticalTextAlignment="Center"
@@ -30,7 +32,7 @@
 
                 <StackLayout>
                     <yummy:PancakeView Padding="20,5" BackgroundColor="#501E88FA" >
-                        <Label Text="Device list on Network :" FontSize="15" TextColor="White" />
+                            <Label Text="{x:Static resource:AppResources.Send_deviceList}" FontSize="15" TextColor="White" />
 
                     </yummy:PancakeView>
                     <ListView x:Name="list_Devices"  
@@ -46,7 +48,7 @@
             <StackLayout Orientation="Horizontal">
                 <Frame  BackgroundColor="#501E88FA" CornerRadius="20" HorizontalOptions="FillAndExpand" Margin="10,0">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
-                        <Label Text="Target IP:" HorizontalOptions="CenterAndExpand" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                            <Label Text="{x:Static resource:AppResources.Send_TargetIP}" HorizontalOptions="CenterAndExpand" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
                         <Entry x:Name="txt_ClientIP" Text="192.168.1.25" HorizontalOptions="CenterAndExpand" Grid.Column="2" FontSize="Subtitle" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
                     </StackLayout>
 
@@ -63,7 +65,7 @@
                              HeightRequest="50"
                              VerticalOptions="CenterAndExpand"
                              HorizontalOptions="CenterAndExpand"  />
-                    <Label Text="Refresh" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold" TextColor="GhostWhite" />
+                        <Label Text="{x:Static resource:AppResources.Send_btnRefresh}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold" TextColor="GhostWhite" />
 
                 </StackLayout>
 
@@ -82,7 +84,7 @@
                              VerticalOptions="CenterAndExpand"
                              HorizontalOptions="CenterAndExpand"  />
 
-                <Label Text="Send" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
+                    <Label Text="{x:Static resource:AppResources.Send_btnSend}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
             </StackLayout>
         </StackLayout>
             <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" HeightRequest="50" 
