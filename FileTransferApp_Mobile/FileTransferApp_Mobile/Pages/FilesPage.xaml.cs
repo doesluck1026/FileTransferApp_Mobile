@@ -41,7 +41,8 @@ namespace FileTransferApp_Mobile.Pages
                 var results = pickResult.ToArray();
                 for (int i = 0; i < results.Length; i++)
                 {
-                    FilePaths.Add(results[i].FullPath);
+                    if(!FilePaths.Contains(results[i].FullPath))
+                        FilePaths.Add(results[i].FullPath);
                 }
                 Device.BeginInvokeOnMainThread(() =>
                 {

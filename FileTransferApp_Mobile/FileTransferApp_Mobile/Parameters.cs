@@ -33,7 +33,6 @@ class Parameters
             char[] splitter = { '-' };
             string language = CultureInfo.InstalledUICulture.ToString().Split(splitter)[0];
             Application.Current.Properties.Add("Language", language);
-            Debug.WriteLine("culture lang: " + language);
         }
         didInit = true;
         DeviceName = (string)Application.Current.Properties["DeviceName"];
