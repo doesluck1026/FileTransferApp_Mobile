@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FileTransferApp_Mobile.Resources;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
@@ -50,7 +51,7 @@ namespace FileTransferApp_Mobile
                 return base.OnBackButtonPressed();
             else
             {
-                Acr.UserDialogs.UserDialogs.Instance.Alert(FileTransferApp_Mobile.Resources.AppResources.Send_Warning_Goback);
+                Acr.UserDialogs.UserDialogs.Instance.Alert(AppResources.Send_Warning_Goback);
                 return true;
             }
         }
@@ -68,7 +69,7 @@ namespace FileTransferApp_Mobile
             }
             else
             {
-                Acr.UserDialogs.UserDialogs.Instance.Alert("Transfer request is rejected by " + TargetDeviceName + ". Sorry...");
+                Acr.UserDialogs.UserDialogs.Instance.Alert(AppResources.Send_Warning_rejected + TargetDeviceName);
             }
         }
 
@@ -118,7 +119,7 @@ namespace FileTransferApp_Mobile
             Task.Run(() =>
             {
                 Thread.Sleep(500);
-                using (var progress = Acr.UserDialogs.UserDialogs.Instance.Progress("Scanning Network..."))
+                using (var progress = Acr.UserDialogs.UserDialogs.Instance.Progress(AppResources.Send_Scanning))
                 {
                     while (NetworkScanner.IsScanning)
                     {
