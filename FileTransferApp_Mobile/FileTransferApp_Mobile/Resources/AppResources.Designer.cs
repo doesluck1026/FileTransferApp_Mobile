@@ -503,7 +503,7 @@ namespace FileTransferApp_Mobile.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You can&apos;t go back while transferring!.
+        ///   Looks up a localized string similar to You can&apos;t go back while files are being transferred!.
         /// </summary>
         internal static string Transfer_Warning_GoBack {
             get {
@@ -512,7 +512,7 @@ namespace FileTransferApp_Mobile.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Your Device Name:.
+        ///   Looks up a localized string similar to Your Device Name .
         /// </summary>
         internal static string YourDeviceName {
             get {
