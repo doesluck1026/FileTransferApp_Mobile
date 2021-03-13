@@ -1251,7 +1251,7 @@
       },
       "Buggy File Transfer/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.475",
           "MarcTron.Admob": "1.6.0",
