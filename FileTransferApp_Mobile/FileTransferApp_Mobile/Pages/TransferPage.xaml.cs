@@ -30,6 +30,7 @@ namespace FileTransferApp_Mobile
             else
                 Main.ResponseToTransferRequest(true);
             Main.OnTransferFinished += Main_OnTransferFinished;
+            Main.OnTransferAborted += Main_OnTransferAborted;
             Task.Run(() =>
             {
                 while (!Main.IsTransfering)
@@ -38,13 +39,23 @@ namespace FileTransferApp_Mobile
                 }
                 StartUpdatingUI();
             });            
-        }
+        }     
+
         protected override void OnDisappearing()
         {
             Main.OnTransferFinished -= Main_OnTransferFinished;
+            Main.OnTransferAborted -= Main_OnTransferAborted;
         }
         private  void Main_OnTransferFinished()
         {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                Navigation.PushAsync(new TransferDonePage());
+            });
+        }
+        private void Main_OnTransferAborted()
+        {
+            UserDialogs.Instance.Alert(AppResources.Transfer_AbortedMessage);
             Device.BeginInvokeOnMainThread(() =>
             {
                 Navigation.PushAsync(new TransferDonePage());
@@ -112,7 +123,7 @@ namespace FileTransferApp_Mobile
         private async void btn_AbortTransfer_Clicked(object sender, EventArgs e)
         {
             var result = await UserDialogs.Instance.ConfirmAsync(AppResources.Transfer_ConfirmAbortMessage,AppResources.Transfer_ConfirmAbortTitle,
-                AppResources.Transfer_ConfirmAbortNo, AppResources.Transfer_ConfirmAbortNo);
+                AppResources.Transfer_ConfirmAbortYes, AppResources.Transfer_ConfirmAbortNo);
             if(result.ToString()== "True")
                 Main.AbortTransfer();
         }

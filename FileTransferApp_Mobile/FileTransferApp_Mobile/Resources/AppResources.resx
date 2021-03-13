@@ -232,6 +232,9 @@
   <data name="Setting_Warning_Saving" xml:space="preserve">
     <value>Saving Parameters...</value>
   </data>
+  <data name="Transfer_AbortedMessage" xml:space="preserve">
+    <value>Transfer is aborted by other device.</value>
+  </data>
   <data name="Transfer_btnAbort" xml:space="preserve">
     <value>Cancel</value>
   </data>

@@ -404,6 +404,15 @@ namespace FileTransferApp_Mobile.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Transfer is aborted by other device..
+        /// </summary>
+        internal static string Transfer_AbortedMessage {
+            get {
+                return ResourceManager.GetString("Transfer_AbortedMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cancel.
         /// </summary>
         internal static string Transfer_btnAbort {

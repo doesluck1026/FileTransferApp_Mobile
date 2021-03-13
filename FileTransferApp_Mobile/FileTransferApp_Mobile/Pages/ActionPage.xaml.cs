@@ -42,7 +42,6 @@ namespace FileTransferApp_Mobile.Pages
         }
         protected override void OnDisappearing()
         {
-            base.OnDisappearing();
             Main.OnClientRequested -= Main_OnClientRequested;
         }
         protected override bool OnBackButtonPressed()

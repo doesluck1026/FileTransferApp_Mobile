@@ -205,16 +205,22 @@
           <target state="translated">Übertragungsgeschwindigkeit:</target>
         </trans-unit>
         <trans-unit id="Transfer_Warning_GoBack" translate="yes" xml:space="preserve">
-          <source>You can't go back while transferring!</source>
-          <target state="translated">Sie können beim Übertragen nicht zurückkehren!</target>
+          <source>You can't go back while files are being transferred!</source>
+          <target state="needs-review-translation">Sie können beim Übertragen nicht zurückkehren!</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="YourDeviceName" translate="yes" xml:space="preserve">
-          <source>Your Device Name:</source>
-          <target state="translated">Ihr Gerätename:</target>
+          <source>Your Device Name </source>
+          <target state="needs-review-translation">Ihr Gerätename:</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="YourIPAddress" translate="yes" xml:space="preserve">
           <source>Your IP Address</source>
           <target state="translated">Ihre IP-Adresse</target>
+        </trans-unit>
+        <trans-unit id="Transfer_AbortedMessage" translate="yes" xml:space="preserve">
+          <source>Transfer is aborted by other device.</source>
+          <target state="new">Transfer is aborted by other device.</target>
         </trans-unit>
       </group>
     </body>

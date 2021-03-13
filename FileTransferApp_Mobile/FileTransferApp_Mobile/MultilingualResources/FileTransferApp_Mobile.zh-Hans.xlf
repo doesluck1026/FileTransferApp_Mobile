@@ -205,16 +205,20 @@
           <target state="new">Transfer speed :</target>
         </trans-unit>
         <trans-unit id="Transfer_Warning_GoBack" translate="yes" xml:space="preserve">
-          <source>You can't go back while transferring!</source>
-          <target state="new">You can't go back while transferring!</target>
+          <source>You can't go back while files are being transferred!</source>
+          <target state="new">You can't go back while files are being transferred!</target>
         </trans-unit>
         <trans-unit id="YourDeviceName" translate="yes" xml:space="preserve">
-          <source>Your Device Name:</source>
-          <target state="new">Your Device Name:</target>
+          <source>Your Device Name </source>
+          <target state="new">Your Device Name </target>
         </trans-unit>
         <trans-unit id="YourIPAddress" translate="yes" xml:space="preserve">
           <source>Your IP Address</source>
           <target state="new">Your IP Address</target>
+        </trans-unit>
+        <trans-unit id="Transfer_AbortedMessage" translate="yes" xml:space="preserve">
+          <source>Transfer is aborted by other device.</source>
+          <target state="new">Transfer is aborted by other device.</target>
         </trans-unit>
       </group>
     </body>
