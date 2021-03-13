@@ -1,22 +1,39 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="MultilingualAppToolkit">
+    <MultilingualAppToolkitVersion>4.0</MultilingualAppToolkitVersion>
+    <MultilingualFallbackLanguage>en</MultilingualFallbackLanguage>
+    <TranslationReport Condition="'$(Configuration)' == 'Release'">true</TranslationReport>
+    <SuppressPseudoWarning Condition="'$(Configuration)' == 'Debug'">true</SuppressPseudoWarning>
+  </PropertyGroup>
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
   </PropertyGroup>
-<PropertyGroup>
+  <PropertyGroup>
     <UseShortFileNames>True</UseShortFileNames>
     <AssemblyName>Buggy File Transfer</AssemblyName>
     <RootNamespace>FileTransferApp_Mobile</RootNamespace>
     <ApplicationIcon>Logo.ico</ApplicationIcon>
     <Company>Buggy Company</Company>
     <PackageIcon>Logo.png</PackageIcon>
-</PropertyGroup>
+    <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
-
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets" Label="MultilingualAppToolkit" Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\v$(MultilingualAppToolkitVersion)\Microsoft.Multilingual.ResxResources.targets')" />
+  <Target Name="MATPrerequisite" BeforeTargets="PrepareForBuild" Condition="!Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets')" Label="MultilingualAppToolkit">
+    <Warning Text="$(MSBuildProjectFile) is Multilingual build enabled, but the Multilingual App Toolkit is unavailable during the build. If building with Visual Studio, please check to ensure that toolkit is properly installed." />
+  </Target>
+  <ItemGroup>
+    <None Remove="MultilingualResources\FileTransferApp_Mobile.ar.xlf" />
+    <None Remove="MultilingualResources\FileTransferApp_Mobile.de.xlf" />
+    <None Remove="MultilingualResources\FileTransferApp_Mobile.es.xlf" />
+    <None Remove="MultilingualResources\FileTransferApp_Mobile.fr.xlf" />
+    <None Remove="MultilingualResources\FileTransferApp_Mobile.zh-Hans.xlf" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Acr.UserDialogs" Version="7.1.0.475" />
     <PackageReference Include="MarcTron.Admob" Version="1.6.0" />
@@ -25,7 +42,13 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1-preview1" />
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.763-beta" />
   </ItemGroup>
-
+  <ItemGroup>
+    <XliffResource Include="MultilingualResources\FileTransferApp_Mobile.ar.xlf" />
+    <XliffResource Include="MultilingualResources\FileTransferApp_Mobile.de.xlf" />
+    <XliffResource Include="MultilingualResources\FileTransferApp_Mobile.es.xlf" />
+    <XliffResource Include="MultilingualResources\FileTransferApp_Mobile.fr.xlf" />
+    <XliffResource Include="MultilingualResources\FileTransferApp_Mobile.zh-Hans.xlf" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="MasterDetailPage1Detail.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -65,7 +88,6 @@
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-
   <ItemGroup>
     <Compile Update="Resources\AppResources.Designer.cs">
       <DesignTime>True</DesignTime>

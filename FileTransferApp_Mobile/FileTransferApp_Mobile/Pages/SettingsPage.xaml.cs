@@ -20,7 +20,10 @@ namespace FileTransferApp_Mobile.Pages
                 BannerView.AdsId = Admob.BannerAdID;
             LanguageList.Add("English", "en");
             LanguageList.Add("Türkçe", "tr");
+            LanguageList.Add("Deutsche", "de");
+            LanguageList.Add("عربي", "ar");
         }
+        
         protected override void OnAppearing()
         {
             Admob.AdjustBannerView(BannerView);

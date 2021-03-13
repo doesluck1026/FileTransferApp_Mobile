@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en" target-language="ar" original="FILETRANSFERAPP_MOBILE/RESOURCES/APPRESOURCES.RESX" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6916.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="FILETRANSFERAPP_MOBILE/RESOURCES/APPRESOURCES.RESX" datatype="resx">
+        <trans-unit id="Ac_btnReceive" translate="yes" xml:space="preserve">
+          <source>Receive Files</source>
+          <target state="final" state-qualifier="tm-suggestion">استلام الملفات</target>
+        </trans-unit>
+        <trans-unit id="Ac_btnSend" translate="yes" xml:space="preserve">
+          <source>Send Files</source>
+          <target state="final" state-qualifier="tm-suggestion">إرسال الملفات</target>
+        </trans-unit>
+        <trans-unit id="Ac_InfoMessage" translate="yes" xml:space="preserve">
+          <source>Choose what to do.</source>
+          <target state="translated">اختر ما تريد القيام به.</target>
+        </trans-unit>
+        <trans-unit id="Done_btnHome" translate="yes" xml:space="preserve">
+          <source>Home</source>
+          <target state="final" state-qualifier="tm-suggestion">الصفحة الرئيسية</target>
+        </trans-unit>
+        <trans-unit id="Done_btnOpen" translate="yes" xml:space="preserve">
+          <source>Open</source>
+          <target state="final" state-qualifier="tm-suggestion">فتح</target>
+        </trans-unit>
+        <trans-unit id="Done_InfoMessage" translate="yes" xml:space="preserve">
+          <source>File transfer is succesful!</source>
+          <target state="translated">تم نقل الملف بنجاح!</target>
+        </trans-unit>
+        <trans-unit id="Done_lblFiles" translate="yes" xml:space="preserve">
+          <source>Files</source>
+          <target state="final" state-qualifier="tm-suggestion">الملفات</target>
+        </trans-unit>
+        <trans-unit id="Files_Warning_NoFile" translate="yes" xml:space="preserve">
+          <source>No file is selected!</source>
+          <target state="translated">لم يتم اختيار ملف</target>
+        </trans-unit>
+        <trans-unit id="File_btnAdd" translate="yes" xml:space="preserve">
+          <source>Add more</source>
+          <target state="final" state-qualifier="tm-suggestion">إضافة المزيد</target>
+        </trans-unit>
+        <trans-unit id="File_btnConfirm" translate="yes" xml:space="preserve">
+          <source>Confirm files</source>
+          <target state="translated">قم بتأكيد الملفات</target>
+        </trans-unit>
+        <trans-unit id="File_btnOpen" translate="yes" xml:space="preserve">
+          <source>View</source>
+          <target state="final" state-qualifier="tm-suggestion">عرض</target>
+        </trans-unit>
+        <trans-unit id="File_btnRemove" translate="yes" xml:space="preserve">
+          <source>Remove</source>
+          <target state="final" state-qualifier="tm-suggestion">‏‏إزالة</target>
+        </trans-unit>
+        <trans-unit id="File_InfoMessage" translate="yes" xml:space="preserve">
+          <source>Review selected files.</source>
+          <target state="translated">مراجعة الملفات المحددة.</target>
+        </trans-unit>
+        <trans-unit id="File_SelectedList" translate="yes" xml:space="preserve">
+          <source>List of selected files</source>
+          <target state="translated">قائمة الملفات المختارة</target>
+        </trans-unit>
+        <trans-unit id="Info_InfoMessage" translate="yes" xml:space="preserve">
+          <source>Thanks for using this application. You can follow and support us for more!</source>
+          <target state="translated">شكرا لاستخدام هذا التطبيق. يمكنك متابعتنا ودعمنا للمزيد!</target>
+        </trans-unit>
+        <trans-unit id="Main_btnSelect" translate="yes" xml:space="preserve">
+          <source>Select FIles</source>
+          <target state="translated">اختر الملفات</target>
+        </trans-unit>
+        <trans-unit id="Main_InfoMessage1" translate="yes" xml:space="preserve">
+          <source>Plase make sure that your phone and the receiver device are connected to same Wi-Fi!</source>
+          <target state="translated">يرجى التأكد من أن هاتفك وجهاز الاستقبال متصلان بشبكة Wi-Fi نفسها!</target>
+        </trans-unit>
+        <trans-unit id="Main_InfoMessage2" translate="yes" xml:space="preserve">
+          <source>Select the files you want to send. You can select multiple files.</source>
+          <target state="translated">حدد الملفات التي تريد إرسالها. يمكنك اختيار عدة ملفات.</target>
+        </trans-unit>
+        <trans-unit id="Permission_btnAccept" translate="yes" xml:space="preserve">
+          <source>Accept</source>
+          <target state="final" state-qualifier="tm-suggestion">قبول</target>
+        </trans-unit>
+        <trans-unit id="Permission_InfoMessage" translate="yes" xml:space="preserve">
+          <source>New Request</source>
+          <target state="final" state-qualifier="tm-suggestion">طلب جديد</target>
+        </trans-unit>
+        <trans-unit id="Permission_RequestMessage" translate="yes" xml:space="preserve">
+          <source>wants to send you some files : </source>
+          <target state="translated">يريد أن يرسل لك بعض الملفات:</target>
+        </trans-unit>
+        <trans-unit id="Permission_RequestMessage2" translate="yes" xml:space="preserve">
+          <source>Do you want to receive?</source>
+          <target state="translated">هل تريد ان تستقبل؟</target>
+        </trans-unit>
+        <trans-unit id="Permisson_btnDecline" translate="yes" xml:space="preserve">
+          <source>Decline</source>
+          <target state="final" state-qualifier="tm-suggestion">رفض</target>
+        </trans-unit>
+        <trans-unit id="Rec_InfoMessage" translate="yes" xml:space="preserve">
+          <source>Waiting for connection...</source>
+          <target state="final" state-qualifier="tm-suggestion">في انتظار الاتصال</target>
+        </trans-unit>
+        <trans-unit id="Send_btnRefresh" translate="yes" xml:space="preserve">
+          <source>Refresh</source>
+          <target state="final" state-qualifier="tm-suggestion">تحديث</target>
+        </trans-unit>
+        <trans-unit id="Send_btnSend" translate="yes" xml:space="preserve">
+          <source>Send</source>
+          <target state="final" state-qualifier="tm-suggestion">إرسال</target>
+        </trans-unit>
+        <trans-unit id="Send_deviceList" translate="yes" xml:space="preserve">
+          <source>Available device list :</source>
+          <target state="translated">قائمة الأجهزة المتاحة:</target>
+        </trans-unit>
+        <trans-unit id="Send_infoMessage" translate="yes" xml:space="preserve">
+          <source>Select the target device</source>
+          <target state="translated">حدد الجهاز المستهدف</target>
+        </trans-unit>
+        <trans-unit id="Send_Scanning" translate="yes" xml:space="preserve">
+          <source>Scanning Network...</source>
+          <target state="translated">جارٍ البحث عن شبكة ...</target>
+        </trans-unit>
+        <trans-unit id="Send_TargetIP" translate="yes" xml:space="preserve">
+          <source>Target IP :</source>
+          <target state="translated">IP الهدف:</target>
+        </trans-unit>
+        <trans-unit id="Send_Warning_Goback" translate="yes" xml:space="preserve">
+          <source>You can't go back after sending a request. Sorry...</source>
+          <target state="translated">لا يمكنك العودة بعد إرسال الطلب. آسف...</target>
+        </trans-unit>
+        <trans-unit id="Send_Warning_rejected" translate="yes" xml:space="preserve">
+          <source>Sorry... Transfer request is rejected by</source>
+          <target state="translated">عذرا ... تم رفض طلب التحويل من قبل</target>
+        </trans-unit>
+        <trans-unit id="Settings_fristTimeInfo" translate="yes" xml:space="preserve">
+          <source>It is better to change the name of your device so that you can easily recognize it later.
+                           This name will be seen when you want to receive files. You can also change the language of this app</source>
+          <target state="translated">من الأفضل تغيير اسم جهازك بحيث يمكنك التعرف عليه بسهولة لاحقًا.
+                            سيظهر هذا الاسم عندما تريد استلام الملفات. يمكنك أيضًا تغيير لغة هذا التطبيق</target>
+        </trans-unit>
+        <trans-unit id="Settings_WelcomeMessage" translate="yes" xml:space="preserve">
+          <source>Welcome to Buggy File Transfer App!</source>
+          <target state="translated">مرحبًا بك في تطبيق Buggy File Transfer!</target>
+        </trans-unit>
+        <trans-unit id="Setting_btnSave" translate="yes" xml:space="preserve">
+          <source>Save</source>
+          <target state="final" state-qualifier="tm-suggestion">حفظ</target>
+        </trans-unit>
+        <trans-unit id="Setting_DeviceName" translate="yes" xml:space="preserve">
+          <source>Device Name :</source>
+          <target state="final" state-qualifier="tm-suggestion">‏‏اسم الجهاز</target>
+        </trans-unit>
+        <trans-unit id="Setting_Language" translate="yes" xml:space="preserve">
+          <source>Language :</source>
+          <target state="final" state-qualifier="tm-suggestion">اللغة</target>
+        </trans-unit>
+        <trans-unit id="Setting_Warning_Saving" translate="yes" xml:space="preserve">
+          <source>Saving Parameters...</source>
+          <target state="translated">حفظ المعلمات ...</target>
+        </trans-unit>
+        <trans-unit id="Transfer_btnAbort" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target state="final" state-qualifier="tm-suggestion">إلغاء الأمر</target>
+        </trans-unit>
+        <trans-unit id="Transfer_ConfirmAbortMessage" translate="yes" xml:space="preserve">
+          <source>Do you really want to cancel transfer?</source>
+          <target state="translated">هل تريد حقًا إلغاء التحويل؟</target>
+        </trans-unit>
+        <trans-unit id="Transfer_ConfirmAbortNo" translate="yes" xml:space="preserve">
+          <source>No</source>
+          <target state="final" state-qualifier="tm-suggestion">لا</target>
+        </trans-unit>
+        <trans-unit id="Transfer_ConfirmAbortTitle" translate="yes" xml:space="preserve">
+          <source>Confirmation</source>
+          <target state="final" state-qualifier="tm-suggestion">تأكيد</target>
+        </trans-unit>
+        <trans-unit id="Transfer_ConfirmAbortYes" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+          <target state="final" state-qualifier="tm-suggestion">نعم</target>
+        </trans-unit>
+        <trans-unit id="Transfer_Filename" translate="yes" xml:space="preserve">
+          <source>File name :</source>
+          <target state="final" state-qualifier="tm-suggestion">اسم الملف:</target>
+        </trans-unit>
+        <trans-unit id="Transfer_FileSize" translate="yes" xml:space="preserve">
+          <source>File Size :</source>
+          <target state="final" state-qualifier="tm-suggestion">حجم الملف</target>
+        </trans-unit>
+        <trans-unit id="Transfer_InfoMessage" translate="yes" xml:space="preserve">
+          <source>Files are being transferred...</source>
+          <target state="translated">يجري نقل الملفات ...</target>
+        </trans-unit>
+        <trans-unit id="Transfer_Remaining" translate="yes" xml:space="preserve">
+          <source>Remaining :</source>
+          <target state="final" state-qualifier="tm-suggestion">المتبقي</target>
+        </trans-unit>
+        <trans-unit id="Transfer_Time" translate="yes" xml:space="preserve">
+          <source>Time :</source>
+          <target state="final" state-qualifier="tm-suggestion">الوقت</target>
+        </trans-unit>
+        <trans-unit id="Transfer_TransferSpeed" translate="yes" xml:space="preserve">
+          <source>Transfer speed :</source>
+          <target state="translated">سرعة النقل:</target>
+        </trans-unit>
+        <trans-unit id="Transfer_Warning_GoBack" translate="yes" xml:space="preserve">
+          <source>You can't go back while transferring!</source>
+          <target state="translated">لا يمكنك الرجوع أثناء التحويل!</target>
+        </trans-unit>
+        <trans-unit id="YourDeviceName" translate="yes" xml:space="preserve">
+          <source>Your Device Name:</source>
+          <target state="translated">اسم جهازك:</target>
+        </trans-unit>
+        <trans-unit id="YourIPAddress" translate="yes" xml:space="preserve">
+          <source>Your IP Address</source>
+          <target state="translated">عنوان IP الخاص بك</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
