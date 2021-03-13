@@ -8,217 +8,245 @@
       <group id="FILETRANSFERAPP_MOBILE/RESOURCES/APPRESOURCES.RESX" datatype="resx">
         <trans-unit id="Ac_btnReceive" translate="yes" xml:space="preserve">
           <source>Receive Files</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">接收文件</target>
+          <target state="translated" state-qualifier="tm-suggestion">接收文件</target>
         </trans-unit>
         <trans-unit id="Ac_btnSend" translate="yes" xml:space="preserve">
           <source>Send Files</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">发送文件</target>
+          <target state="translated" state-qualifier="tm-suggestion">发送文件</target>
         </trans-unit>
         <trans-unit id="Ac_InfoMessage" translate="yes" xml:space="preserve">
           <source>Choose what to do.</source>
-          <target state="new">Choose what to do.</target>
+          <target state="translated">选择要做什么。</target>
         </trans-unit>
         <trans-unit id="Done_btnHome" translate="yes" xml:space="preserve">
-          <source>Home</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">住宅</target>
+          <source>Homepage</source>
+          <target state="translated" state-qualifier="tm-suggestion">住宅</target>
         </trans-unit>
         <trans-unit id="Done_btnOpen" translate="yes" xml:space="preserve">
           <source>Open</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">打开</target>
+          <target state="translated" state-qualifier="tm-suggestion">打开</target>
         </trans-unit>
         <trans-unit id="Done_InfoMessage" translate="yes" xml:space="preserve">
-          <source>File transfer is succesful!</source>
-          <target state="new">File transfer is succesful!</target>
+          <source>File transfer is successful!</source>
+          <target state="translated">文件传输成功！</target>
         </trans-unit>
         <trans-unit id="Done_lblFiles" translate="yes" xml:space="preserve">
           <source>Files</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">文件</target>
+          <target state="translated" state-qualifier="tm-suggestion">文件</target>
         </trans-unit>
         <trans-unit id="Files_Warning_NoFile" translate="yes" xml:space="preserve">
           <source>No file is selected!</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">未选择任何文件。</target>
+          <target state="translated" state-qualifier="tm-suggestion">未选择任何文件。</target>
         </trans-unit>
         <trans-unit id="File_btnAdd" translate="yes" xml:space="preserve">
           <source>Add more</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">添加更多</target>
+          <target state="translated" state-qualifier="tm-suggestion">添加更多</target>
         </trans-unit>
         <trans-unit id="File_btnConfirm" translate="yes" xml:space="preserve">
           <source>Confirm files</source>
-          <target state="new">Confirm files</target>
+          <target state="translated">确认文件</target>
         </trans-unit>
         <trans-unit id="File_btnOpen" translate="yes" xml:space="preserve">
-          <source>View</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">视图</target>
+          <source>Open</source>
+          <target state="translated" state-qualifier="tm-suggestion">视图</target>
         </trans-unit>
         <trans-unit id="File_btnRemove" translate="yes" xml:space="preserve">
           <source>Remove</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">移除</target>
+          <target state="translated" state-qualifier="tm-suggestion">移除</target>
         </trans-unit>
         <trans-unit id="File_InfoMessage" translate="yes" xml:space="preserve">
           <source>Review selected files.</source>
-          <target state="new">Review selected files.</target>
+          <target state="translated">查看选定的文件。</target>
         </trans-unit>
         <trans-unit id="File_SelectedList" translate="yes" xml:space="preserve">
           <source>List of selected files</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">选定文件的列表</target>
+          <target state="translated" state-qualifier="tm-suggestion">选定文件的列表</target>
         </trans-unit>
         <trans-unit id="Info_InfoMessage" translate="yes" xml:space="preserve">
           <source>Thanks for using this application. You can follow and support us for more!</source>
-          <target state="new">Thanks for using this application. You can follow and support us for more!</target>
+          <target state="translated">感谢您使用此应用程序。 您可以关注并支持我们以获取更多！</target>
         </trans-unit>
         <trans-unit id="Main_btnSelect" translate="yes" xml:space="preserve">
           <source>Select FIles</source>
-          <target state="new">Select FIles</target>
+          <target state="translated">选择文件</target>
         </trans-unit>
         <trans-unit id="Main_InfoMessage1" translate="yes" xml:space="preserve">
-          <source>Plase make sure that your phone and the receiver device are connected to same Wi-Fi!</source>
-          <target state="new">Plase make sure that your phone and the receiver device are connected to same Wi-Fi!</target>
+          <source>Please make sure that your phone and the receiver device are connected to same Wi-Fi!</source>
+          <target state="translated">请确保您的手机和接收器设备连接到同一Wi-Fi！</target>
         </trans-unit>
         <trans-unit id="Main_InfoMessage2" translate="yes" xml:space="preserve">
           <source>Select the files you want to send. You can select multiple files.</source>
-          <target state="new">Select the files you want to send. You can select multiple files.</target>
+          <target state="translated">选择您要发送的文件。 您可以选择多个文件。</target>
         </trans-unit>
         <trans-unit id="Permission_btnAccept" translate="yes" xml:space="preserve">
           <source>Accept</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">接受</target>
+          <target state="translated" state-qualifier="tm-suggestion">接受</target>
         </trans-unit>
         <trans-unit id="Permission_InfoMessage" translate="yes" xml:space="preserve">
           <source>New Request</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">新请求</target>
+          <target state="translated" state-qualifier="tm-suggestion">新请求</target>
         </trans-unit>
         <trans-unit id="Permission_RequestMessage" translate="yes" xml:space="preserve">
           <source>wants to send you some files : </source>
-          <target state="new">wants to send you some files : </target>
+          <target state="translated">想要向您发送一些文件：</target>
         </trans-unit>
         <trans-unit id="Permission_RequestMessage2" translate="yes" xml:space="preserve">
           <source>Do you want to receive?</source>
-          <target state="new">Do you want to receive?</target>
+          <target state="translated">你想收到吗？</target>
         </trans-unit>
         <trans-unit id="Permisson_btnDecline" translate="yes" xml:space="preserve">
           <source>Decline</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">拒绝</target>
+          <target state="translated" state-qualifier="tm-suggestion">拒绝</target>
         </trans-unit>
         <trans-unit id="Rec_InfoMessage" translate="yes" xml:space="preserve">
           <source>Waiting for connection...</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">正在等待连接</target>
+          <target state="translated" state-qualifier="tm-suggestion">正在等待连接</target>
         </trans-unit>
         <trans-unit id="Send_btnRefresh" translate="yes" xml:space="preserve">
           <source>Refresh</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">刷新</target>
+          <target state="translated" state-qualifier="tm-suggestion">刷新</target>
         </trans-unit>
         <trans-unit id="Send_btnSend" translate="yes" xml:space="preserve">
           <source>Send</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">发送</target>
+          <target state="translated" state-qualifier="tm-suggestion">发送</target>
         </trans-unit>
         <trans-unit id="Send_deviceList" translate="yes" xml:space="preserve">
           <source>Available device list :</source>
-          <target state="new">Available device list :</target>
+          <target state="translated">可用设备列表：</target>
         </trans-unit>
         <trans-unit id="Send_infoMessage" translate="yes" xml:space="preserve">
           <source>Select the target device</source>
-          <target state="new">Select the target device</target>
+          <target state="translated">选择目标设备</target>
         </trans-unit>
         <trans-unit id="Send_Scanning" translate="yes" xml:space="preserve">
           <source>Scanning Network...</source>
-          <target state="new">Scanning Network...</target>
+          <target state="translated">扫描网络...</target>
         </trans-unit>
         <trans-unit id="Send_TargetIP" translate="yes" xml:space="preserve">
           <source>Target IP :</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">目标 IP</target>
+          <target state="translated" state-qualifier="tm-suggestion">目标 IP</target>
         </trans-unit>
         <trans-unit id="Send_Warning_Goback" translate="yes" xml:space="preserve">
           <source>You can't go back after sending a request. Sorry...</source>
-          <target state="new">You can't go back after sending a request. Sorry...</target>
+          <target state="translated">发送请求后，您将无法返回。 对不起...</target>
         </trans-unit>
         <trans-unit id="Send_Warning_rejected" translate="yes" xml:space="preserve">
           <source>Sorry... Transfer request is rejected by</source>
-          <target state="new">Sorry... Transfer request is rejected by</target>
+          <target state="translated">抱歉...转移请求被拒绝</target>
         </trans-unit>
         <trans-unit id="Settings_fristTimeInfo" translate="yes" xml:space="preserve">
           <source>It is better to change the name of your device so that you can easily recognize it later.
                            This name will be seen when you want to receive files. You can also change the language of this app</source>
-          <target state="new">It is better to change the name of your device so that you can easily recognize it later.
-                           This name will be seen when you want to receive files. You can also change the language of this app</target>
+          <target state="translated">最好更改设备的名称，以便以后可以轻松识别它。
+                            当您要接收文件时，将显示该名称。 您还可以更改此应用的语言</target>
         </trans-unit>
         <trans-unit id="Settings_WelcomeMessage" translate="yes" xml:space="preserve">
           <source>Welcome to Buggy File Transfer App!</source>
-          <target state="new">Welcome to Buggy File Transfer App!</target>
+          <target state="translated">欢迎使用Buggy File Transfer App！</target>
         </trans-unit>
         <trans-unit id="Setting_btnSave" translate="yes" xml:space="preserve">
           <source>Save</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">保存</target>
+          <target state="translated" state-qualifier="tm-suggestion">保存</target>
         </trans-unit>
         <trans-unit id="Setting_DeviceName" translate="yes" xml:space="preserve">
           <source>Device Name :</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">设备名称</target>
+          <target state="translated" state-qualifier="tm-suggestion">设备名称</target>
         </trans-unit>
         <trans-unit id="Setting_Language" translate="yes" xml:space="preserve">
           <source>Language :</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">语言</target>
+          <target state="translated" state-qualifier="tm-suggestion">语言</target>
         </trans-unit>
         <trans-unit id="Setting_Warning_Saving" translate="yes" xml:space="preserve">
           <source>Saving Parameters...</source>
-          <target state="new">Saving Parameters...</target>
+          <target state="translated">保存参数...</target>
         </trans-unit>
         <trans-unit id="Transfer_btnAbort" translate="yes" xml:space="preserve">
           <source>Cancel</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">取消</target>
+          <target state="translated" state-qualifier="tm-suggestion">取消</target>
         </trans-unit>
         <trans-unit id="Transfer_ConfirmAbortMessage" translate="yes" xml:space="preserve">
           <source>Do you really want to cancel transfer?</source>
-          <target state="new">Do you really want to cancel transfer?</target>
+          <target state="translated">您真的要取消转帐吗？</target>
         </trans-unit>
         <trans-unit id="Transfer_ConfirmAbortNo" translate="yes" xml:space="preserve">
           <source>No</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">否</target>
+          <target state="translated" state-qualifier="tm-suggestion">否</target>
         </trans-unit>
         <trans-unit id="Transfer_ConfirmAbortTitle" translate="yes" xml:space="preserve">
           <source>Confirmation</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">确认</target>
+          <target state="translated" state-qualifier="tm-suggestion">确认</target>
         </trans-unit>
         <trans-unit id="Transfer_ConfirmAbortYes" translate="yes" xml:space="preserve">
           <source>Yes</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">是</target>
+          <target state="translated" state-qualifier="tm-suggestion">是</target>
         </trans-unit>
         <trans-unit id="Transfer_Filename" translate="yes" xml:space="preserve">
           <source>File name :</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">文件名</target>
+          <target state="translated" state-qualifier="tm-suggestion">文件名</target>
         </trans-unit>
         <trans-unit id="Transfer_FileSize" translate="yes" xml:space="preserve">
           <source>File Size :</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">文件大小：</target>
+          <target state="translated" state-qualifier="tm-suggestion">文件大小：</target>
         </trans-unit>
         <trans-unit id="Transfer_InfoMessage" translate="yes" xml:space="preserve">
           <source>Files are being transferred...</source>
-          <target state="new">Files are being transferred...</target>
+          <target state="translated">文件正在传输中...</target>
         </trans-unit>
         <trans-unit id="Transfer_Remaining" translate="yes" xml:space="preserve">
           <source>Remaining :</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">剩余</target>
+          <target state="translated" state-qualifier="tm-suggestion">剩余</target>
         </trans-unit>
         <trans-unit id="Transfer_Time" translate="yes" xml:space="preserve">
           <source>Time :</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">时间</target>
+          <target state="translated" state-qualifier="tm-suggestion">时间</target>
         </trans-unit>
         <trans-unit id="Transfer_TransferSpeed" translate="yes" xml:space="preserve">
           <source>Transfer speed :</source>
-          <target state="new">Transfer speed :</target>
+          <target state="translated">传输速度：</target>
         </trans-unit>
         <trans-unit id="Transfer_Warning_GoBack" translate="yes" xml:space="preserve">
           <source>You can't go back while files are being transferred!</source>
-          <target state="new">You can't go back while files are being transferred!</target>
+          <target state="translated">传输文件时您不能回头！</target>
         </trans-unit>
         <trans-unit id="YourDeviceName" translate="yes" xml:space="preserve">
-          <source>Your Device Name </source>
-          <target state="new">Your Device Name </target>
+          <source>Device Name </source>
+          <target state="translated">您的设备名称</target>
         </trans-unit>
         <trans-unit id="YourIPAddress" translate="yes" xml:space="preserve">
-          <source>Your IP Address</source>
-          <target state="new">Your IP Address</target>
+          <source>IP Address</source>
+          <target state="translated" state-qualifier="tm-suggestion">IP 地址</target>
         </trans-unit>
         <trans-unit id="Transfer_AbortedMessage" translate="yes" xml:space="preserve">
           <source>Transfer is aborted by other device.</source>
-          <target state="new">Transfer is aborted by other device.</target>
+          <target state="translated">传输被其他设备中止。</target>
+        </trans-unit>
+        <trans-unit id="Done_OpenFolder" translate="yes" xml:space="preserve">
+          <source>Open Output Folder</source>
+          <target state="translated">打开输出文件夹</target>
+        </trans-unit>
+        <trans-unit id="Main_DragInfo" translate="yes" xml:space="preserve">
+          <source>Drag Your Files Here or Click to Select Files.</source>
+          <target state="translated">将文件拖到此处或单击以选择文件。</target>
+        </trans-unit>
+        <trans-unit id="Main_OrReceive" translate="yes" xml:space="preserve">
+          <source>Or wait here to receive files.</source>
+          <target state="translated">或者在这里等待接收文件。</target>
+        </trans-unit>
+        <trans-unit id="Rejected_Title" translate="yes" xml:space="preserve">
+          <source>Transfer is Rejected!</source>
+          <target state="translated">转移被拒绝！</target>
+        </trans-unit>
+        <trans-unit id="Setting_OutputFolder" translate="yes" xml:space="preserve">
+          <source>Output Folder</source>
+          <target state="translated" state-qualifier="tm-suggestion">输出文件夹:</target>
+        </trans-unit>
+        <trans-unit id="Options_Title" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target state="translated" state-qualifier="tm-suggestion">选项</target>
+        </trans-unit>
+        <trans-unit id="Settings_SelectTargetFolder" translate="yes" xml:space="preserve">
+          <source>Select folder to store received files.</source>
+          <target state="translated">选择文件夹来存储接收到的文件。</target>
         </trans-unit>
       </group>
     </body>

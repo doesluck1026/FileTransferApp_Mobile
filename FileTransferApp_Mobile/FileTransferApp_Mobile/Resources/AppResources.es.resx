@@ -18,11 +18,17 @@
   <data name="Ac_btnSend" xml:space="preserve">
     <value>Enviar archivos</value>
   </data>
+  <data name="Ac_InfoMessage" xml:space="preserve">
+    <value>Elige qué hacer.</value>
+  </data>
   <data name="Done_btnHome" xml:space="preserve">
     <value>Inicio</value>
   </data>
   <data name="Done_btnOpen" xml:space="preserve">
     <value>Abrir</value>
+  </data>
+  <data name="Done_InfoMessage" xml:space="preserve">
+    <value>¡La transferencia de archivos se realizó correctamente!</value>
   </data>
   <data name="Done_lblFiles" xml:space="preserve">
     <value>Archivos</value>
@@ -33,20 +39,44 @@
   <data name="File_btnAdd" xml:space="preserve">
     <value>Agregar más</value>
   </data>
+  <data name="File_btnConfirm" xml:space="preserve">
+    <value>Confirmar archivos</value>
+  </data>
   <data name="File_btnOpen" xml:space="preserve">
     <value>Vista</value>
   </data>
   <data name="File_btnRemove" xml:space="preserve">
     <value>Eliminar</value>
   </data>
+  <data name="File_InfoMessage" xml:space="preserve">
+    <value>Revise los archivos seleccionados.</value>
+  </data>
   <data name="File_SelectedList" xml:space="preserve">
     <value>Lista de campos seleccionados</value>
+  </data>
+  <data name="Info_InfoMessage" xml:space="preserve">
+    <value>Gracias por usar esta aplicación. ¡Puedes seguirnos y apoyarnos por más!</value>
+  </data>
+  <data name="Main_btnSelect" xml:space="preserve">
+    <value>Selecciona archivos</value>
+  </data>
+  <data name="Main_InfoMessage1" xml:space="preserve">
+    <value>¡Asegúrese de que su teléfono y el dispositivo receptor estén conectados al mismo Wi-Fi!</value>
+  </data>
+  <data name="Main_InfoMessage2" xml:space="preserve">
+    <value>Seleccione los archivos que desea enviar. Puede seleccionar varios archivos.</value>
   </data>
   <data name="Permission_btnAccept" xml:space="preserve">
     <value>Aceptar</value>
   </data>
   <data name="Permission_InfoMessage" xml:space="preserve">
     <value>Nueva solicitud</value>
+  </data>
+  <data name="Permission_RequestMessage" xml:space="preserve">
+    <value>quiere enviarte algunos archivos:</value>
+  </data>
+  <data name="Permission_RequestMessage2" xml:space="preserve">
+    <value>Quieres recibir</value>
   </data>
   <data name="Permisson_btnDecline" xml:space="preserve">
     <value>rechazar</value>
@@ -60,8 +90,30 @@
   <data name="Send_btnSend" xml:space="preserve">
     <value>Enviar</value>
   </data>
+  <data name="Send_deviceList" xml:space="preserve">
+    <value>Lista de dispositivos disponibles:</value>
+  </data>
+  <data name="Send_infoMessage" xml:space="preserve">
+    <value>Seleccione el dispositivo de destino</value>
+  </data>
+  <data name="Send_Scanning" xml:space="preserve">
+    <value>Escaneando Red ...</value>
+  </data>
   <data name="Send_TargetIP" xml:space="preserve">
     <value>IP de destino</value>
+  </data>
+  <data name="Send_Warning_Goback" xml:space="preserve">
+    <value>No puede volver después de enviar una solicitud. Perdón...</value>
+  </data>
+  <data name="Send_Warning_rejected" xml:space="preserve">
+    <value>Lo sentimos ... La solicitud de transferencia es rechazada por</value>
+  </data>
+  <data name="Settings_fristTimeInfo" xml:space="preserve">
+    <value>Es mejor cambiar el nombre de su dispositivo para que pueda reconocerlo fácilmente más tarde.
+                            Este nombre se verá cuando desee recibir archivos. También puedes cambiar el idioma de esta aplicación.</value>
+  </data>
+  <data name="Settings_WelcomeMessage" xml:space="preserve">
+    <value>¡Bienvenido a la aplicación Buggy File Transfer!</value>
   </data>
   <data name="Setting_btnSave" xml:space="preserve">
     <value>Guardar</value>
@@ -72,8 +124,14 @@
   <data name="Setting_Language" xml:space="preserve">
     <value>Idioma</value>
   </data>
+  <data name="Setting_Warning_Saving" xml:space="preserve">
+    <value>Guardar parámetros ...</value>
+  </data>
   <data name="Transfer_btnAbort" xml:space="preserve">
     <value>Cancelar</value>
+  </data>
+  <data name="Transfer_ConfirmAbortMessage" xml:space="preserve">
+    <value>¿Realmente quieres cancelar la transferencia?</value>
   </data>
   <data name="Transfer_ConfirmAbortNo" xml:space="preserve">
     <value>NO</value>
@@ -90,10 +148,49 @@
   <data name="Transfer_FileSize" xml:space="preserve">
     <value>Tamaño de archivo:</value>
   </data>
+  <data name="Transfer_InfoMessage" xml:space="preserve">
+    <value>Los archivos se están transfiriendo ...</value>
+  </data>
   <data name="Transfer_Remaining" xml:space="preserve">
     <value>Restante</value>
   </data>
   <data name="Transfer_Time" xml:space="preserve">
     <value>Hora</value>
+  </data>
+  <data name="Transfer_TransferSpeed" xml:space="preserve">
+    <value>Velocidad de transferencia:</value>
+  </data>
+  <data name="Transfer_Warning_GoBack" xml:space="preserve">
+    <value>¡No puede regresar mientras se transfieren los archivos!</value>
+  </data>
+  <data name="YourDeviceName" xml:space="preserve">
+    <value>El nombre de su dispositivo</value>
+  </data>
+  <data name="YourIPAddress" xml:space="preserve">
+    <value>Dirección IP</value>
+  </data>
+  <data name="Transfer_AbortedMessage" xml:space="preserve">
+    <value>Otro dispositivo interrumpe la transferencia.</value>
+  </data>
+  <data name="Done_OpenFolder" xml:space="preserve">
+    <value>Carpeta de salida abierta</value>
+  </data>
+  <data name="Main_DragInfo" xml:space="preserve">
+    <value>Arrastre sus archivos aquí o haga clic para seleccionar archivos.</value>
+  </data>
+  <data name="Main_OrReceive" xml:space="preserve">
+    <value>O espere aquí para recibir archivos.</value>
+  </data>
+  <data name="Rejected_Title" xml:space="preserve">
+    <value>¡La transferencia es rechazada!</value>
+  </data>
+  <data name="Setting_OutputFolder" xml:space="preserve">
+    <value>Carpeta de salida:</value>
+  </data>
+  <data name="Options_Title" xml:space="preserve">
+    <value>Opciones</value>
+  </data>
+  <data name="Settings_SelectTargetFolder" xml:space="preserve">
+    <value>Seleccione la carpeta para almacenar los archivos recibidos.</value>
   </data>
 </root>

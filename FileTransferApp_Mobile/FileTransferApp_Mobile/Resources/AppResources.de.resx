@@ -167,6 +167,30 @@
     <value>Ihr Gerätename:</value>
   </data>
   <data name="YourIPAddress" xml:space="preserve">
-    <value>Ihre IP-Adresse</value>
+    <value>IP-Adresse</value>
+  </data>
+  <data name="Transfer_AbortedMessage" xml:space="preserve">
+    <value>Die Übertragung wird von einem anderen Gerät abgebrochen.</value>
+  </data>
+  <data name="Done_OpenFolder" xml:space="preserve">
+    <value>Öffnen Sie den Ausgabeordner</value>
+  </data>
+  <data name="Main_DragInfo" xml:space="preserve">
+    <value>Ziehen Sie Ihre Dateien hierher oder klicken Sie, um Dateien auszuwählen.</value>
+  </data>
+  <data name="Main_OrReceive" xml:space="preserve">
+    <value>Oder warten Sie hier, um Dateien zu erhalten.</value>
+  </data>
+  <data name="Rejected_Title" xml:space="preserve">
+    <value>Übertragung wird abgelehnt!</value>
+  </data>
+  <data name="Setting_OutputFolder" xml:space="preserve">
+    <value>Ausgabeordner:</value>
+  </data>
+  <data name="Options_Title" xml:space="preserve">
+    <value>Optionen</value>
+  </data>
+  <data name="Settings_SelectTargetFolder" xml:space="preserve">
+    <value>Wählen Sie den Ordner aus, in dem die empfangenen Dateien gespeichert werden sollen.</value>
   </data>
 </root>

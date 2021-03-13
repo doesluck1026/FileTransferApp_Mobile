@@ -8,51 +8,51 @@
       <group id="FILETRANSFERAPP_MOBILE/RESOURCES/APPRESOURCES.RESX" datatype="resx">
         <trans-unit id="Ac_btnReceive" translate="yes" xml:space="preserve">
           <source>Receive Files</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Dateien empfangen</target>
+          <target state="translated" state-qualifier="tm-suggestion">Dateien empfangen</target>
         </trans-unit>
         <trans-unit id="Ac_btnSend" translate="yes" xml:space="preserve">
           <source>Send Files</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Dateien senden</target>
+          <target state="translated" state-qualifier="tm-suggestion">Dateien senden</target>
         </trans-unit>
         <trans-unit id="Ac_InfoMessage" translate="yes" xml:space="preserve">
           <source>Choose what to do.</source>
           <target state="translated">Wählen Sie, was zu tun ist.</target>
         </trans-unit>
         <trans-unit id="Done_btnHome" translate="yes" xml:space="preserve">
-          <source>Home</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Startseite</target>
+          <source>Homepage</source>
+          <target state="translated" state-qualifier="tm-suggestion">Startseite</target>
         </trans-unit>
         <trans-unit id="Done_btnOpen" translate="yes" xml:space="preserve">
           <source>Open</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Öffnen</target>
+          <target state="translated" state-qualifier="tm-suggestion">Öffnen</target>
         </trans-unit>
         <trans-unit id="Done_InfoMessage" translate="yes" xml:space="preserve">
-          <source>File transfer is succesful!</source>
+          <source>File transfer is successful!</source>
           <target state="translated">Dateiübertragung ist erfolgreich!</target>
         </trans-unit>
         <trans-unit id="Done_lblFiles" translate="yes" xml:space="preserve">
           <source>Files</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Dateien</target>
+          <target state="translated" state-qualifier="tm-suggestion">Dateien</target>
         </trans-unit>
         <trans-unit id="Files_Warning_NoFile" translate="yes" xml:space="preserve">
           <source>No file is selected!</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Keine Datei ausgewählt.</target>
+          <target state="translated" state-qualifier="tm-suggestion">Keine Datei ausgewählt.</target>
         </trans-unit>
         <trans-unit id="File_btnAdd" translate="yes" xml:space="preserve">
           <source>Add more</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Weitere hinzufügen</target>
+          <target state="translated" state-qualifier="tm-suggestion">Weitere hinzufügen</target>
         </trans-unit>
         <trans-unit id="File_btnConfirm" translate="yes" xml:space="preserve">
           <source>Confirm files</source>
           <target state="translated">Dateien bestätigen</target>
         </trans-unit>
         <trans-unit id="File_btnOpen" translate="yes" xml:space="preserve">
-          <source>View</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Ansicht</target>
+          <source>Open</source>
+          <target state="translated" state-qualifier="tm-suggestion">Ansicht</target>
         </trans-unit>
         <trans-unit id="File_btnRemove" translate="yes" xml:space="preserve">
           <source>Remove</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Entfernen</target>
+          <target state="translated" state-qualifier="tm-suggestion">Entfernen</target>
         </trans-unit>
         <trans-unit id="File_InfoMessage" translate="yes" xml:space="preserve">
           <source>Review selected files.</source>
@@ -60,7 +60,7 @@
         </trans-unit>
         <trans-unit id="File_SelectedList" translate="yes" xml:space="preserve">
           <source>List of selected files</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Liste der ausgewählten Dateien</target>
+          <target state="translated" state-qualifier="tm-suggestion">Liste der ausgewählten Dateien</target>
         </trans-unit>
         <trans-unit id="Info_InfoMessage" translate="yes" xml:space="preserve">
           <source>Thanks for using this application. You can follow and support us for more!</source>
@@ -71,7 +71,7 @@
           <target state="translated">Dateien auswählen</target>
         </trans-unit>
         <trans-unit id="Main_InfoMessage1" translate="yes" xml:space="preserve">
-          <source>Plase make sure that your phone and the receiver device are connected to same Wi-Fi!</source>
+          <source>Please make sure that your phone and the receiver device are connected to same Wi-Fi!</source>
           <target state="translated">Bitte stellen Sie sicher, dass Ihr Telefon und das Empfängergerät mit demselben WLAN verbunden sind!</target>
         </trans-unit>
         <trans-unit id="Main_InfoMessage2" translate="yes" xml:space="preserve">
@@ -80,11 +80,11 @@
         </trans-unit>
         <trans-unit id="Permission_btnAccept" translate="yes" xml:space="preserve">
           <source>Accept</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Annehmen</target>
+          <target state="translated" state-qualifier="tm-suggestion">Annehmen</target>
         </trans-unit>
         <trans-unit id="Permission_InfoMessage" translate="yes" xml:space="preserve">
           <source>New Request</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Neue Anforderung</target>
+          <target state="translated" state-qualifier="tm-suggestion">Neue Anforderung</target>
         </trans-unit>
         <trans-unit id="Permission_RequestMessage" translate="yes" xml:space="preserve">
           <source>wants to send you some files : </source>
@@ -96,19 +96,19 @@
         </trans-unit>
         <trans-unit id="Permisson_btnDecline" translate="yes" xml:space="preserve">
           <source>Decline</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Ablehnen</target>
+          <target state="translated" state-qualifier="tm-suggestion">Ablehnen</target>
         </trans-unit>
         <trans-unit id="Rec_InfoMessage" translate="yes" xml:space="preserve">
           <source>Waiting for connection...</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Auf Verbindung warten...</target>
+          <target state="translated" state-qualifier="tm-suggestion">Auf Verbindung warten...</target>
         </trans-unit>
         <trans-unit id="Send_btnRefresh" translate="yes" xml:space="preserve">
           <source>Refresh</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Aktualisieren</target>
+          <target state="translated" state-qualifier="tm-suggestion">Aktualisieren</target>
         </trans-unit>
         <trans-unit id="Send_btnSend" translate="yes" xml:space="preserve">
           <source>Send</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Senden</target>
+          <target state="translated" state-qualifier="tm-suggestion">Senden</target>
         </trans-unit>
         <trans-unit id="Send_deviceList" translate="yes" xml:space="preserve">
           <source>Available device list :</source>
@@ -124,7 +124,7 @@
         </trans-unit>
         <trans-unit id="Send_TargetIP" translate="yes" xml:space="preserve">
           <source>Target IP :</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Ziel-IP</target>
+          <target state="translated" state-qualifier="tm-suggestion">Ziel-IP</target>
         </trans-unit>
         <trans-unit id="Send_Warning_Goback" translate="yes" xml:space="preserve">
           <source>You can't go back after sending a request. Sorry...</source>
@@ -146,15 +146,15 @@
         </trans-unit>
         <trans-unit id="Setting_btnSave" translate="yes" xml:space="preserve">
           <source>Save</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Speichern</target>
+          <target state="translated" state-qualifier="tm-suggestion">Speichern</target>
         </trans-unit>
         <trans-unit id="Setting_DeviceName" translate="yes" xml:space="preserve">
           <source>Device Name :</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Gerätename</target>
+          <target state="translated" state-qualifier="tm-suggestion">Gerätename</target>
         </trans-unit>
         <trans-unit id="Setting_Language" translate="yes" xml:space="preserve">
           <source>Language :</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Sprache</target>
+          <target state="translated" state-qualifier="tm-suggestion">Sprache</target>
         </trans-unit>
         <trans-unit id="Setting_Warning_Saving" translate="yes" xml:space="preserve">
           <source>Saving Parameters...</source>
@@ -162,7 +162,7 @@
         </trans-unit>
         <trans-unit id="Transfer_btnAbort" translate="yes" xml:space="preserve">
           <source>Cancel</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Abbrechen</target>
+          <target state="translated" state-qualifier="tm-suggestion">Abbrechen</target>
         </trans-unit>
         <trans-unit id="Transfer_ConfirmAbortMessage" translate="yes" xml:space="preserve">
           <source>Do you really want to cancel transfer?</source>
@@ -170,23 +170,23 @@
         </trans-unit>
         <trans-unit id="Transfer_ConfirmAbortNo" translate="yes" xml:space="preserve">
           <source>No</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">NEIN</target>
+          <target state="translated" state-qualifier="tm-suggestion">NEIN</target>
         </trans-unit>
         <trans-unit id="Transfer_ConfirmAbortTitle" translate="yes" xml:space="preserve">
           <source>Confirmation</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Bestätigung</target>
+          <target state="translated" state-qualifier="tm-suggestion">Bestätigung</target>
         </trans-unit>
         <trans-unit id="Transfer_ConfirmAbortYes" translate="yes" xml:space="preserve">
           <source>Yes</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">JA</target>
+          <target state="translated" state-qualifier="tm-suggestion">JA</target>
         </trans-unit>
         <trans-unit id="Transfer_Filename" translate="yes" xml:space="preserve">
           <source>File name :</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Dateiname:</target>
+          <target state="translated" state-qualifier="tm-suggestion">Dateiname:</target>
         </trans-unit>
         <trans-unit id="Transfer_FileSize" translate="yes" xml:space="preserve">
           <source>File Size :</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Dateigröße:</target>
+          <target state="translated" state-qualifier="tm-suggestion">Dateigröße:</target>
         </trans-unit>
         <trans-unit id="Transfer_InfoMessage" translate="yes" xml:space="preserve">
           <source>Files are being transferred...</source>
@@ -194,11 +194,11 @@
         </trans-unit>
         <trans-unit id="Transfer_Remaining" translate="yes" xml:space="preserve">
           <source>Remaining :</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">Verbleibend</target>
+          <target state="translated" state-qualifier="tm-suggestion">Verbleibend</target>
         </trans-unit>
         <trans-unit id="Transfer_Time" translate="yes" xml:space="preserve">
           <source>Time :</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">ZEIT</target>
+          <target state="translated" state-qualifier="tm-suggestion">ZEIT</target>
         </trans-unit>
         <trans-unit id="Transfer_TransferSpeed" translate="yes" xml:space="preserve">
           <source>Transfer speed :</source>
@@ -206,21 +206,47 @@
         </trans-unit>
         <trans-unit id="Transfer_Warning_GoBack" translate="yes" xml:space="preserve">
           <source>You can't go back while files are being transferred!</source>
-          <target state="needs-review-translation">Sie können beim Übertragen nicht zurückkehren!</target>
-          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
+          <target state="translated">Sie können beim Übertragen nicht zurückkehren!</target>
         </trans-unit>
         <trans-unit id="YourDeviceName" translate="yes" xml:space="preserve">
-          <source>Your Device Name </source>
-          <target state="needs-review-translation">Ihr Gerätename:</target>
-          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
+          <source>Device Name </source>
+          <target state="translated">Ihr Gerätename:</target>
         </trans-unit>
         <trans-unit id="YourIPAddress" translate="yes" xml:space="preserve">
-          <source>Your IP Address</source>
-          <target state="translated">Ihre IP-Adresse</target>
+          <source>IP Address</source>
+          <target state="translated">IP-Adresse</target>
         </trans-unit>
         <trans-unit id="Transfer_AbortedMessage" translate="yes" xml:space="preserve">
           <source>Transfer is aborted by other device.</source>
-          <target state="new">Transfer is aborted by other device.</target>
+          <target state="translated">Die Übertragung wird von einem anderen Gerät abgebrochen.</target>
+        </trans-unit>
+        <trans-unit id="Done_OpenFolder" translate="yes" xml:space="preserve">
+          <source>Open Output Folder</source>
+          <target state="translated">Öffnen Sie den Ausgabeordner</target>
+        </trans-unit>
+        <trans-unit id="Main_DragInfo" translate="yes" xml:space="preserve">
+          <source>Drag Your Files Here or Click to Select Files.</source>
+          <target state="translated">Ziehen Sie Ihre Dateien hierher oder klicken Sie, um Dateien auszuwählen.</target>
+        </trans-unit>
+        <trans-unit id="Main_OrReceive" translate="yes" xml:space="preserve">
+          <source>Or wait here to receive files.</source>
+          <target state="translated">Oder warten Sie hier, um Dateien zu erhalten.</target>
+        </trans-unit>
+        <trans-unit id="Rejected_Title" translate="yes" xml:space="preserve">
+          <source>Transfer is Rejected!</source>
+          <target state="translated">Übertragung wird abgelehnt!</target>
+        </trans-unit>
+        <trans-unit id="Setting_OutputFolder" translate="yes" xml:space="preserve">
+          <source>Output Folder</source>
+          <target state="translated" state-qualifier="tm-suggestion">Ausgabeordner:</target>
+        </trans-unit>
+        <trans-unit id="Options_Title" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target state="translated" state-qualifier="tm-suggestion">Optionen</target>
+        </trans-unit>
+        <trans-unit id="Settings_SelectTargetFolder" translate="yes" xml:space="preserve">
+          <source>Select folder to store received files.</source>
+          <target state="translated">Wählen Sie den Ordner aus, in dem die empfangenen Dateien gespeichert werden sollen.</target>
         </trans-unit>
       </group>
     </body>

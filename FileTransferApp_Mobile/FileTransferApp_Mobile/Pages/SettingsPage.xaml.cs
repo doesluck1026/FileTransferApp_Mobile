@@ -21,6 +21,9 @@ namespace FileTransferApp_Mobile.Pages
             LanguageList.Add("English", "en");
             LanguageList.Add("Türkçe", "tr");
             LanguageList.Add("Deutsche", "de");
+            LanguageList.Add("Française", "fr");
+            LanguageList.Add("Española", "es");
+            LanguageList.Add("中国人", "zh-Hans");
             LanguageList.Add("عربي", "ar");
         }
         

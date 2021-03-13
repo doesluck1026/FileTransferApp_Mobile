@@ -169,4 +169,28 @@
   <data name="YourIPAddress" xml:space="preserve">
     <value>عنوان IP الخاص بك</value>
   </data>
+  <data name="Transfer_AbortedMessage" xml:space="preserve">
+    <value>تم إحباط النقل بواسطة جهاز آخر.</value>
+  </data>
+  <data name="Done_OpenFolder" xml:space="preserve">
+    <value>المجلد الإخراج المفتوحة</value>
+  </data>
+  <data name="Main_DragInfo" xml:space="preserve">
+    <value>اسحب ملفاتك هنا أو انقر لتحديد الملفات.</value>
+  </data>
+  <data name="Main_OrReceive" xml:space="preserve">
+    <value>أو انتظر هنا لتلقي الملفات.</value>
+  </data>
+  <data name="Rejected_Title" xml:space="preserve">
+    <value>تم رفض التحويل!</value>
+  </data>
+  <data name="Setting_OutputFolder" xml:space="preserve">
+    <value>المجلد الخارج:</value>
+  </data>
+  <data name="Options_Title" xml:space="preserve">
+    <value>خيارات</value>
+  </data>
+  <data name="Settings_SelectTargetFolder" xml:space="preserve">
+    <value>حدد مجلدًا لتخزين الملفات المستلمة.</value>
+  </data>
 </root>
