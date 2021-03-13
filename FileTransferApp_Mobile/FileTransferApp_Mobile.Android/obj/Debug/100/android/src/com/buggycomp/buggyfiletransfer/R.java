@@ -7471,6 +7471,7 @@ public final class R {
     public static final int MainTheme=0x7f0f00e5;
     /**
      * Base theme applied no matter what API
+     * Base theme applied no matter what API
      */
     public static final int MainTheme_Base=0x7f0f00e6;
     public static final int MaterialAlertDialog_MaterialComponents=0x7f0f00e7;

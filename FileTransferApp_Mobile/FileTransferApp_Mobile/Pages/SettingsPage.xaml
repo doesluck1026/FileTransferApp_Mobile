@@ -55,7 +55,7 @@
                    HorizontalOptions="End"
                    FontSize="20" />
 
-                    <Entry x:Name="txt_DeviceName" Text="OldDeviceName" />
+                    <Entry x:Name="txt_DeviceName" Text="OldDeviceName"  HorizontalOptions="CenterAndExpand" WidthRequest="250" TextColor="White"/>
                 </StackLayout>
             </Frame>
 
@@ -69,8 +69,7 @@
                    VerticalTextAlignment="Center"
                    HorizontalOptions="End"
                    FontSize="20" />
-
-                    <Picker x:Name="Picker_Languages" HorizontalOptions="EndAndExpand" WidthRequest="150"/>
+                        <Picker x:Name="Picker_Languages" HorizontalOptions="EndAndExpand" WidthRequest="150"  TextColor="White"/>
                 </StackLayout>
             </Frame>
 
