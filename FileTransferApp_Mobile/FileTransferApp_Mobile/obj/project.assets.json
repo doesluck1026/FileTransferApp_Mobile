@@ -1963,23 +1963,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aslan\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Github\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj",
+      "projectUniqueName": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj",
       "projectName": "Buggy File Transfer",
-      "projectPath": "E:\\Github\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj",
-      "packagesPath": "C:\\Users\\aslan\\.nuget\\packages\\",
-      "outputPath": "E:\\Github\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\obj\\",
+      "projectPath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj",
+      "packagesPath": "C:\\Users\\CDS_Software02\\.nuget\\packages\\",
+      "outputPath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\aslan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CDS_Software02\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2046,7 +2049,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

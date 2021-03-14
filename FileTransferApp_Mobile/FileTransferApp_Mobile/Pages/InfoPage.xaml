@@ -76,7 +76,7 @@
                              HeightRequest="50"
                              VerticalOptions="CenterAndExpand"
                              HorizontalOptions="CenterAndExpand"  />
-                    <Label Text="Github" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold" TextColor="GhostWhite" />
+                    <Label Text="Blogger" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Small" FontAttributes="Bold" TextColor="GhostWhite" />
                 </StackLayout>
 
                 <StackLayout Margin="20,0,10,0" HorizontalOptions="StartAndExpand" >

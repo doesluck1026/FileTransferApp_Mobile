@@ -1415,3 +1415,4 @@ E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.A
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\material\textfield\TextInputLayout_OnEditTextAttachedListenerImplementor.java
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\material\textfield\TextInputLayout_OnEndIconChangedListenerImplementor.java
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\com\buggycomp\buggyfiletransfer\R.java
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\res\drawable\blogger.png
