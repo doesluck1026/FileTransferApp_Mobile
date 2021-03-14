@@ -28,7 +28,24 @@ namespace FileTransferApp_Mobile.Pages
             Admob.AdjustBannerView(BannerView);
             list_Files.ItemsSource = FilePaths;
             list_Files.SelectedItem = FilePaths[SelectedIndex];
+            Main.OnClientRequested += Main_OnClientRequested;
+
         }
+
+        protected override void OnDisappearing()
+        {
+            Main.OnClientRequested -= Main_OnClientRequested;
+        }
+
+        private void Main_OnClientRequested(string totalTransferSize, string deviceName)
+        {
+            /// Show file transfer request and ask for permission here
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                Navigation.PushAsync(new TransferPermissionPage(totalTransferSize, deviceName));
+            });
+        }
+
         /// <summary>
         /// The address of the file to be processed is selected
         /// </summary>

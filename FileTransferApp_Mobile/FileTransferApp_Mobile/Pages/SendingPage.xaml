@@ -17,8 +17,6 @@
     <ContentPage.Content>
 
         <StackLayout BackgroundColor="#2f3452" Orientation="Vertical">
-            <StackLayout BackgroundColor="#2f3452" >
-
                 <Frame Padding="20" BackgroundColor="#501E88FA" CornerRadius="20" HorizontalOptions="Center" Margin="10,20,10,10" >
                     <Label Text="{x:Static resource:AppResources.Send_infoMessage}"
                    TextColor="White"
@@ -86,8 +84,8 @@
 
                     <Label Text="{x:Static resource:AppResources.Send_btnSend}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
             </StackLayout>
-        </StackLayout>
             <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" HeightRequest="50" 
+                            BackgroundColor="AliceBlue"
                             VerticalOptions="EndAndExpand" x:Name="BannerView" Margin="0,0,0,5" />
         </StackLayout>
     </ContentPage.Content>

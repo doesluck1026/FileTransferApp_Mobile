@@ -26,7 +26,6 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="#2f3452" Orientation="Vertical">
 
-          <StackLayout BackgroundColor="#2f3452" HorizontalOptions="FillAndExpand">
             <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" 
                    x:Name="Frame_firstTimeInfo" IsVisible="false" 
                    HorizontalOptions="FillAndExpand" Margin="10, 30, 10, 5" >
@@ -101,8 +100,8 @@
                 Clicked="btn_Save_Clicked"
                 />
 
-        </StackLayout>
             <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" HeightRequest="50" 
+                            BackgroundColor="AliceBlue"
                             VerticalOptions="EndAndExpand" x:Name="BannerView" Margin="0,0,0,5"/>
         </StackLayout>
     </ContentPage.Content>

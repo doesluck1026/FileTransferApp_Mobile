@@ -15,7 +15,6 @@
 
     <ContentPage.Content>
         <StackLayout BackgroundColor="#2f3452" Orientation="Vertical">
-            <StackLayout BackgroundColor="#2f3452" >
                     <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10,10" >
                     <Label Text="{x:Static resource:AppResources.Permission_InfoMessage}" 
                    TextColor="White"
@@ -34,7 +33,8 @@
                    FontSize="20" />
             </Frame>
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Margin="0,20">
+            <StackLayout Orientation="Horizontal" 
+                         HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Margin="0,20">
 
                 <StackLayout HorizontalOptions="StartAndExpand" Margin="30,0">
                     <ImageButton x:Name="btn_Reject" Clicked="btn_Reject_Clicked" Padding="20,0,20,0"  Source="abort.png" BackgroundColor="#F20C10" CornerRadius="50" WidthRequest="100" HeightRequest="100" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"  />
@@ -47,8 +47,9 @@
                 </StackLayout>
 
             </StackLayout>
-        </StackLayout>
+            
             <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" HeightRequest="50" 
+                            BackgroundColor="AliceBlue"
                             VerticalOptions="EndAndExpand" x:Name="BannerView" Margin="0,0,0,5"/>
         </StackLayout>
     </ContentPage.Content>

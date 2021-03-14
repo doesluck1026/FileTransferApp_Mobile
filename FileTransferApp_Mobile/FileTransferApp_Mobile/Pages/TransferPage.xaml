@@ -18,9 +18,8 @@
     
     <ContentPage.Content>
         <StackLayout BackgroundColor="#2f3452" Orientation="Vertical">
-            <StackLayout BackgroundColor="#2f3452">
 
-            <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10,20,10,10" >
+            <Frame Padding="20" BackgroundColor="#3f4673" CornerRadius="20" HorizontalOptions="Center" Margin="10,20,10,5" >
                     <Label Text="{x:Static resource:AppResources.Transfer_InfoMessage}"
                    TextColor="White"
                    VerticalOptions="Center"
@@ -30,7 +29,7 @@
                        />
             </Frame>
 
-            <Frame Padding="10" BackgroundColor="#501E88FA" CornerRadius="20"  HorizontalOptions="Fill" VerticalOptions="Fill" Margin="10,20,10,0"  >
+            <Frame Padding="10" BackgroundColor="#501E88FA" CornerRadius="20"  HorizontalOptions="Fill" VerticalOptions="Fill" Margin="10,5,10,0"  >
                 <StackLayout Orientation="Vertical" HorizontalOptions="Start" Margin="5,0,0,0" >
                     <StackLayout Orientation="Horizontal">
                             <Label Text="{x:Static resource:AppResources.Transfer_Filename}" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
@@ -81,27 +80,33 @@
             <Frame Padding="10" BackgroundColor="#501E88FA" CornerRadius="20" HorizontalOptions="Fill" Margin="10,5,10,0" >
                 <StackLayout Orientation="Vertical" HorizontalOptions="Start" >
                     <StackLayout Orientation="Horizontal" >
-                            <Label Text="{x:Static resource:AppResources.Transfer_Time}" Grid.Column="0" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
-                        <Label x:Name="lbl_PassedTime" Text="dawdawdaw" Grid.Column="1" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
+                        <Label Text="{x:Static resource:AppResources.Transfer_Time}" Grid.Column="0" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                        <Label x:Name="lbl_PassedTime" Text="dawdawdaw" Grid.Column="1" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
                     </StackLayout>
 
                     <StackLayout Orientation="Horizontal" >
-                            <Label Text="{x:Static resource:AppResources.Transfer_Remaining}" Grid.Column="0" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
-                        <Label x:Name="lbl_RemainingTime" Text="dawdawdaw" Grid.Column="1" TextColor="White" FontSize="Title" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
+                        <Label Text="{x:Static resource:AppResources.Transfer_Remaining}" Grid.Column="0" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Start"/>
+                        <Label x:Name="lbl_RemainingTime" Text="dawdawdaw" Grid.Column="1" TextColor="White" FontSize="Subtitle" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
                     </StackLayout>
 
                 </StackLayout>
               
             </Frame>
 
-            <StackLayout Margin="0,75,0,50">
-                <ImageButton x:Name="btn_AbortTransfer" Clicked="btn_AbortTransfer_Clicked" Padding="20,0,20,0"  Source="abort.png" BackgroundColor="#F20C10" CornerRadius="50" WidthRequest="100" HeightRequest="100" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"  />
-                    <Label Text="{x:Static resource:AppResources.Transfer_btnAbort}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
+            <StackLayout Margin="0,10,0,0">
+                <ImageButton x:Name="btn_AbortTransfer" Clicked="btn_AbortTransfer_Clicked" 
+                             Padding="20,0,20,0"  Source="abort.png" 
+                             BackgroundColor="#F20C10" CornerRadius="40" 
+                             WidthRequest="80" HeightRequest="80" 
+                             VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"  />
+                    <Label Text="{x:Static resource:AppResources.Transfer_btnAbort}"
+                           VerticalOptions="Center" HorizontalOptions="Center"
+                           FontSize="Body" FontAttributes="Bold" 
+                           TextColor="GhostWhite" />
             </StackLayout>
 
-
-        </StackLayout>
             <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" HeightRequest="50" 
+                            BackgroundColor="AliceBlue"
                             VerticalOptions="EndAndExpand" x:Name="BannerView" Margin="0,0,0,5"/>
         </StackLayout>
     </ContentPage.Content>

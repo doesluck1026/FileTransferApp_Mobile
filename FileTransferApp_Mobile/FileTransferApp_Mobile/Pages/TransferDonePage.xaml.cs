@@ -31,6 +31,7 @@ namespace FileTransferApp_Mobile
         protected override void OnDisappearing()
         {
             CrossMTAdmob.Current.OnInterstitialLoaded -= Current_OnInterstitialLoaded;
+            Main.OnClientRequested -= Main_OnClientRequested;
         }
         private void Current_OnInterstitialLoaded(object sender, EventArgs e)
         {

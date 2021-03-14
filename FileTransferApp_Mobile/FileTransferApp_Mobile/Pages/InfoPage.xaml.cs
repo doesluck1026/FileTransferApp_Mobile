@@ -60,14 +60,14 @@ namespace FileTransferApp_Mobile.Pages
 
         }
 
-        private void btn_github_Clicked(object sender, EventArgs e)
+        private void btn_blogger_Clicked(object sender, EventArgs e)
         {
             //Launcher.OpenAsync("https://github.com/doesluck1026");
         }
 
         private void btn_patreon_Clicked(object sender, EventArgs e)
         {
-
+            Launcher.OpenAsync("https://www.patreon.com/buggycompany");
         }
 
         private void btn_Settings_Clicked(object sender, EventArgs e)

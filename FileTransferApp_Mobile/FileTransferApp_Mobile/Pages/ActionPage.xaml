@@ -20,7 +20,6 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" BackgroundColor="#2f3452">
             
-            <StackLayout >
             <Frame BackgroundColor="#0A2A4D" CornerRadius="10" HorizontalOptions="FillAndExpand" Padding="5" Margin="10,20,10,0">
                 <StackLayout Orientation="Horizontal">
                         <Label Text="{x:Static resource:AppResources.YourDeviceName}" WidthRequest="150"  HorizontalTextAlignment="Center" TextColor="GhostWhite" FontSize="15" Margin="10" />
@@ -49,12 +48,14 @@
                     <Label Text="{x:Static resource:AppResources.Ac_btnSend}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
             </StackLayout>
 
-            <StackLayout Margin="0,10,0,25">
+            <StackLayout Margin="0,10,0,0">
                 <ImageButton x:Name="btn_Receive" Clicked="btn_Receive_Clicked"  Padding="20,0,20,0"  Source="inbox2.png" BackgroundColor="#3d63eb" CornerRadius="50" WidthRequest="100" HeightRequest="100" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"  />
                     <Label Text="{x:Static resource:AppResources.Ac_btnReceive}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
             </StackLayout>
-        </StackLayout>
-            <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" MinimumHeightRequest="50" HeightRequest="100"
+                
+            <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" MinimumHeightRequest="50" 
+                            BackgroundColor="AliceBlue"
+                            HeightRequest="50"
                             VerticalOptions="EndAndExpand" Grid.Row="1" x:Name="BannerView" Margin="0,0,0,5"/>
         </StackLayout>
     </ContentPage.Content>

@@ -530,13 +530,6 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\1\jl\files.cache
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\FileTransferApp_Mobile.Android.dll
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\FileTransferApp_Mobile.Android.pdb
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\com.jvb.filetransferapp_mobile.apk
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\com.jvb.filetransferapp_mobile.aab
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\com.jvb.filetransferapp_mobile-Signed.aab
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\com.jvb.filetransferapp_mobile-Signed.apk
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\com.jvb.filetransferapp_mobile-Signed.apk.idsig
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\FileTransferApp_Mobile.dll
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\FileTransferApp_Mobile.pdb
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\MonoAndroid,Version=v10.0.AssemblyAttributes.cs
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\build.props
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\adb.props
@@ -544,10 +537,6 @@ E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.A
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\stamp\_BuildLibraryImportsCache.stamp
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\res.flag
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\1\jl\files.cache
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\3\jl\files.cache
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\69\jl\files.cache
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\79\jl\files.cache
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\82\jl\files.cache
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\83\jl\files.cache
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\86\jl\files.cache
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\R.txt
@@ -556,10 +545,7 @@ E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.A
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\FileTransferApp_Mobile.Android.csproj.CopyComplete
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\FileTransferApp_Mobile.Android.dll
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\FileTransferApp_Mobile.Android.pdb
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\bin\com.jvb.filetransferapp_mobile.apk
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\bin\base.zip
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\bin\com.jvb.filetransferapp_mobile.aab
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\bin\com.jvb.filetransferapp_mobile.apks
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\res\layout\tabbar.xml
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\res\layout\toolbar.xml
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\res\values\styles.xml
@@ -595,8 +581,6 @@ E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.A
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\AndHUD.dll
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\FileTransferApp_Mobile.Android.dll
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\FileTransferApp_Mobile.Android.pdb
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\FileTransferApp_Mobile.dll
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\FileTransferApp_Mobile.pdb
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\FormsViewGroup.dll
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\FormsViewGroup.pdb
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Java.Interop.dll
@@ -607,7 +591,6 @@ E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.A
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\mscorlib.dll
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\mscorlib.pdb
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\netstandard.dll
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Rssdp.dll
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\System.ComponentModel.Composition.dll
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\System.ComponentModel.Composition.pdb
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\System.Core.dll
@@ -1075,7 +1058,6 @@ E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.A
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\MonoPackageManager_Resources.java
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\xamarin\essentials\fileProvider.java
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\bin\packaged_resources
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\com\jvb\filetransferapp_mobile\R.java
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\compressed_assemblies.arm64-v8a.s
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\compressed_assemblies.armeabi-v7a.s
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\compressed_assemblies.x86.s
@@ -1132,12 +1114,6 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc64f8908e42fa42e603\PancakeDrawable.java
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc64f8908e42fa42e603\PancakeViewRenderer.java
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc64f8908e42fa42e603\RoundedCornerOutlineProvider.java
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\48\jl\files.cache
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\50\jl\files.cache
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\55\jl\files.cache
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\61\jl\files.cache
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\68\jl\files.cache
-E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\72\jl\files.cache
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\84\jl\files.cache
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\85\jl\files.cache
 E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\89\jl\files.cache
@@ -1325,3 +1301,117 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\de\Buggy File Transfer.resources.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\fr\Buggy File Transfer.resources.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\zh-Hans\Buggy File Transfer.resources.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\com.BuggyComp.BuggyFileTransfer.apk
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\com.BuggyComp.BuggyFileTransfer.aab
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\com.BuggyComp.BuggyFileTransfer-Signed.aab
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\com.BuggyComp.BuggyFileTransfer-Signed.apk
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\com.BuggyComp.BuggyFileTransfer-Signed.apk.idsig
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\Buggy File Transfer.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\Buggy File Transfer.pdb
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\ar\Buggy File Transfer.resources.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\de\Buggy File Transfer.resources.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\es\Buggy File Transfer.resources.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\fr\Buggy File Transfer.resources.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\tr\Buggy File Transfer.resources.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\zh-Hans\Buggy File Transfer.resources.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\51\jl\files.cache
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\53\jl\files.cache
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\58\jl\files.cache
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\59\jl\files.cache
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\64\jl\files.cache
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\67\jl\files.cache
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\74\jl\files.cache
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\75\jl\files.cache
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\76\jl\files.cache
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\80\jl\files.cache
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\81\jl\files.cache
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\88\jl\files.cache
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\92\jl\files.cache
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\lp\100\jl\files.cache
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\bin\com.BuggyComp.BuggyFileTransfer.apk
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\bin\com.BuggyComp.BuggyFileTransfer.aab
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\bin\com.BuggyComp.BuggyFileTransfer.apks
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\res\drawable\file_p.png
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\res\drawable\confirm.png
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\res\drawable\logo.png
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\res\mipmap-xxxhdpi\logo.ico
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\res\drawable\blogger.png
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Buggy File Transfer.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Buggy File Transfer.pdb
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Plugin.MtAdmob.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Plugin.Multilingual.Abstractions.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Plugin.Multilingual.Abstractions.dll.mdb
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Plugin.Multilingual.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Plugin.Multilingual.dll.mdb
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\System.Globalization.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Xamarin.AndroidX.Annotation.Experimental.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Xamarin.AndroidX.Annotation.Experimental.pdb
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Xamarin.AndroidX.ViewPager2.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Xamarin.AndroidX.ViewPager2.pdb
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Xamarin.Google.Guava.ListenableFuture.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Xamarin.GooglePlayServices.Ads.Base.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Xamarin.GooglePlayServices.Ads.Base.pdb
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Xamarin.GooglePlayServices.Ads.Lite.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Xamarin.GooglePlayServices.Ads.Lite.pdb
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Xamarin.GooglePlayServices.Basement.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Xamarin.GooglePlayServices.Basement.pdb
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Xamarin.GooglePlayServices.Measurement.Base.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Xamarin.GooglePlayServices.Measurement.Base.pdb
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Xamarin.GooglePlayServices.Measurement.Sdk.Api.dll
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\assets\Xamarin.GooglePlayServices.Measurement.Sdk.Api.pdb
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\androidx\drawerlayout\R.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\androidx\swiperefreshlayout\R.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\androidx\viewpager2\R.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\com\google\android\gms\ads\R.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\com\google\android\gms\common\R.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc643f46942d9dd1fff9\FlyoutPageRendererNonAppCompat.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc643f46942d9dd1fff9\RecyclerViewContainer.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc643f46942d9dd1fff9\ShellFlyoutLayout.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc6450e07d0e82e86181\AwaitableResultCallback_1.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc6450e07d0e82e86181\ResultCallback_1.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc647f13a2a9ff69f8e5\InterstitialAdListener.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc647f13a2a9ff69f8e5\MyAdBannerListener.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc647f13a2a9ff69f8e5\MyRewardedVideoAdListener.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc649c8245f99e045deb\AdViewRenderer.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc64a25b61d9f8ee364f\FloatArrayEvaluator.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc64a25b61d9f8ee364f\RectEvaluator.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc64a25b61d9f8ee364f\TransitionUtils.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc64a25b61d9f8ee364f\TransitionUtils_MatrixEvaluator.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\crc64a83014792d0a8180\IShouldDelayBannerRenderingListenerInvoker.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\ads\mediation\customevent\CustomEventListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\ads\mediation\MediationBannerListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\ads\mediation\MediationInterstitialListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\doubleclick\AppEventListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\doubleclick\OnCustomRenderedAdLoadedListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\formats\NativeAppInstallAd_OnAppInstallAdLoadedListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\formats\NativeContentAd_OnContentAdLoadedListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\formats\NativeCustomTemplateAd_OnCustomClickListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\formats\NativeCustomTemplateAd_OnCustomTemplateAdLoadedListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\formats\OnPublisherAdViewLoadedListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\formats\UnifiedNativeAd_OnUnifiedNativeAdLoadedListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\formats\UnifiedNativeAd_UnconfirmedClickListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\initialization\OnInitializationCompleteListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\mediation\customevent\CustomEventListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\mediation\MediationBannerListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\mediation\MediationInterstitialListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\mediation\OnContextChangedListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\mediation\OnImmersiveModeUpdatedListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\MuteThisAdListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\OnPaidEventListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\rewarded\OnAdMetadataChangedListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\reward\mediation\MediationRewardedVideoAdListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\ads\reward\RewardedVideoAdListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\common\api\internal\BackgroundDetector_BackgroundStateChangeListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\dynamic\OnDelegateCreatedListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\gms\security\ProviderInstaller_ProviderInstallListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\material\button\MaterialButtonToggleGroup_OnButtonCheckedListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\material\button\MaterialButton_OnCheckedChangeListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\material\card\MaterialCardView_OnCheckedChangeListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\material\datepicker\MaterialPickerOnPositiveButtonClickListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\material\internal\ViewUtils_OnApplyWindowInsetsListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\material\shape\ShapeAppearancePathProvider_PathListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\material\slider\BaseOnChangeListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\material\slider\BaseOnSliderTouchListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\material\textfield\TextInputLayout_OnEditTextAttachedListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\mono\com\google\android\material\textfield\TextInputLayout_OnEndIconChangedListenerImplementor.java
+E:\Github\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\100\android\src\com\buggycomp\buggyfiletransfer\R.java
