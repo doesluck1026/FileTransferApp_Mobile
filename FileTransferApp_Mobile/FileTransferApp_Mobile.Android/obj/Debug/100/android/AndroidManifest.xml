@@ -16,7 +16,7 @@
   <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@drawable/logo" android:label="Buggy File Transfer" android:requestLegacyExternalStorage="true" android:theme="@style/MainTheme">
     <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-9174890030718712~9262230398" />
     <uses-library android:name="org.apache.http.legacy" android:required="false" />
-    <activity android:name="crc64497122694a1c0bbf.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/logo" android:label="Buggy File Transfer" android:screenOrientation="portrait" android:theme="@style/MainTheme">
+    <activity android:name="crc64497122694a1c0bbf.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/filetransfericon" android:label="Buggy File Transfer" android:screenOrientation="portrait" android:theme="@style/MainTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

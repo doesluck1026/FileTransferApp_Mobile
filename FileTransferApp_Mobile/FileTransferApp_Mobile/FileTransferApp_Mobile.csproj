@@ -14,7 +14,7 @@
     <UseShortFileNames>True</UseShortFileNames>
     <AssemblyName>Buggy File Transfer</AssemblyName>
     <RootNamespace>FileTransferApp_Mobile</RootNamespace>
-    <ApplicationIcon>Logo.ico</ApplicationIcon>
+    <ApplicationIcon>FileTransferIcon.ico</ApplicationIcon>
     <Company>Buggy Company</Company>
     <PackageIcon>Logo.png</PackageIcon>
     <NeutralLanguage>en</NeutralLanguage>

@@ -30,6 +30,7 @@ namespace FileTransferApp_Mobile
 
             NetworkScanner.OnScanCompleted += NetworkScanner_OnScanCompleted;
             Main.OnTransferResponded += Main_OnTransferResponded;
+            bool isAnyDeviceAvailable = false;
             if (NetworkScanner.DeviceNames != null)
             {
                 if (NetworkScanner.DeviceNames.Count > 0)
@@ -37,8 +38,11 @@ namespace FileTransferApp_Mobile
                     list_Devices.ItemsSource = NetworkScanner.DeviceNames.ToArray();
                     list_Devices.SelectedItem = NetworkScanner.DeviceNames[0];
                     list_Devices_ItemSelected(null, null);
+                    isAnyDeviceAvailable = true;
                 }
             }
+            if (!isAnyDeviceAvailable)
+                btn_ScanDevices_Clicked(null, null);
         }
         protected override void OnDisappearing()
         {
@@ -69,7 +73,7 @@ namespace FileTransferApp_Mobile
             }
             else
             {
-                Acr.UserDialogs.UserDialogs.Instance.Alert(AppResources.Send_Warning_rejected + TargetDeviceName);
+                Acr.UserDialogs.UserDialogs.Instance.Alert(AppResources.Send_Warning_rejected +" "+ TargetDeviceName);
             }
         }
 
@@ -79,8 +83,12 @@ namespace FileTransferApp_Mobile
             {
                 if (NetworkScanner.DeviceNames != null)
                 {
-                    if(NetworkScanner.DeviceNames.Count>0)
+                    if (NetworkScanner.DeviceNames.Count > 0)
+                    {
                         list_Devices.ItemsSource = NetworkScanner.DeviceNames.ToArray();
+                        list_Devices.SelectedItem = NetworkScanner.DeviceNames[0];
+                        list_Devices_ItemSelected(null, null);
+                    }
                 }
             });
         }
