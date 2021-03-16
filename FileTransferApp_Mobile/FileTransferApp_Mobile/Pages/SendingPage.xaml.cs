@@ -90,6 +90,17 @@ namespace FileTransferApp_Mobile
         {
             if (!isRequestSent)
             {
+                Task.Run(() =>
+                {
+                    using (var progress = Acr.UserDialogs.UserDialogs.Instance.Loading(""))
+                    {
+                        while (isRequestSent)
+                        {
+                            //progress.PercentComplete = i;
+                            Thread.Sleep(10);
+                        }
+                    }
+                });
                 isRequestSent = true;
                 Main.ConnectToTargetDevice(txt_ClientIP.Text);
                 if(NetworkScanner.DeviceNames.Count>0)

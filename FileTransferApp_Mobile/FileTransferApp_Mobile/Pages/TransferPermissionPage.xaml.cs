@@ -22,7 +22,7 @@ namespace FileTransferApp_Mobile
         {
             Admob.AdjustBannerView(BannerView);
             
-            lbl_TransferInfo.Text = SenderDevice + AppResources.Permission_RequestMessage + TransferSize + " \n "+AppResources.Permission_RequestMessage2;
+            lbl_TransferInfo.Text = SenderDevice +" "+ AppResources.Permission_RequestMessage +" "+ TransferSize + " \n "+AppResources.Permission_RequestMessage2;
         }
         private async void btn_Accept_Clicked(object sender, EventArgs e)
         {

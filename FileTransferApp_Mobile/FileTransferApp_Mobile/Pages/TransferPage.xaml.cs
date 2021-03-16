@@ -58,7 +58,10 @@ namespace FileTransferApp_Mobile
             UserDialogs.Instance.Alert(AppResources.Transfer_AbortedMessage);
             Device.BeginInvokeOnMainThread(() =>
             {
-                Navigation.PushAsync(new TransferDonePage());
+                if(Main.FileNames.Length>0)
+                    Navigation.PushAsync(new TransferDonePage());
+                else
+                    Navigation.PushAsync(new MainPage());
             });
         }
         protected override bool OnBackButtonPressed()
@@ -125,7 +128,14 @@ namespace FileTransferApp_Mobile
             var result = await UserDialogs.Instance.ConfirmAsync(AppResources.Transfer_ConfirmAbortMessage,AppResources.Transfer_ConfirmAbortTitle,
                 AppResources.Transfer_ConfirmAbortYes, AppResources.Transfer_ConfirmAbortNo);
             if(result.ToString()== "True")
+            {
+                Main.OnTransferFinished -= Main_OnTransferFinished;
                 Main.AbortTransfer();
+                Device.BeginInvokeOnMainThread(() => 
+                {
+                    Navigation.PushAsync(new Pages.ActionPage());
+                });
+            }
         }
     }
 }
