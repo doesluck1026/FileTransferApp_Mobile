@@ -40,7 +40,7 @@
     <value>Agregar más</value>
   </data>
   <data name="File_btnConfirm" xml:space="preserve">
-    <value>Confirmar archivos</value>
+    <value>Confirmar</value>
   </data>
   <data name="File_btnOpen" xml:space="preserve">
     <value>Vista</value>
@@ -192,5 +192,8 @@
   </data>
   <data name="Settings_SelectTargetFolder" xml:space="preserve">
     <value>Seleccione la carpeta para almacenar los archivos recibidos.</value>
+  </data>
+  <data name="Setting_DownloadDektop" xml:space="preserve">
+    <value>Aplicación de escritorio</value>
   </data>
 </root>

@@ -96,5 +96,10 @@ namespace FileTransferApp_Mobile.Pages
         {
             Navigation.PushAsync(new Pages.InfoPage());
         }
+
+        private void btn_GetDesktopApp_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

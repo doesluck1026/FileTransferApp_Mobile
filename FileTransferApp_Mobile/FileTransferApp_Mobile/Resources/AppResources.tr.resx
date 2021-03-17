@@ -193,4 +193,7 @@
   <data name="Settings_SelectTargetFolder" xml:space="preserve">
     <value>Dosyaların kaydedileceği klasörü seçin.</value>
   </data>
+  <data name="Setting_DownloadDektop" xml:space="preserve">
+    <value>Masaüstü Uygulaması</value>
+  </data>
 </root>

@@ -86,6 +86,19 @@
                     <Entry Text="Setting 3" />
                 </StackLayout>
             </Frame>
+            <Button x:Name="btn_GetDesktopApp"
+                CornerRadius="35" 
+                HeightRequest="75" 
+                WidthRequest="75" 
+                BackgroundColor="#3d63eb" 
+                Text="{x:Static resource:AppResources.Setting_DownloadDektop}"
+                Margin="40, 50, 50, 50" 
+                FontSize="20" 
+                FontAttributes="Bold" 
+                TextColor="#0A2A4D" 
+                VerticalOptions="EndAndExpand"
+                Clicked="btn_GetDesktopApp_Clicked"
+                />
             <Button x:Name="btn_Save" 
                 CornerRadius="35" 
                 HeightRequest="75" 

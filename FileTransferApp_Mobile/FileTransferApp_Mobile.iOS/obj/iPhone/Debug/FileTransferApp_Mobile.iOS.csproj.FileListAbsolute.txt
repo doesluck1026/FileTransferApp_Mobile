@@ -132,3 +132,12 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\fr\Buggy File Transfer.resources.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\tr\Buggy File Transfer.resources.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\zh-Hans\Buggy File Transfer.resources.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\WebP.Touch.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\FFImageLoading.Platform.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\FFImageLoading.Platform.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\FFImageLoading.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\FFImageLoading.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\FFImageLoading.Forms.Platform.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\FFImageLoading.Forms.Platform.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\FFImageLoading.Forms.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\FFImageLoading.Forms.pdb

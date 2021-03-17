@@ -2,72 +2,64 @@
 <ArrayOfCacheFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <CacheFile>
     <FileName>Resources\AppResources.resx</FileName>
-    <Checksum>2306725544822267254195917912513257106188</Checksum>
-    <ModifiedTime>2021-03-17T21:12:08.4777854</ModifiedTime>
+    <Checksum>923356152229775259331092271072261011611</Checksum>
+    <ModifiedTime>2021-03-17T22:28:59.3406861</ModifiedTime>
     <CacheFileType>NeutralResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>MultilingualResources\FileTransferApp_Mobile.ar.xlf</FileName>
-    <Checksum>164902191721976581112416623527424525365</Checksum>
-    <ModifiedTime>2021-03-17T21:28:49.9643708+03:00</ModifiedTime>
+    <Checksum>20312716910111427901756125522520615416274249</Checksum>
+    <ModifiedTime>2021-03-17T22:29:49.4567284+03:00</ModifiedTime>
     <CacheFileType>XliffResource</CacheFileType>
-    <WarningMessage>
-      <string>1 resource strings with existing translations were updated and applied to the XLIFF file.  The related translations are unchanged, but should be checked to ensure they are still valid for the updated source string.</string>
-    </WarningMessage>
+    <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>Resources\AppResources.ar.resx</FileName>
-    <Checksum>11324218740160132724119523717755204160233231</Checksum>
-    <ModifiedTime>2021-03-17T21:28:49.9823547+03:00</ModifiedTime>
+    <Checksum>220107801729863126601751052152471742296122</Checksum>
+    <ModifiedTime>2021-03-17T22:33:12.0493086+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>MultilingualResources\FileTransferApp_Mobile.es.xlf</FileName>
-    <Checksum>1062232819222420104152233240217147138361201</Checksum>
-    <ModifiedTime>2021-03-17T21:28:50.0152357+03:00</ModifiedTime>
+    <Checksum>942287202214117175217101283390220214237211</Checksum>
+    <ModifiedTime>2021-03-17T22:30:22.3810062+03:00</ModifiedTime>
     <CacheFileType>XliffResource</CacheFileType>
-    <WarningMessage>
-      <string>1 resource strings with existing translations were updated and applied to the XLIFF file.  The related translations are unchanged, but should be checked to ensure they are still valid for the updated source string.</string>
-    </WarningMessage>
+    <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>Resources\AppResources.es.resx</FileName>
-    <Checksum>21224921138200145209331292232522493225179247</Checksum>
-    <ModifiedTime>2021-03-17T21:28:50.0172296+03:00</ModifiedTime>
+    <Checksum>10321117831115123229491221026113924917161165</Checksum>
+    <ModifiedTime>2021-03-17T22:33:12.0602812+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>MultilingualResources\FileTransferApp_Mobile.de.xlf</FileName>
-    <Checksum>186721221082212020156151139911352377921956</Checksum>
-    <ModifiedTime>2021-03-17T21:28:49.9953024+03:00</ModifiedTime>
+    <Checksum>254142246112678106163481515579596132161</Checksum>
+    <ModifiedTime>2021-03-17T22:30:06.8446109+03:00</ModifiedTime>
     <CacheFileType>XliffResource</CacheFileType>
-    <WarningMessage>
-      <string>1 resource strings with existing translations were updated and applied to the XLIFF file.  The related translations are unchanged, but should be checked to ensure they are still valid for the updated source string.</string>
-    </WarningMessage>
+    <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>MultilingualResources\FileTransferApp_Mobile.zh-Hans.xlf</FileName>
-    <Checksum>8111233221677613557431771804414174251129</Checksum>
-    <ModifiedTime>2021-03-17T21:28:50.0411654+03:00</ModifiedTime>
+    <Checksum>10620793111722111249241956624572125106175</Checksum>
+    <ModifiedTime>2021-03-17T22:33:12.0762651+03:00</ModifiedTime>
     <CacheFileType>XliffResource</CacheFileType>
-    <WarningMessage>
-      <string>1 resource strings with existing translations were updated and applied to the XLIFF file.  The related translations are unchanged, but should be checked to ensure they are still valid for the updated source string.</string>
-    </WarningMessage>
+    <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>Resources\AppResources.de.resx</FileName>
-    <Checksum>565524317518312611489137381092428970151147</Checksum>
-    <ModifiedTime>2021-03-17T21:28:49.9962849+03:00</ModifiedTime>
+    <Checksum>1702211291591562391584620519721424221194173192</Checksum>
+    <ModifiedTime>2021-03-17T22:33:12.0552929+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>MultilingualResources\FileTransferApp_Mobile.fr.xlf</FileName>
-    <Checksum>20514214124411225183200541243720112764106139</Checksum>
-    <ModifiedTime>2021-03-17T21:28:50.0291996+03:00</ModifiedTime>
+    <Checksum>2624319249253692342313425525456180259</Checksum>
+    <ModifiedTime>2021-03-17T22:33:12.0682863+03:00</ModifiedTime>
     <CacheFileType>XliffResource</CacheFileType>
     <WarningMessage>
       <string>1 resource strings with existing translations were updated and applied to the XLIFF file.  The related translations are unchanged, but should be checked to ensure they are still valid for the updated source string.</string>
@@ -75,31 +67,29 @@
   </CacheFile>
   <CacheFile>
     <FileName>Resources\AppResources.fr.resx</FileName>
-    <Checksum>113225211161098823011611464245111331616516</Checksum>
-    <ModifiedTime>2021-03-17T21:28:50.0301964+03:00</ModifiedTime>
+    <Checksum>672051007113424015315422366230199112771915</Checksum>
+    <ModifiedTime>2021-03-17T22:33:12.0693032+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>Resources\AppResources.zh-Hans.resx</FileName>
-    <Checksum>7141011792452271502331301981252625181204</Checksum>
-    <ModifiedTime>2021-03-17T21:28:50.0431608+03:00</ModifiedTime>
+    <Checksum>48135192152101041902129924720011814449</Checksum>
+    <ModifiedTime>2021-03-17T22:33:12.0762651+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>MultilingualResources\FileTransferApp_Mobile.tr.xlf</FileName>
-    <Checksum>153772515723614182107249147919216620218732</Checksum>
-    <ModifiedTime>2021-03-17T21:28:50.0601148+03:00</ModifiedTime>
+    <Checksum>103702051021042482152295116110252020180138</Checksum>
+    <ModifiedTime>2021-03-17T22:33:12.0862414+03:00</ModifiedTime>
     <CacheFileType>XliffResource</CacheFileType>
-    <WarningMessage>
-      <string>1 resource strings with existing translations were updated and applied to the XLIFF file.  The related translations are unchanged, but should be checked to ensure they are still valid for the updated source string.</string>
-    </WarningMessage>
+    <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>Resources\AppResources.tr.resx</FileName>
-    <Checksum>218571151992181261381142461611111401797814580</Checksum>
-    <ModifiedTime>2021-03-17T21:28:50.0621095+03:00</ModifiedTime>
+    <Checksum>69232551713221939202246861942411256200242</Checksum>
+    <ModifiedTime>2021-03-17T22:33:12.0872071+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>

@@ -44,8 +44,7 @@
         </trans-unit>
         <trans-unit id="File_btnConfirm" translate="yes" xml:space="preserve">
           <source>Confirm</source>
-          <target state="needs-review-translation">قم بتأكيد الملفات</target>
-          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
+          <target state="translated">قم بتأكيد الملفات</target>
         </trans-unit>
         <trans-unit id="File_btnOpen" translate="yes" xml:space="preserve">
           <source>Open</source>
@@ -248,6 +247,10 @@
         <trans-unit id="Settings_SelectTargetFolder" translate="yes" xml:space="preserve">
           <source>Select folder to store received files.</source>
           <target state="translated">حدد مجلدًا لتخزين الملفات المستلمة.</target>
+        </trans-unit>
+        <trans-unit id="Setting_DownloadDektop" translate="yes" xml:space="preserve">
+          <source>Desktop App</source>
+          <target state="translated">التطبيق سطح المكتب</target>
         </trans-unit>
       </group>
     </body>

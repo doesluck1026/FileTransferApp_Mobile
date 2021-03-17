@@ -412,6 +412,15 @@ namespace FileTransferApp_Mobile.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Desktop App.
+        /// </summary>
+        public static string Setting_DownloadDektop {
+            get {
+                return ResourceManager.GetString("Setting_DownloadDektop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Language :.
         /// </summary>
         public static string Setting_Language {
