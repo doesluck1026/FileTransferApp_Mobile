@@ -17,7 +17,7 @@
   <CacheFile>
     <FileName>Resources\AppResources.ar.resx</FileName>
     <Checksum>11324218740160132724119523717755204160233231</Checksum>
-    <ModifiedTime>2021-03-14T00:37:51.7664682+03:00</ModifiedTime>
+    <ModifiedTime>2021-03-16T22:35:56.0889322+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
@@ -31,7 +31,7 @@
   <CacheFile>
     <FileName>Resources\AppResources.es.resx</FileName>
     <Checksum>21224921138200145209331292232522493225179247</Checksum>
-    <ModifiedTime>2021-03-14T00:37:51.7794345+03:00</ModifiedTime>
+    <ModifiedTime>2021-03-16T22:35:56.1018977+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
@@ -52,7 +52,7 @@
   <CacheFile>
     <FileName>Resources\AppResources.de.resx</FileName>
     <Checksum>565524317518312611489137381092428970151147</Checksum>
-    <ModifiedTime>2021-03-14T00:37:51.7724524+03:00</ModifiedTime>
+    <ModifiedTime>2021-03-16T22:35:56.0959126+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
@@ -66,14 +66,14 @@
   <CacheFile>
     <FileName>Resources\AppResources.fr.resx</FileName>
     <Checksum>113225211161098823011611464245111331616516</Checksum>
-    <ModifiedTime>2021-03-14T00:37:51.7844358+03:00</ModifiedTime>
+    <ModifiedTime>2021-03-16T22:35:56.1078817+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>Resources\AppResources.zh-Hans.resx</FileName>
     <Checksum>7141011792452271502331301981252625181204</Checksum>
-    <ModifiedTime>2021-03-14T00:37:51.7904053+03:00</ModifiedTime>
+    <ModifiedTime>2021-03-16T22:35:56.1138656+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
@@ -87,7 +87,7 @@
   <CacheFile>
     <FileName>Resources\AppResources.tr.resx</FileName>
     <Checksum>218571151992181261381142461611111401797814580</Checksum>
-    <ModifiedTime>2021-03-16T21:40:43.1804298+03:00</ModifiedTime>
+    <ModifiedTime>2021-03-16T22:35:56.1198483+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>

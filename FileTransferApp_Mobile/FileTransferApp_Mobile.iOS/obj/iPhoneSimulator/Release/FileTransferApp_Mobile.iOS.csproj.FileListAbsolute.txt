@@ -4,7 +4,6 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\BTProgressHUD.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\BTProgressHUD.pdb
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\Plugin.MtAdmob.dll
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\Rssdp.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\SkiaSharp.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\SkiaSharp.Views.iOS.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\SkiaSharp.Views.Forms.dll
@@ -66,3 +65,9 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhoneSimulator\Release\FileTransferApp_Mobile.iOS.csproj.CoreCompileInputs.cache
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhoneSimulator\Release\FileTransferApp_Mobile.iOS.csproj.CopyComplete
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhoneSimulator\Release\FileTransferApp_Mobile.iOS.exe
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\ar\Buggy File Transfer.resources.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\de\Buggy File Transfer.resources.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\es\Buggy File Transfer.resources.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\fr\Buggy File Transfer.resources.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\tr\Buggy File Transfer.resources.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\zh-Hans\Buggy File Transfer.resources.dll

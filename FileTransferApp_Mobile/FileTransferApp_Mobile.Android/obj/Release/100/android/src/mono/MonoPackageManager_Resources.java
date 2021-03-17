@@ -15,6 +15,7 @@ public class MonoPackageManager_Resources {
 		"SkiaSharp.Views.Forms.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
+		"Xamarin.AndroidX.Annotation.Experimental.dll",
 		"Xamarin.AndroidX.AppCompat.AppCompatResources.dll",
 		"Xamarin.AndroidX.AppCompat.dll",
 		"Xamarin.AndroidX.Arch.Core.Common.dll",
@@ -52,6 +53,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.AndroidX.VectorDrawable.dll",
 		"Xamarin.AndroidX.VersionedParcelable.dll",
 		"Xamarin.AndroidX.ViewPager.dll",
+		"Xamarin.AndroidX.ViewPager2.dll",
 		"Xamarin.Essentials.dll",
 		"Xamarin.Forms.Core.dll",
 		"Xamarin.Forms.PancakeView.dll",
@@ -59,6 +61,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
 		"Xamarin.Google.Android.Material.dll",
+		"Xamarin.Google.Guava.ListenableFuture.dll",
 		"Xamarin.GooglePlayServices.Ads.Base.dll",
 		"Xamarin.GooglePlayServices.Ads.Lite.dll",
 		"Xamarin.GooglePlayServices.Basement.dll",
@@ -67,5 +70,4 @@ public class MonoPackageManager_Resources {
 	};
 	public static String[] Dependencies = new String[]{
 	};
-	public static String ApiPackageName = null;
 }
