@@ -3,56 +3,56 @@
   <CacheFile>
     <FileName>Resources\AppResources.resx</FileName>
     <Checksum>923356152229775259331092271072261011611</Checksum>
-    <ModifiedTime>2021-03-17T22:28:59.3406861</ModifiedTime>
+    <ModifiedTime>2021-03-18T01:14:23.8111027</ModifiedTime>
     <CacheFileType>NeutralResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>MultilingualResources\FileTransferApp_Mobile.ar.xlf</FileName>
-    <Checksum>20312716910111427901756125522520615416274249</Checksum>
-    <ModifiedTime>2021-03-17T22:29:49.4567284+03:00</ModifiedTime>
+    <Checksum>222971391611601134427228241147252182215177131</Checksum>
+    <ModifiedTime>2021-03-18T01:14:23.7105925+03:00</ModifiedTime>
     <CacheFileType>XliffResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>Resources\AppResources.ar.resx</FileName>
     <Checksum>220107801729863126601751052152471742296122</Checksum>
-    <ModifiedTime>2021-03-18T00:24:19.4589216+03:00</ModifiedTime>
+    <ModifiedTime>2021-03-18T01:14:44.6093622+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>MultilingualResources\FileTransferApp_Mobile.de.xlf</FileName>
-    <Checksum>254142246112678106163481515579596132161</Checksum>
-    <ModifiedTime>2021-03-17T22:30:06.8446109+03:00</ModifiedTime>
+    <Checksum>19949128215210051235102177208103119310376</Checksum>
+    <ModifiedTime>2021-03-18T01:14:23.7157347+03:00</ModifiedTime>
     <CacheFileType>XliffResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>Resources\AppResources.de.resx</FileName>
     <Checksum>1702211291591562391584620519721424221194173192</Checksum>
-    <ModifiedTime>2021-03-18T00:24:19.4589216+03:00</ModifiedTime>
+    <ModifiedTime>2021-03-18T01:14:44.6213306+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>MultilingualResources\FileTransferApp_Mobile.es.xlf</FileName>
-    <Checksum>942287202214117175217101283390220214237211</Checksum>
-    <ModifiedTime>2021-03-17T22:30:22.3810062+03:00</ModifiedTime>
+    <Checksum>26211223189250602432232423815760225105146232</Checksum>
+    <ModifiedTime>2021-03-18T01:14:23.7217265+03:00</ModifiedTime>
     <CacheFileType>XliffResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>Resources\AppResources.es.resx</FileName>
     <Checksum>10321117831115123229491221026113924917161165</Checksum>
-    <ModifiedTime>2021-03-18T00:24:19.4745433+03:00</ModifiedTime>
+    <ModifiedTime>2021-03-18T01:14:44.6293062+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>MultilingualResources\FileTransferApp_Mobile.fr.xlf</FileName>
     <Checksum>2624319249253692342313425525456180259</Checksum>
-    <ModifiedTime>2021-03-18T00:24:19.675013+03:00</ModifiedTime>
+    <ModifiedTime>2021-03-18T01:14:44.8376068+03:00</ModifiedTime>
     <CacheFileType>XliffResource</CacheFileType>
     <WarningMessage>
       <string>1 resource strings with existing translations were updated and applied to the XLIFF file.  The related translations are unchanged, but should be checked to ensure they are still valid for the updated source string.</string>
@@ -61,35 +61,35 @@
   <CacheFile>
     <FileName>Resources\AppResources.fr.resx</FileName>
     <Checksum>672051007113424015315422366230199112771915</Checksum>
-    <ModifiedTime>2021-03-18T00:24:19.675013+03:00</ModifiedTime>
+    <ModifiedTime>2021-03-18T01:14:44.8396016+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>MultilingualResources\FileTransferApp_Mobile.zh-Hans.xlf</FileName>
     <Checksum>10620793111722111249241956624572125106175</Checksum>
-    <ModifiedTime>2021-03-18T00:24:19.6906332+03:00</ModifiedTime>
+    <ModifiedTime>2021-03-18T01:14:44.8505725+03:00</ModifiedTime>
     <CacheFileType>XliffResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>Resources\AppResources.zh-Hans.resx</FileName>
     <Checksum>48135192152101041902129924720011814449</Checksum>
-    <ModifiedTime>2021-03-18T00:24:19.6906332+03:00</ModifiedTime>
+    <ModifiedTime>2021-03-18T01:14:44.8505725+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>MultilingualResources\FileTransferApp_Mobile.tr.xlf</FileName>
     <Checksum>103702051021042482152295116110252020180138</Checksum>
-    <ModifiedTime>2021-03-18T00:24:19.6906332+03:00</ModifiedTime>
+    <ModifiedTime>2021-03-18T01:14:44.8575536+03:00</ModifiedTime>
     <CacheFileType>XliffResource</CacheFileType>
     <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>Resources\AppResources.tr.resx</FileName>
     <Checksum>69232551713221939202246861942411256200242</Checksum>
-    <ModifiedTime>2021-03-18T00:24:19.6906332+03:00</ModifiedTime>
+    <ModifiedTime>2021-03-18T01:14:44.8585516+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>

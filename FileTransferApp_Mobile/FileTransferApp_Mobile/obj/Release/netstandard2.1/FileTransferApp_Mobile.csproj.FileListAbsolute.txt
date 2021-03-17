@@ -41,3 +41,4 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Rele
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\fr\Buggy File Transfer.resources.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\tr\Buggy File Transfer.resources.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\zh-Hans\Buggy File Transfer.resources.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Release\netstandard2.1\FileTransferApp_Mobile.csprojAssemblyReference.cache
