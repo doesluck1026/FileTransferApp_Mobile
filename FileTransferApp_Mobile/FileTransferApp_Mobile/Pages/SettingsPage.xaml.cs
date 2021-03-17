@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Linq;
+using Xamarin.Essentials;
+
 namespace FileTransferApp_Mobile.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -99,7 +101,7 @@ namespace FileTransferApp_Mobile.Pages
 
         private void btn_GetDesktopApp_Clicked(object sender, EventArgs e)
         {
-
+            Launcher.OpenAsync("https://freakingcyborg.blogspot.com/2021/03/buggy-file-transfer.html");
         }
     }
 }
