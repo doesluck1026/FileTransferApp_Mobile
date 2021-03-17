@@ -14,14 +14,25 @@ namespace FileTransferApp_Mobile.Pages
             InitializeComponent();
             if (!Admob.TestMode)
                 BannerView.AdsId = Admob.BannerAdID;
-            var list = new List<string>
+            //var list = new List<string>
+            //{
+            //    "Welcome to B.C. File Transfer ",
+            //    "You will learn how to use it",
+            //    "It is an useful and time-saving app,",
+            //    "also very easy to use."
+            //};
+            //TheCarousel.ItemsSource = list;
+
+            var ImageURL_list = new List<string>
             {
-                "Welcome to B.C. File Transfer ",
-                "You will learn how to use it",
-                "It is an useful and time-saving app,",
-                "also very easy to use."
+                "infoSendGif3.png",
+                "sendGif.gif",
+                "infoReceiveGif3.png",
+                "receiveGif.gif",
             };
-            TheCarousel.ItemsSource = list;
+
+
+            TheCarousel.ItemsSource = ImageURL_list;
         }
         protected override void OnAppearing()
         {

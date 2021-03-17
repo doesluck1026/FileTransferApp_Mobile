@@ -105,21 +105,13 @@
                     IndicatorView="indicatorview">
                         <CarouselView.ItemTemplate>
                             <DataTemplate>
-                                <AbsoluteLayout>
-                                    <StackLayout
-                                    AbsoluteLayout.LayoutBounds=
-                                    "0.5,0.3,AutoSize,AutoSize"
-                                    AbsoluteLayout.LayoutFlags=
-                                    "PositionProportional"
+                                <Grid
                                     HorizontalOptions="Center">
-                                        <Label
-                                        FontSize="Title"
-                                        HorizontalOptions="Center"
-                                        HorizontalTextAlignment="Center"
-                                        Text="{Binding .}"
-                                        VerticalOptions="Center" />
-                                    </StackLayout>
-                                </AbsoluteLayout>
+                                    <Image Source="{Binding .}" 
+                                               WidthRequest="250"
+                                               IsAnimationPlaying="True"
+                                               HorizontalOptions="Center" />
+                                </Grid>
                             </DataTemplate>
                         </CarouselView.ItemTemplate>
                     </CarouselView>
