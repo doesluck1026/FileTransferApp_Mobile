@@ -26,11 +26,11 @@
           "lib/xamarinios10/BTProgressHUD.dll": {}
         }
       },
-      "MarcTron.Admob/1.6.0": {
+      "MarcTron.Admob/1.6.1": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Forms": "4.2.0.815419",
+          "Xamarin.Forms": "5.0.0.1905",
           "Xamarin.Google.iOS.MobileAds": "7.66.0"
         },
         "compile": {
@@ -342,7 +342,7 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.475",
-          "MarcTron.Admob": "1.6.0",
+          "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
           "Xamarin.Essentials": "1.6.1-preview1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
@@ -382,11 +382,11 @@
           "lib/xamarinios10/BTProgressHUD.dll": {}
         }
       },
-      "MarcTron.Admob/1.6.0": {
+      "MarcTron.Admob/1.6.1": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Forms": "4.2.0.815419",
+          "Xamarin.Forms": "5.0.0.1905",
           "Xamarin.Google.iOS.MobileAds": "7.66.0"
         },
         "compile": {
@@ -676,7 +676,7 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.475",
-          "MarcTron.Admob": "1.6.0",
+          "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
           "Xamarin.Essentials": "1.6.1-preview1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
@@ -716,11 +716,11 @@
           "lib/xamarinios10/BTProgressHUD.dll": {}
         }
       },
-      "MarcTron.Admob/1.6.0": {
+      "MarcTron.Admob/1.6.1": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Forms": "4.2.0.815419",
+          "Xamarin.Forms": "5.0.0.1905",
           "Xamarin.Google.iOS.MobileAds": "7.66.0"
         },
         "compile": {
@@ -1013,7 +1013,7 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.475",
-          "MarcTron.Admob": "1.6.0",
+          "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
           "Xamarin.Essentials": "1.6.1-preview1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
@@ -1053,11 +1053,11 @@
           "lib/xamarinios10/BTProgressHUD.dll": {}
         }
       },
-      "MarcTron.Admob/1.6.0": {
+      "MarcTron.Admob/1.6.1": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Forms": "4.2.0.815419",
+          "Xamarin.Forms": "5.0.0.1905",
           "Xamarin.Google.iOS.MobileAds": "7.66.0"
         },
         "compile": {
@@ -1350,7 +1350,7 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.475",
-          "MarcTron.Admob": "1.6.0",
+          "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
           "Xamarin.Essentials": "1.6.1-preview1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
@@ -1418,21 +1418,20 @@
         "lib/xamarinios10/BTProgressHUD.xml"
       ]
     },
-    "MarcTron.Admob/1.6.0": {
-      "sha512": "TmgkmPdrtuutjWmxJtVTtDg+QzoENXL9BfF8SI2ptj3lB1gmxc706WvhhYGpEuzC7GSCUujrIu3B/4SU9AGX/g==",
+    "MarcTron.Admob/1.6.1": {
+      "sha512": "I9tbe3YIwuBtfYuM8XFNx6NIyy4ln1QVBQv/SZUHUsKKnLiyaZGeTaYF3eg02t94i0qsWbR4KkaSBGJ+99D10g==",
       "type": "package",
-      "path": "marctron.admob/1.6.0",
+      "path": "marctron.admob/1.6.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/monoandroid81/Plugin.MtAdmob.dll",
-        "lib/monoandroid90/Plugin.MtAdmob.dll",
+        "lib/monoandroid10.0/Plugin.MtAdmob.dll",
         "lib/netstandard1.0/Plugin.MtAdmob.dll",
         "lib/netstandard2.0/Plugin.MtAdmob.dll",
         "lib/uap10.0.18362/Plugin.MtAdmob.dll",
         "lib/uap10.0.18362/Plugin.MtAdmob.pri",
         "lib/xamarinios10/Plugin.MtAdmob.dll",
-        "marctron.admob.1.6.0.nupkg.sha512",
+        "marctron.admob.1.6.1.nupkg.sha512",
         "marctron.admob.nuspec",
         "readme.txt"
       ]

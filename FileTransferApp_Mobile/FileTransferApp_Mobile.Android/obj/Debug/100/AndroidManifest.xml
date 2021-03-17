@@ -5,7 +5,7 @@
     Changes to this file may cause incorrect behavior and will be lost if
     the contents are regenerated.
     -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="10" android:versionName="4.3" package="com.BuggyComp.BuggyFileTransfer" android:installLocation="internalOnly">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="11" android:versionName="4.4" package="com.BuggyComp.BuggyFileTransfer" android:installLocation="internalOnly">
   <uses-sdk android:minSdkVersion="20" android:targetSdkVersion="29" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />

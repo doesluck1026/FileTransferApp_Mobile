@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "YyNM0vVU6SAkRaocFCARBvEZ46fa62o/XRUFjQQUZv+TVKMsYSoNIZxc9SjvS0S5ws0lPnrnxpKaInolbcvRAg==",
+  "dgSpecHash": "tPycc0OQIJyLqsmoWo+3l59gMkD8QIhXa13bf48e1zpNZhM8yh5X4Wisu92cEPtci9M5jLAD1zDgF569FMexWA==",
   "success": true,
   "projectFilePath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\acr.userdialogs\\7.1.0.475\\acr.userdialogs.7.1.0.475.nupkg.sha512",
-    "C:\\Users\\CDS_Software02\\.nuget\\packages\\marctron.admob\\1.6.0\\marctron.admob.1.6.0.nupkg.sha512",
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\marctron.admob\\1.6.1\\marctron.admob.1.6.1.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",

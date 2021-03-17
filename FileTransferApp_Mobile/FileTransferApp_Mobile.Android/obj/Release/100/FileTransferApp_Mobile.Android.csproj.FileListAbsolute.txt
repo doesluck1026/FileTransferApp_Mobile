@@ -437,8 +437,6 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\1\jl\files.cache
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\Buggy File Transfer.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\Buggy File Transfer.pdb
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\89\jl\files.cache
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\92\jl\files.cache
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\bc_logo_1.png
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\inbox1.png
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\inbox2.png
@@ -538,10 +536,6 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Plugin.Multilingual.Abstractions.dll.mdb
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Plugin.Multilingual.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Plugin.Multilingual.dll.mdb
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\51\jl\files.cache
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\64\jl\files.cache
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\75\jl\files.cache
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\85\jl\files.cache
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\88\jl\files.cache
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\ar\Buggy File Transfer.resources.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\de\Buggy File Transfer.resources.dll
@@ -549,18 +543,6 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\fr\Buggy File Transfer.resources.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\tr\Buggy File Transfer.resources.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Release\zh-Hans\Buggy File Transfer.resources.dll
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\53\jl\files.cache
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\58\jl\files.cache
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\59\jl\files.cache
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\67\jl\files.cache
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\74\jl\files.cache
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\76\jl\files.cache
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\80\jl\files.cache
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\81\jl\files.cache
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\83\jl\files.cache
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\84\jl\files.cache
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\86\jl\files.cache
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\100\jl\files.cache
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\blogger.png
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\filetransfericon.png
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\mipmap-xxxhdpi\filetransfericon.png
@@ -595,3 +577,52 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\infosendgif3.png
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\receivegif.gif
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\sendgif.gif
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\61\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\66\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\82\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\90\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\94\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\102\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\FFImageLoading.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\FFImageLoading.Forms.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\FFImageLoading.Forms.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\FFImageLoading.Forms.Platform.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\FFImageLoading.Forms.Platform.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\FFImageLoading.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\FFImageLoading.Platform.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\FFImageLoading.Platform.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\src\crc6414fa209700c2b9f3\CachedImageFastRenderer.java
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\src\crc6414fa209700c2b9f3\CachedImageRenderer.java
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\src\crc6414fa209700c2b9f3\CachedImageView.java
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\src\crc644bcdcf6d99873ace\FFAnimatedDrawable.java
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\src\crc644bcdcf6d99873ace\FFBitmapDrawable.java
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\src\crc644bcdcf6d99873ace\SelfDisposingBitmapDrawable.java
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\src\crc64b75d9ddab39d6c30\LRUCache.java
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\src\ffimageloading\cross\MvxCachedImageView.java
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\src\ffimageloading\views\ImageViewAsync.java
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\59\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\67\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\72\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\75\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\89\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\95\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\97\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\98\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\99\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\100\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\103\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\106\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\lp\113\jl\files.cache
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Xamarin.AndroidX.Lifecycle.Service.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Xamarin.AndroidX.Lifecycle.Service.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Xamarin.AndroidX.Room.Common.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Xamarin.AndroidX.Room.Common.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Xamarin.AndroidX.Room.Runtime.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Xamarin.AndroidX.Room.Runtime.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Xamarin.AndroidX.Sqlite.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Xamarin.AndroidX.Sqlite.Framework.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Xamarin.AndroidX.Sqlite.Framework.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Xamarin.AndroidX.Sqlite.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Xamarin.AndroidX.Work.Runtime.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Xamarin.AndroidX.Work.Runtime.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\src\androidx\work\R.java

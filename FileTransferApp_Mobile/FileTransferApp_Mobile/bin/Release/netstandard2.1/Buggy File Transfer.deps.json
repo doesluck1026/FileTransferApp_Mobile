@@ -10,9 +10,10 @@
       "Buggy File Transfer/1.0.0": {
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.475",
-          "MarcTron.Admob": "1.6.0",
+          "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
           "Xamarin.Essentials": "1.6.1-preview1",
+          "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2012",
           "Xamarin.Forms.PancakeView": "2.3.0.763-beta"
         },
@@ -48,15 +49,15 @@
           }
         }
       },
-      "MarcTron.Admob/1.6.0": {
+      "MarcTron.Admob/1.6.1": {
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
           "Xamarin.Forms": "5.0.0.2012"
         },
         "runtime": {
           "lib/netstandard2.0/Plugin.MtAdmob.dll": {
-            "assemblyVersion": "1.6.0.0",
-            "fileVersion": "1.6.0.0"
+            "assemblyVersion": "1.6.1.0",
+            "fileVersion": "1.6.1.0"
           }
         }
       },
@@ -267,6 +268,30 @@
           }
         }
       },
+      "Xamarin.FFImageLoading/2.4.11.982": {
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Platform.dll": {
+            "assemblyVersion": "2.4.11.982",
+            "fileVersion": "2.4.11.982"
+          },
+          "lib/netstandard1.0/FFImageLoading.dll": {
+            "assemblyVersion": "2.4.11.982",
+            "fileVersion": "2.4.11.982"
+          }
+        }
+      },
+      "Xamarin.FFImageLoading.Forms/2.4.11.982": {
+        "dependencies": {
+          "Xamarin.FFImageLoading": "2.4.11.982",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "runtime": {
+          "lib/netstandard1.0/FFImageLoading.Forms.dll": {
+            "assemblyVersion": "2.4.11.982",
+            "fileVersion": "2.4.11.982"
+          }
+        }
+      },
       "Xamarin.Forms/5.0.0.2012": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
@@ -310,12 +335,12 @@
       "path": "acr.userdialogs/7.1.0.475",
       "hashPath": "acr.userdialogs.7.1.0.475.nupkg.sha512"
     },
-    "MarcTron.Admob/1.6.0": {
+    "MarcTron.Admob/1.6.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TmgkmPdrtuutjWmxJtVTtDg+QzoENXL9BfF8SI2ptj3lB1gmxc706WvhhYGpEuzC7GSCUujrIu3B/4SU9AGX/g==",
-      "path": "marctron.admob/1.6.0",
-      "hashPath": "marctron.admob.1.6.0.nupkg.sha512"
+      "sha512": "sha512-I9tbe3YIwuBtfYuM8XFNx6NIyy4ln1QVBQv/SZUHUsKKnLiyaZGeTaYF3eg02t94i0qsWbR4KkaSBGJ+99D10g==",
+      "path": "marctron.admob/1.6.1",
+      "hashPath": "marctron.admob.1.6.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -491,6 +516,20 @@
       "sha512": "sha512-5d31UJzgmGxP41i0FKQmVhEBRPALGds3HRBL3wJeQx/xGa9uDWoPIlS1jky+jL5TQ49+jkCg1IbDjb9Bo/C9NQ==",
       "path": "xamarin.essentials/1.6.1-preview1",
       "hashPath": "xamarin.essentials.1.6.1-preview1.nupkg.sha512"
+    },
+    "Xamarin.FFImageLoading/2.4.11.982": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M0sNIQgUPs+le6C2TS4RmZQAURnzaRVizRtnZIZ6/1//qGcEAtEXAGt/tBJz6I1zlP6XlMxq8io6b4sjFP5N9Q==",
+      "path": "xamarin.ffimageloading/2.4.11.982",
+      "hashPath": "xamarin.ffimageloading.2.4.11.982.nupkg.sha512"
+    },
+    "Xamarin.FFImageLoading.Forms/2.4.11.982": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7X4t3J1wJj0/0o8+vd91hzSYlrqEeMFC7Mj+0T8O+fcbRSHo/c+QbWscEQiT4AaKCwyO709xq+7aY2XXbK/H7g==",
+      "path": "xamarin.ffimageloading.forms/2.4.11.982",
+      "hashPath": "xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512"
     },
     "Xamarin.Forms/5.0.0.2012": {
       "type": "package",

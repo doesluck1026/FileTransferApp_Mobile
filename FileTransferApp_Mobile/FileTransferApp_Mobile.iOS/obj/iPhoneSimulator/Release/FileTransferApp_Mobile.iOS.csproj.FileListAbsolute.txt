@@ -71,3 +71,12 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\fr\Buggy File Transfer.resources.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\tr\Buggy File Transfer.resources.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\zh-Hans\Buggy File Transfer.resources.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\WebP.Touch.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\FFImageLoading.Platform.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\FFImageLoading.Platform.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\FFImageLoading.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\FFImageLoading.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\FFImageLoading.Forms.Platform.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\FFImageLoading.Forms.Platform.pdb
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\FFImageLoading.Forms.dll
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhoneSimulator\Release\FFImageLoading.Forms.pdb

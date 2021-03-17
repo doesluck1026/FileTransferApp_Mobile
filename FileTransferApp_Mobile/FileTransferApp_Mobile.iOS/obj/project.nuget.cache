@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "8sUH8Bsi5p4rSAKzcV3muXepSP7P63HKY/HU7cL9nI93eURrB9uQtdANpE6ONEjS/b6cUmFxZa9/MlwtO5dbqQ==",
+  "dgSpecHash": "jxV1ke+QSv8T/2BZniRWckVgl/oKKXGwIYLlLcOnQ1YU4EI1CfqHHQ1NSbV91RsqX8B0DvvefoQpwaISLnsN5A==",
   "success": true,
   "projectFilePath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\FileTransferApp_Mobile.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\acr.userdialogs\\7.1.0.475\\acr.userdialogs.7.1.0.475.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\btprogresshud\\1.3.1\\btprogresshud.1.3.1.nupkg.sha512",
-    "C:\\Users\\CDS_Software02\\.nuget\\packages\\marctron.admob\\1.6.0\\marctron.admob.1.6.0.nupkg.sha512",
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\marctron.admob\\1.6.1\\marctron.admob.1.6.1.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\skiasharp.views\\1.68.1.1\\skiasharp.views.1.68.1.1.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\skiasharp.views.forms\\1.68.1.1\\skiasharp.views.forms.1.68.1.1.nupkg.sha512",
