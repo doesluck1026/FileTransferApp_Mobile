@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="10" android:versionName="4.3" package="com.BuggyComp.BuggyFileTransfer" android:installLocation="internalOnly">
 	<uses-sdk android:minSdkVersion="20" android:targetSdkVersion="29" />
-	<application android:label="Buggy File Transfer" android:theme="@style/MainTheme" android:requestLegacyExternalStorage="true" android:icon="@drawable/Logo">
+	<application android:label="Buggy File Transfer" android:theme="@style/MainTheme" android:requestLegacyExternalStorage="true" android:icon="@drawable/FileTransferIcon">
 		<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-9174890030718712~9262230398" />
 	</application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

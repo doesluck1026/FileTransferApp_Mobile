@@ -26,7 +26,7 @@
 
 	/* 2: Buggy File Transfer.dll */
 	/* uncompressed_file_size */
-	.word	267264
+	.word	266752
 	/* loaded */
 	.byte	0
 	/* data */
@@ -53,7 +53,7 @@
 
 	/* 5: Java.Interop.dll */
 	/* uncompressed_file_size */
-	.word	164864
+	.word	164352
 	/* loaded */
 	.byte	0
 	/* data */
@@ -134,7 +134,7 @@
 
 	/* 14: System.Buffers.dll */
 	/* uncompressed_file_size */
-	.word	13688
+	.word	13712
 	/* loaded */
 	.byte	0
 	/* data */

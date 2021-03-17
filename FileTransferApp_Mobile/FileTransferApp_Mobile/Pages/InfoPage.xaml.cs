@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
 namespace FileTransferApp_Mobile.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -12,32 +11,15 @@ namespace FileTransferApp_Mobile.Pages
         public InfoPage()
         {
             InitializeComponent();
+            
             if (!Admob.TestMode)
                 BannerView.AdsId = Admob.BannerAdID;
-            //var list = new List<string>
-            //{
-            //    "Welcome to B.C. File Transfer ",
-            //    "You will learn how to use it",
-            //    "It is an useful and time-saving app,",
-            //    "also very easy to use."
-            //};
-            //TheCarousel.ItemsSource = list;
-
-            var ImageURL_list = new List<string>
-            {
-                "infoSendGif3.png",
-                "sendGif.gif",
-                "infoReceiveGif3.png",
-                "receiveGif.gif",
-            };
-
-
-            TheCarousel.ItemsSource = ImageURL_list;
         }
         protected override void OnAppearing()
         {
             Admob.AdjustBannerView(BannerView);
             Main.OnClientRequested += Main_OnClientRequested;
+            
         }
         protected override void OnDisappearing()
         {
@@ -73,7 +55,7 @@ namespace FileTransferApp_Mobile.Pages
 
         private void btn_blogger_Clicked(object sender, EventArgs e)
         {
-            //Launcher.OpenAsync("https://github.com/doesluck1026");
+            Launcher.OpenAsync("https://freakingcyborg.blogspot.com");
         }
 
         private void btn_patreon_Clicked(object sender, EventArgs e)

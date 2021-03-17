@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:admob="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
              xmlns:resource="clr-namespace:FileTransferApp_Mobile.Resources"
+             xmlns:ffimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             
              x:Class="FileTransferApp_Mobile.Pages.InfoPage"
              NavigationPage.HasBackButton="false"
              >
@@ -102,18 +104,28 @@
                     x:Name="TheCarousel"
                     AbsoluteLayout.LayoutBounds="0,0,1,1"
                     AbsoluteLayout.LayoutFlags="All"
-                    IndicatorView="indicatorview">
-                        <CarouselView.ItemTemplate>
+                    IndicatorView="indicatorview"  >
+                        <CarouselView.ItemTemplate >
                             <DataTemplate>
                                 <Grid
                                     HorizontalOptions="Center">
-                                    <Image Source="{Binding .}" 
+                                    <ffimage:CachedImage Source="{Binding .}" 
                                                WidthRequest="250"
-                                               IsAnimationPlaying="True"
-                                               HorizontalOptions="Center" />
+                                               HorizontalOptions="Center" 
+                                                CacheDuration= "50"
+                                                RetryCount= "3"
+                                                RetryDelay= "600"
+                                                DownsampleToViewSize = "False"/>
                                 </Grid>
+                                
                             </DataTemplate>
                         </CarouselView.ItemTemplate>
+                        <CarouselView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String >sendGif.gif</x:String>
+                                <x:String >receiveGif.gif</x:String>
+                            </x:Array>
+                        </CarouselView.ItemsSource>
                     </CarouselView>
                     <IndicatorView
                     x:Name="indicatorview"

@@ -28,12 +28,9 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\mipmap-xxhdpi\launcher_foreground.png
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\mipmap-xxxhdpi\icon.png
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\mipmap-xxxhdpi\launcher_foreground.png
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\number2.png
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\number3.png
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\tr_flag.png
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\uk_flag.png
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\checked.png
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\number1.png
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\uploadflags.txt
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\resolvedassemblies.hash
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\link.flag
@@ -464,8 +461,6 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\patreon.png
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\file_p.png
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\confirm.png
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\logo.png
-D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\mipmap-xxxhdpi\logo.ico
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Acr.UserDialogs.dll
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\Acr.UserDialogs.pdb
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\assets\AndHUD.dll
@@ -596,3 +591,7 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\android\compressed_assemblies.x86_64.o
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\app_shared_libraries\x86\libxamarin-app.so
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\app_shared_libraries\x86_64\libxamarin-app.so
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\inforeceivegif3.png
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\infosendgif3.png
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\receivegif.gif
+D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Release\100\res\drawable\sendgif.gif

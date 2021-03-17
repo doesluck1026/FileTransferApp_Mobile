@@ -105,16 +105,10 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\number2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\FileTransferApp_Mobile\FileTransferApp_Mobile.csproj">
       <Project>{8C6E5832-FC33-4804-AFA4-6B0A5E09C466}</Project>
       <Name>FileTransferApp_Mobile</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\number3.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\TR_flag.png" />
@@ -124,9 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\checked.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\number1.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\BC_logo_1.png" />
@@ -190,12 +181,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\confirm.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-xxxhdpi\Logo.ico" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\blogger.png" />
