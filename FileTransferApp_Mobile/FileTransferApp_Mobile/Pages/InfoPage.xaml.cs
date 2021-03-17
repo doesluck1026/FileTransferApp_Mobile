@@ -55,7 +55,7 @@ namespace FileTransferApp_Mobile.Pages
 
         private void btn_blogger_Clicked(object sender, EventArgs e)
         {
-            Launcher.OpenAsync("https://freakingcyborg.blogspot.com");
+            Launcher.OpenAsync("https://buggycompany.blogspot.com");
         }
 
         private void btn_patreon_Clicked(object sender, EventArgs e)

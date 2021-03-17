@@ -101,7 +101,7 @@ namespace FileTransferApp_Mobile.Pages
 
         private void btn_GetDesktopApp_Clicked(object sender, EventArgs e)
         {
-            Launcher.OpenAsync("https://freakingcyborg.blogspot.com/2021/03/buggy-file-transfer.html");
+            Launcher.OpenAsync("https://buggycompany.blogspot.com/2021/03/buggy-file-transfer.html");
         }
     }
 }
