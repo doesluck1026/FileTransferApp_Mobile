@@ -82,7 +82,7 @@
                    VerticalTextAlignment="Center"
                    HorizontalOptions="End"
                    FontSize="20" />
-
+    
                     <Entry Text="Setting 3" />
                 </StackLayout>
             </Frame>
