@@ -44,9 +44,9 @@
       "frameworks": {
         "monoandroid10.0": {
           "dependencies": {
-            "Plugin.Multilingual": {
+            "MarcTron.Admob": {
               "target": "Package",
-              "version": "[1.0.2, )"
+              "version": "[1.6.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -106,17 +106,13 @@
               "target": "Package",
               "version": "[7.1.0.475, )"
             },
-            "MarcTron.Admob": {
-              "target": "Package",
-              "version": "[1.6.1, )"
-            },
             "SkiaSharp.Views.Forms": {
               "target": "Package",
               "version": "[1.68.1.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.6.1-preview1, )"
+              "version": "[1.6.1, )"
             },
             "Xamarin.FFImageLoading.Forms": {
               "target": "Package",

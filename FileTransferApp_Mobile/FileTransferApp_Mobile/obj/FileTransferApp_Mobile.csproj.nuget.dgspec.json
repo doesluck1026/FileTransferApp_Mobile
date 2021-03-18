@@ -48,11 +48,7 @@
           "dependencies": {
             "Acr.UserDialogs": {
               "target": "Package",
-              "version": "[7.1.0.475, )"
-            },
-            "MarcTron.Admob": {
-              "target": "Package",
-              "version": "[1.6.1, )"
+              "version": "[7.1.0.481, )"
             },
             "SkiaSharp.Views.Forms": {
               "target": "Package",
@@ -60,7 +56,7 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.6.1-preview1, )"
+              "version": "[1.6.1, )"
             },
             "Xamarin.FFImageLoading.Forms": {
               "target": "Package",

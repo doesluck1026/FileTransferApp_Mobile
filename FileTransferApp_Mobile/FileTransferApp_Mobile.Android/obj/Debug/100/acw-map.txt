@@ -286,6 +286,12 @@ mono.androidx.viewpager.widget.ViewPager_OnAdapterChangeListenerImplementor;mono
 AndroidX.ViewPager.Widget.ViewPager+IOnPageChangeListenerImplementor, Xamarin.AndroidX.ViewPager;mono.androidx.viewpager.widget.ViewPager_OnPageChangeListenerImplementor
 AndroidX.ViewPager.Widget.ViewPager.IOnPageChangeListenerImplementor;mono.androidx.viewpager.widget.ViewPager_OnPageChangeListenerImplementor
 mono.androidx.viewpager.widget.ViewPager_OnPageChangeListenerImplementor;mono.androidx.viewpager.widget.ViewPager_OnPageChangeListenerImplementor
+AndroidX.Work.Impl.Utils.WorkTimer+ITimeLimitExceededListenerImplementor, Xamarin.AndroidX.Work.Runtime;mono.androidx.work.impl.utils.WorkTimer_TimeLimitExceededListenerImplementor
+AndroidX.Work.Impl.Utils.WorkTimer.ITimeLimitExceededListenerImplementor;mono.androidx.work.impl.utils.WorkTimer_TimeLimitExceededListenerImplementor
+mono.androidx.work.impl.utils.WorkTimer_TimeLimitExceededListenerImplementor;mono.androidx.work.impl.utils.WorkTimer_TimeLimitExceededListenerImplementor
+AndroidX.Work.Impl.Constraints.IConstraintListenerImplementor, Xamarin.AndroidX.Work.Runtime;mono.androidx.work.impl.constraints.ConstraintListenerImplementor
+AndroidX.Work.Impl.Constraints.IConstraintListenerImplementor;mono.androidx.work.impl.constraints.ConstraintListenerImplementor
+mono.androidx.work.impl.constraints.ConstraintListenerImplementor;mono.androidx.work.impl.constraints.ConstraintListenerImplementor
 Xamarin.Essentials.AccelerometerListener, Xamarin.Essentials;crc64a0e0a82d0db9a07d.AccelerometerListener
 Xamarin.Essentials.AccelerometerListener;crc64a0e0a82d0db9a07d.AccelerometerListener
 xamarin.essentials.AccelerometerListener;crc64a0e0a82d0db9a07d.AccelerometerListener
@@ -1060,6 +1066,9 @@ mono.com.google.android.gms.ads.MuteThisAdListenerImplementor;mono.com.google.an
 Android.Gms.Ads.IOnPaidEventListenerImplementor, Xamarin.GooglePlayServices.Ads.Lite;mono.com.google.android.gms.ads.OnPaidEventListenerImplementor
 Android.Gms.Ads.IOnPaidEventListenerImplementor;mono.com.google.android.gms.ads.OnPaidEventListenerImplementor
 mono.com.google.android.gms.ads.OnPaidEventListenerImplementor;mono.com.google.android.gms.ads.OnPaidEventListenerImplementor
+Android.Gms.Ads.IOnUserEarnedRewardListenerImplementor, Xamarin.GooglePlayServices.Ads.Lite;mono.com.google.android.gms.ads.OnUserEarnedRewardListenerImplementor
+Android.Gms.Ads.IOnUserEarnedRewardListenerImplementor;mono.com.google.android.gms.ads.OnUserEarnedRewardListenerImplementor
+mono.com.google.android.gms.ads.OnUserEarnedRewardListenerImplementor;mono.com.google.android.gms.ads.OnUserEarnedRewardListenerImplementor
 Android.Gms.Ads.Rewarded.IOnAdMetadataChangedListenerImplementor, Xamarin.GooglePlayServices.Ads.Lite;mono.com.google.android.gms.ads.rewarded.OnAdMetadataChangedListenerImplementor
 Android.Gms.Ads.Rewarded.IOnAdMetadataChangedListenerImplementor;mono.com.google.android.gms.ads.rewarded.OnAdMetadataChangedListenerImplementor
 mono.com.google.android.gms.ads.rewarded.OnAdMetadataChangedListenerImplementor;mono.com.google.android.gms.ads.rewarded.OnAdMetadataChangedListenerImplementor

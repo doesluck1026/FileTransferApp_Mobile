@@ -48,17 +48,19 @@ namespace FileTransferApp_Mobile
 
         public static void AdjustBannerView(MarcTron.Plugin.Controls.MTAdView bannerView)
         {
-            if (Device.Idiom == TargetIdiom.Phone)
+            Device.BeginInvokeOnMainThread(() =>
             {
-                bannerView.MinimumHeightRequest = 50;
-                bannerView.HeightRequest = 50;
-               
-            }
-            else
-            {
-                bannerView.MinimumHeightRequest = 100;
-                bannerView.HeightRequest = 100;
-            }
+                if (Device.Idiom == TargetIdiom.Phone)
+                {
+                    bannerView.MinimumHeightRequest = 50;
+                    bannerView.HeightRequest = 50;
+                }
+                else
+                {
+                    bannerView.MinimumHeightRequest = 100;
+                    bannerView.HeightRequest = 100;
+                }
+            });
         }
         public static void LoadInterstitialAd()
         {

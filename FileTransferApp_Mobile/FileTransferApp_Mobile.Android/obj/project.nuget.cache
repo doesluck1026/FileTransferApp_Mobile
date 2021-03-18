@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "sy4FYl2Kx2/D8ryHLlOU0eB56vr4RmXmzk8QE0UtYSytepPdJX0U40cS+TZ96Imw+JcGlpsD9HHrDsbYkmmuUg==",
+  "dgSpecHash": "q0VT3GGkysSiQnBRv7hRod20Yw+o1E1HzdOKr62+sIs3e18AXezpBwNj1NJVs9p0b4yp2gmcYKb/FwlLQARsIg==",
   "success": true,
   "projectFilePath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.Android\\FileTransferApp_Mobile.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\acr.userdialogs\\7.1.0.475\\acr.userdialogs.7.1.0.475.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\andhud\\1.4.2\\andhud.1.4.2.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\marctron.admob\\1.6.1\\marctron.admob.1.6.1.nupkg.sha512",
-    "C:\\Users\\CDS_Software02\\.nuget\\packages\\plugin.multilingual\\1.0.2\\plugin.multilingual.1.0.2.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\skiasharp.views\\1.68.1.1\\skiasharp.views.1.68.1.1.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\skiasharp.views.forms\\1.68.1.1\\skiasharp.views.forms.1.68.1.1.nupkg.sha512",
@@ -85,7 +84,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1-preview1 to 1.6.0-pre5. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.Android -> Buggy File Transfer -> Xamarin.Essentials (>= 1.6.1-preview1) \r\n FileTransferApp_Mobile.Android -> Xamarin.Essentials (>= 1.6.0-pre5)",
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1 to 1.6.0-pre5. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.Android -> Buggy File Transfer -> Xamarin.Essentials (>= 1.6.1) \r\n FileTransferApp_Mobile.Android -> Xamarin.Essentials (>= 1.6.0-pre5)",
       "libraryId": "Xamarin.Essentials",
       "targetGraphs": [
         "MonoAndroid,Version=v10.0"

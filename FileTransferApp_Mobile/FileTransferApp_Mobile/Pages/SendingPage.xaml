@@ -85,7 +85,6 @@
                     <Label Text="{x:Static resource:AppResources.Send_btnSend}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
             </StackLayout>
             <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" HeightRequest="50" 
-                            BackgroundColor="AliceBlue"
                             VerticalOptions="EndAndExpand" x:Name="BannerView" Margin="0,0,0,5" />
         </StackLayout>
     </ContentPage.Content>

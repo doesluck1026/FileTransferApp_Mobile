@@ -13,6 +13,7 @@ public class MediationBannerListenerImplementor
 		__md_methods = 
 			"n_onAdClicked:(Lcom/google/android/gms/ads/mediation/MediationBannerAdapter;)V:GetOnAdClicked_Lcom_google_android_gms_ads_mediation_MediationBannerAdapter_Handler:Android.Gms.Ads.Mediation.IMediationBannerListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
 			"n_onAdClosed:(Lcom/google/android/gms/ads/mediation/MediationBannerAdapter;)V:GetOnAdClosed_Lcom_google_android_gms_ads_mediation_MediationBannerAdapter_Handler:Android.Gms.Ads.Mediation.IMediationBannerListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
+			"n_onAdFailedToLoad:(Lcom/google/android/gms/ads/mediation/MediationBannerAdapter;Lcom/google/android/gms/ads/AdError;)V:GetOnAdFailedToLoad2_Lcom_google_android_gms_ads_mediation_MediationBannerAdapter_Lcom_google_android_gms_ads_AdError_Handler:Android.Gms.Ads.Mediation.IMediationBannerListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
 			"n_onAdFailedToLoad:(Lcom/google/android/gms/ads/mediation/MediationBannerAdapter;I)V:GetOnAdFailedToLoad_Lcom_google_android_gms_ads_mediation_MediationBannerAdapter_IHandler:Android.Gms.Ads.Mediation.IMediationBannerListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
 			"n_onAdLeftApplication:(Lcom/google/android/gms/ads/mediation/MediationBannerAdapter;)V:GetOnAdLeftApplication_Lcom_google_android_gms_ads_mediation_MediationBannerAdapter_Handler:Android.Gms.Ads.Mediation.IMediationBannerListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
 			"n_onAdLoaded:(Lcom/google/android/gms/ads/mediation/MediationBannerAdapter;)V:GetOnAdLoaded_Lcom_google_android_gms_ads_mediation_MediationBannerAdapter_Handler:Android.Gms.Ads.Mediation.IMediationBannerListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
@@ -45,6 +46,14 @@ public class MediationBannerListenerImplementor
 	}
 
 	private native void n_onAdClosed (com.google.android.gms.ads.mediation.MediationBannerAdapter p0);
+
+
+	public void onAdFailedToLoad (com.google.android.gms.ads.mediation.MediationBannerAdapter p0, com.google.android.gms.ads.AdError p1)
+	{
+		n_onAdFailedToLoad (p0, p1);
+	}
+
+	private native void n_onAdFailedToLoad (com.google.android.gms.ads.mediation.MediationBannerAdapter p0, com.google.android.gms.ads.AdError p1);
 
 
 	public void onAdFailedToLoad (com.google.android.gms.ads.mediation.MediationBannerAdapter p0, int p1)

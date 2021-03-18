@@ -26,20 +26,6 @@
           "lib/xamarinios10/BTProgressHUD.dll": {}
         }
       },
-      "MarcTron.Admob/1.6.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Forms": "5.0.0.1905",
-          "Xamarin.Google.iOS.MobileAds": "7.66.0"
-        },
-        "compile": {
-          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
-        }
-      },
       "SkiaSharp/1.68.1.1": {
         "type": "package",
         "compile": {
@@ -115,13 +101,6 @@
           "lib/Xamarin.iOS10/WebP.Touch.dll": {}
         }
       },
-      "Xamarin.Build.Download/0.10.0": {
-        "type": "package",
-        "build": {
-          "buildTransitive/Xamarin.Build.Download.props": {},
-          "buildTransitive/Xamarin.Build.Download.targets": {}
-        }
-      },
       "Xamarin.Essentials/1.5.3.2": {
         "type": "package",
         "frameworkAssemblies": [
@@ -162,24 +141,6 @@
         "runtime": {
           "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.dll": {},
           "lib/Xamarin.iOS10/FFImageLoading.Forms.dll": {}
-        }
-      },
-      "Xamarin.Firebase.iOS.Core/6.10.4": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Build.Download": "0.10.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Firebase.Core.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Firebase.Core.dll": {}
-        },
-        "build": {
-          "buildTransitive/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
       "Xamarin.Forms/5.0.0.2012": {
@@ -318,33 +279,13 @@
           "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
         }
       },
-      "Xamarin.Google.iOS.MobileAds/7.66.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Firebase.iOS.Core": "6.10.4"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Google.MobileAds.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Google.MobileAds.dll": {}
-        },
-        "build": {
-          "buildTransitive/Xamarin.Google.iOS.MobileAds.targets": {}
-        }
-      },
       "Buggy File Transfer/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.475",
-          "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
-          "Xamarin.Essentials": "1.6.1-preview1",
+          "Xamarin.Essentials": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2012",
           "Xamarin.Forms.PancakeView": "2.3.0.763-beta"
@@ -380,20 +321,6 @@
         },
         "runtime": {
           "lib/xamarinios10/BTProgressHUD.dll": {}
-        }
-      },
-      "MarcTron.Admob/1.6.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Forms": "5.0.0.1905",
-          "Xamarin.Google.iOS.MobileAds": "7.66.0"
-        },
-        "compile": {
-          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
         }
       },
       "SkiaSharp/1.68.1.1": {
@@ -449,13 +376,6 @@
           "lib/Xamarin.iOS10/WebP.Touch.dll": {}
         }
       },
-      "Xamarin.Build.Download/0.10.0": {
-        "type": "package",
-        "build": {
-          "buildTransitive/Xamarin.Build.Download.props": {},
-          "buildTransitive/Xamarin.Build.Download.targets": {}
-        }
-      },
       "Xamarin.Essentials/1.5.3.2": {
         "type": "package",
         "frameworkAssemblies": [
@@ -496,24 +416,6 @@
         "runtime": {
           "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.dll": {},
           "lib/Xamarin.iOS10/FFImageLoading.Forms.dll": {}
-        }
-      },
-      "Xamarin.Firebase.iOS.Core/6.10.4": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Build.Download": "0.10.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Firebase.Core.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Firebase.Core.dll": {}
-        },
-        "build": {
-          "buildTransitive/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
       "Xamarin.Forms/5.0.0.2012": {
@@ -652,33 +554,13 @@
           "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
         }
       },
-      "Xamarin.Google.iOS.MobileAds/7.66.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Firebase.iOS.Core": "6.10.4"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Google.MobileAds.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Google.MobileAds.dll": {}
-        },
-        "build": {
-          "buildTransitive/Xamarin.Google.iOS.MobileAds.targets": {}
-        }
-      },
       "Buggy File Transfer/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.475",
-          "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
-          "Xamarin.Essentials": "1.6.1-preview1",
+          "Xamarin.Essentials": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2012",
           "Xamarin.Forms.PancakeView": "2.3.0.763-beta"
@@ -714,20 +596,6 @@
         },
         "runtime": {
           "lib/xamarinios10/BTProgressHUD.dll": {}
-        }
-      },
-      "MarcTron.Admob/1.6.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Forms": "5.0.0.1905",
-          "Xamarin.Google.iOS.MobileAds": "7.66.0"
-        },
-        "compile": {
-          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
         }
       },
       "SkiaSharp/1.68.1.1": {
@@ -786,13 +654,6 @@
           "lib/Xamarin.iOS10/WebP.Touch.dll": {}
         }
       },
-      "Xamarin.Build.Download/0.10.0": {
-        "type": "package",
-        "build": {
-          "buildTransitive/Xamarin.Build.Download.props": {},
-          "buildTransitive/Xamarin.Build.Download.targets": {}
-        }
-      },
       "Xamarin.Essentials/1.5.3.2": {
         "type": "package",
         "frameworkAssemblies": [
@@ -833,24 +694,6 @@
         "runtime": {
           "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.dll": {},
           "lib/Xamarin.iOS10/FFImageLoading.Forms.dll": {}
-        }
-      },
-      "Xamarin.Firebase.iOS.Core/6.10.4": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Build.Download": "0.10.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Firebase.Core.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Firebase.Core.dll": {}
-        },
-        "build": {
-          "buildTransitive/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
       "Xamarin.Forms/5.0.0.2012": {
@@ -989,33 +832,13 @@
           "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
         }
       },
-      "Xamarin.Google.iOS.MobileAds/7.66.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Firebase.iOS.Core": "6.10.4"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Google.MobileAds.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Google.MobileAds.dll": {}
-        },
-        "build": {
-          "buildTransitive/Xamarin.Google.iOS.MobileAds.targets": {}
-        }
-      },
       "Buggy File Transfer/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.475",
-          "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
-          "Xamarin.Essentials": "1.6.1-preview1",
+          "Xamarin.Essentials": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2012",
           "Xamarin.Forms.PancakeView": "2.3.0.763-beta"
@@ -1051,20 +874,6 @@
         },
         "runtime": {
           "lib/xamarinios10/BTProgressHUD.dll": {}
-        }
-      },
-      "MarcTron.Admob/1.6.1": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Forms": "5.0.0.1905",
-          "Xamarin.Google.iOS.MobileAds": "7.66.0"
-        },
-        "compile": {
-          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Plugin.MtAdmob.dll": {}
         }
       },
       "SkiaSharp/1.68.1.1": {
@@ -1123,13 +932,6 @@
           "lib/Xamarin.iOS10/WebP.Touch.dll": {}
         }
       },
-      "Xamarin.Build.Download/0.10.0": {
-        "type": "package",
-        "build": {
-          "buildTransitive/Xamarin.Build.Download.props": {},
-          "buildTransitive/Xamarin.Build.Download.targets": {}
-        }
-      },
       "Xamarin.Essentials/1.5.3.2": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1170,24 +972,6 @@
         "runtime": {
           "lib/Xamarin.iOS10/FFImageLoading.Forms.Platform.dll": {},
           "lib/Xamarin.iOS10/FFImageLoading.Forms.dll": {}
-        }
-      },
-      "Xamarin.Firebase.iOS.Core/6.10.4": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Build.Download": "0.10.0"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Firebase.Core.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Firebase.Core.dll": {}
-        },
-        "build": {
-          "buildTransitive/Xamarin.Firebase.iOS.Core.targets": {}
         }
       },
       "Xamarin.Forms/5.0.0.2012": {
@@ -1326,33 +1110,13 @@
           "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
         }
       },
-      "Xamarin.Google.iOS.MobileAds/7.66.0": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Firebase.iOS.Core": "6.10.4"
-        },
-        "frameworkAssemblies": [
-          "Xamarin.iOS"
-        ],
-        "compile": {
-          "lib/xamarinios10/Google.MobileAds.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios10/Google.MobileAds.dll": {}
-        },
-        "build": {
-          "buildTransitive/Xamarin.Google.iOS.MobileAds.targets": {}
-        }
-      },
       "Buggy File Transfer/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.475",
-          "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
-          "Xamarin.Essentials": "1.6.1-preview1",
+          "Xamarin.Essentials": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2012",
           "Xamarin.Forms.PancakeView": "2.3.0.763-beta"
@@ -1416,24 +1180,6 @@
         "lib/xamarinios10/BTProgressHUD.dll",
         "lib/xamarinios10/BTProgressHUD.pdb",
         "lib/xamarinios10/BTProgressHUD.xml"
-      ]
-    },
-    "MarcTron.Admob/1.6.1": {
-      "sha512": "I9tbe3YIwuBtfYuM8XFNx6NIyy4ln1QVBQv/SZUHUsKKnLiyaZGeTaYF3eg02t94i0qsWbR4KkaSBGJ+99D10g==",
-      "type": "package",
-      "path": "marctron.admob/1.6.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/monoandroid10.0/Plugin.MtAdmob.dll",
-        "lib/netstandard1.0/Plugin.MtAdmob.dll",
-        "lib/netstandard2.0/Plugin.MtAdmob.dll",
-        "lib/uap10.0.18362/Plugin.MtAdmob.dll",
-        "lib/uap10.0.18362/Plugin.MtAdmob.pri",
-        "lib/xamarinios10/Plugin.MtAdmob.dll",
-        "marctron.admob.1.6.1.nupkg.sha512",
-        "marctron.admob.nuspec",
-        "readme.txt"
       ]
     },
     "SkiaSharp/1.68.1.1": {
@@ -1620,28 +1366,6 @@
         "webp.touch.nuspec"
       ]
     },
-    "Xamarin.Build.Download/0.10.0": {
-      "sha512": "XiQNxx6Jox00O80sJRlZv6jXDZ/r3KC7SMwzQNQcD1gZ+vsZyJH3LcSpdJ5NiZhRrWZlTGNSbooHsOBF7lBOyQ==",
-      "type": "package",
-      "path": "xamarin.build.download/0.10.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "THIRD-PARTY-NOTICE.txt",
-        "build/Microsoft.Win32.Registry.dll",
-        "build/Newtonsoft.Json.dll",
-        "build/Xamarin.Build.Download.dll",
-        "build/Xamarin.Build.Download.props",
-        "build/Xamarin.Build.Download.targets",
-        "buildTransitive/Microsoft.Win32.Registry.dll",
-        "buildTransitive/Newtonsoft.Json.dll",
-        "buildTransitive/Xamarin.Build.Download.dll",
-        "buildTransitive/Xamarin.Build.Download.props",
-        "buildTransitive/Xamarin.Build.Download.targets",
-        "xamarin.build.download.0.10.0.nupkg.sha512",
-        "xamarin.build.download.nuspec"
-      ]
-    },
     "Xamarin.Essentials/1.5.3.2": {
       "sha512": "BSLgDJUOPFRwTpQaftM+s4qb/MsTjrqXulEYDOcK6KF3i0Orf75zo3RwRfqnQ8WfpoEFxW/v0jgcPWCvOMgHxg==",
       "type": "package",
@@ -1798,23 +1522,6 @@
         "lib/uap/FFImageLoading.Forms.xml",
         "xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
         "xamarin.ffimageloading.forms.nuspec"
-      ]
-    },
-    "Xamarin.Firebase.iOS.Core/6.10.4": {
-      "sha512": "b/cy0xmGUGlT/RxQt2mvlB9lL/tiNRcfsZsWH20lP7FI6H/xABAGAQU0MDKM84KTTOx8NN9CB95eY74NWKGQtw==",
-      "type": "package",
-      "path": "xamarin.firebase.ios.core/6.10.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License.md",
-        "THIRD-PARTY-NOTICES.txt",
-        "build/Xamarin.Firebase.iOS.Core.targets",
-        "buildTransitive/Xamarin.Firebase.iOS.Core.targets",
-        "firebaseioscore_128x128.png",
-        "lib/xamarinios10/Firebase.Core.dll",
-        "xamarin.firebase.ios.core.6.10.4.nupkg.sha512",
-        "xamarin.firebase.ios.core.nuspec"
       ]
     },
     "Xamarin.Forms/5.0.0.2012": {
@@ -2069,23 +1776,6 @@
         "xamarin.forms.pancakeview.nuspec"
       ]
     },
-    "Xamarin.Google.iOS.MobileAds/7.66.0": {
-      "sha512": "e1SprUq3RNhNXyV2UCGI/2dte3nRcLDpXR/jlJj6h1OM+LVpGak/WzJp2yTQ7j1tgj8YDMrFAbYMtFVoLU7VKQ==",
-      "type": "package",
-      "path": "xamarin.google.ios.mobileads/7.66.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License.md",
-        "THIRD-PARTY-NOTICES.txt",
-        "build/Xamarin.Google.iOS.MobileAds.targets",
-        "buildTransitive/Xamarin.Google.iOS.MobileAds.targets",
-        "googleiosmobileads_128x128.png",
-        "lib/xamarinios10/Google.MobileAds.dll",
-        "xamarin.google.ios.mobileads.7.66.0.nupkg.sha512",
-        "xamarin.google.ios.mobileads.nuspec"
-      ]
-    },
     "Buggy File Transfer/1.0.0": {
       "type": "project",
       "path": "../FileTransferApp_Mobile/FileTransferApp_Mobile.csproj",
@@ -2172,7 +1862,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1-preview1 to 1.5.3.2. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> Buggy File Transfer -> Xamarin.Essentials (>= 1.6.1-preview1) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Essentials (>= 1.5.3.2)",
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1 to 1.5.3.2. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.iOS -> Buggy File Transfer -> Xamarin.Essentials (>= 1.6.1) \r\n FileTransferApp_Mobile.iOS -> Xamarin.Essentials (>= 1.5.3.2)",
       "libraryId": "Xamarin.Essentials",
       "targetGraphs": [
         "Xamarin.iOS,Version=v1.0",

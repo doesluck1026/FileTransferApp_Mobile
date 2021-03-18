@@ -10,7 +10,7 @@
       "Buggy File Transfer/1.0.0": {
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.475",
-          "MarcTron.Admob": "1.6.0",
+          "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
           "Xamarin.Essentials": "1.6.1-preview1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
@@ -49,15 +49,15 @@
           }
         }
       },
-      "MarcTron.Admob/1.6.0": {
+      "MarcTron.Admob/1.6.1": {
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
           "Xamarin.Forms": "5.0.0.2012"
         },
         "runtime": {
           "lib/netstandard2.0/Plugin.MtAdmob.dll": {
-            "assemblyVersion": "1.6.0.0",
-            "fileVersion": "1.6.0.0"
+            "assemblyVersion": "1.6.1.0",
+            "fileVersion": "1.6.1.0"
           }
         }
       },
@@ -335,12 +335,12 @@
       "path": "acr.userdialogs/7.1.0.475",
       "hashPath": "acr.userdialogs.7.1.0.475.nupkg.sha512"
     },
-    "MarcTron.Admob/1.6.0": {
+    "MarcTron.Admob/1.6.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TmgkmPdrtuutjWmxJtVTtDg+QzoENXL9BfF8SI2ptj3lB1gmxc706WvhhYGpEuzC7GSCUujrIu3B/4SU9AGX/g==",
-      "path": "marctron.admob/1.6.0",
-      "hashPath": "marctron.admob.1.6.0.nupkg.sha512"
+      "sha512": "sha512-I9tbe3YIwuBtfYuM8XFNx6NIyy4ln1QVBQv/SZUHUsKKnLiyaZGeTaYF3eg02t94i0qsWbR4KkaSBGJ+99D10g==",
+      "path": "marctron.admob/1.6.1",
+      "hashPath": "marctron.admob.1.6.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

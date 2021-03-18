@@ -13,6 +13,7 @@ public class MediationInterstitialListenerImplementor
 		__md_methods = 
 			"n_onAdClicked:(Lcom/google/android/gms/ads/mediation/MediationInterstitialAdapter;)V:GetOnAdClicked_Lcom_google_android_gms_ads_mediation_MediationInterstitialAdapter_Handler:Android.Gms.Ads.Mediation.IMediationInterstitialListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
 			"n_onAdClosed:(Lcom/google/android/gms/ads/mediation/MediationInterstitialAdapter;)V:GetOnAdClosed_Lcom_google_android_gms_ads_mediation_MediationInterstitialAdapter_Handler:Android.Gms.Ads.Mediation.IMediationInterstitialListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
+			"n_onAdFailedToLoad:(Lcom/google/android/gms/ads/mediation/MediationInterstitialAdapter;Lcom/google/android/gms/ads/AdError;)V:GetOnAdFailedToLoad2_Lcom_google_android_gms_ads_mediation_MediationInterstitialAdapter_Lcom_google_android_gms_ads_AdError_Handler:Android.Gms.Ads.Mediation.IMediationInterstitialListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
 			"n_onAdFailedToLoad:(Lcom/google/android/gms/ads/mediation/MediationInterstitialAdapter;I)V:GetOnAdFailedToLoad_Lcom_google_android_gms_ads_mediation_MediationInterstitialAdapter_IHandler:Android.Gms.Ads.Mediation.IMediationInterstitialListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
 			"n_onAdLeftApplication:(Lcom/google/android/gms/ads/mediation/MediationInterstitialAdapter;)V:GetOnAdLeftApplication_Lcom_google_android_gms_ads_mediation_MediationInterstitialAdapter_Handler:Android.Gms.Ads.Mediation.IMediationInterstitialListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
 			"n_onAdLoaded:(Lcom/google/android/gms/ads/mediation/MediationInterstitialAdapter;)V:GetOnAdLoaded_Lcom_google_android_gms_ads_mediation_MediationInterstitialAdapter_Handler:Android.Gms.Ads.Mediation.IMediationInterstitialListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
@@ -44,6 +45,14 @@ public class MediationInterstitialListenerImplementor
 	}
 
 	private native void n_onAdClosed (com.google.android.gms.ads.mediation.MediationInterstitialAdapter p0);
+
+
+	public void onAdFailedToLoad (com.google.android.gms.ads.mediation.MediationInterstitialAdapter p0, com.google.android.gms.ads.AdError p1)
+	{
+		n_onAdFailedToLoad (p0, p1);
+	}
+
+	private native void n_onAdFailedToLoad (com.google.android.gms.ads.mediation.MediationInterstitialAdapter p0, com.google.android.gms.ads.AdError p1);
 
 
 	public void onAdFailedToLoad (com.google.android.gms.ads.mediation.MediationInterstitialAdapter p0, int p1)

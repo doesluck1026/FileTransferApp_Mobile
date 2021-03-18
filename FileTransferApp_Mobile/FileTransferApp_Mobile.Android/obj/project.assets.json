@@ -45,17 +45,6 @@
           "lib/monoandroid10.0/Plugin.MtAdmob.dll": {}
         }
       },
-      "Plugin.Multilingual/1.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.dll": {},
-          "lib/MonoAndroid10/Plugin.Multilingual.dll": {}
-        },
-        "runtime": {
-          "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.dll": {},
-          "lib/MonoAndroid10/Plugin.Multilingual.dll": {}
-        }
-      },
       "SkiaSharp/1.68.1.1": {
         "type": "package",
         "dependencies": {
@@ -1396,9 +1385,8 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Acr.UserDialogs": "7.1.0.475",
-          "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
-          "Xamarin.Essentials": "1.6.1-preview1",
+          "Xamarin.Essentials": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2012",
           "Xamarin.Forms.PancakeView": "2.3.0.763-beta"
@@ -1476,64 +1464,6 @@
         "marctron.admob.1.6.1.nupkg.sha512",
         "marctron.admob.nuspec",
         "readme.txt"
-      ]
-    },
-    "Plugin.Multilingual/1.0.2": {
-      "sha512": "aDPTIQCOCGxCvcFs98nSswcFTHfHUpUSiSltobV5NoRELUQREl4n95dLZSuqey9cIb5G2Ni53YDG6KCnD9ZWYw==",
-      "type": "package",
-      "path": "plugin.multilingual/1.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/net45/Helpers/TranslateExtension.txt.pp",
-        "content/netstandard1.0/Helpers/TranslateExtension.txt.pp",
-        "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.dll",
-        "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.pdb",
-        "lib/MonoAndroid10/Plugin.Multilingual.Abstractions.xml",
-        "lib/MonoAndroid10/Plugin.Multilingual.XML",
-        "lib/MonoAndroid10/Plugin.Multilingual.dll",
-        "lib/MonoAndroid10/Plugin.Multilingual.pdb",
-        "lib/UAP10/Plugin.Multilingual.Abstractions.dll",
-        "lib/UAP10/Plugin.Multilingual.Abstractions.pdb",
-        "lib/UAP10/Plugin.Multilingual.Abstractions.xml",
-        "lib/UAP10/Plugin.Multilingual.XML",
-        "lib/UAP10/Plugin.Multilingual.dll",
-        "lib/UAP10/Plugin.Multilingual.pdb",
-        "lib/UAP10/Plugin.Multilingual.pri",
-        "lib/Xamarin.Mac20/Plugin.Multilingual.Abstractions.dll",
-        "lib/Xamarin.Mac20/Plugin.Multilingual.Abstractions.pdb",
-        "lib/Xamarin.Mac20/Plugin.Multilingual.Abstractions.xml",
-        "lib/Xamarin.Mac20/Plugin.Multilingual.dll",
-        "lib/Xamarin.iOS10/Plugin.Multilingual.Abstractions.dll",
-        "lib/Xamarin.iOS10/Plugin.Multilingual.Abstractions.pdb",
-        "lib/Xamarin.iOS10/Plugin.Multilingual.Abstractions.xml",
-        "lib/Xamarin.iOS10/Plugin.Multilingual.XML",
-        "lib/Xamarin.iOS10/Plugin.Multilingual.dll",
-        "lib/XamarinTVOS/Plugin.Multilingual.Abstractions.dll",
-        "lib/XamarinTVOS/Plugin.Multilingual.Abstractions.dll.mdb",
-        "lib/XamarinTVOS/Plugin.Multilingual.Abstractions.pdb",
-        "lib/XamarinTVOS/Plugin.Multilingual.Abstractions.xml",
-        "lib/XamarinTVOS/Plugin.Multilingual.dll",
-        "lib/XamarinTVOS/Plugin.Multilingual.pdb",
-        "lib/XamarinWatchOS/Plugin.Multilingual.Abstractions.dll",
-        "lib/XamarinWatchOS/Plugin.Multilingual.Abstractions.dll.mdb",
-        "lib/XamarinWatchOS/Plugin.Multilingual.Abstractions.pdb",
-        "lib/XamarinWatchOS/Plugin.Multilingual.Abstractions.xml",
-        "lib/XamarinWatchOS/Plugin.Multilingual.dll",
-        "lib/XamarinWatchOS/Plugin.Multilingual.pdb",
-        "lib/net45/Plugin.Multilingual.Abstractions.dll",
-        "lib/net45/Plugin.Multilingual.Abstractions.pdb",
-        "lib/net45/Plugin.Multilingual.Abstractions.xml",
-        "lib/net45/Plugin.Multilingual.dll",
-        "lib/net45/Plugin.Multilingual.pdb",
-        "lib/netstandard1.0/Plugin.Multilingual.Abstractions.dll",
-        "lib/netstandard1.0/Plugin.Multilingual.Abstractions.pdb",
-        "lib/netstandard1.0/Plugin.Multilingual.Abstractions.xml",
-        "lib/netstandard1.0/Plugin.Multilingual.deps.json",
-        "lib/netstandard1.0/Plugin.Multilingual.dll",
-        "lib/netstandard1.0/Plugin.Multilingual.xml",
-        "plugin.multilingual.1.0.2.nupkg.sha512",
-        "plugin.multilingual.nuspec"
       ]
     },
     "SkiaSharp/1.68.1.1": {
@@ -3272,7 +3202,7 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v10.0": [
       "Buggy File Transfer >= 1.0.0",
-      "Plugin.Multilingual >= 1.0.2",
+      "MarcTron.Admob >= 1.6.1",
       "Xamarin.Essentials >= 1.6.0-pre5",
       "Xamarin.Forms >= 5.0.0.2012"
     ]
@@ -3322,9 +3252,9 @@
     "frameworks": {
       "monoandroid10.0": {
         "dependencies": {
-          "Plugin.Multilingual": {
+          "MarcTron.Admob": {
             "target": "Package",
-            "version": "[1.0.2, )"
+            "version": "[1.6.1, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
@@ -3343,7 +3273,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1-preview1 to 1.6.0-pre5. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.Android -> Buggy File Transfer -> Xamarin.Essentials (>= 1.6.1-preview1) \r\n FileTransferApp_Mobile.Android -> Xamarin.Essentials (>= 1.6.0-pre5)",
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1 to 1.6.0-pre5. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.Android -> Buggy File Transfer -> Xamarin.Essentials (>= 1.6.1) \r\n FileTransferApp_Mobile.Android -> Xamarin.Essentials (>= 1.6.0-pre5)",
       "libraryId": "Xamarin.Essentials",
       "targetGraphs": [
         "MonoAndroid,Version=v10.0"

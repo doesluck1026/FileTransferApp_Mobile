@@ -13,6 +13,7 @@ public class CustomEventListenerImplementor
 		__md_methods = 
 			"n_onAdClicked:()V:GetOnAdClickedHandler:Android.Gms.Ads.Mediation.CustomEvent.ICustomEventListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
 			"n_onAdClosed:()V:GetOnAdClosedHandler:Android.Gms.Ads.Mediation.CustomEvent.ICustomEventListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
+			"n_onAdFailedToLoad:(Lcom/google/android/gms/ads/AdError;)V:GetOnAdFailedToLoad2_Lcom_google_android_gms_ads_AdError_Handler:Android.Gms.Ads.Mediation.CustomEvent.ICustomEventListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
 			"n_onAdFailedToLoad:(I)V:GetOnAdFailedToLoad_IHandler:Android.Gms.Ads.Mediation.CustomEvent.ICustomEventListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
 			"n_onAdLeftApplication:()V:GetOnAdLeftApplicationHandler:Android.Gms.Ads.Mediation.CustomEvent.ICustomEventListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
 			"n_onAdOpened:()V:GetOnAdOpenedHandler:Android.Gms.Ads.Mediation.CustomEvent.ICustomEventListenerInvoker, Xamarin.GooglePlayServices.Ads.Lite\n" +
@@ -43,6 +44,14 @@ public class CustomEventListenerImplementor
 	}
 
 	private native void n_onAdClosed ();
+
+
+	public void onAdFailedToLoad (com.google.android.gms.ads.AdError p0)
+	{
+		n_onAdFailedToLoad (p0);
+	}
+
+	private native void n_onAdFailedToLoad (com.google.android.gms.ads.AdError p0);
 
 
 	public void onAdFailedToLoad (int p0)

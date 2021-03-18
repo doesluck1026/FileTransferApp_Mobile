@@ -4,7 +4,6 @@ FFImageLoading.Forms.Platform.dll
 FFImageLoading.Platform.dll
 FormsViewGroup.dll
 Plugin.MtAdmob.dll
-Plugin.Multilingual.dll
 SkiaSharp.dll
 SkiaSharp.Views.Android.dll
 SkiaSharp.Views.Forms.dll
@@ -34,6 +33,7 @@ Xamarin.AndroidX.Lifecycle.Common.dll
 Xamarin.AndroidX.Lifecycle.LiveData.Core.dll
 Xamarin.AndroidX.Lifecycle.LiveData.dll
 Xamarin.AndroidX.Lifecycle.Runtime.dll
+Xamarin.AndroidX.Lifecycle.Service.dll
 Xamarin.AndroidX.Lifecycle.ViewModel.dll
 Xamarin.AndroidX.Lifecycle.ViewModelSavedState.dll
 Xamarin.AndroidX.Loader.dll
@@ -42,8 +42,12 @@ Xamarin.AndroidX.Media.dll
 Xamarin.AndroidX.MultiDex.dll
 Xamarin.AndroidX.Print.dll
 Xamarin.AndroidX.RecyclerView.dll
+Xamarin.AndroidX.Room.Common.dll
+Xamarin.AndroidX.Room.Runtime.dll
 Xamarin.AndroidX.SavedState.dll
 Xamarin.AndroidX.SlidingPaneLayout.dll
+Xamarin.AndroidX.Sqlite.dll
+Xamarin.AndroidX.Sqlite.Framework.dll
 Xamarin.AndroidX.SwipeRefreshLayout.dll
 Xamarin.AndroidX.Transition.dll
 Xamarin.AndroidX.VectorDrawable.Animated.dll
@@ -51,6 +55,7 @@ Xamarin.AndroidX.VectorDrawable.dll
 Xamarin.AndroidX.VersionedParcelable.dll
 Xamarin.AndroidX.ViewPager.dll
 Xamarin.AndroidX.ViewPager2.dll
+Xamarin.AndroidX.Work.Runtime.dll
 Xamarin.Essentials.dll
 Xamarin.Forms.PancakeView.dll
 Xamarin.Forms.Platform.Android.dll
@@ -75,6 +80,12 @@ androidx.loader.loader.aar
 androidx.lifecycle.lifecycle-viewmodel-savedstate.aar
 androidx.activity.activity.aar
 androidx.fragment.fragment.aar
+androidx.sqlite.sqlite.aar
+androidx.sqlite.sqlite-framework.aar
+androidx.room.room-runtime.aar
+androidx.lifecycle.lifecycle-service.aar
+androidx.lifecycle.lifecycle-livedata.aar
+androidx.work.work-runtime.aar
 androidx.recyclerview.recyclerview.aar
 androidx.viewpager2.viewpager2.aar
 androidx.vectordrawable.vectordrawable.aar
@@ -94,7 +105,6 @@ androidx.slidingpanelayout.slidingpanelayout.aar
 androidx.print.print.aar
 androidx.media.media.aar
 androidx.localbroadcastmanager.localbroadcastmanager.aar
-androidx.lifecycle.lifecycle-livedata.aar
 androidx.documentfile.documentfile.aar
 androidx.legacy.legacy-support-core-utils.aar
 androidx.asynclayoutinflater.asynclayoutinflater.aar
