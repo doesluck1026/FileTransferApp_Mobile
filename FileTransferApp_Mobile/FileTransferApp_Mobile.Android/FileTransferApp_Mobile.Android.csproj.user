@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <SelectedDevice>Xiaomi Redmi Note 8</SelectedDevice>
-    <DefaultDevice>pixel_2_pie_9_0_-_api_28</DefaultDevice>
+    <DefaultDevice>tablet</DefaultDevice>
     <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
     <ActiveDebugProfile>Xiaomi Redmi Note 8</ActiveDebugProfile>
   </PropertyGroup>

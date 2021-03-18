@@ -250,8 +250,7 @@
         </trans-unit>
         <trans-unit id="Setting_DownloadDektop" translate="yes" xml:space="preserve">
           <source>Desktop App</source>
-          <target state="needs-review-translation">Obtenir une application de bureau</target>
-          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
+          <target state="translated">Application de bureau</target>
         </trans-unit>
       </group>
     </body>

@@ -125,15 +125,25 @@
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\FileTransferApp_Mobile\FileTransferApp_Mobile.csproj">
       <Project>{8C6E5832-FC33-4804-AFA4-6B0A5E09C466}</Project>
       <Name>FileTransferApp_Mobile</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs">
+      <Version>7.1.0.481</Version>
+    </PackageReference>
+    <PackageReference Include="MarcTron.Admob">
+      <Version>1.6.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials">
+      <Version>1.6.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms">
+      <Version>5.0.0.2012</Version>
+    </PackageReference>
   </ItemGroup>
 </Project>

@@ -58,17 +58,15 @@
   </CacheFile>
   <CacheFile>
     <FileName>MultilingualResources\FileTransferApp_Mobile.fr.xlf</FileName>
-    <Checksum>2624319249253692342313425525456180259</Checksum>
-    <ModifiedTime>2021-03-18T01:14:44.8376068+03:00</ModifiedTime>
+    <Checksum>52571462916817612063237171200182222157191</Checksum>
+    <ModifiedTime>2021-03-18T09:59:33.362246+03:00</ModifiedTime>
     <CacheFileType>XliffResource</CacheFileType>
-    <WarningMessage>
-      <string>1 resource strings with existing translations were updated and applied to the XLIFF file.  The related translations are unchanged, but should be checked to ensure they are still valid for the updated source string.</string>
-    </WarningMessage>
+    <WarningMessage />
   </CacheFile>
   <CacheFile>
     <FileName>Resources\AppResources.fr.resx</FileName>
-    <Checksum>672051007113424015315422366230199112771915</Checksum>
-    <ModifiedTime>2021-03-18T01:14:44.8396016+03:00</ModifiedTime>
+    <Checksum>17163421341966236862414124931207252217</Checksum>
+    <ModifiedTime>2021-03-18T09:59:44.8104624+03:00</ModifiedTime>
     <CacheFileType>LanguageResource</CacheFileType>
     <WarningMessage />
   </CacheFile>

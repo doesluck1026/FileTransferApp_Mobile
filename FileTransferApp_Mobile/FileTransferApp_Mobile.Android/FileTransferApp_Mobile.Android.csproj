@@ -17,7 +17,7 @@
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
@@ -68,13 +68,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="MarcTron.Admob">
-      <Version>1.6.1</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.0-pre5" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -205,6 +198,20 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\sendGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs">
+      <Version>7.1.0.481</Version>
+    </PackageReference>
+    <PackageReference Include="MarcTron.Admob">
+      <Version>1.6.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials">
+      <Version>1.6.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms">
+      <Version>5.0.0.2012</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
