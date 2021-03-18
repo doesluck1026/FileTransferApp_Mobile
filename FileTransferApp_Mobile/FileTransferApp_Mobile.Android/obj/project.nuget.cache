@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "q0VT3GGkysSiQnBRv7hRod20Yw+o1E1HzdOKr62+sIs3e18AXezpBwNj1NJVs9p0b4yp2gmcYKb/FwlLQARsIg==",
+  "dgSpecHash": "IN3/DdxCZRJx9LyO+WPqSf1yvMjBtTKx8Xf5iG64OVN0JIx9a3CVvCT1d7B1V6LiuZwE0D8iqTyrib+7foReyQ==",
   "success": true,
   "projectFilePath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.Android\\FileTransferApp_Mobile.Android.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\CDS_Software02\\.nuget\\packages\\acr.userdialogs\\7.1.0.475\\acr.userdialogs.7.1.0.475.nupkg.sha512",
+    "C:\\Users\\CDS_Software02\\.nuget\\packages\\acr.userdialogs\\7.1.0.481\\acr.userdialogs.7.1.0.481.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\andhud\\1.4.2\\andhud.1.4.2.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\marctron.admob\\1.6.1\\marctron.admob.1.6.1.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
@@ -66,7 +66,7 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.viewpager2\\1.0.0.8\\xamarin.androidx.viewpager2.1.0.0.8.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.androidx.work.runtime\\2.4.0\\xamarin.androidx.work.runtime.2.4.0.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.build.download\\0.10.0\\xamarin.build.download.0.10.0.nupkg.sha512",
-    "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.essentials\\1.6.0-pre5\\xamarin.essentials.1.6.0-pre5.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
@@ -79,16 +79,5 @@
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.googleplayservices.measurement.base\\118.0.0\\xamarin.googleplayservices.measurement.base.118.0.0.nupkg.sha512",
     "C:\\Users\\CDS_Software02\\.nuget\\packages\\xamarin.googleplayservices.measurement.sdk.api\\118.0.0\\xamarin.googleplayservices.measurement.sdk.api.118.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1 to 1.6.0-pre5. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.Android -> Buggy File Transfer -> Xamarin.Essentials (>= 1.6.1) \r\n FileTransferApp_Mobile.Android -> Xamarin.Essentials (>= 1.6.0-pre5)",
-      "libraryId": "Xamarin.Essentials",
-      "targetGraphs": [
-        "MonoAndroid,Version=v10.0"
-      ]
-    }
-  ]
+  "logs": []
 }

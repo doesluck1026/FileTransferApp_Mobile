@@ -25,14 +25,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "monoandroid10.0"
+          "monoandroid11.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "monoandroid10.0": {
+          "monoandroid11.0": {
             "projectReferences": {
               "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj": {
                 "projectPath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj"
@@ -42,15 +42,19 @@
         }
       },
       "frameworks": {
-        "monoandroid10.0": {
+        "monoandroid11.0": {
           "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.1.0.481, )"
+            },
             "MarcTron.Admob": {
               "target": "Package",
               "version": "[1.6.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.6.0-pre5, )"
+              "version": "[1.6.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
@@ -104,7 +108,11 @@
           "dependencies": {
             "Acr.UserDialogs": {
               "target": "Package",
-              "version": "[7.1.0.475, )"
+              "version": "[7.1.0.481, )"
+            },
+            "MarcTron.Admob": {
+              "target": "Package",
+              "version": "[1.6.1, )"
             },
             "SkiaSharp.Views.Forms": {
               "target": "Package",

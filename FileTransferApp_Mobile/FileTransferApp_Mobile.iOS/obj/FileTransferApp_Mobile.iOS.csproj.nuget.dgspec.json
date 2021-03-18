@@ -44,9 +44,17 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.1.0.481, )"
+            },
+            "MarcTron.Admob": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.5.3.2, )"
+              "version": "[1.6.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
@@ -111,7 +119,11 @@
           "dependencies": {
             "Acr.UserDialogs": {
               "target": "Package",
-              "version": "[7.1.0.475, )"
+              "version": "[7.1.0.481, )"
+            },
+            "MarcTron.Admob": {
+              "target": "Package",
+              "version": "[1.6.1, )"
             },
             "SkiaSharp.Views.Forms": {
               "target": "Package",

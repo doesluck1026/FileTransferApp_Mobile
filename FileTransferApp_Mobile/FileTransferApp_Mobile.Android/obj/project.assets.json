@@ -1,8 +1,8 @@
 {
   "version": 3,
   "targets": {
-    "MonoAndroid,Version=v10.0": {
-      "Acr.UserDialogs/7.1.0.475": {
+    "MonoAndroid,Version=v11.0": {
+      "Acr.UserDialogs/7.1.0.481": {
         "type": "package",
         "dependencies": {
           "AndHUD": "1.4.2",
@@ -1149,15 +1149,14 @@
           "buildTransitive/Xamarin.Build.Download.targets": {}
         }
       },
-      "Xamarin.Essentials/1.6.0-pre5": {
+      "Xamarin.Essentials/1.6.1": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0",
-          "Xamarin.AndroidX.Browser": "1.0.0"
+          "Xamarin.AndroidX.Browser": "1.3.0"
         },
         "frameworkAssemblies": [
-          "Java.Interop",
-          "System.Numerics"
+          "Java.Interop"
         ],
         "compile": {
           "lib/monoandroid10.0/Xamarin.Essentials.dll": {}
@@ -1384,7 +1383,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "Acr.UserDialogs": "7.1.0.475",
+          "Acr.UserDialogs": "7.1.0.481",
+          "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
@@ -1401,14 +1401,14 @@
     }
   },
   "libraries": {
-    "Acr.UserDialogs/7.1.0.475": {
-      "sha512": "iGW0uda9bmbGcPABm0UzDjSd5DtGwcTCkOg265aUxKhG9IW0HtoNA3gASMXK64hMye2A+9mfkcmWJDOudbhJWw==",
+    "Acr.UserDialogs/7.1.0.481": {
+      "sha512": "s/XcLHi41gOBbo4MSNcVOAwVfoc5SVbtlibcAzDFnXb2GrTEmIHG078F3/CFjqgmRiWwzJJCYfY1vy5hCgc/ww==",
       "type": "package",
-      "path": "acr.userdialogs/7.1.0.475",
+      "path": "acr.userdialogs/7.1.0.481",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "acr.userdialogs.7.1.0.475.nupkg.sha512",
+        "acr.userdialogs.7.1.0.481.nupkg.sha512",
         "acr.userdialogs.nuspec",
         "lib/monoandroid10.0/Acr.UserDialogs.dll",
         "lib/monoandroid10.0/Acr.UserDialogs.pdb",
@@ -2670,10 +2670,10 @@
         "xamarin.build.download.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.6.0-pre5": {
-      "sha512": "iEbd8Lxt/4fO/jIugh8Boh9brPif81oFDXryaow2xuVRI1b/9hbmgJrQtbN7RfI+m197dkTCAsaacgfiFP2U8A==",
+    "Xamarin.Essentials/1.6.1": {
+      "sha512": "gG1Bp4j4bpJQ0dp9MeBJQJ9c8xULauIlhc7Cx5Qw4J2K1c+4Glq5n+gkb9Pm0UA/CevXVqLK5ZXmZkuYI52FgA==",
       "type": "package",
-      "path": "xamarin.essentials/1.6.0-pre5",
+      "path": "xamarin.essentials/1.6.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2717,7 +2717,7 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.6.0-pre5.nupkg.sha512",
+        "xamarin.essentials.1.6.1.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
@@ -3200,10 +3200,11 @@
     }
   },
   "projectFileDependencyGroups": {
-    "MonoAndroid,Version=v10.0": [
+    "MonoAndroid,Version=v11.0": [
+      "Acr.UserDialogs >= 7.1.0.481",
       "Buggy File Transfer >= 1.0.0",
       "MarcTron.Admob >= 1.6.1",
-      "Xamarin.Essentials >= 1.6.0-pre5",
+      "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012"
     ]
   },
@@ -3233,14 +3234,14 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "monoandroid10.0"
+        "monoandroid11.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "monoandroid10.0": {
+        "monoandroid11.0": {
           "projectReferences": {
             "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj": {
               "projectPath": "D:\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj"
@@ -3250,15 +3251,19 @@
       }
     },
     "frameworks": {
-      "monoandroid10.0": {
+      "monoandroid11.0": {
         "dependencies": {
+          "Acr.UserDialogs": {
+            "target": "Package",
+            "version": "[7.1.0.481, )"
+          },
           "MarcTron.Admob": {
             "target": "Package",
             "version": "[1.6.1, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.6.0-pre5, )"
+            "version": "[1.6.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
@@ -3267,17 +3272,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.1 to 1.6.0-pre5. Reference the package directly from the project to select a different version. \r\n FileTransferApp_Mobile.Android -> Buggy File Transfer -> Xamarin.Essentials (>= 1.6.1) \r\n FileTransferApp_Mobile.Android -> Xamarin.Essentials (>= 1.6.0-pre5)",
-      "libraryId": "Xamarin.Essentials",
-      "targetGraphs": [
-        "MonoAndroid,Version=v10.0"
-      ]
-    }
-  ]
+  }
 }
