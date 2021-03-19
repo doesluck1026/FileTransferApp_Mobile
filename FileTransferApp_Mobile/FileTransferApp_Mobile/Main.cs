@@ -273,7 +273,7 @@ public class Main
             watch.Restart();
             while (IsTransferEnabled)
             {
-                File.FileReadAtByteIndex(totalBytesRead, out numberOfBytesRead, out buffer, chunkSize: (int)(ChunkSize + TransferMetrics.TransferSpeed * MB * 0.4), functionByte: (byte)Functions.TransferMode);
+                File.FileReadAtByteIndex(totalBytesRead, out numberOfBytesRead, out buffer, chunkSize: (int)(ChunkSize + TransferMetrics.TransferSpeed * MB * 0.3), functionByte: (byte)Functions.TransferMode);
                 if (numberOfBytesRead == 0)
                 {
                     UpdateMetrics(watch, byteCounter);
