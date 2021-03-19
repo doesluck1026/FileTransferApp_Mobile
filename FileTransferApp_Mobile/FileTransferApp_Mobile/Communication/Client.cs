@@ -52,15 +52,7 @@ class Client
             client.SendBufferSize = BufferSize;
             client.ReceiveBufferSize = BufferSize;
             Debug.WriteLine("Succesfully Connected to: " + IP + " on Port: " + Port + " time: " + stp.Elapsed.TotalMilliseconds + " ms");
-            if (timeout > 0)
-            {
-                var host = Dns.GetHostEntry(IP);
-                return host.HostName;
-            }
-            else
-            {
-                return IP;
-            }
+            return IP;
         }
 
         catch (Exception e)

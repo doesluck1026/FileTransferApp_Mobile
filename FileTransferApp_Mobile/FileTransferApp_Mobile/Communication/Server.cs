@@ -70,15 +70,15 @@ class Server
         try
         {
             if (Listener == null)
-                return ;
+                return;
             Debug.WriteLine("Listener is Started IP:  " + IP + "  Port: " + Port);
-            Listener.BeginAcceptTcpClient(new AsyncCallback(DoAcceptTcpClientCallback),Listener);
+            Listener.BeginAcceptTcpClient(new AsyncCallback(DoAcceptTcpClientCallback), Listener);
         }
         catch
         {
         }
     }
-    public  void DoAcceptTcpClientCallback(IAsyncResult ar)
+    public void DoAcceptTcpClientCallback(IAsyncResult ar)
     {
         try
         {
@@ -93,6 +93,7 @@ class Server
             var ipAddress = endPoint.Address;
             Client.ReceiveBufferSize = BufferSize;
             Client.SendBufferSize = BufferSize;
+            Client.NoDelay = true;
             Debug.WriteLine(ipAddress + " is connected");
             OnClientConnected(ipAddress.ToString());
         }
@@ -124,7 +125,7 @@ class Server
     }
     public bool SendDataToClient(byte[] data)
     {
-        Debug.WriteLine("Function:: " + data[0]+" len: "+data.Length);
+        Debug.WriteLine("Function:: " + data[0] + " len: " + data.Length);
         bool success = false;
         byte[] headerBytes = PrepareDataHeader(data.Length);
         int DataLength = headerBytes.Length + data.Length;
@@ -240,7 +241,7 @@ class Server
                 }
                 else
                 {
-                    Debug.WriteLine("number of received bytes are incorrect: TotalBytesReceived: " + TotalBytesReceived+ " DataLength: "+ DataLength +" First byte::"+ms.ToArray()[0]+" second first byte:"+ ms.ToArray()[DataLength]);
+                    Debug.WriteLine("number of received bytes are incorrect: TotalBytesReceived: " + TotalBytesReceived + " DataLength: " + DataLength + " First byte::" + ms.ToArray()[0] + " second first byte:" + ms.ToArray()[DataLength]);
                     return null;
                 }
             }
