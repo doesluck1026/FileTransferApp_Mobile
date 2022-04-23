@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Plugin.FilePicker;
+using Plugin.FilePicker.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -52,21 +54,22 @@ namespace FileTransferApp_Mobile.Pages
         /// <returns>the address of the file in memory</returns>
         private async void SelectFile()
         {
-            var pickResult = await FilePicker.PickMultipleAsync();
-            if (pickResult != null)
-            {
-                var results = pickResult.ToArray();
-                for (int i = 0; i < results.Length; i++)
-                {
-                    if(!FilePaths.Contains(results[i].FullPath))
-                        FilePaths.Add(results[i].FullPath);
-                }
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    list_Files.ItemsSource = FilePaths.ToArray();
-                    list_Files.SelectedItem = FilePaths[SelectedIndex];
-                });
-            }
+           
+            //var pickResult = await FilePicker.PickMultipleAsync();
+            //if (pickResult != null)
+            //{
+            //    var results = pickResult.ToArray();
+            //    for (int i = 0; i < results.Length; i++)
+            //    {
+            //        if(!FilePaths.Contains(results[i].FullPath))
+            //            FilePaths.Add(results[i].FullPath);
+            //    }
+            //    Device.BeginInvokeOnMainThread(() =>
+            //    {
+            //        list_Files.ItemsSource = FilePaths.ToArray();
+            //        list_Files.SelectedItem = FilePaths[SelectedIndex];
+            //    });
+            //}
         }
         private void btn_Add_Clicked(object sender, EventArgs e)
         {

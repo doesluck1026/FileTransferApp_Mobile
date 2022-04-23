@@ -12,6 +12,7 @@
           "Acr.UserDialogs": "7.1.0.481",
           "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
+          "Xam.Plugin.FilePicker": "1.1.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2012",
@@ -254,6 +255,18 @@
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
+        }
+      },
+      "Xam.Plugin.FilePicker/1.1.0": {
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Xamarin.Build.Download/0.10.0": {},
@@ -502,6 +515,13 @@
       "sha512": "sha512-LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
+    },
+    "Xam.Plugin.FilePicker/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ORzNG6dEgdBZnIdmbQCpNB4LSSTjBebwGjb1XZrgfbBGjX9muHBfZeQwOnNRvcGlm6fkylzTj2rDslDA1E/JFA==",
+      "path": "xam.plugin.filepicker/1.1.0",
+      "hashPath": "xam.plugin.filepicker.1.1.0.nupkg.sha512"
     },
     "Xamarin.Build.Download/0.10.0": {
       "type": "package",

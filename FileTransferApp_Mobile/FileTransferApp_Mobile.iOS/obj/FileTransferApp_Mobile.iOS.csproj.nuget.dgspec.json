@@ -50,6 +50,10 @@
               "target": "Package",
               "version": "[1.6.1, )"
             },
+            "Xam.Plugin.FilePicker": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
@@ -125,6 +129,10 @@
               "target": "Package",
               "version": "[1.68.1.1, )"
             },
+            "Xam.Plugin.FilePicker": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
@@ -157,7 +165,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

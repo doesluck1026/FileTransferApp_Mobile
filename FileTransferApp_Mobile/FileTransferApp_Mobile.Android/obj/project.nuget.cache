@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QUGD9KcJ0OxU7qw8l3TyQ6jHklqS26dn36Hc/HbVQZHeloGGVDOAuV2dAAS7m79sMumEmouNug+CnLAKMdRYIQ==",
+  "dgSpecHash": "MJ+YKFgA3kU9oNUe+ehW9A4K4NOEdwBUy1F4W6iU3lcB4LoErcL8NoWcOZnrRQv39pGhs5mWCM1jd2fmVlrTfw==",
   "success": true,
   "projectFilePath": "C:\\Projects\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.Android\\FileTransferApp_Mobile.Android.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\yhsvk\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\yhsvk\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\yhsvk\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\yhsvk\\.nuget\\packages\\xam.plugin.filepicker\\1.1.0\\xam.plugin.filepicker.1.1.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation.experimental\\1.0.0.8\\xamarin.androidx.annotation.experimental.1.0.0.8.nupkg.sha512",

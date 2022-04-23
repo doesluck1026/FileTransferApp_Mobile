@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Essentials;
-
+using Plugin.FilePicker.Abstractions;
+using Plugin.FilePicker;
 
 namespace FileTransferApp_Mobile
 {
@@ -61,21 +62,27 @@ namespace FileTransferApp_Mobile
         private async void SelectFile()
         {
             var pickResult = await FilePicker.PickMultipleAsync();
+               
             if (pickResult != null)
             {
                 var results = pickResult.ToArray();
                 string[] filepaths = new string[results.Length];
-                for(int i=0;i<filepaths.Length;i++)
+                for (int i = 0; i < filepaths.Length; i++)
                 {
                     filepaths[i] = results[i].FullPath;
                 }
                 Main.SetFilePaths(filepaths);
                 await Navigation.PushAsync(new Pages.FilesPage());
             }
+            else
+            {
+                await Navigation.PopAsync();
+            }
         }
 
         private void btn_SelectFile_Clicked(object sender, EventArgs e)
         {
+            System.Diagnostics.Debug.WriteLine("Selecting " );
             SelectFile();
         }
     }

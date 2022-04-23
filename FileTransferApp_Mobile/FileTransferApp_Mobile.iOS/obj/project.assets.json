@@ -124,6 +124,17 @@
           "lib/Xamarin.iOS10/WebP.Touch.dll": {}
         }
       },
+      "Xam.Plugin.FilePicker/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.dll": {}
+        }
+      },
       "Xamarin.Build.Download/0.10.0": {
         "type": "package",
         "build": {
@@ -357,6 +368,7 @@
           "Acr.UserDialogs": "7.1.0.481",
           "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
+          "Xam.Plugin.FilePicker": "1.1.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2012",
@@ -471,6 +483,17 @@
           "lib/Xamarin.iOS10/WebP.Touch.dll": {}
         }
       },
+      "Xam.Plugin.FilePicker/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.dll": {}
+        }
+      },
       "Xamarin.Build.Download/0.10.0": {
         "type": "package",
         "build": {
@@ -704,6 +727,7 @@
           "Acr.UserDialogs": "7.1.0.481",
           "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
+          "Xam.Plugin.FilePicker": "1.1.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2012",
@@ -821,6 +845,17 @@
           "lib/Xamarin.iOS10/WebP.Touch.dll": {}
         }
       },
+      "Xam.Plugin.FilePicker/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.dll": {}
+        }
+      },
       "Xamarin.Build.Download/0.10.0": {
         "type": "package",
         "build": {
@@ -1054,6 +1089,7 @@
           "Acr.UserDialogs": "7.1.0.481",
           "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
+          "Xam.Plugin.FilePicker": "1.1.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2012",
@@ -1171,6 +1207,17 @@
           "lib/Xamarin.iOS10/WebP.Touch.dll": {}
         }
       },
+      "Xam.Plugin.FilePicker/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.dll": {},
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.dll": {}
+        }
+      },
       "Xamarin.Build.Download/0.10.0": {
         "type": "package",
         "build": {
@@ -1404,6 +1451,7 @@
           "Acr.UserDialogs": "7.1.0.481",
           "MarcTron.Admob": "1.6.1",
           "SkiaSharp.Views.Forms": "1.68.1.1",
+          "Xam.Plugin.FilePicker": "1.1.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.FFImageLoading.Forms": "2.4.11.982",
           "Xamarin.Forms": "5.0.0.2012",
@@ -1717,6 +1765,58 @@
         "lib/Xamarin.iOS10/WebP.Touch.xml",
         "webp.touch.1.0.8.nupkg.sha512",
         "webp.touch.nuspec"
+      ]
+    },
+    "Xam.Plugin.FilePicker/1.1.0": {
+      "sha512": "ORzNG6dEgdBZnIdmbQCpNB4LSSTjBebwGjb1XZrgfbBGjX9muHBfZeQwOnNRvcGlm6fkylzTj2rDslDA1E/JFA==",
+      "type": "package",
+      "path": "xam.plugin.filepicker/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.FilePicker.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.FilePicker.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.FilePicker.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.FilePicker.dll",
+        "lib/MonoAndroid10/Plugin.FilePicker.pdb",
+        "lib/MonoAndroid10/Plugin.FilePicker.xml",
+        "lib/MonoTouch10/Plugin.FilePicker.Abstractions.dll",
+        "lib/MonoTouch10/Plugin.FilePicker.Abstractions.xml",
+        "lib/MonoTouch10/Plugin.FilePicker.dll",
+        "lib/MonoTouch10/Plugin.FilePicker.xml",
+        "lib/UAP10/Plugin.FilePicker.Abstractions.dll",
+        "lib/UAP10/Plugin.FilePicker.Abstractions.pdb",
+        "lib/UAP10/Plugin.FilePicker.Abstractions.xml",
+        "lib/UAP10/Plugin.FilePicker.dll",
+        "lib/UAP10/Plugin.FilePicker.pdb",
+        "lib/UAP10/Plugin.FilePicker.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.FilePicker.xml",
+        "lib/win8/Plugin.FilePicker.Abstractions.dll",
+        "lib/win8/Plugin.FilePicker.Abstractions.pdb",
+        "lib/win8/Plugin.FilePicker.Abstractions.xml",
+        "lib/win8/Plugin.FilePicker.dll",
+        "lib/win8/Plugin.FilePicker.pdb",
+        "lib/win8/Plugin.FilePicker.xml",
+        "lib/wp8/Plugin.FilePicker.Abstractions.dll",
+        "lib/wp8/Plugin.FilePicker.Abstractions.pdb",
+        "lib/wp8/Plugin.FilePicker.Abstractions.xml",
+        "lib/wp8/Plugin.FilePicker.dll",
+        "lib/wp8/Plugin.FilePicker.pdb",
+        "lib/wp8/Plugin.FilePicker.xml",
+        "lib/wpa81/Plugin.FilePicker.Abstractions.dll",
+        "lib/wpa81/Plugin.FilePicker.Abstractions.pdb",
+        "lib/wpa81/Plugin.FilePicker.Abstractions.xml",
+        "lib/wpa81/Plugin.FilePicker.dll",
+        "lib/wpa81/Plugin.FilePicker.pdb",
+        "lib/wpa81/Plugin.FilePicker.xml",
+        "readme.txt",
+        "xam.plugin.filepicker.1.1.0.nupkg.sha512",
+        "xam.plugin.filepicker.nuspec"
       ]
     },
     "Xamarin.Build.Download/0.10.0": {
@@ -2199,6 +2299,7 @@
       "Acr.UserDialogs >= 7.1.0.481",
       "Buggy File Transfer >= 1.0.0",
       "MarcTron.Admob >= 1.6.1",
+      "Xam.Plugin.FilePicker >= 1.1.0",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012"
     ]
@@ -2252,6 +2353,10 @@
           "MarcTron.Admob": {
             "target": "Package",
             "version": "[1.6.1, )"
+          },
+          "Xam.Plugin.FilePicker": {
+            "target": "Package",
+            "version": "[1.1.0, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

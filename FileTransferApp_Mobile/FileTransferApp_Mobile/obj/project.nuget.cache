@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GrRQk4kjc7TqtyuxXtUzcEIeZKCmHrmhHJvCcMXBjJYkIS453ggv6LJOLSXQ07kAW3Unh2RaES9WaOLo5Y2dtQ==",
+  "dgSpecHash": "CKaQzrDsLVUxCuooZZwktKuRmuXGjgwFhqahFXaSc33l9Hf5DN6Xn8NBL7bCtpm3K9/keM8F6rBb3Sd3JbFV0g==",
   "success": true,
   "projectFilePath": "C:\\Projects\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\yhsvk\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\yhsvk\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\yhsvk\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\yhsvk\\.nuget\\packages\\xam.plugin.filepicker\\1.1.0\\xam.plugin.filepicker.1.1.0.nupkg.sha512",
     "C:\\Users\\yhsvk\\.nuget\\packages\\xamarin.build.download\\0.10.0\\xamarin.build.download.0.10.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Users\\yhsvk\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
@@ -36,5 +37,16 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
     "C:\\Users\\yhsvk\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.763-beta\\xamarin.forms.pancakeview.2.3.0.763-beta.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Xam.Plugin.FilePicker 1.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Xam.Plugin.FilePicker",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.1"
+      ]
+    }
+  ]
 }

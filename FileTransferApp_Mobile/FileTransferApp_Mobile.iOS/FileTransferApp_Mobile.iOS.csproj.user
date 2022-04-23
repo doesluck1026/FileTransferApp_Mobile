@@ -5,5 +5,6 @@
     <ActiveDebugProfile>iPhone</ActiveDebugProfile>
     <DeveloperId>yahyasevikoglu%40gmail.com</DeveloperId>
     <DevelopmentTeamId>3W3G72X886</DevelopmentTeamId>
+    <SelectedPlatformGroup>LocalDevice</SelectedPlatformGroup>
   </PropertyGroup>
 </Project>

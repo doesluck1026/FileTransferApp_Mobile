@@ -79,7 +79,7 @@ namespace FileTransferApp_Mobile.Pages
                 return "/storage/emulated/0/Download/";
             else
             {
-                string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "..", "Library") + "/";
+                string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "/";
                 System.Diagnostics.Debug.WriteLine("Path: "+ path);
                 return path;
             }

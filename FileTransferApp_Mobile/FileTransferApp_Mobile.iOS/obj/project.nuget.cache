@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2yz+K1z3BGCTXV4hyFye+X4HjwHYB5NPSQQszzcXaJFddnefX6jxb8F/RzFLuJdv5SRObgxTXEBS8wpL6PJ7BA==",
+  "dgSpecHash": "h75XoEFPXBeQCrH+IiDAq/me/8klip75zyfm79BuHdV/uQW8JGJ2bFSIxNNJrtUnE0iVxGHejbW/m9qNpYCLGw==",
   "success": true,
   "projectFilePath": "C:\\Projects\\FileTransferApp_Mobile\\FileTransferApp_Mobile\\FileTransferApp_Mobile.iOS\\FileTransferApp_Mobile.iOS.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\yhsvk\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\yhsvk\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\yhsvk\\.nuget\\packages\\webp.touch\\1.0.8\\webp.touch.1.0.8.nupkg.sha512",
+    "C:\\Users\\yhsvk\\.nuget\\packages\\xam.plugin.filepicker\\1.1.0\\xam.plugin.filepicker.1.1.0.nupkg.sha512",
     "C:\\Users\\yhsvk\\.nuget\\packages\\xamarin.build.download\\0.10.0\\xamarin.build.download.0.10.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Users\\yhsvk\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
