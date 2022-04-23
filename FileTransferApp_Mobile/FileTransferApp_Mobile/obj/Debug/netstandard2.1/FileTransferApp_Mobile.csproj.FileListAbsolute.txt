@@ -110,7 +110,6 @@ C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Debug\netstandard2.1\fr\Buggy File Transfer.resources.dll
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Debug\netstandard2.1\tr\Buggy File Transfer.resources.dll
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Debug\netstandard2.1\zh-Hans\Buggy File Transfer.resources.dll
-C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\FileTransferApp_Mobile.csproj.AssemblyReference.cache
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\FileTransferApp_Mobile.Resources.AppResources.resources
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\FileTransferApp_Mobile.Resources.AppResources.ar.resources
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\FileTransferApp_Mobile.Resources.AppResources.de.resources
@@ -145,3 +144,4 @@ C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\Buggy File Transfer.dll
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\ref\Buggy File Transfer.dll
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\Buggy File Transfer.pdb
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\FileTransferApp_Mobile.csproj.AssemblyReference.cache

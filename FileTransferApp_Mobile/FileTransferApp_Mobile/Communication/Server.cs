@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Net;
+using System.Net.NetworkInformation;
 using System.Net.Sockets;
 
 class Server
@@ -35,20 +36,24 @@ class Server
             IPAddress localAddr = null;
             if (string.IsNullOrEmpty(IP))
             {
-                var ipAddresses = GetAllInternetworkIPs();
-                if (ipAddresses.Length > 0)
-                    localAddr = ipAddresses[0];
-                else
-                {
-                    var host = Dns.GetHostEntry(Dns.GetHostName());
-                    foreach (var ip in host.AddressList)
-                    {
-                        if (ip.AddressFamily == AddressFamily.InterNetwork)
-                        {
-                            localAddr = ip;
-                        }
-                    }
-                }
+
+                localAddr = IPAddress.Parse(NetworkScanner.GetIPAddress());
+                Debug.WriteLine("IP: " + localAddr);
+                //var ipAddresses = GetAllInternetworkIPs();
+                //Debug.WriteLine("yh: IP:"+ipAddresses[0].Address);
+                //if (ipAddresses.Length > 0)
+                //    localAddr = ipAddresses[0];
+                //else
+                //{
+                //    var host = Dns.GetHostEntry(Dns.GetHostName());
+                //    foreach (var ip in host.AddressList)
+                //    {
+                //        if (ip.AddressFamily == AddressFamily.InterNetwork)
+                //        {
+                //            localAddr = ip;
+                //        }
+                //    }
+                //}
             }
             else
                 localAddr = IPAddress.Parse(IP);
@@ -269,6 +274,8 @@ class Server
     }
     private IPAddress[] GetAllInternetworkIPs()
     {
+        Debug.WriteLine("yh getallInternetIPs");
+
         List<IPAddress> addressList = new List<IPAddress>();
         var interfaces = System.Net.NetworkInformation.NetworkInterface.GetAllNetworkInterfaces();
         foreach (var i in interfaces)
@@ -282,6 +289,7 @@ class Server
             }
         return addressList.ToArray();
     }
+    
 }
 
 

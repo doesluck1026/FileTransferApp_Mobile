@@ -19,12 +19,12 @@ namespace FileTransferApp_Mobile
         public SendingPage()
         {
             InitializeComponent();
-            if (!Admob.TestMode)
-                BannerView.AdsId = Admob.BannerAdID;
+            //if (!Admob.TestMode)
+            //    BannerView.AdsId = Admob.BannerAdID;
         }
         protected override void OnAppearing()
         {
-            Admob.AdjustBannerView(BannerView);
+            //Admob.AdjustBannerView(BannerView);
             list_Devices.SeparatorColor = Color.AliceBlue;
             list_Devices.RefreshControlColor = Color.Black;
 

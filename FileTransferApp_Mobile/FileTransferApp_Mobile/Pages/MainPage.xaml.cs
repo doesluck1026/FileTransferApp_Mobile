@@ -15,12 +15,12 @@ namespace FileTransferApp_Mobile
         {
             InitializeComponent();
             DeviceDisplay.KeepScreenOn = false;
-            if (!Admob.TestMode)
-                BannerView.AdsId = Admob.BannerAdID;
+            //if (!Admob.TestMode)
+            //    BannerView.AdsId = Admob.BannerAdID;
         }
         protected override void OnAppearing()
         {
-            Admob.AdjustBannerView(BannerView);
+            //Admob.AdjustBannerView(BannerView);
             Main.OnClientRequested += Main_OnClientRequested;
             NetworkScanner.GetDeviceAddress(out DeviceIP, out DeviceHostName);
             Dispatcher.BeginInvokeOnMainThread(() =>

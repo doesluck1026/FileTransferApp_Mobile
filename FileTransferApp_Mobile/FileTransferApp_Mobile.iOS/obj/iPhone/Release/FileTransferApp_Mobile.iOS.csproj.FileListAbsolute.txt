@@ -1,0 +1,87 @@
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\FileTransferApp_Mobile.iOS.exe
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Acr.UserDialogs.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Acr.UserDialogs.pdb
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\BTProgressHUD.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\BTProgressHUD.pdb
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Plugin.MtAdmob.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\SkiaSharp.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\SkiaSharp.Views.iOS.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\SkiaSharp.Views.Forms.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\WebP.Touch.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Xamarin.Essentials.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Xamarin.Essentials.pdb
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\FFImageLoading.Platform.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\FFImageLoading.Platform.pdb
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\FFImageLoading.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\FFImageLoading.pdb
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\FFImageLoading.Forms.Platform.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\FFImageLoading.Forms.Platform.pdb
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\FFImageLoading.Forms.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\FFImageLoading.Forms.pdb
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Firebase.Core.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Xamarin.Forms.Core.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Xamarin.Forms.Core.pdb
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Xamarin.Forms.Platform.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Xamarin.Forms.Platform.iOS.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Xamarin.Forms.Platform.iOS.pdb
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Xamarin.Forms.Xaml.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Xamarin.Forms.Xaml.pdb
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\ar\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\ca\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\cs\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\da\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\de\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\el\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\es\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\fi\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\fr\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\he\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\hi\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\hr\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\hu\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\id\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\it\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\ja\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\ko\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\ms\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\nb\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\nl\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\pl\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\pt-BR\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\pt\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\ro\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\ru\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\sk\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\sv\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\th\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\tr\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\uk\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\vi\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Xamarin.Forms.PancakeView.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Google.MobileAds.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Buggy File Transfer.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\Buggy File Transfer.pdb
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\ar\Buggy File Transfer.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\de\Buggy File Transfer.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\es\Buggy File Transfer.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\fr\Buggy File Transfer.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\tr\Buggy File Transfer.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Release\zh-Hans\Buggy File Transfer.resources.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Release\actool\_PartialAppManifest.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Release\actool\_BundleResourceWithLogicalName.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Release\actool\_ProcessedImageAssetsPath.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Release\ibtool\_BundleResourceWithLogicalName.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Release\ibtool\_ProcessedInterfaceDefinitionsPath.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Release\coremlc\_PartialAppManifest.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Release\coremlc\_BundleResourceWithLogicalName.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Release\coremlc\_ProcessedCoreMLModelsPath.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Release\_ProcessedBundleResourcesPath.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Release\_ProcessedContentPath.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Release\optimized\
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Release\FileTransferApp_Mobile.iOS.csproj.AssemblyReference.cache
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Release\FileTransferApp_Mobile.iOS.csproj.CoreCompileInputs.cache
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Release\FileTransferApp_Mobile.iOS.csproj.CopyComplete
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Release\FileTransferApp_Mobile.iOS.exe

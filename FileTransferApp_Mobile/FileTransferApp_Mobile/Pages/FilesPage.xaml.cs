@@ -20,12 +20,12 @@ namespace FileTransferApp_Mobile.Pages
             InitializeComponent();
             FilePaths = Main.FilePaths.ToList();
             SelectedIndex = 0;
-            if (!Admob.TestMode)
-                BannerView.AdsId = Admob.BannerAdID;
+            //if (!Admob.TestMode)
+            //    BannerView.AdsId = Admob.BannerAdID;
         }
         protected override void OnAppearing()
         {
-            Admob.AdjustBannerView(BannerView);
+            //Admob.AdjustBannerView(BannerView);
             list_Files.ItemsSource = FilePaths;
             list_Files.SelectedItem = FilePaths[SelectedIndex];
             Main.OnClientRequested += Main_OnClientRequested;

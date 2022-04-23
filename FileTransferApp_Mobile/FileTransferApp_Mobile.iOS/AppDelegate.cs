@@ -24,7 +24,7 @@ namespace FileTransferApp_Mobile.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            MobileAds.SharedInstance.Start(CompletionHandler);
+           // MobileAds.SharedInstance.Start(CompletionHandler);
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

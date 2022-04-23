@@ -1,5 +1,6 @@
 ﻿using MarcTron.Plugin;
 using System;
+using System.IO;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -16,12 +17,12 @@ namespace FileTransferApp_Mobile.Pages
             Main.FileSaveURL = GetSaveFilePath();
             
             Admob.LoadInterstitialAd();
-            if (!Admob.TestMode)
-                BannerView.AdsId = Admob.BannerAdID;
+            //if (!Admob.TestMode)
+                //BannerView.AdsId = Admob.BannerAdID;
         }
         protected override void OnAppearing()
         {
-            Admob.AdjustBannerView(BannerView);
+            //Admob.AdjustBannerView(BannerView);
             Main.OnClientRequested += Main_OnClientRequested;
             if (Parameters.IsFirstTime)
             {
@@ -77,7 +78,11 @@ namespace FileTransferApp_Mobile.Pages
             if (Device.RuntimePlatform == Device.Android)
                 return "/storage/emulated/0/Download/";
             else
-                return Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/";
+            {
+                string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "..", "Library") + "/";
+                System.Diagnostics.Debug.WriteLine("Path: "+ path);
+                return path;
+            }
         }
 
         private async void btn_Info_Clicked(object sender, EventArgs e)

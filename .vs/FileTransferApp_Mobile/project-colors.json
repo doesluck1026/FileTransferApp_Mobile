@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "44e36254-b190-48d7-a978-57bccba024e0": {
+      "ProjectGuid": "44e36254-b190-48d7-a978-57bccba024e0",
+      "DisplayName": "FileTransferApp_Mobile.iOS",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "db62a7f4-c894-45f7-9b78-c5eab0919518": {
+      "ProjectGuid": "db62a7f4-c894-45f7-9b78-c5eab0919518",
+      "DisplayName": "FileTransferApp_Mobile.Android",
+      "ColorIndex": 1
+    },
+    "d8947a03-39af-4722-975b-1613f60bad77": {
+      "ProjectGuid": "d8947a03-39af-4722-975b-1613f60bad77",
+      "DisplayName": "FileTransferApp_Mobile",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

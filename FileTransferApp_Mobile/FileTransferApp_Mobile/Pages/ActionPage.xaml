@@ -53,9 +53,9 @@
                     <Label Text="{x:Static resource:AppResources.Ac_btnReceive}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Body" FontAttributes="Bold" TextColor="GhostWhite" />
             </StackLayout>
                 
-            <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" MinimumHeightRequest="50" 
+            <!--<admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" MinimumHeightRequest="50" 
                             HeightRequest="50"
-                            VerticalOptions="EndAndExpand" Grid.Row="1" x:Name="BannerView" Margin="0,0,0,5"/>
+                            VerticalOptions="EndAndExpand" Grid.Row="1" x:Name="BannerView" Margin="0,0,0,5"/>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

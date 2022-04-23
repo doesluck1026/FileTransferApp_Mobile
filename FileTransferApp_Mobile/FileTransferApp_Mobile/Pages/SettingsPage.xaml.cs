@@ -18,8 +18,8 @@ namespace FileTransferApp_Mobile.Pages
         public SettingsPage()
         {
             InitializeComponent();
-            if (!Admob.TestMode)
-                BannerView.AdsId = Admob.BannerAdID;
+            //if (!Admob.TestMode)
+            //    BannerView.AdsId = Admob.BannerAdID;
             LanguageList.Add("English", "en");
             LanguageList.Add("Türkçe", "tr");
             LanguageList.Add("Deutsche", "de");
@@ -31,7 +31,7 @@ namespace FileTransferApp_Mobile.Pages
         
         protected override void OnAppearing()
         {
-            Admob.AdjustBannerView(BannerView);
+            //Admob.AdjustBannerView(BannerView);
             Main.OnClientRequested += Main_OnClientRequested;
             Device.InvokeOnMainThreadAsync(() =>
             {

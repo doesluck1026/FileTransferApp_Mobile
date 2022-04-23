@@ -14,28 +14,28 @@ namespace FileTransferApp_Mobile
         public TransferDonePage()
         {
             InitializeComponent();
-            if (!Admob.TestMode)
-                BannerView.AdsId = Admob.BannerAdID;
+            //if (!Admob.TestMode)
+            //    BannerView.AdsId = Admob.BannerAdID;
         }
         protected override void OnAppearing()
         {
             Main.OnClientRequested += Main_OnClientRequested;
-            Admob.AdjustBannerView(BannerView);
-            if (Admob.IsInterstitialLoaded)
-                Admob.ShowInterstitialAd();
-            else
-                CrossMTAdmob.Current.OnInterstitialLoaded += Current_OnInterstitialLoaded;
+            //Admob.AdjustBannerView(BannerView);
+            //if (Admob.IsInterstitialLoaded)
+            //    Admob.ShowInterstitialAd();
+            //else
+            //    CrossMTAdmob.Current.OnInterstitialLoaded += Current_OnInterstitialLoaded;
             list_Files.ItemsSource = Main.FileNames;
             list_Files.SelectedItem = Main.FileNames[selectedFileIndex];
         }
         protected override void OnDisappearing()
         {
-            CrossMTAdmob.Current.OnInterstitialLoaded -= Current_OnInterstitialLoaded;
+            //CrossMTAdmob.Current.OnInterstitialLoaded -= Current_OnInterstitialLoaded;
             Main.OnClientRequested -= Main_OnClientRequested;
         }
         private void Current_OnInterstitialLoaded(object sender, EventArgs e)
         {
-            Admob.ShowInterstitialAd();
+            //Admob.ShowInterstitialAd();
         }
         private void Main_OnClientRequested(string totalTransferSize, string senderDevice)
         {

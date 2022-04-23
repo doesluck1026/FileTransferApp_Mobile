@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net;
+using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
@@ -199,19 +200,44 @@ class NetworkScanner
 
     public static void GetDeviceAddress(out string deviceIP, out string deviceHostname)
     {
-        IPAddress localAddr = null;
-        var host = Dns.GetHostEntry(Dns.GetHostName());
-        foreach (var ip in host.AddressList)
+
+        //var host = Dns.GetHostEntry(Dns.GetHostName());
+        //foreach (var ip in host.AddressList)
+        //{
+        //    if (ip.AddressFamily == AddressFamily.InterNetwork)
+        //    {
+        //        localAddr = ip;
+        //    }
+        //}
+        deviceIP = GetIPAddress();
+        deviceHostname = deviceIP;
+
+
+        DeviceIP = deviceIP;
+    }
+
+    public static string GetIPAddress()
+    {
+        string ipAddress = "";
+
+        foreach (var netInterface in NetworkInterface.GetAllNetworkInterfaces())
         {
-            if (ip.AddressFamily == AddressFamily.InterNetwork)
+            if (netInterface.NetworkInterfaceType == NetworkInterfaceType.Wireless80211 ||
+                netInterface.NetworkInterfaceType == NetworkInterfaceType.Ethernet)
             {
-                localAddr = ip;
+                foreach (var addrInfo in netInterface.GetIPProperties().UnicastAddresses)
+                {
+                    if (addrInfo.Address.AddressFamily == AddressFamily.InterNetwork)
+                    {
+                        ipAddress = addrInfo.Address.ToString();
+
+                    }
+                }
             }
         }
-        deviceIP = localAddr.ToString();
-        deviceHostname = host.HostName;
-        DeviceIP = localAddr.ToString();
+        return ipAddress;
     }
+
     public string GetHostName(string ipAddress)
     {
         try

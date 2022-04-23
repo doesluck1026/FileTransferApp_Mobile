@@ -752,6 +752,7 @@ D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 D:\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\110\lp\102\jl\files.cache
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\FileTransferApp_Mobile.Android.dll
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\FileTransferApp_Mobile.Android.pdb
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\com.BuggyComp.BuggyFileTransfer.apk
@@ -791,7 +792,6 @@ C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\110\lp\98\jl\files.cache
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\110\lp\99\jl\files.cache
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\110\lp\101\jl\files.cache
-C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\110\lp\102\jl\files.cache
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\110\lp\105\jl\files.cache
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\110\lp\112\jl\files.cache
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\110\R.txt

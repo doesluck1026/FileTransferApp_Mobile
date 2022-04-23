@@ -55,8 +55,8 @@
                     Margin="25"
                     />
 
-            <admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" HeightRequest="50" 
-                            VerticalOptions="EndAndExpand" x:Name="BannerView" Margin="0,0,0,5"/>
+            <!--<admob:MTAdView AdsId="ca-app-pub-3940256099942544/6300978111" HeightRequest="50" 
+                            VerticalOptions="EndAndExpand" x:Name="BannerView" Margin="0,0,0,5"/>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

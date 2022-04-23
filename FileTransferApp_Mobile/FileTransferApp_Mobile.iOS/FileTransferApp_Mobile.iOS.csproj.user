@@ -3,5 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>iPhone</SelectedDevice>
     <ActiveDebugProfile>iPhone</ActiveDebugProfile>
+    <DeveloperId>yahyasevikoglu%40gmail.com</DeveloperId>
+    <DevelopmentTeamId>3W3G72X886</DevelopmentTeamId>
   </PropertyGroup>
 </Project>

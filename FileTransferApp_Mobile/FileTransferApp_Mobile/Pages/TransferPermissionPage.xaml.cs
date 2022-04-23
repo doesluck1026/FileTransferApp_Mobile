@@ -13,14 +13,14 @@ namespace FileTransferApp_Mobile
         public TransferPermissionPage(string transferSize,string senderName)
         {
             InitializeComponent();
-            if (!Admob.TestMode)
-                BannerView.AdsId = Admob.BannerAdID;
+            //if (!Admob.TestMode)
+            //    BannerView.AdsId = Admob.BannerAdID;
             this.TransferSize = transferSize;
             this.SenderDevice = senderName;
         }
         protected override void OnAppearing()
         {
-            Admob.AdjustBannerView(BannerView);
+            //Admob.AdjustBannerView(BannerView);
             lbl_TransferInfo.Text = SenderDevice +" "+ AppResources.Permission_RequestMessage +" "+ TransferSize + " \n "+AppResources.Permission_RequestMessage2;
         }
         private async void btn_Accept_Clicked(object sender, EventArgs e)

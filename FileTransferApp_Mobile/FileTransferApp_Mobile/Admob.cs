@@ -14,7 +14,7 @@ namespace FileTransferApp_Mobile
         private static string Test_InterstitialAdID= "ca-app-pub-3940256099942544/8691691433";
         public static string BannerAdID = "ca-app-pub-9174890030718712/5131413691";
 
-        public static readonly bool TestMode = false;
+        public static readonly bool TestMode = true;
         #endregion
 
         #region Public Variables
@@ -48,37 +48,37 @@ namespace FileTransferApp_Mobile
 
         public static void AdjustBannerView(MarcTron.Plugin.Controls.MTAdView bannerView)
         {
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                if (Device.Idiom == TargetIdiom.Phone)
-                {
-                    bannerView.MinimumHeightRequest = 50;
-                    bannerView.HeightRequest = 50;
-                }
-                else
-                {
-                    bannerView.MinimumHeightRequest = 100;
-                    bannerView.HeightRequest = 100;
-                }
-            });
+            //Device.BeginInvokeOnMainThread(() =>
+            //{
+            //    if (Device.Idiom == TargetIdiom.Phone)
+            //    {
+            //        bannerView.MinimumHeightRequest = 50;
+            //        bannerView.HeightRequest = 50;
+            //    }
+            //    else
+            //    {
+            //        bannerView.MinimumHeightRequest = 100;
+            //        bannerView.HeightRequest = 100;
+            //    }
+            //});
         }
         public static void LoadInterstitialAd()
         {
-            if (TestMode)
-                CrossMTAdmob.Current.LoadInterstitial(Test_InterstitialAdID);
-            else
-                CrossMTAdmob.Current.LoadInterstitial(InterstitialAdID);
-            if(!didInit)
-            {
-                CrossMTAdmob.Current.OnInterstitialLoaded += Current_OnInterstitialLoaded;
-                didInit = true;
-            }
+            //if (TestMode)
+            //    CrossMTAdmob.Current.LoadInterstitial(Test_InterstitialAdID);
+            //else
+            //    CrossMTAdmob.Current.LoadInterstitial(InterstitialAdID);
+            //if(!didInit)
+            //{
+            //    CrossMTAdmob.Current.OnInterstitialLoaded += Current_OnInterstitialLoaded;
+            //    didInit = true;
+            //}
         }
         public static void ShowInterstitialAd()
         {
-            IsInterstitialLoaded = false;
-            CrossMTAdmob.Current.ShowInterstitial();
-            LoadInterstitialAd();
+            //IsInterstitialLoaded = false;
+            //CrossMTAdmob.Current.ShowInterstitial();
+            //LoadInterstitialAd();
         }
         private static void Current_OnInterstitialLoaded(object sender, EventArgs e)
         {
