@@ -20,13 +20,13 @@ namespace FileTransferApp_Mobile.Pages
         }
         protected override void OnAppearing()
         {
+            Parameters.Init();
             Main.StartServer();
             string deviceIP, deviceHostname;
             NetworkScanner.GetDeviceAddress(out deviceIP, out deviceHostname);
             if (!NetworkScanner.IsDevicePublished)
-                NetworkScanner.PublishDevice();
+                NetworkScanner.PublishDevice(Parameters.DeviceName);
             NetworkScanner.ScanAvailableDevices();
-            Parameters.Init();
             Thread.CurrentThread.CurrentUICulture = new CultureInfo(Parameters.DeviceLanguage);
             AppResources.Culture = new CultureInfo(Parameters.DeviceLanguage);
         }

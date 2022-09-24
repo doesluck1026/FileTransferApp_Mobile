@@ -31,15 +31,13 @@ namespace FileTransferApp_Mobile
             NetworkScanner.OnScanCompleted += NetworkScanner_OnScanCompleted;
             Main.OnTransferResponded += Main_OnTransferResponded;
             bool isAnyDeviceAvailable = false;
-            if (NetworkScanner.DeviceNames != null)
+            if (NetworkScanner.PublisherDevices != null && NetworkScanner.PublisherDevices.Count > 0)
             {
-                if (NetworkScanner.DeviceNames.Count > 0)
-                {
-                    list_Devices.ItemsSource = NetworkScanner.DeviceNames.ToArray();
-                    list_Devices.SelectedItem = NetworkScanner.DeviceNames[0];
-                    list_Devices_ItemSelected(null, null);
-                    isAnyDeviceAvailable = true;
-                }
+
+                list_Devices.ItemsSource = NetworkScanner.DeviceNames.ToArray();
+                list_Devices.SelectedItem = NetworkScanner.DeviceNames[0];
+                list_Devices_ItemSelected(null, null);
+                isAnyDeviceAvailable = true;
             }
             if (!isAnyDeviceAvailable)
                 btn_ScanDevices_Clicked(null, null);
@@ -113,7 +111,7 @@ namespace FileTransferApp_Mobile
                 Main.ConnectToTargetDevice(txt_ClientIP.Text);
                 if(NetworkScanner.DeviceNames.Count>0)
                 {
-                    int index = NetworkScanner.DeviceIPs.IndexOf(txt_ClientIP.Text.ToString());
+                    int index = NetworkScanner.PublisherDevices.FindIndex(x=>x.IP.Equals(txt_ClientIP.Text.ToString()));
                     if(index>=0&& index< NetworkScanner.DeviceNames.Count)
                         TargetDeviceName = NetworkScanner.DeviceNames[index];
                 }
@@ -124,13 +122,12 @@ namespace FileTransferApp_Mobile
         {
             if (NetworkScanner.DeviceNames.Count <= 0)
                 return;
-            TargetDeviceIP = NetworkScanner.DeviceIPs[NetworkScanner.DeviceNames.IndexOf(list_Devices.SelectedItem.ToString())];
+            TargetDeviceIP = NetworkScanner.PublisherDevices.Find(x => x.Hostname.Equals(list_Devices.SelectedItem.ToString())).IP;
             txt_ClientIP.Text = TargetDeviceIP;//list_Clients.SelectedItem.ToString();
         }
 
         private void btn_ScanDevices_Clicked(object sender, EventArgs e)
         {
-            NetworkScanner.DeviceNames = new List<string>();
             if (NetworkScanner.IsScanning)
                 return;
             NetworkScanner.ScanAvailableDevices();

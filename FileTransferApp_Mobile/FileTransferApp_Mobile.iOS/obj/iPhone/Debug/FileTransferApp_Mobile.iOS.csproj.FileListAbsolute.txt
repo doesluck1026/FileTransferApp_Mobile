@@ -234,3 +234,14 @@ C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\Plugin.FilePicker.dll
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\Plugin.FilePicker.Abstractions.pdb
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\bin\iPhone\Debug\Plugin.FilePicker.pdb
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\actool\_ProcessedImageAssetsPath.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\ibtool\_ProcessedInterfaceDefinitionsPath.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\coremlc\_ProcessedCoreMLModelsPath.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\_ProcessedBundleResourcesPath.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\_ProcessedContentPath.items
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.iOS\obj\iPhone\Debug\optimized\

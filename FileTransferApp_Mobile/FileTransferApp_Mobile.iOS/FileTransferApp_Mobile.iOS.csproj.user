@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <SelectedDevice>iPhone</SelectedDevice>
-    <ActiveDebugProfile>iPhone</ActiveDebugProfile>
+    <SelectedDevice>Local Device</SelectedDevice>
+    <ActiveDebugProfile>Local Device</ActiveDebugProfile>
     <DeveloperId>yahyasevikoglu%40gmail.com</DeveloperId>
     <DevelopmentTeamId>3W3G72X886</DevelopmentTeamId>
     <SelectedPlatformGroup>LocalDevice</SelectedPlatformGroup>

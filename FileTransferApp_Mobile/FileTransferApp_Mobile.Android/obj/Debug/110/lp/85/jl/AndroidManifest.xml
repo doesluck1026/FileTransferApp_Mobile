@@ -15,10 +15,17 @@
   ~ limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="androidx.lifecycle.service" >
+    package="androidx.room" >
 
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="28" />
+
+    <application>
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+    </application>
 
 </manifest>

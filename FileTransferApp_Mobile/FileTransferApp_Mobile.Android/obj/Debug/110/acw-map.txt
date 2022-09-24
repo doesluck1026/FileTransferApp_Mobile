@@ -67,6 +67,9 @@ ffimageloading.cross.MvxCachedImageView;ffimageloading.cross.MvxCachedImageView
 FFImageLoading.Cache.LRUCache, FFImageLoading.Platform;crc64b75d9ddab39d6c30.LRUCache
 FFImageLoading.Cache.LRUCache;crc64b75d9ddab39d6c30.LRUCache
 ffimageloading.cache.LRUCache;crc64b75d9ddab39d6c30.LRUCache
+Plugin.FilePicker.FilePickerActivity, Plugin.FilePicker;crc64424a8adc5a1fbe28.FilePickerActivity
+Plugin.FilePicker.FilePickerActivity;crc64424a8adc5a1fbe28.FilePickerActivity
+plugin.filepicker.FilePickerActivity;crc64424a8adc5a1fbe28.FilePickerActivity
 MarcTron.Plugin.Renderers.AdViewRenderer, Plugin.MtAdmob;crc649c8245f99e045deb.AdViewRenderer
 MarcTron.Plugin.Renderers.AdViewRenderer;crc649c8245f99e045deb.AdViewRenderer
 marctron.plugin.renderers.AdViewRenderer;crc649c8245f99e045deb.AdViewRenderer

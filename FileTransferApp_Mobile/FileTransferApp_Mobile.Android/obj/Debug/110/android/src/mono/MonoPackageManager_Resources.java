@@ -11,6 +11,8 @@ public class MonoPackageManager_Resources {
 		"FFImageLoading.Forms.Platform.dll",
 		"FFImageLoading.Platform.dll",
 		"FormsViewGroup.dll",
+		"Plugin.FilePicker.Abstractions.dll",
+		"Plugin.FilePicker.dll",
 		"Plugin.MtAdmob.dll",
 		"SkiaSharp.dll",
 		"SkiaSharp.Views.Android.dll",

@@ -37,7 +37,7 @@ class Server
             if (string.IsNullOrEmpty(IP))
             {
 
-                localAddr = IPAddress.Parse(NetworkScanner.GetIPAddress());
+                localAddr = IPAddress.Parse(NetworkScanner.GetDeviceAddress());
                 Debug.WriteLine("IP: " + localAddr);
                 //var ipAddresses = GetAllInternetworkIPs();
                 //Debug.WriteLine("yh: IP:"+ipAddresses[0].Address);

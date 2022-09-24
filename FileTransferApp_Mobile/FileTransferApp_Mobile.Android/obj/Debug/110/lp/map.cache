@@ -3,6 +3,7 @@ AndHUD.dll
 FFImageLoading.Forms.Platform.dll
 FFImageLoading.Platform.dll
 FormsViewGroup.dll
+Plugin.FilePicker.dll
 Plugin.MtAdmob.dll
 SkiaSharp.dll
 SkiaSharp.Views.Android.dll
@@ -111,4 +112,3 @@ androidx.asynclayoutinflater.asynclayoutinflater.aar
 androidx.legacy.legacy-support-core-ui.aar
 androidx.legacy.legacy-support-v4.aar
 androidx.browser.browser.aar
-Plugin.FilePicker.dll
