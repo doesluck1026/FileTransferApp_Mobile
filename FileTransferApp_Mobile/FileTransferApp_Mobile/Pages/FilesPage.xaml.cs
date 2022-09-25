@@ -16,6 +16,7 @@ namespace FileTransferApp_Mobile.Pages
     public partial class FilesPage : ContentPage
     {
         private List<string> FilePaths;
+        private string[] FileNames;
         private int SelectedIndex;
         public FilesPage()
         {
@@ -28,8 +29,7 @@ namespace FileTransferApp_Mobile.Pages
         protected override void OnAppearing()
         {
             //Admob.AdjustBannerView(BannerView);
-            list_Files.ItemsSource = FilePaths;
-            list_Files.SelectedItem = FilePaths[SelectedIndex];
+            ShowSelectedFiles();
             Main.OnClientRequested += Main_OnClientRequested;
 
         }
@@ -63,11 +63,7 @@ namespace FileTransferApp_Mobile.Pages
                     if (!FilePaths.Contains(results[i].FullPath))
                         FilePaths.Add(results[i].FullPath);
                 }
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    list_Files.ItemsSource = FilePaths.ToArray();
-                    list_Files.SelectedItem = FilePaths[SelectedIndex];
-                });
+                ShowSelectedFiles();
             }
         }
         private void btn_Add_Clicked(object sender, EventArgs e)
@@ -79,7 +75,7 @@ namespace FileTransferApp_Mobile.Pages
         {
             if (FilePaths==null || FilePaths.Count == 0)
                 return;
-            string selectedFilePath = Main.FilePaths[SelectedIndex];
+            string selectedFilePath = FilePaths[SelectedIndex];
             await Launcher.OpenAsync(new OpenFileRequest
             {
                 File = new ReadOnlyFile(selectedFilePath)
@@ -97,14 +93,25 @@ namespace FileTransferApp_Mobile.Pages
                 return;
             }
 
+            ShowSelectedFiles();
+        }
+        private void ShowSelectedFiles()
+        {
+            if (FilePaths == null || FilePaths.Count == 0)
+                return;
+            FileNames = new string[FilePaths.Count];
+            for (int i = 0; i < FilePaths.Count; i++)
+            {
+                var filePathParts= FilePaths[i].Split(new char[] { '/' });
+                FileNames[i] = filePathParts[filePathParts.Length-1];
+            }
             Device.BeginInvokeOnMainThread(() =>
             {
-                list_Files.ItemsSource = FilePaths.ToArray();
-                SelectedIndex = Math.Min(SelectedIndex, FilePaths.Count-1);
-                list_Files.SelectedItem = FilePaths[SelectedIndex];
+                list_Files.ItemsSource = FileNames;
+                SelectedIndex = Math.Min(SelectedIndex, FilePaths.Count - 1);
+                list_Files.SelectedItem = FileNames[SelectedIndex];
             });
         }
-
         private async void btn_Send_Clicked(object sender, EventArgs e)
         {
             if(FilePaths.Count>0)
@@ -127,7 +134,7 @@ namespace FileTransferApp_Mobile.Pages
 
         private void list_Files_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            SelectedIndex = FilePaths.ToList().IndexOf(list_Files.SelectedItem.ToString());
+            SelectedIndex = FileNames.ToList().IndexOf(list_Files.SelectedItem.ToString());
         }
     }
 }
