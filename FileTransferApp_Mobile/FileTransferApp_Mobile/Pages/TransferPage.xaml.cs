@@ -7,6 +7,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Acr.UserDialogs;
 using FileTransferApp_Mobile.Resources;
+using FileTransfer;
+using FileTransfer.Communication;
 
 namespace FileTransferApp_Mobile
 {
@@ -25,15 +27,15 @@ namespace FileTransferApp_Mobile
         protected override void OnAppearing()
         {
             //Admob.AdjustBannerView(BannerView);
-            if (Main.IsSending)
-                Main.BeginSendingFiles();
+            if (TransferEngine.IsSending)
+                TransferEngine.BeginSendingFiles();
             else
-                Main.ResponseToTransferRequest(true);
-            Main.OnTransferFinished += Main_OnTransferFinished;
-            Main.OnTransferAborted += Main_OnTransferAborted;
+                TransferEngine.ResponseToTransferRequest(true);
+            TransferEngine.OnTransferFinished += Main_OnTransferFinished;
+            TransferEngine.OnTransferAborted += Main_OnTransferAborted;
             Task.Run(() =>
             {
-                while (!Main.IsTransfering)
+                while (!TransferEngine.IsTransfering)
                 {
                     Thread.Sleep(1);
                 }
@@ -43,8 +45,8 @@ namespace FileTransferApp_Mobile
 
         protected override void OnDisappearing()
         {
-            Main.OnTransferFinished -= Main_OnTransferFinished;
-            Main.OnTransferAborted -= Main_OnTransferAborted;
+            TransferEngine.OnTransferFinished -= Main_OnTransferFinished;
+            TransferEngine.OnTransferAborted -= Main_OnTransferAborted;
         }
         private  void Main_OnTransferFinished()
         {
@@ -58,7 +60,7 @@ namespace FileTransferApp_Mobile
             UserDialogs.Instance.Alert(AppResources.Transfer_AbortedMessage);
             Device.BeginInvokeOnMainThread(() =>
             {
-                if(Main.FileNames.Length>0)
+                if(TransferEngine.FileNames.Length>0)
                     Navigation.PushAsync(new TransferDonePage());
                 else
                     Navigation.PushAsync(new MainPage());
@@ -66,7 +68,7 @@ namespace FileTransferApp_Mobile
         }
         protected override bool OnBackButtonPressed()
         {
-            if(Main.IsTransfering)
+            if(TransferEngine.IsTransfering)
             {
                 UserDialogs.Instance.Alert(AppResources.Send_Warning_Goback);
             }
@@ -104,7 +106,7 @@ namespace FileTransferApp_Mobile
         
         private void UpdateUI()
         {
-            var metrics = Main.TransferMetrics;
+            var metrics = TransferEngine.TransferMetrics;
             Dispatcher.BeginInvokeOnMainThread(() => {
                 lbl_currentFileNumber.Text = metrics.IndexOfCurrentFile.ToString();
                 lbl_FileCount.Text = metrics.CountOfFiles.ToString();
@@ -121,7 +123,7 @@ namespace FileTransferApp_Mobile
                 lbl_totalSize.Text = metrics.TotalDataSize.ToString("0.00") + " "+ metrics.SizeUnit.ToString();
             });
             
-            if (!Main.IsTransfering)
+            if (!TransferEngine.IsTransfering)
                 StopUpdateingUI();
         }
         private async void btn_AbortTransfer_Clicked(object sender, EventArgs e)
@@ -130,8 +132,8 @@ namespace FileTransferApp_Mobile
                 AppResources.Transfer_ConfirmAbortYes, AppResources.Transfer_ConfirmAbortNo);
             if(result.ToString()== "True")
             {
-                Main.OnTransferFinished -= Main_OnTransferFinished;
-                Main.AbortTransfer();
+                TransferEngine.OnTransferFinished -= Main_OnTransferFinished;
+                TransferEngine.AbortTransfer();
                 Device.BeginInvokeOnMainThread(() => 
                 {
                     Navigation.PushAsync(new Pages.ActionPage());

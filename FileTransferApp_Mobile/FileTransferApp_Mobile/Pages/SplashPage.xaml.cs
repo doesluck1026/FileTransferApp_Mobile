@@ -6,6 +6,9 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using FileTransferApp_Mobile.Resources;
+using FileTransfer;
+using FileTransfer.Communication;
+
 namespace FileTransferApp_Mobile.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -21,7 +24,7 @@ namespace FileTransferApp_Mobile.Pages
         protected override void OnAppearing()
         {
             Parameters.Init();
-            Main.StartServer();
+            TransferEngine.StartServer();
             string deviceIP, deviceHostname;
             NetworkScanner.GetDeviceAddress(out deviceIP, out deviceHostname);
             if (!NetworkScanner.IsDevicePublished)

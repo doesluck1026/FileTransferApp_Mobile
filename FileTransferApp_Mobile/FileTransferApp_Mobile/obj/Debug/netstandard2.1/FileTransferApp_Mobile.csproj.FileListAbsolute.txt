@@ -145,3 +145,5 @@ C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\Buggy File Transfer.pdb
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\FileTransferApp_Mobile.csproj.AssemblyReference.cache
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\refint\Buggy File Transfer.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\bin\Debug\netstandard2.1\FileTransfer.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile\obj\Debug\netstandard2.1\FileTransferApp_Mobile.csproj.CopyComplete

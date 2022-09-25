@@ -51,6 +51,11 @@
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.763-beta" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="FileTransfer">
+      <HintPath>..\FileTransfer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
     <XliffResource Include="MultilingualResources\FileTransferApp_Mobile.ar.xlf" />
     <XliffResource Include="MultilingualResources\FileTransferApp_Mobile.de.xlf" />
     <XliffResource Include="MultilingualResources\FileTransferApp_Mobile.es.xlf" />

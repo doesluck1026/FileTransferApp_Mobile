@@ -4,6 +4,8 @@ using System.IO;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using FileTransfer;
+using FileTransfer.Communication;
 
 namespace FileTransferApp_Mobile.Pages
 {
@@ -14,7 +16,7 @@ namespace FileTransferApp_Mobile.Pages
         {
             InitializeComponent();
             DeviceDisplay.KeepScreenOn = false;
-            Main.FileSaveURL = GetSaveFilePath();
+            TransferEngine.FileSaveURL = GetSaveFilePath();
             
             Admob.LoadInterstitialAd();
             //if (!Admob.TestMode)
@@ -23,7 +25,7 @@ namespace FileTransferApp_Mobile.Pages
         protected override void OnAppearing()
         {
             //Admob.AdjustBannerView(BannerView);
-            Main.OnClientRequested += Main_OnClientRequested;
+            TransferEngine.OnClientRequested += Main_OnClientRequested;
             if (Parameters.IsFirstTime)
             {
                 Parameters.IsFirstTime = false;
@@ -43,7 +45,7 @@ namespace FileTransferApp_Mobile.Pages
         }
         protected override void OnDisappearing()
         {
-            Main.OnClientRequested -= Main_OnClientRequested;
+            TransferEngine.OnClientRequested -= Main_OnClientRequested;
         }
         protected override bool OnBackButtonPressed()
         {

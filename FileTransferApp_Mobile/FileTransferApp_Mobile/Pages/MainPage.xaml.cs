@@ -5,6 +5,8 @@ using Xamarin.Forms;
 using Xamarin.Essentials;
 using Plugin.FilePicker.Abstractions;
 using Plugin.FilePicker;
+using FileTransfer;
+using FileTransfer.Communication;
 
 namespace FileTransferApp_Mobile
 {
@@ -22,7 +24,7 @@ namespace FileTransferApp_Mobile
         protected override void OnAppearing()
         {
             //Admob.AdjustBannerView(BannerView);
-            Main.OnClientRequested += Main_OnClientRequested;
+            TransferEngine.OnClientRequested += Main_OnClientRequested;
             NetworkScanner.GetDeviceAddress(out DeviceIP, out DeviceHostName);
             Dispatcher.BeginInvokeOnMainThread(() =>
             {
@@ -32,7 +34,7 @@ namespace FileTransferApp_Mobile
         }
         protected override void OnDisappearing()
         {
-            Main.OnClientRequested -= Main_OnClientRequested;
+            TransferEngine.OnClientRequested -= Main_OnClientRequested;
         }
         protected override bool OnBackButtonPressed()
         {
@@ -71,7 +73,7 @@ namespace FileTransferApp_Mobile
                 {
                     filepaths[i] = results[i].FullPath;
                 }
-                Main.SetFilePaths(filepaths);
+                TransferEngine.SetFilePaths(filepaths);
                 await Navigation.PushAsync(new Pages.FilesPage());
             }
             else

@@ -3,6 +3,7 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "FileTransferApp_Mobile.Android.dll" comes first in this list. */
 		"FileTransferApp_Mobile.Android.dll",
+		"FileTransfer.dll",
 		"Acr.UserDialogs.dll",
 		"AndHUD.dll",
 		"Buggy File Transfer.dll",

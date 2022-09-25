@@ -1,6 +1,8 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using FileTransfer;
+using FileTransfer.Communication;
 
 namespace FileTransferApp_Mobile.Pages
 {
@@ -18,11 +20,11 @@ namespace FileTransferApp_Mobile.Pages
         protected override void OnAppearing()
         {
             //Admob.AdjustBannerView(BannerView);
-            Main.OnClientRequested += Main_OnClientRequested;
+            TransferEngine.OnClientRequested += Main_OnClientRequested;
         }
         protected override void OnDisappearing()
         {
-            Main.OnClientRequested -= Main_OnClientRequested;
+            TransferEngine.OnClientRequested -= Main_OnClientRequested;
         }
         private void Main_OnClientRequested(string totalTransferSize, string senderDevice, bool isAlreadyAccepted)
         {

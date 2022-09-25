@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using FileTransfer;
+using FileTransfer.Communication;
 
 namespace FileTransferApp_Mobile.Pages
 {
@@ -21,7 +23,7 @@ namespace FileTransferApp_Mobile.Pages
         public FilesPage()
         {
             InitializeComponent();
-            FilePaths = Main.FilePaths.ToList();
+            FilePaths = TransferEngine.FilePaths.ToList();
             SelectedIndex = 0;
             //if (!Admob.TestMode)
             //    BannerView.AdsId = Admob.BannerAdID;
@@ -30,13 +32,13 @@ namespace FileTransferApp_Mobile.Pages
         {
             //Admob.AdjustBannerView(BannerView);
             ShowSelectedFiles();
-            Main.OnClientRequested += Main_OnClientRequested;
+            TransferEngine.OnClientRequested += Main_OnClientRequested;
 
         }
 
         protected override void OnDisappearing()
         {
-            Main.OnClientRequested -= Main_OnClientRequested;
+            TransferEngine.OnClientRequested -= Main_OnClientRequested;
         }
 
         private void Main_OnClientRequested(string totalTransferSize, string deviceName, bool isAlreadyAccepted)
@@ -116,7 +118,7 @@ namespace FileTransferApp_Mobile.Pages
         {
             if(FilePaths.Count>0)
             {
-                Main.SetFilePaths(FilePaths.ToArray());
+                TransferEngine.SetFilePaths(FilePaths.ToArray());
                 await Navigation.PushAsync(new SendingPage());
             }
             else

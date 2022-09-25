@@ -1512,3 +1512,5 @@ C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\110\android\assets\Plugin.FilePicker.dll
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\110\android\assets\Plugin.FilePicker.dll.mdb
 C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\110\android\src\crc64424a8adc5a1fbe28\FilePickerActivity.java
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\bin\Debug\FileTransfer.dll
+C:\Projects\FileTransferApp_Mobile\FileTransferApp_Mobile\FileTransferApp_Mobile.Android\obj\Debug\110\android\assets\FileTransfer.dll

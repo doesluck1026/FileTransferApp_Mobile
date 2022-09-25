@@ -6,6 +6,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using FileTransfer;
+using FileTransfer.Communication;
 
 namespace FileTransferApp_Mobile
 {
@@ -29,7 +31,7 @@ namespace FileTransferApp_Mobile
             list_Devices.RefreshControlColor = Color.Black;
 
             NetworkScanner.OnScanCompleted += NetworkScanner_OnScanCompleted;
-            Main.OnTransferResponded += Main_OnTransferResponded;
+            TransferEngine.OnTransferResponded += Main_OnTransferResponded;
             bool isAnyDeviceAvailable = false;
             if (NetworkScanner.PublisherDevices != null && NetworkScanner.PublisherDevices.Count > 0)
             {
@@ -45,7 +47,7 @@ namespace FileTransferApp_Mobile
         protected override void OnDisappearing()
         {
             NetworkScanner.OnScanCompleted -= NetworkScanner_OnScanCompleted;
-            Main.OnTransferResponded -= Main_OnTransferResponded;
+            TransferEngine.OnTransferResponded -= Main_OnTransferResponded;
         }
         protected override bool OnBackButtonPressed()
         {
@@ -65,7 +67,7 @@ namespace FileTransferApp_Mobile
             {
                 Device.InvokeOnMainThreadAsync(() =>
                 {
-                    Main.IsSending = true;
+                    TransferEngine.IsSending = true;
                     Navigation.PushAsync(new TransferPage());
                 });
             }
@@ -108,7 +110,7 @@ namespace FileTransferApp_Mobile
                     }
                 });
                 isRequestSent = true;
-                Main.SendFileTo(txt_ClientIP.Text);
+                TransferEngine.SendFileTo(txt_ClientIP.Text);
                 if(NetworkScanner.DeviceNames.Count>0)
                 {
                     int index = NetworkScanner.PublisherDevices.FindIndex(x=>x.IP.Equals(txt_ClientIP.Text.ToString()));

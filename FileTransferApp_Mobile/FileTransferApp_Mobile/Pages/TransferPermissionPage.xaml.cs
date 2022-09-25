@@ -2,6 +2,8 @@
 using FileTransferApp_Mobile.Resources;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using FileTransfer;
+using FileTransfer.Communication;
 
 namespace FileTransferApp_Mobile
 {
@@ -25,13 +27,13 @@ namespace FileTransferApp_Mobile
         }
         private async void btn_Accept_Clicked(object sender, EventArgs e)
         {
-            Main.IsSending = false;
+            TransferEngine.IsSending = false;
             await Navigation.PushAsync(new TransferPage());
         }
 
         private async void btn_Reject_Clicked(object sender, EventArgs e)
         {
-            Main.ResponseToTransferRequest(false);
+            TransferEngine.ResponseToTransferRequest(false);
             await Navigation.PushAsync(new Pages.ActionPage());
         }
     }

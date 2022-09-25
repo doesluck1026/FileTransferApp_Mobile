@@ -8,6 +8,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Linq;
 using Xamarin.Essentials;
+using FileTransfer;
+using FileTransfer.Communication;
 
 namespace FileTransferApp_Mobile.Pages
 {
@@ -32,7 +34,7 @@ namespace FileTransferApp_Mobile.Pages
         protected override void OnAppearing()
         {
             //Admob.AdjustBannerView(BannerView);
-            Main.OnClientRequested += Main_OnClientRequested;
+            TransferEngine.OnClientRequested += Main_OnClientRequested;
             Device.InvokeOnMainThreadAsync(() =>
             {
                 if (Parameters.IsFirstTime)
@@ -47,7 +49,7 @@ namespace FileTransferApp_Mobile.Pages
         }
         protected override void OnDisappearing()
         {
-            Main.OnClientRequested -= Main_OnClientRequested;
+            TransferEngine.OnClientRequested -= Main_OnClientRequested;
             
         }
         protected override bool OnBackButtonPressed()
