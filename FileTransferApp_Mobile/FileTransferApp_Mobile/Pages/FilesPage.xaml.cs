@@ -39,7 +39,7 @@ namespace FileTransferApp_Mobile.Pages
             Main.OnClientRequested -= Main_OnClientRequested;
         }
 
-        private void Main_OnClientRequested(string totalTransferSize, string deviceName)
+        private void Main_OnClientRequested(string totalTransferSize, string deviceName, bool isAlreadyAccepted)
         {
             /// Show file transfer request and ask for permission here
             Device.BeginInvokeOnMainThread(() =>
@@ -54,22 +54,21 @@ namespace FileTransferApp_Mobile.Pages
         /// <returns>the address of the file in memory</returns>
         private async void SelectFile()
         {
-           
-            //var pickResult = await FilePicker.PickMultipleAsync();
-            //if (pickResult != null)
-            //{
-            //    var results = pickResult.ToArray();
-            //    for (int i = 0; i < results.Length; i++)
-            //    {
-            //        if(!FilePaths.Contains(results[i].FullPath))
-            //            FilePaths.Add(results[i].FullPath);
-            //    }
-            //    Device.BeginInvokeOnMainThread(() =>
-            //    {
-            //        list_Files.ItemsSource = FilePaths.ToArray();
-            //        list_Files.SelectedItem = FilePaths[SelectedIndex];
-            //    });
-            //}
+            var pickResult = await FilePicker.PickMultipleAsync();
+            if (pickResult != null)
+            {
+                var results = pickResult.ToArray();
+                for (int i = 0; i < results.Length; i++)
+                {
+                    if (!FilePaths.Contains(results[i].FullPath))
+                        FilePaths.Add(results[i].FullPath);
+                }
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    list_Files.ItemsSource = FilePaths.ToArray();
+                    list_Files.SelectedItem = FilePaths[SelectedIndex];
+                });
+            }
         }
         private void btn_Add_Clicked(object sender, EventArgs e)
         {
@@ -78,7 +77,7 @@ namespace FileTransferApp_Mobile.Pages
 
         private async void btn_Open_Clicked(object sender, EventArgs e)
         {
-            if (FilePaths.Count == 0)
+            if (FilePaths==null || FilePaths.Count == 0)
                 return;
             string selectedFilePath = Main.FilePaths[SelectedIndex];
             await Launcher.OpenAsync(new OpenFileRequest

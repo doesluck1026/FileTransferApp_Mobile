@@ -37,7 +37,7 @@ namespace FileTransferApp_Mobile
         {
             //Admob.ShowInterstitialAd();
         }
-        private void Main_OnClientRequested(string totalTransferSize, string senderDevice)
+        private void Main_OnClientRequested(string totalTransferSize, string senderDevice, bool isAlreadyAccepted)
         {
             /// Show file transfer request and ask for permission here
             Device.BeginInvokeOnMainThread(() =>

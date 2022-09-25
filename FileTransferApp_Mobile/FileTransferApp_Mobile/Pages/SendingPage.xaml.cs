@@ -108,7 +108,7 @@ namespace FileTransferApp_Mobile
                     }
                 });
                 isRequestSent = true;
-                Main.ConnectToTargetDevice(txt_ClientIP.Text);
+                Main.SendFileTo(txt_ClientIP.Text);
                 if(NetworkScanner.DeviceNames.Count>0)
                 {
                     int index = NetworkScanner.PublisherDevices.FindIndex(x=>x.IP.Equals(txt_ClientIP.Text.ToString()));

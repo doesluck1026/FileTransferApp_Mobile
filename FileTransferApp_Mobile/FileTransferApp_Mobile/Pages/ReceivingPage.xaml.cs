@@ -24,7 +24,7 @@ namespace FileTransferApp_Mobile.Pages
         {
             Main.OnClientRequested -= Main_OnClientRequested;
         }
-        private void Main_OnClientRequested(string totalTransferSize, string senderDevice)
+        private void Main_OnClientRequested(string totalTransferSize, string senderDevice, bool isAlreadyAccepted)
         {
             /// Show file transfer request and ask for permission here
             Device.BeginInvokeOnMainThread(() =>

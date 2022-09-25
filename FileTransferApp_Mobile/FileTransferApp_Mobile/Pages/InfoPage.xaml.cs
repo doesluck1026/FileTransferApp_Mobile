@@ -35,7 +35,7 @@ namespace FileTransferApp_Mobile.Pages
         /// </summary>
         /// <param name="totalTransferSize">Total size of transfer as the unit of byte</param>
         /// <param name="deviceName">Name of the device which has connected to this device.</param>
-        private void Main_OnClientRequested(string totalTransferSize, string deviceName)
+        private void Main_OnClientRequested(string totalTransferSize, string deviceName, bool isAlreadyAccepted)
         {
             /// Show file transfer request and ask for permission here
             Device.BeginInvokeOnMainThread(() =>

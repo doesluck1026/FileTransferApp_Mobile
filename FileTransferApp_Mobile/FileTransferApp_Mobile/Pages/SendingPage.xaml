@@ -37,8 +37,7 @@
                       VerticalOptions="Center"  
                       SeparatorColor="DarkGray"
                       ItemSelected="list_Devices_ItemSelected" 
-                      RefreshControlColor="LightGreen"
-                              />
+                      RefreshControlColor="LightGreen"/>
                 </StackLayout>
 
             </yummy:PancakeView>

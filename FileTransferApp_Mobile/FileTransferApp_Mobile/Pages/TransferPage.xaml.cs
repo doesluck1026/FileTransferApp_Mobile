@@ -104,20 +104,21 @@ namespace FileTransferApp_Mobile
         
         private void UpdateUI()
         {
+            var metrics = Main.TransferMetrics;
             Dispatcher.BeginInvokeOnMainThread(() => {
-                lbl_currentFileNumber.Text = Main.TransferMetrics.IndexOfCurrentFile.ToString();
-                lbl_FileCount.Text = Main.TransferMetrics.CountOfFiles.ToString();
-                lbl_FileSize.Text = Main.TransferMetrics.CurrentFile.FileSize.ToString("0.00") + " " + Main.TransferMetrics.CurrentFile.SizeUnit;
-                lbl_FileName.Text = Main.TransferMetrics.CurrentFile.FileName;
+                lbl_currentFileNumber.Text = metrics.IndexOfCurrentFile.ToString();
+                lbl_FileCount.Text = metrics.CountOfFiles.ToString();
+                lbl_FileSize.Text = metrics.CurrentFile.FileSize.ToString("0.00") + " " + metrics.CurrentFile.SizeUnit;
+                lbl_FileName.Text = metrics.CurrentFile.FileName;
                 //lbl_progress.Text = "%"+Main.TransferMetrics.Progress.ToString("0.0");
-                prg_Transfer.Percentage = (float)(Main.TransferMetrics.Progress / 100.0);
-                lbl_transferSpeed.Text = Main.TransferMetrics.TransferSpeed.ToString("0.00") + " MB/s";
-                lbl_PassedTime.Text = ((int)Main.TransferMetrics.TotalElapsedTime / 3600).ToString("00") + ":" + (((int)Main.TransferMetrics.TotalElapsedTime % 3600) / 60).ToString("00") + ":" +
-                    (((int)Main.TransferMetrics.TotalElapsedTime % 3600) % 60).ToString("00");
-                lbl_RemainingTime.Text = ((int)Main.TransferMetrics.EstimatedTime / 3600).ToString("00") + ":" + (((int)Main.TransferMetrics.EstimatedTime % 3600) / 60).ToString("00") + ":" +
-                    (((int)Main.TransferMetrics.EstimatedTime % 3600) % 60).ToString("00");
-                lbl_totalSent.Text = Main.TransferMetrics.TotalDataSent.ToString("0.00") + " "+Main.TransferMetrics.SentSizeUnit.ToString();
-                lbl_totalSize.Text = Main.TransferMetrics.TotalDataSize.ToString("0.00") + " "+Main.TransferMetrics.SizeUnit.ToString();
+                prg_Transfer.Percentage = (float)(metrics.Progress / 100.0);
+                lbl_transferSpeed.Text = metrics.TransferSpeed.ToString("0.00") + " MB/s";
+                lbl_PassedTime.Text = ((int)metrics.TotalElapsedTime / 3600).ToString("00") + ":" + (((int)metrics.TotalElapsedTime % 3600) / 60).ToString("00") + ":" +
+                    (((int)metrics.TotalElapsedTime % 3600) % 60).ToString("00");
+                lbl_RemainingTime.Text = ((int)metrics.EstimatedTime / 3600).ToString("00") + ":" + (((int)metrics.EstimatedTime % 3600) / 60).ToString("00") + ":" +
+                    (((int)metrics.EstimatedTime % 3600) % 60).ToString("00");
+                lbl_totalSent.Text = metrics.TotalDataSent.ToString("0.00") + " "+metrics.SentSizeUnit.ToString();
+                lbl_totalSize.Text = metrics.TotalDataSize.ToString("0.00") + " "+ metrics.SizeUnit.ToString();
             });
             
             if (!Main.IsTransfering)

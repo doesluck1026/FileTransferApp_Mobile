@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 using System.Threading;
@@ -20,7 +21,7 @@ public class Main
     /// </summary>
     /// <param name="files">files to be sent by client</param>
     /// <returns></returns>
-    public delegate void ClientRequestDelegate(string totalTransferSize, string senderDevice);
+    public delegate void ClientRequestDelegate(string totalTransferSize, string senderDevice, bool isAlreadyAccepted = false);
     public static event ClientRequestDelegate OnClientRequested;
 
     public delegate void TransferFinishedDelegate();
@@ -105,6 +106,10 @@ public class Main
     private static Metrics _transferMetrics;
     private static int MB = 1024 * 1024;
     private static readonly int ChunkSize = (int)(0.1 * MB);
+
+    private static List<string> TargetDeviceList = new List<string>();
+    public static bool MultipleSendMode = false;
+    private static string TargetDeviceIP;
     #endregion
 
     #region Lock Objects
@@ -150,6 +155,7 @@ public class Main
         public double Progress;             /// between 0 and 100
         public double TotalElapsedTime;     /// Seconds
         public double EstimatedTime;        /// Seconds
+        public string ReceiverDevice;
     }
     #endregion
 
@@ -163,7 +169,7 @@ public class Main
     {
         if (server != null)
             return;
-        server = new Server(port: Port, bufferSize: BufferSize, StartByte: StartByte);
+        server = new Server(port: Port, ip: NetworkScanner.MyIP, bufferSize: BufferSize, StartByte: StartByte);
         ServerIP = server.SetupServer();
         server.StartListener();
         server.OnClientConnected += Server_OnClientConnected;
@@ -193,8 +199,9 @@ public class Main
             Debug.WriteLine(i + " : " + FilePaths[i]);
         }
     }
-    public static void ConnectToTargetDevice(string IP)
+    public static void SendFileTo(string IP)
     {
+        TargetDeviceIP = IP;
         IsTransferEnabled = true;
         client = new Client(port: Port, ip: IP, bufferSize: BufferSize, StartByte: StartByte);
         ServerIP = client.ConnectToServer();
@@ -218,9 +225,29 @@ public class Main
                 client.DisconnectFromServer();
                 client = null;
             }
+            if (!isAccepted)
+                SendToNextDevice();
+            else
+            {
+                lock (Lck_TransferMetrics)
+                {
+                    _transferMetrics.ReceiverDevice = NetworkScanner.PublisherDevices.Find(x => x.IP.Equals(TargetDeviceIP)).Hostname;
+                }
+            }
+
         });
 
     }
+
+    public static void SendToMultipleDevices(List<string> deviceIPs)
+    {
+        if (deviceIPs == null || deviceIPs.Count == 0)
+            return;
+        MultipleSendMode = true;
+        TargetDeviceList = new List<string>(deviceIPs);
+        SendToNextDevice();
+    }
+
     public static void BeginSendingFiles()
     {
         IsTransferEnabled = true;
@@ -235,6 +262,18 @@ public class Main
     #endregion
 
     #region Private Functions
+
+    private static void SendToNextDevice()
+    {
+        if (!MultipleSendMode || TargetDeviceList == null || TargetDeviceList.Count < 1)
+        {
+            MultipleSendMode = false;
+            return;
+        }
+        SendFileTo(TargetDeviceList[0]);
+        TargetDeviceList.RemoveAt(0);
+
+    }
     private static void SendingCoreFcn()
     {
         lock (Lck_TransferMetrics)
@@ -273,7 +312,7 @@ public class Main
             watch.Restart();
             while (IsTransferEnabled)
             {
-                File.FileReadAtByteIndex(totalBytesRead, out numberOfBytesRead, out buffer, chunkSize: (int)(ChunkSize + TransferMetrics.TransferSpeed * MB * 0.3), functionByte: (byte)Functions.TransferMode);
+                File.FileReadAtByteIndex(totalBytesRead, out numberOfBytesRead, out buffer, chunkSize: (int)(ChunkSize + TransferMetrics.TransferSpeed * MB * 0.1), functionByte: (byte)Functions.TransferMode);
                 if (numberOfBytesRead == 0)
                 {
                     UpdateMetrics(watch, byteCounter);
@@ -331,6 +370,8 @@ public class Main
         server.CloseServer();
         server = null;
         StartServer();
+        SendToNextDevice();
+
     }
     private static bool CheckAck(Functions func)
     {
@@ -364,7 +405,10 @@ public class Main
         lock (Lck_TransferMetrics)
         {
             _transferMetrics.TotalBytesSent += byteCounter;
-            _transferMetrics.TransferSpeed = (_transferMetrics.TransferSpeed * 0.9 + 0.1 * (byteCounter / (MB * elapsedTime)));
+            if (_transferMetrics.TransferSpeed == 0)
+                _transferMetrics.TransferSpeed = byteCounter / (MB * elapsedTime);
+            else
+                _transferMetrics.TransferSpeed = (_transferMetrics.TransferSpeed * 0.9 + 0.1 * (byteCounter / (MB * elapsedTime)));
             _transferMetrics.Progress = ((double)_transferMetrics.TotalBytesSent / (double)_transferMetrics.TotalDataSizeAsBytes) * 100.0;
             _transferMetrics.TotalElapsedTime += elapsedTime;
             _transferMetrics.EstimatedTime = (_transferMetrics.TotalDataSizeAsBytes - _transferMetrics.TotalBytesSent) / (_transferMetrics.TotalBytesSent / _transferMetrics.TotalElapsedTime);
@@ -509,10 +553,20 @@ public class Main
             string fileSizeString = File.FileSize.ToString("0.00") + " " + File.FileSizeUnit.ToString();
             Debug.WriteLine("numberOfFiles: " + numberOfFiles + " transfer size: " + fileSizeString + " device Name: " + senderDevice);
             IsSending = false;
-            if (OnClientRequested != null)
-                OnClientRequested(fileSizeString, senderDevice);
+            if (false)
+            {
+                ResponseToTransferRequest(true);
+                OnClientRequested?.Invoke(fileSizeString, senderDevice, true);
+
+            }
             else
-                ResponseToTransferRequest(false);
+            {
+                if (OnClientRequested != null)
+                    OnClientRequested?.Invoke(fileSizeString, senderDevice);
+                else
+                    ResponseToTransferRequest(false);
+
+            }
             _transferMetrics.TotalDataSizeAsBytes = transferSize;
         }
     }
@@ -676,5 +730,5 @@ public class Main
     #endregion
 
     #endregion
-
 }
+
